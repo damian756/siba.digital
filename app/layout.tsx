@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -98,6 +99,11 @@ export default function RootLayout({
         <Nav />
         <main className="pt-16">{children}</main>
         <Footer />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="nUQShDgkJVT10fQpmqAvaw"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
