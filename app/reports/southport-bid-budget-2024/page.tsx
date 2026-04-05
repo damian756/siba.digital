@@ -34,6 +34,15 @@ function Source({ children }: { children: React.ReactNode }) {
   );
 }
 
+function SectionHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+    </div>
+  );
+}
+
 export default function BidBudgetReportPage() {
   return (
     <div className="min-h-screen bg-[#f8fafc]">
@@ -79,9 +88,9 @@ export default function BidBudgetReportPage() {
       </div>
 
       {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-white/95 backdrop-blur-sm border-b border-[#e2e8f0]">
+      <div className="sticky top-16 z-10 bg-white border-b border-[#e2e8f0] shadow-sm">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex gap-6 overflow-x-auto py-3">
+          <nav className="flex gap-1 overflow-x-auto py-2">
             {[
               { href: "#levy", label: "The levy" },
               { href: "#budget", label: "The budget" },
@@ -92,7 +101,7 @@ export default function BidBudgetReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 text-sm font-medium text-[#94a3b8] hover:text-[#0f172a] transition-colors"
+                className="flex-shrink-0 px-3 py-2 rounded-md text-sm font-semibold text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
               >
                 {l.label}
               </a>
@@ -159,7 +168,7 @@ export default function BidBudgetReportPage() {
 
         {/* The levy */}
         <section id="levy" className="scroll-mt-32 space-y-5">
-          <h2 className="text-2xl font-bold text-[#0f172a]">The levy income</h2>
+          <SectionHeading>The levy income</SectionHeading>
           <div className="space-y-4 text-[#475569] leading-relaxed">
             <p>
               In year one of the current BID term, which runs from November 2024, the BID
@@ -220,7 +229,7 @@ export default function BidBudgetReportPage() {
 
         {/* The budget */}
         <section id="budget" className="scroll-mt-32 space-y-5">
-          <h2 className="text-2xl font-bold text-[#0f172a]">Where it goes</h2>
+          <SectionHeading>Where it goes</SectionHeading>
           <p className="text-[#475569] leading-relaxed">
             The BID&apos;s own budget breakdown for year one is as follows. All figures are
             taken directly from their published Business Plan.
@@ -281,7 +290,7 @@ export default function BidBudgetReportPage() {
 
         {/* Operating costs */}
         <section id="operating" className="scroll-mt-32 space-y-4">
-          <h2 className="text-2xl font-bold text-[#0f172a]">The operating cost question</h2>
+          <SectionHeading>The operating cost question</SectionHeading>
           <div className="space-y-4 text-[#475569] leading-relaxed">
             <p>
               £110,000 per year in operating costs, every year for five years, totals{" "}
@@ -317,7 +326,7 @@ export default function BidBudgetReportPage() {
 
         {/* YourSouthport */}
         <section id="yoursouthport" className="scroll-mt-32 space-y-4">
-          <h2 className="text-2xl font-bold text-[#0f172a]">What YourSouthport actually is</h2>
+          <SectionHeading>What YourSouthport actually is</SectionHeading>
           <div className="space-y-4 text-[#475569] leading-relaxed">
             <p>
               Many Southport businesses and visitors encounter YourSouthport and assume it is
@@ -387,7 +396,7 @@ export default function BidBudgetReportPage() {
 
         {/* Transparency */}
         <section id="transparency" className="scroll-mt-32 space-y-4">
-          <h2 className="text-2xl font-bold text-[#0f172a]">The transparency question</h2>
+          <SectionHeading>The transparency question</SectionHeading>
           <div className="space-y-4 text-[#475569] leading-relaxed">
             <p>
               The BID&apos;s resources page states that board meeting minutes are available on
@@ -423,7 +432,7 @@ export default function BidBudgetReportPage() {
 
         {/* 2026 */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-[#0f172a]">Before July</h2>
+          <SectionHeading>Before July</SectionHeading>
           <div className="space-y-4 text-[#475569] leading-relaxed">
             <p>
               The Open Championship comes to Royal Birkdale in July 2026. 150,000 visitors.
