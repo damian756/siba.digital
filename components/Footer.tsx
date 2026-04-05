@@ -78,6 +78,7 @@ export default function Footer() {
                 { href: "/", label: "Home" },
                 { href: "/manifesto", label: "Manifesto" },
                 { href: "/audit", label: "Audit Hub" },
+                { href: "/reports", label: "Reports" },
                 { href: "/2026", label: "2026 Hub" },
               ].map((l) => (
                 <li key={l.href}>
