@@ -81,15 +81,12 @@ export default function Footer() {
             &copy; {year} Southport Independent Business Alliance. All rights reserved.
           </p>
           <p className="text-xs text-slate-600">
-            Built by{" "}
-            <a
-              href="https://churchtownmedia.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-slate-400 transition-colors"
-            >
-              Churchtown Media
-            </a>
+          <a
+            href="mailto:office@siba.digital"
+            className="hover:text-slate-400 transition-colors"
+          >
+            office@siba.digital
+          </a>
           </p>
         </div>
       </div>

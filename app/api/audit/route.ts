@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.CONTACT_EMAIL || "hello@siba.digital";
+    const toEmail = process.env.CONTACT_EMAIL || "office@siba.digital";
 
     if (!apiKey) {
       console.error("RESEND_API_KEY not set");
@@ -37,7 +37,7 @@ export async function POST(req: Request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "SIBA Digital <noreply@siba.digital>",
+        from: "SIBA Digital <office@siba.digital>",
         to: toEmail,
         subject: `New Audit Request: ${businessName} (${postcode})`,
         html,

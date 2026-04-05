@@ -174,7 +174,7 @@ export default function AuditForm() {
 
       {state === "error" && (
         <p className="mt-4 text-sm text-red-400">
-          Something went wrong. Please try again or email us directly at hello@siba.digital
+          Something went wrong. Please try again or email us directly at office@siba.digital
         </p>
       )}
 

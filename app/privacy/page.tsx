@@ -30,8 +30,8 @@ export default function PrivacyPage() {
           <p className="text-slate-400">
             Last updated: {LAST_UPDATED}. If you have questions about any of the below,
             contact us at{" "}
-            <a href="mailto:hello@siba.digital" className="text-[#f97316] hover:underline">
-              hello@siba.digital
+            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
+              office@siba.digital
             </a>
             .
           </p>
@@ -65,15 +65,14 @@ export default function PrivacyPage() {
 
         <Section id="ownership" title="Statement of Ownership">
           <p>
-            SIBA Digital (siba.digital) is owned and operated by Churchtown Media, a digital
-            publishing company based in Southport, Merseyside. Churchtown Media is the entity
+            SIBA Digital (siba.digital) is owned and operated by the Southport Independent
+            Business Alliance (SIBA), based in Southport, Merseyside. SIBA is the entity
             responsible for all content published on this website.
           </p>
           <p>
-            The Southport Independent Business Alliance (SIBA) is a non-mandatory advocacy
-            organisation. It is not a legally incorporated body and does not hold funds, employ
-            staff, or enter into contracts. Its activities are coordinated and published by
-            Churchtown Media on behalf of participating businesses.
+            SIBA is a non-mandatory advocacy organisation. It is not a legally incorporated
+            body and does not hold funds, employ staff, or enter into contracts. Its activities
+            are coordinated and published on behalf of participating PR8 and PR9 businesses.
           </p>
           <p>
             SIBA is not affiliated with, endorsed by, or related to the Southport BID (Business
@@ -83,12 +82,12 @@ export default function PrivacyPage() {
           <div className="rounded-lg border border-white/8 bg-[#0a1628] p-4 mt-4">
             <p className="text-xs font-semibold text-white mb-2">Contact</p>
             <p>
-              Churchtown Media, Southport, Merseyside.
-              <br />
-              Email:{" "}
-              <a href="mailto:hello@siba.digital" className="text-[#f97316] hover:underline">
-                hello@siba.digital
-              </a>
+            Southport Independent Business Alliance, Southport, Merseyside.
+            <br />
+            Email:{" "}
+            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
+              office@siba.digital
+            </a>
             </p>
           </div>
         </Section>
@@ -125,8 +124,8 @@ export default function PrivacyPage() {
           <p>
             Audit request data is retained for 24 months from submission or until you request
             deletion. To request deletion, email{" "}
-            <a href="mailto:hello@siba.digital" className="text-[#f97316] hover:underline">
-              hello@siba.digital
+            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
+              office@siba.digital
             </a>{" "}
             with your name and business name.
           </p>
@@ -136,8 +135,8 @@ export default function PrivacyPage() {
             Under UK GDPR, you have the right to access, correct, or delete personal data we
             hold about you. You also have the right to object to processing and to data
             portability. To exercise any of these rights, contact us at{" "}
-            <a href="mailto:hello@siba.digital" className="text-[#f97316] hover:underline">
-              hello@siba.digital
+            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
+              office@siba.digital
             </a>
             .
           </p>
@@ -190,7 +189,7 @@ export default function PrivacyPage() {
 
           <h3 className="text-sm font-semibold text-white mt-6 mb-2">Limitation of liability</h3>
           <p>
-            Churchtown Media accepts no liability for decisions made based on content published
+            SIBA accepts no liability for decisions made based on content published
             on siba.digital. SEO audits and recommendations are provided in good faith but
             results depend on factors outside our control, including search engine algorithm
             changes.
