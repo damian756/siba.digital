@@ -43,8 +43,8 @@ export default function PrivacyPage() {
           <h1 className="text-4xl font-bold text-[#0f172a] mb-3">Privacy and Legal</h1>
           <p className="text-[#64748b] text-sm">
             Last updated: {LAST_UPDATED}. Questions?{" "}
-            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
-              office@siba.digital
+            <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+              damian@siba.digital
             </a>
           </p>
         </div>
@@ -99,8 +99,8 @@ export default function PrivacyPage() {
                 Southport Independent Business Alliance, Southport, Merseyside.
                 <br />
                 Email:{" "}
-                <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
-                  office@siba.digital
+                <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+                  damian@siba.digital
                 </a>
                 {" "}&nbsp;|&nbsp; Tel:{" "}
                 <a href="tel:01704635785" className="text-[#f97316] hover:underline">
@@ -138,8 +138,8 @@ export default function PrivacyPage() {
             <p>
               Audit request data is retained for 24 months from submission or until you
               request deletion. To request deletion, email{" "}
-              <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
-                office@siba.digital
+              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+                damian@siba.digital
               </a>{" "}
               with your name and business name.
             </p>
@@ -148,8 +148,8 @@ export default function PrivacyPage() {
               Under UK GDPR, you have the right to access, correct, or delete personal data
               we hold about you. You also have the right to object to processing and to data
               portability. Contact{" "}
-              <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
-                office@siba.digital
+              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+                damian@siba.digital
               </a>{" "}
               to exercise any of these rights.
             </p>

@@ -127,8 +127,8 @@ export default function BidBudgetReportPage() {
               Every factual claim in this report is sourced from publicly available documents,
               linked directly below. SIBA welcomes corrections or responses from Southport BID
               and will publish them in full at{" "}
-              <a href="mailto:office@siba.digital" className="underline hover:text-[#64748b]">
-                office@siba.digital
+              <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+                damian@siba.digital
               </a>
             </p>
           </div>
@@ -517,8 +517,8 @@ export default function BidBudgetReportPage() {
             All factual claims in this report are sourced from the document above or from
             southportbid.com (accessed April 2026). SIBA welcomes corrections or responses
             and will publish them in full. Contact{" "}
-            <a href="mailto:office@siba.digital" className="underline hover:text-[#64748b]">
-              office@siba.digital
+            <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+              damian@siba.digital
             </a>
           </p>
         </div>

@@ -125,10 +125,10 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <a
-                  href="mailto:office@siba.digital"
+                  href="mailto:damian@siba.digital"
                   className="text-sm text-[#64748b] hover:text-[#0f172a] transition-colors"
                 >
-                  office@siba.digital
+                  damian@siba.digital
                 </a>
               </li>
               <li>
@@ -157,10 +157,10 @@ export default function Footer() {
           </p>
           <p className="text-xs text-[#cbd5e1]">
             <a
-              href="mailto:office@siba.digital"
+              href="mailto:damian@siba.digital"
               className="hover:text-[#94a3b8] transition-colors"
             >
-              office@siba.digital
+              damian@siba.digital
             </a>
           </p>
         </div>

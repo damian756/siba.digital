@@ -98,8 +98,8 @@ export default function ReportsPage() {
           <p className="text-sm text-[#94a3b8]">
             More reports in preparation. If you have information relevant to BID transparency
             in PR8 or PR9, contact{" "}
-            <a href="mailto:office@siba.digital" className="text-[#f97316] hover:underline">
-              office@siba.digital
+            <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+              damian@siba.digital
             </a>
           </p>
         </div>

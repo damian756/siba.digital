@@ -457,10 +457,10 @@ export default function AboutPage() {
                 digital situation directly.
               </p>
               <a
-                href="mailto:office@siba.digital"
+                href="mailto:damian@siba.digital"
                 className="text-sm font-semibold text-[#f97316] hover:underline"
               >
-                office@siba.digital
+                damian@siba.digital
               </a>
             </div>
           </div>

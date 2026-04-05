@@ -56,7 +56,7 @@ const organizationSchema = {
         "@type": "ImageObject",
         url: "https://www.siba.digital/icon.svg",
       },
-      email: "office@siba.digital",
+      email: "damian@siba.digital",
       telephone: "+441704635785",
       areaServed: {
         "@type": "Place",

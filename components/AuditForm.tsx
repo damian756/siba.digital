@@ -91,8 +91,8 @@ export default function AuditForm() {
         <div className="mt-4 rounded-lg bg-red-50 border border-red-200 px-4 py-3">
           <p className="text-sm text-red-600">
             Something went wrong. Please try again or email{" "}
-            <a href="mailto:office@siba.digital" className="underline">
-              office@siba.digital
+            <a href="mailto:damian@siba.digital" className="underline">
+              damian@siba.digital
             </a>
           </p>
         </div>
