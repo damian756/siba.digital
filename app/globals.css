@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+:root {
+  --navy: #0f172a;
+  --orange: #f97316;
+  --slate: #f8fafc;
+  --slate-mid: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-body: #cbd5e1;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-orange: var(--orange);
+  --color-slate: var(--slate);
+  --color-slate-mid: var(--slate-mid);
+  --color-muted: var(--text-muted);
+}
+
+body {
+  background: var(--navy);
+  color: var(--text-body);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1e293b; }
+::-webkit-scrollbar-thumb { background: #f97316; border-radius: 2px; }
+
+/* Utility: orange underline */
+.underline-orange {
+  text-decoration-color: #f97316;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(249, 115, 22, 0.12);
+}
