@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Calculator, TrendingDown } from "lucide-react";
+import { Calculator, ExternalLink } from "lucide-react";
 
-const BID_RATE = 0.02; // 2% standard BID levy rate
+const BID_RATE = 0.02;
 
 const SIBA_SERVICES = [
   { name: "Technical SEO Audit (one-off)", value: 450 },
@@ -16,70 +16,67 @@ const SIBA_SERVICES = [
 
 const SIBA_TOTAL = SIBA_SERVICES.reduce((sum, s) => sum + s.value, 0);
 
+const fmt = (n: number) =>
+  new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+    maximumFractionDigits: 0,
+  }).format(n);
+
 export default function LevyCalculator() {
-  const [rateable, setRateable] = useState("");
-  const [calculated, setCalculated] = useState(false);
+  const [raw, setRaw] = useState("");
+  const [done, setDone] = useState(false);
 
-  const rv = parseFloat(rateable.replace(/,/g, "")) || 0;
-  const annualLevy = rv * BID_RATE;
-  const saving = annualLevy; // SIBA is free, so saving equals levy paid
-  const difference = SIBA_TOTAL - annualLevy;
-
-  const handleCalculate = () => {
-    if (rv > 0) setCalculated(true);
-  };
-
-  const formatGBP = (n: number) =>
-    new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(n);
+  const rv = parseFloat(raw.replace(/,/g, "")) || 0;
+  const levy = rv * BID_RATE;
+  const diff = SIBA_TOTAL - levy;
 
   return (
-    <div className="rounded-xl border border-white/8 bg-[#0a1628] overflow-hidden">
-      {/* Input */}
-      <div className="p-6 sm:p-8 border-b border-white/8">
+    <div className="card overflow-hidden">
+      {/* Input panel */}
+      <div className="p-6 sm:p-8 border-b border-[#e2e8f0] bg-[#f8fafc]">
         <div className="flex items-center gap-3 mb-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10 border border-orange-500/20">
-            <Calculator size={20} className="text-[#f97316]" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff7ed] border border-[#fed7aa]">
+            <Calculator size={18} className="text-[#f97316]" />
           </div>
           <div>
-            <h3 className="text-base font-bold text-white">Levy ROI Calculator</h3>
-            <p className="text-xs text-slate-500">Based on the standard 2% BID levy rate</p>
+            <p className="text-base font-bold text-[#0f172a]">Levy ROI Calculator</p>
+            <p className="text-xs text-[#94a3b8]">Based on the standard 2% BID levy rate</p>
           </div>
         </div>
 
-        <label className="block mb-2 text-sm font-medium text-slate-300">
+        <label className="block text-sm font-semibold text-[#0f172a] mb-1">
           Your Business Rateable Value (RV)
         </label>
-        <p className="text-xs text-slate-500 mb-3">
+        <p className="text-xs text-[#94a3b8] mb-3 flex items-center gap-1">
           Find your RV at{" "}
           <a
             href="https://www.gov.uk/find-business-rates"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#f97316] hover:underline"
+            className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
           >
             gov.uk/find-business-rates
+            <ExternalLink size={11} />
           </a>
         </p>
         <div className="flex gap-3">
           <div className="relative flex-1">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 font-medium">
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm font-medium text-[#94a3b8]">
               £
             </span>
             <input
               type="text"
-              value={rateable}
-              onChange={(e) => {
-                setRateable(e.target.value);
-                setCalculated(false);
-              }}
+              value={raw}
+              onChange={(e) => { setRaw(e.target.value); setDone(false); }}
               placeholder="e.g. 48,000"
-              className="w-full rounded border border-white/12 bg-[#0f172a] pl-8 pr-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20"
+              className="input pl-7"
             />
           </div>
           <button
-            onClick={handleCalculate}
+            onClick={() => { if (rv > 0) setDone(true); }}
             disabled={rv <= 0}
-            className="rounded bg-[#f97316] px-5 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="rounded-lg bg-[#f97316] px-5 py-2.5 text-sm font-semibold text-white hover:bg-orange-500 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Calculate
           </button>
@@ -87,70 +84,70 @@ export default function LevyCalculator() {
       </div>
 
       {/* Results */}
-      {calculated && rv > 0 && (
-        <div className="p-6 sm:p-8 space-y-6">
-          {/* Key numbers */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="rounded-lg bg-[#0f172a] border border-white/8 p-4 text-center">
-              <p className="text-xs text-slate-500 mb-1">Annual BID Levy</p>
-              <p className="text-2xl font-bold text-red-400">{formatGBP(annualLevy)}</p>
-              <p className="text-xs text-slate-600 mt-1">You pay this every year</p>
+      {done && rv > 0 && (
+        <div className="p-6 sm:p-8 space-y-6 bg-white">
+          {/* Key figures */}
+          <div className="grid grid-cols-3 gap-4">
+            <div className="text-center p-4 rounded-lg bg-red-50 border border-red-100">
+              <p className="text-xs text-[#94a3b8] mb-1">Annual BID Levy</p>
+              <p className="text-xl font-bold text-red-600">{fmt(levy)}</p>
+              <p className="text-xs text-[#94a3b8] mt-0.5">you pay this</p>
             </div>
-            <div className="rounded-lg bg-[#0f172a] border border-white/8 p-4 text-center">
-              <p className="text-xs text-slate-500 mb-1">SIBA Membership Cost</p>
-              <p className="text-2xl font-bold text-[#f97316]">{formatGBP(0)}</p>
-              <p className="text-xs text-slate-600 mt-1">Always free</p>
+            <div className="text-center p-4 rounded-lg bg-[#fff7ed] border border-[#fed7aa]">
+              <p className="text-xs text-[#94a3b8] mb-1">SIBA Cost</p>
+              <p className="text-xl font-bold text-[#f97316]">{fmt(0)}</p>
+              <p className="text-xs text-[#94a3b8] mt-0.5">always free</p>
             </div>
-            <div className="rounded-lg bg-[#0f172a] border border-white/8 p-4 text-center">
-              <p className="text-xs text-slate-500 mb-1">Annual Saving</p>
-              <p className="text-2xl font-bold text-green-400">{formatGBP(saving)}</p>
-              <p className="text-xs text-slate-600 mt-1">vs BID levy</p>
+            <div className="text-center p-4 rounded-lg bg-green-50 border border-green-100">
+              <p className="text-xs text-[#94a3b8] mb-1">Annual Saving</p>
+              <p className="text-xl font-bold text-green-600">{fmt(levy)}</p>
+              <p className="text-xs text-[#94a3b8] mt-0.5">vs. BID levy</p>
             </div>
           </div>
 
           {/* SIBA services breakdown */}
           <div>
-            <p className="text-sm font-semibold text-white mb-3 flex items-center gap-2">
-              <TrendingDown size={15} className="text-[#f97316]" />
+            <p className="text-sm font-semibold text-[#0f172a] mb-3">
               What SIBA provides free (estimated market value)
             </p>
-            <div className="space-y-2">
-              {SIBA_SERVICES.map((s) => (
+            <div className="border border-[#e2e8f0] rounded-lg overflow-hidden">
+              {SIBA_SERVICES.map((s, i) => (
                 <div
                   key={s.name}
-                  className="flex items-center justify-between py-2 border-b border-white/5"
+                  className={`flex items-center justify-between px-4 py-3 text-sm ${
+                    i < SIBA_SERVICES.length - 1 ? "border-b border-[#e2e8f0]" : ""
+                  } hover:bg-[#f8fafc]`}
                 >
-                  <span className="text-sm text-slate-400">{s.name}</span>
-                  <span className="text-sm font-medium text-slate-300">{formatGBP(s.value)}</span>
+                  <span className="text-[#475569]">{s.name}</span>
+                  <span className="font-medium text-[#0f172a]">{fmt(s.value)}</span>
                 </div>
               ))}
-              <div className="flex items-center justify-between pt-2">
-                <span className="text-sm font-semibold text-white">Total SIBA value</span>
-                <span className="text-sm font-bold text-[#f97316]">{formatGBP(SIBA_TOTAL)}</span>
+              <div className="flex items-center justify-between px-4 py-3 bg-[#f8fafc] border-t border-[#e2e8f0]">
+                <span className="text-sm font-bold text-[#0f172a]">Total SIBA value</span>
+                <span className="text-sm font-bold text-[#f97316]">{fmt(SIBA_TOTAL)}</span>
               </div>
             </div>
           </div>
 
           {/* Summary */}
-          <div className="rounded-lg bg-orange-500/5 border border-orange-500/20 p-4">
-            <p className="text-sm text-slate-300 leading-relaxed">
-              Based on your rateable value of {formatGBP(rv)}, your annual BID levy is
-              approximately{" "}
-              <span className="text-white font-semibold">{formatGBP(annualLevy)}</span>.
-              SIBA provides{" "}
-              <span className="text-white font-semibold">{formatGBP(SIBA_TOTAL)}</span> in
+          <div className="rounded-lg bg-[#fff7ed] border border-[#fed7aa] p-4">
+            <p className="text-sm text-[#475569] leading-relaxed">
+              Based on a rateable value of {fmt(rv)}, your annual BID levy is approximately{" "}
+              <span className="font-semibold text-[#0f172a]">{fmt(levy)}</span>. SIBA
+              provides{" "}
+              <span className="font-semibold text-[#0f172a]">{fmt(SIBA_TOTAL)}</span> in
               digital services at no cost.{" "}
-              {difference > 0 ? (
+              {diff > 0 ? (
                 <>
                   That is{" "}
-                  <span className="text-[#f97316] font-semibold">{formatGBP(difference)}</span>{" "}
-                  more value than your annual levy, for nothing.
+                  <span className="font-semibold text-[#f97316]">{fmt(diff)}</span> more
+                  value than your annual levy, for free.
                 </>
               ) : (
                 <>
-                  That is still a saving of{" "}
-                  <span className="text-[#f97316] font-semibold">{formatGBP(saving)}</span>{" "}
-                  per year versus the mandatory levy model.
+                  You still save{" "}
+                  <span className="font-semibold text-[#f97316]">{fmt(levy)}</span> per year
+                  versus the mandatory levy model.
                 </>
               )}
             </p>

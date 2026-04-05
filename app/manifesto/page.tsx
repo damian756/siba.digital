@@ -11,27 +11,25 @@ export const metadata: Metadata = {
 
 export default function ManifestoPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="border-b border-white/8 bg-[#0a1628] py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-orange-400 mb-4">
-            SIBA Technical Charter — April 2026
-          </p>
-          <h1 className="text-4xl font-bold text-white mb-4">The Manifesto</h1>
-          <p className="text-lg text-slate-400 leading-relaxed">
-            Why SIBA exists, what it is committed to delivering, and why the current Business
-            Improvement District model is not fit for purpose in 2026.
+      <div className="border-b border-[#e2e8f0] bg-[#f8fafc]">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
+          <span className="badge badge-orange mb-5">SIBA Technical Charter, April 2026</span>
+          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">The Manifesto</h1>
+          <p className="text-lg text-[#64748b] leading-relaxed">
+            Why SIBA exists, what it is committed to delivering, and why the current
+            Business Improvement District model is not fit for purpose in 2026.
           </p>
         </div>
       </div>
 
-      {/* Manifesto cover image */}
+      {/* Cover image */}
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-10">
-        <div className="relative w-full overflow-hidden rounded-xl border border-white/8 shadow-2xl">
+        <div className="relative w-full overflow-hidden rounded-xl border border-[#e2e8f0] shadow-sm">
           <Image
             src="/images/manifesto-cover.png"
-            alt="Supporting Southport's Independents — SIBA Manifesto"
+            alt="Supporting Southport's Independents"
             width={1280}
             height={640}
             className="w-full h-auto"
@@ -40,103 +38,107 @@ export default function ManifestoPage() {
         </div>
       </div>
 
+      {/* Sticky section nav */}
+      <div className="sticky top-16 z-10 border-b border-[#e2e8f0] bg-white/95 backdrop-blur-sm">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <nav className="flex gap-6 overflow-x-auto py-3 text-sm">
+            {[
+              { href: "#vision", label: "01. 2026 Vision" },
+              { href: "#levy", label: "02. The Levy Failure" },
+              { href: "#charter", label: "03. Technical Charter" },
+            ].map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="flex-shrink-0 text-sm font-medium text-[#94a3b8] hover:text-[#0f172a] transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </div>
+
       {/* Content */}
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-16">
 
-        {/* Section 1: The 2026 Vision */}
-        <section>
-          <div className="flex items-start gap-4 mb-6">
-            <span className="text-[#f97316] font-mono text-sm font-bold mt-1">01</span>
+        {/* 01 */}
+        <section id="vision" className="scroll-mt-32">
+          <div className="flex items-start gap-5 mb-7">
+            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
+              01
+            </span>
             <div>
-              <h2 className="text-2xl font-bold text-white">The 2026 Vision</h2>
-              <p className="text-slate-500 text-sm mt-1">The commercial case for acting now</p>
+              <h2 className="text-2xl font-bold text-[#0f172a]">The 2026 Vision</h2>
+              <p className="text-sm text-[#94a3b8] mt-1">The commercial case for acting now</p>
             </div>
           </div>
-
-          <div className="pl-10 space-y-4 text-slate-300 leading-relaxed">
+          <div className="space-y-4 text-[#475569] leading-relaxed pl-14">
             <p>
               The Open Championship comes to Royal Birkdale in July 2026. That means roughly
-              150,000 visitors arriving in this town over seven days, most of them on smartphones,
-              many of them looking for somewhere to eat, drink, and stay. It is the single largest
-              commercial opportunity Southport has had in a decade.
+              150,000 visitors arriving in this town over seven days, most of them on
+              smartphones, many of them looking for somewhere to eat, drink, and stay. It is
+              the single largest commercial opportunity Southport has had in a decade.
             </p>
             <p>
-              The question is not whether the footfall will arrive. It will. The question is whether
-              Southport&apos;s independent businesses will be findable when it does. Right now, too many
-              of them are not. Websites that load in four seconds. Google Business profiles with
-              outdated hours. No structured data. No mobile optimisation. No local SEO worth the name.
+              The question is not whether the footfall will arrive. It will. The question is
+              whether Southport&apos;s independent businesses will be findable when it does.
+              Right now, too many of them are not. Websites that load in four seconds. Google
+              Business profiles with outdated hours. No structured data. No mobile
+              optimisation. No local SEO worth the name.
             </p>
             <p>
-              MLEC, the Marine Lake Events Centre, opens in 2027 and projects an additional 515,000
-              visitors per year. That is not a one-off. That is structural change in footfall
-              patterns for this town for the next decade. The businesses that build their digital
-              infrastructure now will benefit from that. The ones that don&apos;t will be invisible to
-              the people walking past their doors.
+              MLEC, the Marine Lake Events Centre, opens in 2027 and projects an additional
+              515,000 visitors per year. That is not a one-off. That is structural change in
+              footfall patterns for this town for the next decade.
             </p>
             <p>
-              SIBA&apos;s 2026 vision is simple: every PR8 and PR9 independent business should be
-              technically ready before Royal Birkdale hosts The Open. Fast. Findable. Optimised
-              for the searches that will actually happen in July. That is what we are building
-              toward. That is the deadline.
+              SIBA&apos;s 2026 vision is simple: every PR8 and PR9 independent business should
+              be technically ready before Royal Birkdale hosts The Open. Fast. Findable.
+              Optimised for the searches that will actually happen in July.
             </p>
           </div>
         </section>
 
-        <div className="border-t border-white/8" />
+        <div className="border-t border-[#e2e8f0]" />
 
-        {/* Section 2: The Failure of the Mandatory Levy */}
-        <section>
-          <div className="flex items-start gap-4 mb-6">
-            <span className="text-[#f97316] font-mono text-sm font-bold mt-1">02</span>
+        {/* 02 */}
+        <section id="levy" className="scroll-mt-32">
+          <div className="flex items-start gap-5 mb-7">
+            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
+              02
+            </span>
             <div>
-              <h2 className="text-2xl font-bold text-white">
-                The Failure of the Mandatory Levy Model
-              </h2>
-              <p className="text-slate-500 text-sm mt-1">
-                A structural critique, not a political one
-              </p>
+              <h2 className="text-2xl font-bold text-[#0f172a]">The Failure of the Mandatory Levy Model</h2>
+              <p className="text-sm text-[#94a3b8] mt-1">A structural critique, not a political one</p>
             </div>
           </div>
-
-          <div className="pl-10 space-y-4 text-slate-300 leading-relaxed">
+          <div className="space-y-4 text-[#475569] leading-relaxed pl-14">
             <p>
               Business Improvement Districts were a reasonable idea in 2004. A collective levy,
-              pooled for collective benefit. Events, marketing, street improvements. The model made
-              sense when digital infrastructure was not the primary driver of commercial success.
+              pooled for collective benefit. Events, marketing, street improvements. The model
+              made sense when digital infrastructure was not the primary driver of commercial
+              success. It does not make sense now.
             </p>
             <p>
-              It does not make sense now.
-            </p>
-            <p>
-              The BID levy is mandatory. If your business falls within the defined zone, you pay.
-              There is no opt-out based on whether you are receiving value. There is no mechanism
-              to redirect your levy to the services you actually need. A restaurant paying
-              £2,400 per year has no practical way to direct any of that money toward the SEO
-              audit that would fill its tables on a Tuesday in November.
+              The BID levy is mandatory. If your business falls within the defined zone, you
+              pay. There is no opt-out based on whether you are receiving value. A restaurant
+              paying £2,400 per year has no practical way to direct any of that money toward
+              the SEO audit that would fill its tables on a Tuesday in November.
             </p>
             <p>
               The problem is not that BIDs do events badly. Some of the events are fine. The
-              problem is that events are not the primary driver of business success in 2026. Search
-              is. Mobile is. Page speed is. Google Business Profile completeness is. These are
-              the variables that determine whether a customer chooses you or your competitor.
-              And they are largely absent from what Southport&apos;s BID delivers.
-            </p>
-            <p>
-              The levy transparency issue compounds this. Rateable values, levy calculations,
-              and spending breakdowns are technically public information. They are not presented
-              in a format that allows a business owner to understand what they are paying, why,
-              and what they receive in return. SIBA publishes this data. It is not a political
-              act. It is a basic service.
+              problem is that events are not the primary driver of business success in 2026.
+              Search is. Mobile is. Page speed is. Google Business Profile completeness is.
             </p>
 
-            {/* Callout box */}
-            <div className="my-6 rounded-lg border border-orange-500/20 bg-orange-500/5 p-5">
-              <p className="text-sm font-semibold text-orange-400 mb-2">The calculation</p>
-              <p className="text-sm text-slate-300">
+            <div className="my-6 card p-5 bg-[#fff7ed] border-[#fed7aa]">
+              <p className="text-sm font-semibold text-[#0f172a] mb-2">The calculation</p>
+              <p className="text-sm text-[#64748b]">
                 A Southport business with a rateable value of £120,000 pays approximately
                 £2,400 per year in BID levy at a 2% rate. SIBA provides SEO audits, local
                 ranking reports, and levy ROI analysis at no cost. Use the{" "}
-                <Link href="/audit" className="text-[#f97316] hover:underline">
+                <Link href="/audit" className="text-[#f97316] hover:underline font-medium">
                   Levy ROI Calculator
                 </Link>{" "}
                 to see your own numbers.
@@ -145,27 +147,26 @@ export default function ManifestoPage() {
 
             <p>
               The mandatory model also removes the market discipline that forces organisations
-              to prove their value. A voluntary membership scheme must demonstrate that
-              membership is worth the cost or members leave. A mandatory levy has no such
-              pressure. SIBA operates on the voluntary model. If we are not useful, businesses
-              do not join. That is the correct incentive structure.
+              to prove their value. SIBA operates on the voluntary model. If we are not useful,
+              businesses do not join. That is the correct incentive structure.
             </p>
           </div>
         </section>
 
-        <div className="border-t border-white/8" />
+        <div className="border-t border-[#e2e8f0]" />
 
-        {/* Section 3: The Technical Charter */}
-        <section>
-          <div className="flex items-start gap-4 mb-6">
-            <span className="text-[#f97316] font-mono text-sm font-bold mt-1">03</span>
+        {/* 03 */}
+        <section id="charter" className="scroll-mt-32">
+          <div className="flex items-start gap-5 mb-7">
+            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
+              03
+            </span>
             <div>
-              <h2 className="text-2xl font-bold text-white">The SIBA Technical Charter</h2>
-              <p className="text-slate-500 text-sm mt-1">Commitments, not aspirations</p>
+              <h2 className="text-2xl font-bold text-[#0f172a]">The SIBA Technical Charter</h2>
+              <p className="text-sm text-[#94a3b8] mt-1">Commitments, not aspirations</p>
             </div>
           </div>
-
-          <div className="pl-10 space-y-6">
+          <div className="pl-14 space-y-4">
             {[
               {
                 title: "Transparency as default",
@@ -173,50 +174,49 @@ export default function ManifestoPage() {
               },
               {
                 title: "Technical standards, not marketing",
-                body: "SIBA measures success by Lighthouse scores, search rankings, and Core Web Vitals, not by social media impressions or event attendance. The standard is technical and objective.",
+                body: "SIBA measures success by Lighthouse scores, search rankings, and Core Web Vitals, not by social media impressions or event attendance.",
               },
               {
                 title: "No mandatory fees",
-                body: "SIBA membership is voluntary. No business is compelled to join or pay. If we are not providing value, businesses should not join us. That is intentional.",
+                body: "SIBA membership is voluntary. No business is compelled to join or pay. If we are not providing value, businesses should not join us.",
               },
               {
                 title: "PR8 and PR9 focus",
-                body: "SIBA serves businesses in the PR8 and PR9 postcode areas. That is Southport town centre, Birkdale, Churchtown, and the surrounding commercial areas. Not a wider region. Not a theoretical catchment. These postcodes.",
+                body: "SIBA serves businesses in the PR8 and PR9 postcode areas. Southport town centre, Birkdale, Churchtown, and the surrounding commercial areas. Not a wider region.",
               },
               {
                 title: "2026 as the operational deadline",
-                body: "Every business in scope should be technically ready before Royal Birkdale hosts The Open in July 2026. That is the deadline SIBA is working toward. It is achievable.",
+                body: "Every business in scope should be technically ready before Royal Birkdale hosts The Open in July 2026. That is the deadline SIBA is working toward.",
               },
               {
                 title: "Data provided, not withheld",
-                body: "Any analysis SIBA conducts for a business belongs to that business. We do not use audit data to create dependency. We hand over the report and you decide what to do with it.",
+                body: "Any analysis SIBA conducts for a business belongs to that business. We do not use audit data to create dependency. We hand over the report.",
               },
             ].map((item) => (
-              <div key={item.title} className="flex gap-4">
-                <div className="flex-shrink-0 mt-1.5 h-2 w-2 rounded-full bg-[#f97316]" />
+              <div key={item.title} className="card p-5 flex gap-4">
+                <div className="flex-shrink-0 mt-1 h-2 w-2 rounded-full bg-[#f97316]" />
                 <div>
-                  <p className="text-sm font-semibold text-white mb-1">{item.title}</p>
-                  <p className="text-sm text-slate-400 leading-relaxed">{item.body}</p>
+                  <p className="text-sm font-semibold text-[#0f172a] mb-1">{item.title}</p>
+                  <p className="text-sm text-[#64748b] leading-relaxed">{item.body}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-white/8" />
+        <div className="border-t border-[#e2e8f0]" />
 
-        {/* CTA */}
         <div className="text-center">
-          <p className="text-slate-400 mb-6 leading-relaxed">
-            If that sounds like the kind of organisation Southport should have had ten years ago,
-            you&apos;re right. It should. Request an audit and let&apos;s get started.
+          <p className="text-[#64748b] mb-6 leading-relaxed">
+            If that sounds like the kind of organisation Southport should have had ten years
+            ago, you&apos;re right. Request an audit and let&apos;s get started.
           </p>
           <Link
             href="/audit"
-            className="inline-flex items-center gap-2 rounded bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
           >
             Request a Free SEO Audit
-            <ArrowRight size={16} />
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

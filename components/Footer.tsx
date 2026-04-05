@@ -1,47 +1,36 @@
 import Link from "next/link";
-import Image from "next/image";
+import SibaLogo from "@/components/SibaLogo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/8 bg-[#080f1e]">
+    <footer className="border-t border-[#e2e8f0] bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2.5 mb-3">
-              <Image
-                src="/images/siba-logo.png"
-                alt="SIBA"
-                width={40}
-                height={40}
-                className="rounded"
-              />
-              <p className="text-lg font-bold text-white">
-                SIBA<span className="text-[#f97316]">.digital</span>
-              </p>
-            </div>
-            <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              The Southport Independent Business Alliance. Serving PR8 and PR9 businesses
-              with data-driven digital infrastructure. No levy. No agenda.
+            <SibaLogo markSize={30} className="mb-3" />
+            <p className="text-sm text-[#64748b] leading-relaxed mb-4">
+              The Southport Independent Business Alliance. Serving PR8 and PR9
+              businesses with data-driven digital infrastructure.
             </p>
             <a
               href="https://twitter.com/SouthportIBA"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-300 transition-colors"
+              className="text-xs font-medium text-[#94a3b8] hover:text-[#f97316] transition-colors"
             >
-              <span className="text-[#f97316] font-semibold">@</span>SouthportIBA
+              @SouthportIBA
             </a>
           </div>
 
-          {/* Navigation */}
+          {/* Platform */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8] mb-4">
               Platform
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-2.5">
               {[
                 { href: "/", label: "Home" },
                 { href: "/manifesto", label: "Manifesto" },
@@ -51,7 +40,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                    className="text-sm text-[#64748b] hover:text-[#0f172a] transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -62,47 +51,37 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8] mb-4">
               Legal
             </p>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy#ownership"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
-                >
-                  Statement of Ownership
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy#terms"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
-                >
-                  Terms of Use
-                </Link>
-              </li>
+            <ul className="space-y-2.5">
+              {[
+                { href: "/privacy", label: "Privacy Policy" },
+                { href: "/privacy#ownership", label: "Statement of Ownership" },
+                { href: "/privacy#terms", label: "Terms of Use" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="text-sm text-[#64748b] hover:text-[#0f172a] transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8] mb-4">
               Contact
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-2.5">
               <li>
                 <a
                   href="mailto:office@siba.digital"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                  className="text-sm text-[#64748b] hover:text-[#0f172a] transition-colors"
                 >
                   office@siba.digital
                 </a>
@@ -110,7 +89,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:01704635785"
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                  className="text-sm text-[#64748b] hover:text-[#0f172a] transition-colors"
                 >
                   01704 635785
                 </a>
@@ -118,7 +97,7 @@ export default function Footer() {
               <li className="pt-2">
                 <Link
                   href="/audit"
-                  className="inline-block rounded bg-[#f97316] px-4 py-2 text-xs font-semibold text-white hover:bg-orange-500 transition-colors"
+                  className="inline-block rounded-lg bg-[#f97316] px-4 py-2 text-xs font-semibold text-white hover:bg-orange-500 transition-colors"
                 >
                   Request Free Audit
                 </Link>
@@ -127,14 +106,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-slate-500">
+        <div className="mt-10 pt-6 border-t border-[#e2e8f0] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-[#94a3b8]">
             &copy; {year} Southport Independent Business Alliance. All rights reserved.
           </p>
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-[#cbd5e1]">
             <a
               href="mailto:office@siba.digital"
-              className="hover:text-slate-400 transition-colors"
+              className="hover:text-[#94a3b8] transition-colors"
             >
               office@siba.digital
             </a>
