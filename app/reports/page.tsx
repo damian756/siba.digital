@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "SIBA Reports: Transparency and Data",
   description:
     "In-depth transparency reports on Southport's Business Improvement District. All data sourced from publicly available documents.",
+  alternates: {
+    canonical: "https://www.siba.digital/reports",
+  },
+  openGraph: {
+    title: "SIBA Reports: Transparency and Data | SIBA Digital",
+    description:
+      "In-depth transparency reports on Southport's Business Improvement District. All data sourced from publicly available documents.",
+    url: "https://www.siba.digital/reports",
+    type: "website",
+  },
 };
 
 const reports = [

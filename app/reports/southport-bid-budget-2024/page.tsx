@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Where does Southport BID spend your levy? | SIBA Reports",
   description:
     "A line-by-line breakdown of Southport BID's 2024-2029 Business Plan budget. £448,211 collected in year one. All figures sourced from the BID's own published documents.",
+  alternates: {
+    canonical: "https://www.siba.digital/reports/southport-bid-budget-2024",
+  },
+  openGraph: {
+    title: "Where does Southport BID spend your levy?",
+    description:
+      "A line-by-line breakdown of the BID's 2024-2029 Business Plan. £448,211 collected in year one. All figures from publicly available documents.",
+    url: "https://www.siba.digital/reports/southport-bid-budget-2024",
+    type: "article",
+  },
 };
 
 const BID_PDF = "https://southportbid.com/wp-content/uploads/2024/05/Southport-BID-Business-Plan-2024-2029.pdf";
@@ -43,9 +53,47 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Where does Southport BID spend your levy?",
+  description:
+    "A line-by-line breakdown of Southport BID's 2024-2029 Business Plan budget. £448,211 collected in year one. All figures sourced from the BID's own published documents.",
+  datePublished: "2026-04-05",
+  dateModified: "2026-04-05",
+  author: {
+    "@type": "Organization",
+    "@id": "https://www.siba.digital/#organization",
+    name: "Southport Independent Business Alliance",
+    url: "https://www.siba.digital",
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": "https://www.siba.digital/#organization",
+    name: "SIBA Digital",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.siba.digital/icon.svg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.siba.digital/reports/southport-bid-budget-2024",
+  },
+  isBasedOn: {
+    "@type": "PublicationIssue",
+    name: "Southport BID Business Plan 2024-2029",
+    url: "https://southportbid.com/wp-content/uploads/2024/05/Southport-BID-Business-Plan-2024-2029.pdf",
+  },
+};
+
 export default function BidBudgetReportPage() {
   return (
     <div className="min-h-screen bg-[#f8fafc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Header */}
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">

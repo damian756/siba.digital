@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Audit Hub: Free SEO Audit for Southport Businesses",
   description:
     "Request a free technical SEO audit for your PR8 or PR9 business. Calculate your BID levy ROI and see what SIBA provides for free.",
+  alternates: {
+    canonical: "https://www.siba.digital/audit",
+  },
+  openGraph: {
+    title: "Free SEO Audit for Southport Businesses | SIBA Digital",
+    description:
+      "Request a free technical SEO audit for your PR8 or PR9 business. Calculate your BID levy ROI and see what SIBA provides for free.",
+    url: "https://www.siba.digital/audit",
+    type: "website",
+  },
 };
 
 const process = [

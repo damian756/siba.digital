@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Southport Independent Business Alliance | SIBA Digital",
   description:
     "Real data, better infrastructure, no levy. SIBA provides PR8 and PR9 businesses with digital tools, SEO audits, and levy transparency ahead of The Open 2026.",
+  alternates: {
+    canonical: "https://www.siba.digital",
+  },
+  openGraph: {
+    title: "Southport Independent Business Alliance | SIBA Digital",
+    description:
+      "Real data, better infrastructure, no levy. Free SEO audits, levy analysis, and digital tools for PR8 and PR9 businesses.",
+    url: "https://www.siba.digital",
+    type: "website",
+  },
 };
 
 const stats = [

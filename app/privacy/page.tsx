@@ -4,6 +4,16 @@ export const metadata: Metadata = {
   title: "Privacy Policy and Legal",
   description:
     "SIBA Digital privacy policy, statement of ownership, and terms of use for siba.digital.",
+  alternates: {
+    canonical: "https://www.siba.digital/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy and Legal | SIBA Digital",
+    description:
+      "SIBA Digital privacy policy, statement of ownership, and terms of use for siba.digital.",
+    url: "https://www.siba.digital/privacy",
+    type: "website",
+  },
 };
 
 const LAST_UPDATED = "April 2026";
