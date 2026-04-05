@@ -35,12 +35,12 @@ export default function Nav() {
               </Link>
             ))}
             <div className="ml-3 pl-3 border-l border-[#e2e8f0]">
-              <Link
-                href="/audit"
-                className="inline-flex items-center rounded-lg bg-[#f97316] px-4 py-2 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
-              >
-                Request Audit
-              </Link>
+            <Link
+              href="/audit#request"
+              className="inline-flex items-center rounded-lg bg-[#f97316] px-4 py-2 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+            >
+              Request Audit
+            </Link>
             </div>
           </nav>
 
@@ -67,13 +67,13 @@ export default function Nav() {
             </Link>
           ))}
           <div className="pt-2">
-            <Link
-              href="/audit"
-              onClick={() => setOpen(false)}
-              className="block w-full rounded-lg bg-[#f97316] px-4 py-2.5 text-center text-sm font-semibold text-white"
-            >
-              Request Audit
-            </Link>
+          <Link
+            href="/audit#request"
+            onClick={() => setOpen(false)}
+            className="block w-full rounded-lg bg-[#f97316] px-4 py-2.5 text-center text-sm font-semibold text-white"
+          >
+            Request Audit
+          </Link>
           </div>
         </div>
       )}

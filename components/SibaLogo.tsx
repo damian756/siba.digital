@@ -31,7 +31,7 @@ export default function SibaLogo({ markSize = 28, showWordmark = true, className
     <span className={`inline-flex items-center gap-2 ${className}`}>
       <SibaMark size={markSize} />
       {showWordmark && (
-        <span className="text-[17px] font-bold tracking-tight text-[#0f172a] leading-none">
+        <span className="text-[26px] font-bold tracking-tight text-[#0f172a] leading-none">
           SIBA
           <span className="text-[#f97316]">.digital</span>
         </span>

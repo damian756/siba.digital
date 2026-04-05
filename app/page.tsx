@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, BarChart3, Globe, ShieldCheck, Search, TrendingUp, FileText, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -58,39 +59,56 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-white border-b border-[#e2e8f0]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-          <div className="max-w-3xl">
-            <span className="badge badge-orange mb-6 inline-flex">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#f97316] animate-pulse" />
-              Southport PR8 and PR9
-            </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold text-[#0f172a] leading-[1.1] tracking-tight mb-6">
-              Southport&apos;s New<br />
-              <span className="text-[#f97316]">Digital Infrastructure</span>
-            </h1>
-            <p className="text-xl text-[#475569] leading-relaxed mb-3 font-medium">
-              Real Data. Better Infrastructure. No Levy.
-            </p>
-            <p className="text-lg text-[#64748b] leading-relaxed mb-10 max-w-2xl">
-              Preparing Southport&apos;s high streets for The Open 2026 and beyond. SIBA provides
-              independent businesses with the digital tools, SEO support, and data transparency
-              that the current Business Improvement District model does not.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/audit"
-                className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
-              >
-                Request a Free Audit
-                <ArrowRight size={15} />
-              </Link>
-              <Link
-                href="/manifesto"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-colors"
-              >
-                Read the Manifesto
-              </Link>
+      <section className="bg-white border-b border-[#e2e8f0] overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Text */}
+            <div>
+              <span className="badge badge-orange mb-6 inline-flex">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#f97316] animate-pulse" />
+                Southport PR8 and PR9
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-bold text-[#0f172a] leading-[1.1] tracking-tight mb-6">
+                Southport&apos;s New<br />
+                <span className="text-[#f97316]">Digital Infrastructure</span>
+              </h1>
+              <p className="text-xl text-[#475569] leading-relaxed mb-3 font-medium">
+                Real Data. Better Infrastructure. No Levy.
+              </p>
+              <p className="text-base text-[#64748b] leading-relaxed mb-10">
+                Preparing Southport&apos;s high streets for The Open 2026 and beyond. SIBA provides
+                independent businesses with the digital tools, SEO support, and data transparency
+                that the current Business Improvement District model does not.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/audit#request"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+                >
+                  Request a Free Audit
+                  <ArrowRight size={15} />
+                </Link>
+                <Link
+                  href="/manifesto"
+                  className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-colors"
+                >
+                  Read the Manifesto
+                </Link>
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="rounded-xl overflow-hidden border border-[#e2e8f0] shadow-lg">
+                <Image
+                  src="/images/manifesto-cover.png"
+                  alt="Supporting Southport's Independents"
+                  width={720}
+                  height={405}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
