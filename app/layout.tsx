@@ -15,6 +15,18 @@ export const metadata: Metadata = {
     siteName: "SIBA Digital",
     locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: "/images/siba-og.png",
+        width: 1080,
+        height: 1080,
+        alt: "SIBA — Southport Independent Business Alliance",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    images: ["/images/siba-og.png"],
   },
   robots: {
     index: true,

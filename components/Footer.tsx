@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -6,16 +7,33 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/8 bg-[#080f1e]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
-          <div>
-            <p className="text-lg font-bold text-white mb-2">
-              SIBA<span className="text-[#f97316]">.digital</span>
-            </p>
-            <p className="text-sm text-slate-400 leading-relaxed">
+          <div className="md:col-span-1">
+            <div className="flex items-center gap-2.5 mb-3">
+              <Image
+                src="/images/siba-logo.png"
+                alt="SIBA"
+                width={40}
+                height={40}
+                className="rounded"
+              />
+              <p className="text-lg font-bold text-white">
+                SIBA<span className="text-[#f97316]">.digital</span>
+              </p>
+            </div>
+            <p className="text-sm text-slate-400 leading-relaxed mb-4">
               The Southport Independent Business Alliance. Serving PR8 and PR9 businesses
               with data-driven digital infrastructure. No levy. No agenda.
             </p>
+            <a
+              href="https://twitter.com/SouthportIBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-300 transition-colors"
+            >
+              <span className="text-[#f97316] font-semibold">@</span>SouthportIBA
+            </a>
           </div>
 
           {/* Navigation */}
@@ -74,6 +92,39 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Contact */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">
+              Contact
+            </p>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="mailto:office@siba.digital"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  office@siba.digital
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:01704635785"
+                  className="text-sm text-slate-400 hover:text-white transition-colors"
+                >
+                  01704 635785
+                </a>
+              </li>
+              <li className="pt-2">
+                <Link
+                  href="/audit"
+                  className="inline-block rounded bg-[#f97316] px-4 py-2 text-xs font-semibold text-white hover:bg-orange-500 transition-colors"
+                >
+                  Request Free Audit
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -81,12 +132,12 @@ export default function Footer() {
             &copy; {year} Southport Independent Business Alliance. All rights reserved.
           </p>
           <p className="text-xs text-slate-600">
-          <a
-            href="mailto:office@siba.digital"
-            className="hover:text-slate-400 transition-colors"
-          >
-            office@siba.digital
-          </a>
+            <a
+              href="mailto:office@siba.digital"
+              className="hover:text-slate-400 transition-colors"
+            >
+              office@siba.digital
+            </a>
           </p>
         </div>
       </div>

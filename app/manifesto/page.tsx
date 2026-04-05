@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -22,6 +23,20 @@ export default function ManifestoPage() {
             Why SIBA exists, what it is committed to delivering, and why the current Business
             Improvement District model is not fit for purpose in 2026.
           </p>
+        </div>
+      </div>
+
+      {/* Manifesto cover image */}
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-10">
+        <div className="relative w-full overflow-hidden rounded-xl border border-white/8 shadow-2xl">
+          <Image
+            src="/images/manifesto-cover.png"
+            alt="Supporting Southport's Independents — SIBA Manifesto"
+            width={1280}
+            height={640}
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -19,7 +20,15 @@ export default function Nav() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <Image
+              src="/images/siba-logo.png"
+              alt="SIBA"
+              width={36}
+              height={36}
+              className="rounded"
+              priority
+            />
             <span className="text-lg font-bold tracking-tight text-white">
               SIBA
               <span className="text-[#f97316]">.digital</span>
