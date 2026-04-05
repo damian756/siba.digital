@@ -171,7 +171,7 @@ export default function HomePage() {
             <div>
               <span className="badge badge-orange mb-4">Free for PR8 and PR9</span>
               <h2 className="text-3xl font-bold text-[#0f172a] mb-4">
-                Tools that pay for themselves in week one
+                Free tools. Real results.
               </h2>
               <p className="text-[#64748b] leading-relaxed mb-6">
                 The Open 2026 is at Royal Birkdale in July. That is 150,000 visitors arriving
