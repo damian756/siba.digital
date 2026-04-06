@@ -124,6 +124,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Report prominence band */}
+      <section className="bg-[#0f172a] border-b border-[#1e293b]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <span className="flex-shrink-0 w-1 h-8 rounded-full bg-[#f97316]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#f97316]">Published</span>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 flex-1 min-w-0">
+              <p className="text-sm font-semibold text-white leading-snug">
+                Where does Southport BID spend your levy? A line-by-line breakdown of the 2024 budget.
+              </p>
+              <p className="hidden sm:block text-[#475569] text-xs flex-shrink-0">Report 01</p>
+            </div>
+            <Link
+              href="/reports/southport-bid-budget-2024"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-400 transition-colors flex-shrink-0"
+            >
+              Read the report
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="bg-[#f8fafc] border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">

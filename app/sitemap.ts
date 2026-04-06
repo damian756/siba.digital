@@ -43,8 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${BASE_URL}/reports/southport-bid-budget-2024`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/privacy`,

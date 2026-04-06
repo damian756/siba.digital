@@ -106,6 +106,9 @@ export default function BidBudgetReportPage() {
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-orange">Budget Transparency</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
+              Report 01 of an ongoing investigation
+            </span>
             <span className="text-xs text-[#94a3b8]">April 2026</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
