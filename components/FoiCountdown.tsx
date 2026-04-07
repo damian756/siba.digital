@@ -108,7 +108,7 @@ export default function FoiCountdown() {
       <div className="bg-[#0f172a] px-6 pt-6 pb-5">
         <div className="grid grid-cols-4 gap-3 mb-6">
           {[
-            { value: countdown.days, label: "Days" },
+            { value: countdown.days, label: "Calendar Days" },
             { value: countdown.hours, label: "Hours" },
             { value: countdown.minutes, label: "Minutes" },
             { value: countdown.seconds, label: "Seconds" },
