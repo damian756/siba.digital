@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Clock, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ExternalLink, Clock } from "lucide-react";
+import FoiCountdown from "@/components/FoiCountdown";
 
 export const metadata: Metadata = {
   title: "FOI Requests: Sefton Council | SIBA",
@@ -162,6 +163,8 @@ export default function FoiPage() {
       </div>
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
+
+        <FoiCountdown />
 
         {/* What FOI is */}
         <div className="card p-6 bg-white border-l-4 border-l-[#0f172a] mb-10">
