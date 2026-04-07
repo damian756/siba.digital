@@ -19,9 +19,42 @@ export const metadata: Metadata = {
   },
 };
 
+const manifestoSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "The SIBA Manifesto",
+  description:
+    "The 2026 Vision, the failure of the mandatory BID levy model, and the SIBA Technical Charter for Southport independent businesses.",
+  datePublished: "2026-04-01",
+  dateModified: "2026-04-07",
+  author: {
+    "@type": "Organization",
+    "@id": "https://www.siba.digital/#organization",
+    name: "Southport Independent Business Alliance",
+    url: "https://www.siba.digital",
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": "https://www.siba.digital/#organization",
+    name: "SIBA Digital",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.siba.digital/icon.svg",
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.siba.digital/manifesto",
+  },
+};
+
 export default function ManifestoPage() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(manifestoSchema) }}
+      />
       {/* Header */}
       <div className="border-b border-[#e2e8f0] bg-[#f8fafc]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
@@ -159,6 +192,13 @@ export default function ManifestoPage() {
               The mandatory model also removes the market discipline that forces organisations
               to prove their value. SIBA operates on the voluntary model. If we are not useful,
               businesses do not join. That is the correct incentive structure.
+            </p>
+            <p>
+              For the full structural analysis of why the BID model breeds cronyism by
+              design, regardless of who runs it,{" "}
+              <Link href="/analysis/bid-cronyism-by-design" className="text-[#f97316] hover:underline font-medium">
+                read the analysis
+              </Link>.
             </p>
           </div>
         </section>

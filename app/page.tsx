@@ -150,6 +150,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Analysis prominence band */}
+      <section className="bg-[#1e293b] border-b border-[#334155]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <span className="flex-shrink-0 w-1 h-6 rounded-full bg-[#94a3b8]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">Analysis</span>
+            </div>
+            <p className="text-sm text-[#cbd5e1] leading-snug flex-1 min-w-0">
+              How BIDs breed cronyism by design. A structural analysis of why every BID produces the same outcome.
+            </p>
+            <Link
+              href="/analysis/bid-cronyism-by-design"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#94a3b8] hover:text-white transition-colors flex-shrink-0"
+            >
+              Read
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Stats */}
       <section className="bg-[#f8fafc] border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">

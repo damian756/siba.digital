@@ -93,9 +93,41 @@ const queries = {
   ],
 };
 
+const hub2026Schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "2026 Hub: Open Championship Readiness for Southport Businesses",
+  description:
+    "The Open 2026 is at Royal Birkdale, 12-19 July. A technical roadmap for PR8 and PR9 businesses to be search-ready before the first tee shot.",
+  url: "https://www.siba.digital/2026",
+  isPartOf: {
+    "@id": "https://www.siba.digital/#website",
+  },
+  about: {
+    "@type": "Event",
+    name: "The Open Championship 2026",
+    startDate: "2026-07-12",
+    endDate: "2026-07-19",
+    location: {
+      "@type": "Place",
+      name: "Royal Birkdale Golf Club",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Southport",
+        addressRegion: "Merseyside",
+        addressCountry: "GB",
+      },
+    },
+  },
+};
+
 export default function Hub2026Page() {
   return (
     <div className="min-h-screen bg-[#f8fafc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hub2026Schema) }}
+      />
       {/* Header */}
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">

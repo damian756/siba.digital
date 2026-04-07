@@ -84,17 +84,9 @@ const proofSites = [
   {
     name: "SeftonCoastWildlife.co.uk",
     desc: "257-species database for the Sefton Coast Special Area of Conservation. Birds, mammals, insects, plants.",
-    href: "https://seftoncoastwildlife.co.uk",
+    href: "https://www.seftoncoastwildlife.co.uk",
   },
 ];
-
-function SectionRule() {
-  return (
-    <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
-    </div>
-  );
-}
 
 export default function AboutPage() {
   return (

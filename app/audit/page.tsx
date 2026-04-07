@@ -53,9 +53,25 @@ const covers = [
   "Priority fix list with impact ratings",
 ];
 
+const auditSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Audit Hub: Free SEO Audit for Southport Businesses",
+  description:
+    "Request a free technical SEO audit for your PR8 or PR9 business. Calculate your BID levy ROI and see what SIBA provides for free.",
+  url: "https://www.siba.digital/audit",
+  isPartOf: {
+    "@id": "https://www.siba.digital/#website",
+  },
+};
+
 export default function AuditPage() {
   return (
     <div className="min-h-screen bg-[#f8fafc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(auditSchema) }}
+      />
       {/* Header */}
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
