@@ -67,7 +67,6 @@ const domainStats = [
   { label: "Domain Rating", value: "59" },
   { label: "Live Backlinks", value: "797" },
   { label: "Referring Domains", value: "225" },
-  { label: "Organic Traffic", value: "0" },
 ];
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
@@ -139,7 +138,7 @@ export default function SelectivePromotionPage() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-14">
 
         {/* Domain overview stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-white">
+        <div className="grid grid-cols-3 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-white">
           {domainStats.map((s) => (
             <div key={s.label} className="px-5 py-4 text-center">
               <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
@@ -162,12 +161,6 @@ export default function SelectivePromotionPage() {
               It is not a private commercial website. It exists to serve all businesses in
               the area. Outbound links from a DR 59 domain carry measurable commercial value
               for any business that receives one.
-            </p>
-            <p>
-              Despite its domain authority, VisitSouthport currently generates zero
-              estimated organic search traffic according to Ahrefs. The platform exists,
-              the authority exists, but the traffic impact is negligible. That raises its
-              own questions about how effectively this public resource is being managed.
             </p>
           </div>
         </section>
@@ -321,7 +314,6 @@ export default function SelectivePromotionPage() {
               "Is there a declared conflict of interest relating to any person with editorial control over VisitSouthport and the businesses it promotes?",
               "Has Sefton Council conducted any review of the content or linking decisions on a platform it funds?",
               "Have any independent hospitality businesses requested inclusion on VisitSouthport and been refused or ignored?",
-              "Why does a DR 59 domain with 225 referring domains generate zero organic search traffic?",
             ].map((q) => (
               <div key={q} className="card p-4 flex gap-3">
                 <span className="flex-shrink-0 mt-0.5 h-2 w-2 rounded-full bg-[#f97316]" />
