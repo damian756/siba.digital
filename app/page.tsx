@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "£2,400+", label: "Avg. annual BID levy", sub: "PR9 business" },
   { value: "£0", label: "SIBA membership", sub: "Always free" },
+  { value: "8", label: "FOI requests submitted", sub: "Sefton Council" },
   { value: "150k+", label: "Open 2026 visitors", sub: "Royal Birkdale, July" },
   { value: "515k", label: "MLEC visitors p/a", sub: "Projected from 2027" },
 ];
@@ -152,7 +153,7 @@ export default function HomePage() {
       {/* Stats */}
       <section className="bg-[#f8fafc] border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#e2e8f0]">
+          <div className="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#e2e8f0]">
             {stats.map((s) => (
               <div key={s.label} className="px-6 py-4 first:pl-0 last:pr-0">
                 <p className="text-2xl font-bold text-[#0f172a] mb-0.5">{s.value}</p>

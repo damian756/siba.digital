@@ -52,6 +52,7 @@ const methodologyStats = [
   { value: "12+", label: "Months of research" },
   { value: "47+", label: "Companies House filings reviewed" },
   { value: "6", label: "Reports in preparation" },
+  { value: "8", label: "FOI requests submitted" },
 ];
 
 export default function ReportsPage() {
@@ -71,7 +72,7 @@ export default function ReportsPage() {
           </p>
 
           {/* Methodology stats */}
-          <div className="grid grid-cols-3 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-[#f8fafc] max-w-lg">
+          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-[#f8fafc] max-w-xl">
             {methodologyStats.map((s) => (
               <div key={s.label} className="px-5 py-4 text-center">
                 <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
@@ -166,6 +167,36 @@ export default function ReportsPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* FOI block */}
+        <div className="mt-10">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-5">
+            Freedom of Information
+          </p>
+          <div className="card bg-white p-7 border-l-4 border-l-[#0f172a]">
+            <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex-shrink-0">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
+                  <span className="text-sm font-bold text-[#0f172a]">8</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h2 className="text-base font-bold text-[#0f172a] mb-2">
+                  FOI Requests Submitted to Sefton Council
+                </h2>
+                <p className="text-sm text-[#475569] leading-relaxed mb-3">
+                  SIBA has submitted 8 Freedom of Information requests to Sefton Council
+                  relating to their oversight of and contractual relationship with Southport BID.
+                  We are awaiting responses. All responses will be published in full on this platform.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-1 bg-[#f8fafc]">
+                  <Clock size={11} />
+                  Awaiting response
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
