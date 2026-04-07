@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "selective-promotion",
+    title: "Who Does VisitSouthport.com Actually Promote?",
+    subtitle:
+      "An Ahrefs analysis of outbound links from Southport's publicly-funded tourism platform. Two hospitality businesses linked. Both connected to the same commercial group. Every other independent excluded.",
+    date: "April 2026",
+    category: "Data Analysis",
+  },
+  {
     slug: "bid-cronyism-by-design",
     title: "How BIDs Breed Cronyism by Design",
     subtitle:

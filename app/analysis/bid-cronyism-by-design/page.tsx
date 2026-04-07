@@ -288,6 +288,29 @@ export default function CronyismAnalysisPage() {
 
         <div className="border-t border-[#e2e8f0]" />
 
+        {/* Evidence link */}
+        <section className="scroll-mt-32">
+          <div className="card card-hover p-6 border-l-4 border-l-[#f97316]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+              The empirical evidence
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              This analysis describes the structural theory. For the data that confirms it
+              in practice, read our Ahrefs-sourced investigation into which businesses
+              Southport&apos;s publicly-funded tourism platform actually links to.
+            </p>
+            <Link
+              href="/analysis/selective-promotion"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
+            >
+              Who does VisitSouthport.com actually promote?
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </section>
+
+        <div className="border-t border-[#e2e8f0]" />
+
         {/* CTA */}
         <div className="text-center py-4">
           <p className="text-[#64748b] mb-6 leading-relaxed max-w-xl mx-auto">
