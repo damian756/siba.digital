@@ -295,15 +295,16 @@ export default function CronyismAnalysisPage() {
               The empirical evidence
             </p>
             <p className="text-sm text-[#475569] leading-relaxed mb-3">
-              This analysis describes the structural theory. For the data that confirms it
-              in practice, read our Ahrefs-sourced investigation into which businesses
-              Southport&apos;s publicly-funded tourism platform actually links to.
+              This analysis describes the structural theory. For the evidence
+              that confirms it in practice, read our manual editorial review of
+              which businesses Southport&apos;s publicly-funded tourism platform
+              actually promotes. Every seasonal page. Every mention. Every link.
             </p>
             <Link
               href="/analysis/selective-promotion"
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
             >
-              Who does VisitSouthport.com actually promote?
+              Which businesses does VisitSouthport.com actually promote?
               <ArrowRight size={14} />
             </Link>
           </div>
