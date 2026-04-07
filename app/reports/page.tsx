@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, FileText, Calendar, Lock, Clock } from "lucide-react";
+import { ArrowRight, FileText, Calendar, Lock, Clock, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "SIBA Reports: The Southport Accountability Project",
@@ -52,7 +52,7 @@ const methodologyStats = [
   { value: "12+", label: "Months of research" },
   { value: "47+", label: "Companies House filings reviewed" },
   { value: "6", label: "Reports in preparation" },
-  { value: "8", label: "FOI requests submitted" },
+  { value: "9", label: "FOI requests submitted" },
 ];
 
 export default function ReportsPage() {
@@ -179,22 +179,33 @@ export default function ReportsPage() {
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
-                  <span className="text-sm font-bold text-[#0f172a]">8</span>
+                  <span className="text-sm font-bold text-[#0f172a]">9</span>
                 </div>
               </div>
               <div className="flex-1">
                 <h2 className="text-base font-bold text-[#0f172a] mb-2">
-                  FOI Requests Submitted to Sefton Council
+                  9 FOI Requests Submitted to Sefton Council
                 </h2>
-                <p className="text-sm text-[#475569] leading-relaxed mb-3">
-                  SIBA has submitted 8 Freedom of Information requests to Sefton Council
-                  relating to their oversight of and contractual relationship with Southport BID.
-                  We are awaiting responses. All responses will be published in full on this platform.
+                <p className="text-sm text-[#475569] leading-relaxed mb-4">
+                  SIBA has submitted 9 Freedom of Information requests to Sefton Council
+                  covering BID ballot integrity, governance conflicts of interest, public spending,
+                  and the editorial decisions behind Southport&apos;s publicly-funded tourism platform.
+                  All requests are publicly listed on WhatDoTheyKnow. All responses will be published
+                  in full.
                 </p>
-                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-1 bg-[#f8fafc]">
-                  <Clock size={11} />
-                  Awaiting response
-                </span>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="/foi"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] border border-[#e2e8f0] rounded px-3 py-1.5 bg-[#f8fafc] hover:bg-[#f1f5f9] transition-colors"
+                  >
+                    View all FOI requests
+                    <ArrowRight size={11} />
+                  </Link>
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-3 py-1.5 bg-[#f8fafc]">
+                    <Clock size={11} />
+                    All awaiting response
+                  </span>
+                </div>
               </div>
             </div>
           </div>

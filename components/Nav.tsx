@@ -10,6 +10,7 @@ const links = [
   { href: "/manifesto", label: "Manifesto" },
   { href: "/audit", label: "Audit Hub" },
   { href: "/reports", label: "Reports" },
+  { href: "/foi", label: "FOI" },
   { href: "/analysis", label: "Analysis" },
   { href: "/2026", label: "2026 Hub" },
 ];

@@ -795,9 +795,31 @@ export default function SelectivePromotionPage() {
             ))}
           </div>
           <p className="mt-6 text-sm text-[#64748b] leading-relaxed">
-            SIBA has submitted these questions to Sefton Council. We will
-            publish any response in full.
+            SIBA has submitted formal Freedom of Information requests to Sefton
+            Council on these precise points.
           </p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/foi#09"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+            >
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#fff7ed] border border-[#fed7aa] text-[9px] font-bold text-[#f97316]">
+                09
+              </span>
+              FOI 09: VisitSouthport Link Management
+              <ArrowRight size={12} />
+            </Link>
+            <Link
+              href="/foi#04"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+            >
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#fff7ed] border border-[#fed7aa] text-[9px] font-bold text-[#f97316]">
+                04
+              </span>
+              FOI 04: Mark Catherall Register of Interests
+              <ArrowRight size={12} />
+            </Link>
+          </div>
         </section>
 
         <div className="border-t border-[#e2e8f0]" />

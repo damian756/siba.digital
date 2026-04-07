@@ -312,6 +312,30 @@ export default function CronyismAnalysisPage() {
 
         <div className="border-t border-[#e2e8f0]" />
 
+        {/* FOI cross-link */}
+        <section>
+          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-4">
+            Active FOI Requests
+          </p>
+          <p className="text-sm text-[#475569] leading-relaxed mb-5">
+            The governance patterns described in this analysis are the subject
+            of formal Freedom of Information requests to Sefton Council. SIBA
+            is asking for the BID operating agreement, declarations of interest
+            from Town Deal board members, and details of Mark Catherall&apos;s
+            register of interests as a council officer who simultaneously runs
+            Visit Southport and sits on the BID board.
+          </p>
+          <Link
+            href="/foi"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+          >
+            View all 9 FOI requests
+            <ArrowRight size={12} />
+          </Link>
+        </section>
+
+        <div className="border-t border-[#e2e8f0]" />
+
         {/* CTA */}
         <div className="text-center py-4">
           <p className="text-[#64748b] mb-6 leading-relaxed max-w-xl mx-auto">
