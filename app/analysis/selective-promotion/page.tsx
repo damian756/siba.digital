@@ -283,6 +283,7 @@ export default function SelectivePromotionPage() {
               { href: "#links", label: "The Links" },
               { href: "#absent", label: "Who Is Missing" },
               { href: "#pattern", label: "The Pattern" },
+              { href: "#governance", label: "The Governance" },
               { href: "#questions", label: "Questions" },
             ].map((l) => (
               <a
@@ -305,7 +306,7 @@ export default function SelectivePromotionPage() {
             { value: "4", label: "Pages reviewed" },
             { value: String(mikhailTotal), label: "Mikhail Group mentions" },
             { value: "0", label: "Independent restaurants" },
-            { value: "27", label: "Dofollow outbound links" },
+            { value: "3", label: "BID directors also governing Visit Southport" },
           ].map((s) => (
             <div key={s.label} className="px-5 py-4 text-center">
               <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
@@ -654,6 +655,127 @@ export default function SelectivePromotionPage() {
 
         <div className="border-t border-[#e2e8f0]" />
 
+        {/* Governance section */}
+        <section id="governance" className="scroll-mt-32">
+          <SectionHeading>The governance connection</SectionHeading>
+          <div className="space-y-4 text-[#475569] leading-relaxed">
+            <p>
+              This is not speculation about editorial influence. The BID and
+              Visit Southport have confirmed their joint working on seasonal
+              content in a published interview. In September 2025,{" "}
+              <strong className="text-[#0f172a]">Rachel Fitzgerald</strong>,
+              CEO of Southport BID, sat down with Mark Catherall, Sefton
+              Council&apos;s Tourism Service Manager and the person who runs
+              Visit Southport day-to-day. The interview was published by
+              Liverpool City Region Destination Partnership.
+            </p>
+            <p>
+              Fitzgerald stated directly:
+            </p>
+          </div>
+
+          {/* Pull quote */}
+          <div className="my-6 border-l-4 border-l-[#f97316] bg-white rounded-r-lg p-6 shadow-sm">
+            <p className="text-lg font-medium text-[#0f172a] leading-relaxed italic mb-4">
+              &ldquo;Christmas is another time when the town comes alive and
+              working alongside the Visit Southport team on marketing helps us
+              extend the reach of what we offer locally.&rdquo;
+            </p>
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-[#e2e8f0]" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+                Rachel Fitzgerald
+              </p>
+              <div className="h-px flex-1 bg-[#e2e8f0]" />
+            </div>
+            <p className="text-xs text-[#94a3b8] text-center mt-1.5">
+              CEO, Southport BID. Liverpool City Region Destination Partnership interview, September 2025.
+            </p>
+          </div>
+
+          <div className="space-y-4 text-[#475569] leading-relaxed">
+            <p>
+              The seasonal pages reviewed in this analysis are therefore a joint
+              editorial product between two organisations whose governance
+              structures overlap directly. The three shared positions are
+              documented on public records.
+            </p>
+          </div>
+
+          {/* Governance table */}
+          <div className="mt-6 card overflow-hidden">
+            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+                Shared positions between Southport BID and Visit Southport
+              </p>
+            </div>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[#e2e8f0] bg-[#f8fafc]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Person</th>
+                  <th className="text-left px-4 py-3 font-semibold text-[#0f172a]">BID role</th>
+                  <th className="text-left px-4 py-3 font-semibold text-[#0f172a]">Visit Southport role</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#e2e8f0]">
+                {[
+                  {
+                    name: "Geoff Wareham",
+                    bid: "Treasurer",
+                    visit: "Not on board",
+                    note: "Commercial Director, Mikhail Hotel and Leisure Group",
+                    highlight: true,
+                  },
+                  {
+                    name: "Peter Hampson",
+                    bid: "Co-opted Director",
+                    visit: "Chair",
+                    note: "Director, British Destinations",
+                    highlight: false,
+                  },
+                  {
+                    name: "Mark Catherall",
+                    bid: "Director",
+                    visit: "Day-to-day operator (Sefton Council)",
+                    note: "Tourism Service Manager, Sefton Council",
+                    highlight: false,
+                  },
+                ].map((row) => (
+                  <tr
+                    key={row.name}
+                    className={`hover:bg-[#f8fafc] transition-colors ${row.highlight ? "bg-[#fff7ed]" : ""}`}
+                  >
+                    <td className="px-5 py-3">
+                      <p className="font-semibold text-[#0f172a] text-sm">{row.name}</p>
+                      <p className="text-xs text-[#94a3b8] mt-0.5">{row.note}</p>
+                    </td>
+                    <td className="px-4 py-3 text-sm text-[#475569]">{row.bid}</td>
+                    <td className="px-4 py-3 text-sm text-[#475569]">{row.visit}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="mt-6 card p-6 bg-[#fff7ed] border-[#fed7aa]">
+            <p className="text-sm font-semibold text-[#0f172a] mb-2">
+              What this means
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed">
+              The organisation whose Treasurer is the Mikhail Group&apos;s
+              Commercial Director collaborates directly with Visit Southport on
+              the seasonal marketing content that consistently promotes Mikhail
+              Group venues. The Chair of Visit Southport sits on the BID board.
+              The person who runs Visit Southport day-to-day sits on the BID
+              board. Rachel Fitzgerald confirmed the collaboration on the record.
+              The content is a joint product. The outcomes of that content are
+              not evenly distributed.
+            </p>
+          </div>
+        </section>
+
+        <div className="border-t border-[#e2e8f0]" />
+
         {/* Questions */}
         <section id="questions" className="scroll-mt-32">
           <SectionHeading>Questions for the record</SectionHeading>
@@ -704,6 +826,23 @@ export default function SelectivePromotionPage() {
                 <ExternalLink size={11} />
               </a>
               , an independent third-party SEO analytics platform.
+            </p>
+            <p>
+              The Rachel Fitzgerald quote is sourced from a published interview
+              conducted by Liverpool City Region Destination Partnership in
+              September 2025, titled &ldquo;Southport Leaders in Conversation:
+              Rachel Fitzgerald and Mark Catherall on the Town&apos;s Incredible
+              Future.&rdquo; The interview is publicly accessible at{" "}
+              <a
+                href="https://liverpoolcityregiondp.com/2025/09/16/southport-leaders-in-conversation-rachel-fitzgerald-and-mark-catherall-on-the-towns-incredible-future/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+              >
+                liverpoolcityregiondp.com
+                <ExternalLink size={11} />
+              </a>
+              . BID board membership data is sourced from southportbid.com/our-team/.
             </p>
             <p>
               The review was conducted on 7 April 2026. All pages referenced are
