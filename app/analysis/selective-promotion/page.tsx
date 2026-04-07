@@ -275,7 +275,7 @@ export default function SelectivePromotionPage() {
       {/* Sticky section nav */}
       <div className="sticky top-16 z-10 border-b border-[#e2e8f0] bg-white/95 backdrop-blur-sm">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex gap-6 overflow-x-auto py-3 text-sm">
+          <nav className="grid grid-cols-4 py-1">
             {[
               { href: "#platform", label: "The Platform" },
               { href: "#method", label: "What We Did" },
@@ -289,7 +289,7 @@ export default function SelectivePromotionPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 text-sm font-semibold text-[#94a3b8] hover:text-[#0f172a] transition-colors"
+                className="text-xs font-semibold text-[#94a3b8] hover:text-[#0f172a] transition-colors py-2 px-1 text-center"
               >
                 {l.label}
               </a>
