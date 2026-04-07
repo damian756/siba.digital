@@ -80,6 +80,7 @@ export default function Footer() {
                 { href: "/manifesto", label: "Manifesto" },
                 { href: "/audit", label: "Audit Hub" },
                 { href: "/reports", label: "Reports" },
+                { href: "/analysis", label: "Analysis" },
                 { href: "/2026", label: "2026 Hub" },
               ].map((l) => (
                 <li key={l.href}>
