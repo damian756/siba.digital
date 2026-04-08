@@ -170,12 +170,15 @@ export default function Footer() {
           <p className="text-xs text-[#94a3b8]">
             &copy; {year} Southport Independent Business Alliance. All rights reserved.
           </p>
-          <p className="text-xs text-[#cbd5e1]">
+          <p className="text-xs text-[#94a3b8]">
+            Powered by{" "}
             <a
-              href="mailto:damian@siba.digital"
-              className="hover:text-[#94a3b8] transition-colors"
+              href="https://churchtownmedia.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#64748b] hover:text-[#f97316] transition-colors"
             >
-              damian@siba.digital
+              Churchtown Media
             </a>
           </p>
         </div>
