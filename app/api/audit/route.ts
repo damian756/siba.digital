@@ -1,5 +1,14 @@
 import { NextResponse } from "next/server";
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
@@ -17,16 +26,17 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
     }
 
+    const safeWebsite = escapeHtml(String(website));
     const html = `
       <h2>New SIBA Audit Request</h2>
       <table cellpadding="6" cellspacing="0" style="border-collapse:collapse;">
-        <tr><td><strong>Name</strong></td><td>${name}</td></tr>
-        <tr><td><strong>Business</strong></td><td>${businessName}</td></tr>
-        <tr><td><strong>Postcode</strong></td><td>${postcode}</td></tr>
-        <tr><td><strong>Email</strong></td><td>${email}</td></tr>
-        <tr><td><strong>Phone</strong></td><td>${phone || "Not provided"}</td></tr>
-        <tr><td><strong>Website</strong></td><td><a href="${website}">${website}</a></td></tr>
-        <tr><td><strong>Notes</strong></td><td>${notes || "None"}</td></tr>
+        <tr><td><strong>Name</strong></td><td>${escapeHtml(String(name))}</td></tr>
+        <tr><td><strong>Business</strong></td><td>${escapeHtml(String(businessName))}</td></tr>
+        <tr><td><strong>Postcode</strong></td><td>${escapeHtml(String(postcode))}</td></tr>
+        <tr><td><strong>Email</strong></td><td>${escapeHtml(String(email))}</td></tr>
+        <tr><td><strong>Phone</strong></td><td>${phone ? escapeHtml(String(phone)) : "Not provided"}</td></tr>
+        <tr><td><strong>Website</strong></td><td><a href="${safeWebsite}">${safeWebsite}</a></td></tr>
+        <tr><td><strong>Notes</strong></td><td>${notes ? escapeHtml(String(notes)) : "None"}</td></tr>
       </table>
     `;
 
