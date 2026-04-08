@@ -15,6 +15,8 @@ const links = [
   { href: "/2026", label: "2026 Hub" },
 ];
 
+const alertLink = { href: "/contact-log", label: "Contact Log" };
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
 
@@ -37,7 +39,17 @@ export default function Nav() {
                 {l.label}
               </Link>
             ))}
-            <div className="ml-3 pl-3 border-l border-[#e2e8f0]">
+            <Link
+              href={alertLink.href}
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-semibold text-red-600 hover:text-red-700 hover:bg-red-50 transition-colors"
+            >
+              <span className="relative flex h-2 w-2 flex-shrink-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              {alertLink.label}
+            </Link>
+            <div className="ml-2 pl-3 border-l border-[#e2e8f0]">
             <Link
               href="/audit#request"
               className="inline-flex items-center rounded-lg bg-[#f97316] px-4 py-2 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
@@ -69,6 +81,17 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
+          <Link
+            href={alertLink.href}
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-2 rounded-md px-3 py-2.5 text-sm font-semibold text-red-600 hover:text-red-700 hover:bg-red-50"
+          >
+            <span className="relative flex h-2 w-2 flex-shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+            </span>
+            {alertLink.label}
+          </Link>
           <div className="pt-2">
           <Link
             href="/audit#request"
