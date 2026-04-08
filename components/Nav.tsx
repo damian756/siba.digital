@@ -13,6 +13,7 @@ const links = [
   { href: "/foi", label: "FOI" },
   { href: "/analysis", label: "Analysis" },
   { href: "/2026", label: "2026 Hub" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const alertLink = { href: "/contact-log", label: "Contact Log" };
