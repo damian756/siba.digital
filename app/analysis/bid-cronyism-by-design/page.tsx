@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight, ArrowLeft, Info } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "How BIDs Breed Cronyism by Design | SIBA",
@@ -115,6 +115,60 @@ export default function CronyismAnalysisPage() {
 
       {/* Content */}
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-14">
+
+        {/* Plain language summary */}
+        <section className="scroll-mt-32">
+          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <Info size={14} className="text-[#f97316] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+                What this article is about
+              </p>
+            </div>
+            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+              <p>
+                A BID is a Business Improvement District. Businesses in a defined town centre area
+                pay a compulsory levy. The money is collected by the council and handed to a BID
+                board to spend on behalf of the area. You pay whether or not you voted for it, and
+                there is no practical way to opt out.
+              </p>
+              <p>
+                Most criticism of BIDs focuses on specific bad boards or specific bad decisions.
+                This article argues that is the wrong question. The argument here is structural:
+                the BID model creates the conditions for a particular pattern of spending, even
+                when everyone involved is acting in good faith.
+              </p>
+              <p>
+                The pattern works like this. The board is small. It decides where the money goes.
+                Board members naturally spend with people they trust. The people they trust are
+                the people they already know. The businesses without those existing connections
+                pay the same levy and receive proportionally less in return. No individual has
+                to make a corrupt decision.{" "}
+                <span className="text-white font-semibold">
+                  The structure produces the outcome automatically.
+                </span>
+              </p>
+              <p>
+                The BID also replaces the organic peer-to-peer networks that existed before it.
+                Before a BID, businesses promoted each other directly. After a BID, everything
+                routes through the official channel. The official channel is the BID. The BID is
+                controlled by the board. The businesses that previously built their own networks
+                now depend on one they did not choose and cannot leave.
+              </p>
+              <p>
+                If this argument is correct, better governance is not the solution. The model
+                itself is the problem. Better people running the same structure will produce the
+                same result.
+              </p>
+              <p className="text-[#94a3b8] text-xs pt-2 border-t border-[#1e293b]">
+                This is a structural analysis. It does not allege impropriety by any specific
+                individual or organisation. The Southport-specific evidence for this argument
+                is documented in two companion pieces linked at the bottom of this article.
+                Use the navigation above to jump to the section most relevant to you.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Before the BID */}
         <section id="before" className="scroll-mt-32">

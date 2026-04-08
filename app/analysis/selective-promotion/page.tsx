@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowRight, ArrowLeft, ExternalLink, Info } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
@@ -300,6 +300,55 @@ export default function SelectivePromotionPage() {
 
       {/* Content */}
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-14">
+
+        {/* Plain language summary */}
+        <section className="scroll-mt-32">
+          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <Info size={14} className="text-[#f97316] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+                What this article is about
+              </p>
+            </div>
+            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+              <p>
+                VisitSouthport.com is a publicly-funded tourism website operated by Sefton Council.
+                Its stated purpose is to promote Southport to visitors. It is not a private
+                commercial website. Public money built it and public money runs it.
+              </p>
+              <p>
+                Southport BID is a separate organisation that collects a compulsory levy from
+                around 720 town centre businesses. The BID and Visit Southport collaborate on
+                seasonal marketing content. The BID&apos;s CEO confirmed this on the public record.
+              </p>
+              <p>
+                We read every seasonal editorial page on VisitSouthport.com. All four of them:
+                Christmas, Halloween, Easter, and half-term. We counted every business mentioned.
+                We checked every external link.
+              </p>
+              <p>
+                The findings are specific:{" "}
+                <span className="text-white font-semibold">
+                  one commercial group&apos;s venues appear on every seasonal page.
+                </span>{" "}
+                No independent restaurant, pub, or cafe appears on any of them.
+              </p>
+              <p>
+                Every outbound link on this publicly-funded website passes full SEO authority to
+                the businesses it links to. That is a real, measurable commercial benefit.
+                The question this article asks is: who decided how that benefit should be
+                distributed, and how was that decision governed?
+              </p>
+              <p className="text-[#94a3b8] text-xs pt-2 border-t border-[#1e293b]">
+                This analysis documents a pattern identified from publicly available data. It is
+                not an allegation of deliberate impropriety by any individual. Every claim is
+                independently verifiable by anyone with a web browser. Use the navigation above
+                to jump to the section most relevant to you.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Key stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-white">
           {[
