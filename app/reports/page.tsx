@@ -29,18 +29,28 @@ const publishedReports = [
     summary:
       "Southport BID collects £448,211 in compulsory levy income in year one of its current term, rising automatically by 3% each year. This report breaks down exactly where that money goes, sourced directly from the BID's own publicly available Business Plan.",
   },
+  {
+    number: "02",
+    slug: "mark-catherall-visit-southport",
+    title: "The council officer running Southport's tourism platform",
+    subtitle: "How one Sefton Council officer controls both Visit Southport and a seat on the BID board",
+    date: "April 2026",
+    category: "Governance",
+    summary:
+      "Mark Catherall is Sefton Council's Service Manager for Tourism. He runs Visit Southport and sits on the BID board as the council's formally appointed representative. He helped design the BID before moving into his current post. This report documents the structure and asks the questions that follow.",
+  },
 ];
 
 const upcomingReports = [
   {
-    number: "02",
-    title: "Governance, Conflicts of Interest, and the BID Board",
-    subtitle: "An examination of board composition, dual roles, and undisclosed relationships",
+    number: "03",
+    title: "BID Board Composition: Directorships, Conflicts, and the Wareham Question",
+    subtitle: "A documented timeline of outside commercial interests held by BID board members",
     date: "May 2026",
     category: "Governance",
   },
   {
-    number: "03",
+    number: "04",
     title: "Corporate Interests and Southport's Regeneration Funding",
     subtitle: "The private sector connections behind Southport's public funding allocation",
     date: "In preparation",
@@ -50,9 +60,9 @@ const upcomingReports = [
 
 const methodologyStats = [
   { value: "12+", label: "Months of research" },
-  { value: "47+", label: "Companies House filings reviewed" },
-  { value: "6", label: "Reports in preparation" },
-  { value: "9", label: "FOI requests submitted" },
+  { value: "55+", label: "Companies House filings reviewed" },
+  { value: "5", label: "Reports in preparation" },
+  { value: "14", label: "FOI requests submitted" },
 ];
 
 export default function ReportsPage() {
@@ -179,19 +189,19 @@ export default function ReportsPage() {
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
-                  <span className="text-sm font-bold text-[#0f172a]">9</span>
+                  <span className="text-sm font-bold text-[#0f172a]">14</span>
                 </div>
               </div>
               <div className="flex-1">
                 <h2 className="text-base font-bold text-[#0f172a] mb-2">
-                  9 FOI Requests Submitted to Sefton Council
+                  14 FOI Requests Submitted to Sefton Council
                 </h2>
                 <p className="text-sm text-[#475569] leading-relaxed mb-4">
-                  SIBA has submitted 9 Freedom of Information requests to Sefton Council
+                  SIBA has submitted 14 Freedom of Information requests to Sefton Council
                   covering BID ballot integrity, governance conflicts of interest, public spending,
-                  and the editorial decisions behind Southport&apos;s publicly-funded tourism platform.
-                  All requests are publicly listed on WhatDoTheyKnow. All responses will be published
-                  in full.
+                  COVID grant recipients, and the editorial decisions behind Southport&apos;s
+                  publicly-funded tourism platform. All requests are publicly listed on
+                  WhatDoTheyKnow. All responses will be published in full.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link

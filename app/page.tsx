@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "£2,400+", label: "Avg. annual BID levy", sub: "PR9 business" },
   { value: "£0", label: "SIBA membership", sub: "Always free" },
-  { value: "9", label: "FOI requests submitted", sub: "Sefton Council" },
+  { value: "14", label: "FOI requests submitted", sub: "Sefton Council" },
   { value: "150k+", label: "Open 2026 visitors", sub: "Royal Birkdale, July" },
   { value: "515k", label: "MLEC visitors p/a", sub: "Projected from 2027" },
 ];

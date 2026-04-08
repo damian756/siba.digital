@@ -6,14 +6,14 @@ import FoiCountdown from "@/components/FoiCountdown";
 export const metadata: Metadata = {
   title: "FOI Requests: Sefton Council | SIBA",
   description:
-    "SIBA has submitted 9 Freedom of Information requests to Sefton Council covering BID ballot integrity, governance conflicts of interest, public spending, and editorial decisions on publicly-funded platforms.",
+    "SIBA has submitted 14 Freedom of Information requests to Sefton Council covering BID ballot integrity, governance conflicts of interest, public spending, and editorial decisions on publicly-funded platforms.",
   alternates: {
     canonical: "https://www.siba.digital/foi",
   },
   openGraph: {
     title: "FOI Requests: Sefton Council | SIBA",
     description:
-      "9 active Freedom of Information requests to Sefton Council. All responses will be published in full.",
+      "14 Freedom of Information requests to Sefton Council. All responses will be published in full.",
     url: "https://www.siba.digital/foi",
     type: "website",
   },
@@ -123,6 +123,63 @@ const requests = [
     relatedHref: "/analysis/selective-promotion",
     highlight: true,
   },
+  {
+    number: "10",
+    title: "BID Board Members' Declarations of Interest and Outside Directorships",
+    slug: "foi_request_10_bid_board_members",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Asks whether the BID governance framework requires board members to declare outside directorships, whether declarations were made by or in relation to G R Wareham (BID Treasurer) between January 2022 and December 2024 during the period he served as a director of Mikhail Hotels and Leisure Holdings Limited, and whether any correspondence exists between council officers and BID board members regarding declarations of outside commercial interests.",
+    relatedLabel: null,
+    relatedHref: null,
+    highlight: true,
+  },
+  {
+    number: "11",
+    title: "COVID Business Grant Recipients and Council Transparency Page",
+    slug: "foi_request_11_freedom_of_inform",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Two-part request. Part 1 asks for the full list of COVID-19 business grant recipients paid by Sefton Council between March 2020 and March 2022, including the name of each recipient, the amount received, and the grant scheme under which it was paid. Part 2 asks why the Council Spend transparency page no longer displays any documents, and when those documents were removed.",
+    relatedLabel: null,
+    relatedHref: null,
+  },
+  {
+    number: "12",
+    title: "Financial Relationship Between Sefton Council and Visit Southport",
+    slug: "foi_request_12_freedom_of_inform",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Asks for any grants, contracts, service level agreements, or other payments made between Sefton Council and Visit Southport from 2018 to present. Also asks for any formal arrangement or agreement governing the relationship between the council and the Visit Southport tourism service.",
+    relatedLabel: "Catherall Report",
+    relatedHref: "/reports/mark-catherall-visit-southport",
+  },
+  {
+    number: "13",
+    title: "Employment Arrangements and Outside Role with Visit Southport",
+    slug: "foi_request_13_freedom_of_inform",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Asks for Mark Catherall's job title and description, any secondment or outside activity agreement governing his Visit Southport role, any entry in Sefton's register of employees' interests relating to his BID board directorship, and any correspondence about managing conflicts of interest arising from his simultaneous council and BID roles.",
+    relatedLabel: "Catherall Report",
+    relatedHref: "/reports/mark-catherall-visit-southport",
+    highlight: true,
+  },
+  {
+    number: "14",
+    title: "Southport Business Recovery Fund Recipients and Payments",
+    slug: "foi_request_14_freedom_of_inform",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Asks for full details of the Southport Business Recovery Fund including the total allocation, source of funding, a complete list of recipients and amounts received, the eligibility criteria applied, and the names of the officers or decision-makers who approved each payment.",
+    relatedLabel: null,
+    relatedHref: null,
+  },
 ];
 
 export default function FoiPage() {
@@ -149,7 +206,7 @@ export default function FoiPage() {
             {[
               { value: String(requests.length), label: "Requests submitted" },
               { value: String(awaiting), label: "Awaiting response" },
-              { value: "0", label: "Responses received" },
+              { value: "0", label: "Substantive responses" },
             ].map((s) => (
               <div key={s.label} className="px-5 py-4 text-center">
                 <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
@@ -165,6 +222,15 @@ export default function FoiPage() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
 
         <FoiCountdown />
+
+        <div className="rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
+          <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#94a3b8] mt-1.5" />
+          <p className="text-xs text-[#94a3b8] leading-relaxed">
+            The countdown above tracks the statutory deadline for FOI requests 1–9 (5–6 May 2026).
+            FOI requests 10–14, submitted 8 April 2026, have a response deadline of{" "}
+            <span className="font-semibold text-[#64748b]">7 May 2026</span>.
+          </p>
+        </div>
 
         {/* What FOI is */}
         <div className="card p-6 bg-white border-l-4 border-l-[#0f172a] mb-10">
@@ -190,6 +256,7 @@ export default function FoiPage() {
         <div className="space-y-4">
           {requests.map((r) => (
             <div
+              id={r.number}
               key={r.number}
               className={`card bg-white p-6 sm:p-7 ${
                 "highlight" in r && r.highlight
