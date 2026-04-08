@@ -109,6 +109,51 @@ const awardsRows = [
   },
 ];
 
+const loopSteps = [
+  {
+    step: "01",
+    actor: "The levy",
+    title: "720 businesses pay a compulsory charge",
+    body: "Every business in the BID zone is billed annually. The money goes to the BID board to spend on behalf of the area. No business can opt out. Mikhail Group pays the levy as one of the larger operators on Lord Street.",
+    highlight: false,
+  },
+  {
+    step: "02",
+    actor: "The board",
+    title: "Wareham oversees how the money is spent",
+    body: "As Treasurer, he oversees BID finances and sits on the board that decides where the levy goes. His day job is Commercial Director of the group that owns six venues in the same area. He is currently listed as an active director of that group's holding company at Companies House.",
+    highlight: true,
+  },
+  {
+    step: "03",
+    actor: "The collaboration",
+    title: "BID and Visit Southport co-produce the town's seasonal marketing",
+    body: "The BID's CEO confirmed on the public record that the BID works alongside the Visit Southport team on seasonal marketing content. Visit Southport is the publicly-funded tourism platform operated by Sefton Council. The two organisations jointly shape what visitors find when they look for things to do in Southport.",
+    highlight: false,
+  },
+  {
+    step: "04",
+    actor: "The promotion",
+    title: "The content consistently promotes Mikhail venues",
+    body: "Four seasonal pages reviewed. 47 Mikhail venue mentions. Zero independent restaurants. Zero independent pubs. Zero independent cafes. All outbound links are dofollow and pass full SEO authority to the receiving domains.",
+    highlight: true,
+  },
+  {
+    step: "05",
+    actor: "The awards",
+    title: "The BID's own awards publicly validate Mikhail",
+    body: "The Stars Awards are run by BID staff, funded by BID budget, and promoted across BID channels. Mikhail's bar won in 2023 and 2024. The panel-judged Hotel of the Year at the 2025 ceremony went to The Bold Hotel. The ceremony itself was held at The Grand, a Mikhail venue.",
+    highlight: true,
+  },
+  {
+    step: "06",
+    actor: "The visitor",
+    title: "Official channels direct visitors into the Mikhail ecosystem",
+    body: "A visitor following VisitSouthport's seasonal recommendations can stay at a Mikhail hotel, eat at a Mikhail venue, and drink at a Mikhail bar. The publicly-funded infrastructure that is supposed to serve all 720 levy payers consistently routes visitors to the same commercial group.",
+    highlight: false,
+  },
+];
+
 const questions = [
   "Has Wareham declared his Mikhail Holdings directorship to the BID board as a formal conflict of interest, separately from his employment as Commercial Director?",
   "At which BID board meetings, if any, has Wareham declared a conflict and recused himself from discussion or vote?",
@@ -192,6 +237,7 @@ export default function BidTreasurerMikhailPage() {
               { href: "#register", label: "Companies House" },
               { href: "#venues", label: "The venues" },
               { href: "#awards", label: "The awards" },
+              { href: "#loop", label: "The loop" },
               { href: "#accountability", label: "The gap" },
               { href: "#impact", label: "Levy payers" },
               { href: "#questions", label: "Questions" },
@@ -597,6 +643,178 @@ export default function BidTreasurerMikhailPage() {
             no involvement in awards administration, shortlisting, venue selection, or panel
             appointments, given that his employer&apos;s venues were nominees or winners in every
             year of the awards&apos; existence?
+          </p>
+        </section>
+
+        <div className="border-t border-[#e2e8f0]" />
+
+        {/* The full loop */}
+        <section id="loop" className="scroll-mt-32 space-y-7">
+          <SectionHeading>The full loop: what the structure produces</SectionHeading>
+
+          <div className="space-y-4 text-[#475569] leading-relaxed">
+            <p>
+              Each element documented in this analysis operates within a larger structure. When
+              assembled, the picture is a closed loop: the levy funds the infrastructure, the
+              infrastructure promotes the dominant operator, and the dominant operator&apos;s director
+              oversees the fund. No single step requires deliberate coordination. The structure
+              produces the outcome automatically.
+            </p>
+            <p>
+              The diagram below traces how levy money flows into promotion, how that promotion
+              consistently advantages one commercial group, and how that group&apos;s director sits at
+              the point of governance where the fund is managed.
+            </p>
+          </div>
+
+          {/* Flow diagram */}
+          <div>
+            {loopSteps.map((s, i) => (
+              <div key={i}>
+                <div
+                  className={`rounded-xl border p-5 flex gap-4 ${
+                    s.highlight
+                      ? "bg-[#fff7ed] border-[#fed7aa]"
+                      : "bg-white border-[#e2e8f0]"
+                  }`}
+                >
+                  <div className="flex-shrink-0 flex flex-col items-center gap-1 pt-0.5">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0f172a] text-xs font-bold text-white">
+                      {s.step}
+                    </span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+                      {s.actor}
+                    </p>
+                    <p className="text-sm font-semibold text-[#0f172a] mb-1.5">{s.title}</p>
+                    <p className="text-sm text-[#475569] leading-relaxed">{s.body}</p>
+                  </div>
+                </div>
+                <div className="flex justify-start pl-[1.1rem] py-1">
+                  <div className="flex flex-col items-center gap-0.5">
+                    <div className="w-px h-3 bg-[#cbd5e1]" />
+                    <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-[#cbd5e1]" />
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Loop back node */}
+            <div className="rounded-xl bg-[#0f172a] p-5 flex gap-4 items-start">
+              <div className="flex-shrink-0">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#f97316] text-white text-base font-bold leading-none">
+                  ↻
+                </span>
+              </div>
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+                  The cycle
+                </p>
+                <p className="text-sm font-semibold text-white mb-1.5">
+                  Reinforces at the next ballot
+                </p>
+                <p className="text-xs text-[#94a3b8] leading-relaxed">
+                  Mikhail&apos;s public profile grows through award wins and editorial coverage.
+                  Independent competitors remain invisible on the official platform. The BID
+                  renews. Wareham&apos;s board seat continues. The levy is collected again. The
+                  loop continues from step 01.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hospitality ecosystem map */}
+          <div className="card bg-white overflow-hidden">
+            <div className="px-5 py-4 bg-[#0f172a]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+                The Mikhail hospitality ecosystem: Southport town centre
+              </p>
+              <p className="text-xs text-[#94a3b8] leading-relaxed">
+                A visitor following VisitSouthport&apos;s recommendations can complete their entire
+                stay within this single group&apos;s portfolio. Accommodation. Food. Drink. Events.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e2e8f0]">
+              <div className="p-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                  Sleep
+                </p>
+                <div className="space-y-2.5">
+                  {[
+                    { name: "The Bold Hotel", note: "Hotel of Year 2025 (panel)" },
+                    { name: "The Grand", note: "2025 ceremony venue" },
+                    { name: "Lord Street Hotel", note: "2025 finalist" },
+                  ].map((v) => (
+                    <div key={v.name}>
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                      </div>
+                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="p-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                  Drink
+                </p>
+                <div className="space-y-2.5">
+                  {[
+                    { name: "Southport Market Bar", note: "Bar of Year 2023 and 2024" },
+                    { name: "Punch Tarmey\u2019s", note: "2025 Awards nominee" },
+                    { name: "Mavericks", note: "2025 Awards nominee" },
+                  ].map((v) => (
+                    <div key={v.name}>
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                      </div>
+                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="p-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                  Eat and socialise
+                </p>
+                <div className="space-y-2.5">
+                  {[
+                    { name: "Southport Market", note: "Street food hall" },
+                    { name: "The Grand restaurant", note: "2025 Restaurant nominee" },
+                    { name: "The Bold restaurant", note: "Lord Street" },
+                  ].map((v) => (
+                    <div key={v.name}>
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                      </div>
+                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="px-5 py-3 bg-[#fff7ed] border-t border-[#fed7aa]">
+              <p className="text-xs text-[#475569] leading-relaxed">
+                This is not a criticism of Mikhail Group&apos;s investment in Southport or the quality of
+                its venues. It is a description of a market structure in which the publicly-funded
+                promotional infrastructure consistently routes visitors to one commercial group,
+                while the director who oversees that infrastructure&apos;s finances is that group&apos;s own
+                Commercial Director.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-sm text-[#475569] leading-relaxed">
+            The 720 levy-paying businesses financing this system include Mikhail&apos;s direct
+            competitors. Independent hotels competing for the same guests. Independent bars
+            competing for the same customers. They fund the awards that consistently validate their
+            competitor. They fund the seasonal content that never mentions them. They fund the
+            infrastructure that routes visitors to the venues owned by the group whose director
+            oversees the fund.
           </p>
         </section>
 
