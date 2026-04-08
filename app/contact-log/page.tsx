@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const entries = [
   {
     id: "CL-002",
-    date: "9 April 2026",
+    date: "8 April 2026",
     time: "Approximately 13:05 to 13:15",
     duration: null,
     method: "LinkedIn",
@@ -36,14 +36,14 @@ const entries = [
       },
     ],
     nature:
-      "Rachel Fitzgerald and Andrew Brown both viewed SIBA founder Damian Roche's LinkedIn profile within five minutes of each other. This is an observable public fact recorded by LinkedIn's own 'Who Viewed Your Profile' feature. The views occurred within the same timeframe as the phone call documented in Entry CL-001. Martin Sarbutts, Facilities Development and Management Officer at Sefton Council, also viewed the profile approximately 13 hours prior, on the morning of 9 April 2026.",
+      "Rachel Fitzgerald and Andrew Brown both viewed SIBA founder Damian Roche's LinkedIn profile within five minutes of each other. This is an observable public fact recorded by LinkedIn's own 'Who Viewed Your Profile' feature. The views occurred within the same timeframe as the phone call documented in Entry CL-001. Martin Sarbutts, Facilities Development and Management Officer at Sefton Council, also viewed the profile approximately 13 hours prior, on the morning of 8 April 2026.",
     sibaResponse:
       "No private information is disclosed in this entry. All information is drawn from LinkedIn's publicly visible 'Who Viewed Your Profile' feature. SIBA notes the coordination and timing as a matter of documented public record.",
     highlight: false,
   },
   {
     id: "CL-001",
-    date: "9 April 2026",
+    date: "8 April 2026",
     time: "13:22",
     duration: "4 minutes 16 seconds",
     method: "Telephone",
