@@ -131,8 +131,8 @@ const requests = [
     status: "awaiting",
     summary:
       "Asks whether the BID governance framework requires board members to declare outside directorships, whether declarations were made by or in relation to G R Wareham (BID Treasurer) between January 2022 and December 2024 during the period he served as a director of Mikhail Hotels and Leisure Holdings Limited, and whether any correspondence exists between council officers and BID board members regarding declarations of outside commercial interests.",
-    relatedLabel: null,
-    relatedHref: null,
+    relatedLabel: "BID Treasurer Analysis",
+    relatedHref: "/analysis/bid-treasurer-mikhail",
     highlight: true,
   },
   {

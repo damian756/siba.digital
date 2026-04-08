@@ -288,8 +288,8 @@ export default function CronyismAnalysisPage() {
 
         <div className="border-t border-[#e2e8f0]" />
 
-        {/* Evidence link */}
-        <section className="scroll-mt-32">
+        {/* Evidence links */}
+        <section className="scroll-mt-32 space-y-4">
           <div className="card card-hover p-6 border-l-4 border-l-[#f97316]">
             <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
               The empirical evidence
@@ -305,6 +305,23 @@ export default function CronyismAnalysisPage() {
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
             >
               Which businesses does VisitSouthport.com actually promote?
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="card card-hover p-6 border-l-4 border-l-[#0f172a]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+              A live case study
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              The structural pattern described here is documented in a specific, named case.
+              Southport BID&apos;s Treasurer is a registered active director of the largest
+              hospitality group in the town, with no TM01 ever filed. Read the analysis.
+            </p>
+            <Link
+              href="/analysis/bid-treasurer-mikhail"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
+            >
+              The BID Treasurer and Mikhail Hotels
               <ArrowRight size={14} />
             </Link>
           </div>
@@ -329,7 +346,7 @@ export default function CronyismAnalysisPage() {
             href="/foi"
             className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
           >
-            View all 9 FOI requests
+            View all 14 FOI requests
             <ArrowRight size={12} />
           </Link>
         </section>

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "bid-treasurer-mikhail",
+    title: "Southport's BID Treasurer Is an Active Director of the Town's Biggest Hospitality Group",
+    subtitle:
+      "Companies House confirms Geoffrey Wareham is currently a registered active director of Mikhail Hotels and Leisure Holdings Limited while simultaneously serving as Treasurer of Southport BID. No termination has ever been filed. This analysis documents the structure.",
+    date: "April 2026",
+    category: "Governance",
+  },
+  {
     slug: "selective-promotion",
     title: "Which Businesses Does VisitSouthport.com Actually Promote?",
     subtitle:

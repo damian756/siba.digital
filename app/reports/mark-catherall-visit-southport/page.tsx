@@ -526,6 +526,18 @@ export default function CaterallReportPage() {
             this site in full, unedited.
           </p>
 
+          <p className="text-sm text-[#475569] leading-relaxed">
+            A companion analysis documents a separate but structurally related governance conflict
+            at the BID board level.{" "}
+            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#f97316] hover:underline">
+              Southport&apos;s BID Treasurer is a registered active director of Mikhail Hotels and
+              Leisure Holdings Limited
+            </Link>{" "}
+            while simultaneously overseeing BID finances. Together, these two cases document a
+            governance environment where conflicts of interest are managed without public
+            transparency.
+          </p>
+
           <div className="space-y-3">
             {[
               {
