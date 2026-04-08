@@ -139,9 +139,12 @@ export default function BidBudgetReportPage() {
       </div>
 
       {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-white border-b border-[#e2e8f0] shadow-sm">
+      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex flex-wrap gap-1 py-2">
+          <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+              Jump to
+            </span>
             {[
               { href: "#levy", label: "The levy" },
               { href: "#budget", label: "The budget" },
@@ -152,7 +155,7 @@ export default function BidBudgetReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-3 py-2 rounded-md text-sm font-semibold text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
               >
                 {l.label}
               </a>
