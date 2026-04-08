@@ -53,7 +53,7 @@ export default function PrivacyPage() {
       {/* Sticky section nav */}
       <div className="sticky top-16 z-10 bg-white/95 backdrop-blur-sm border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex gap-6 overflow-x-auto py-3">
+          <nav className="flex flex-wrap gap-x-6 gap-y-0 py-3">
             {[
               { href: "#ownership", label: "Ownership" },
               { href: "#privacy", label: "Privacy" },

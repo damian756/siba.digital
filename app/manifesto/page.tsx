@@ -84,7 +84,7 @@ export default function ManifestoPage() {
       {/* Sticky section nav */}
       <div className="sticky top-16 z-10 border-b border-[#e2e8f0] bg-white/95 backdrop-blur-sm">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex gap-6 overflow-x-auto py-3 text-sm">
+          <nav className="flex flex-wrap gap-x-6 gap-y-0 py-3 text-sm">
             {[
               { href: "#vision", label: "01. 2026 Vision" },
               { href: "#levy", label: "02. The Levy Failure" },
