@@ -125,49 +125,66 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Report prominence band */}
-      <section className="bg-[#0f172a] border-b border-[#1e293b]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
-            <div className="flex items-center gap-3 flex-shrink-0">
-              <span className="flex-shrink-0 w-1 h-8 rounded-full bg-[#f97316]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#f97316]">Published</span>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 flex-1 min-w-0">
-              <p className="text-sm font-semibold text-white leading-snug">
-                Where does Southport BID spend your levy? A line-by-line breakdown of the 2024 budget.
-              </p>
-              <p className="hidden sm:block text-[#475569] text-xs flex-shrink-0">Report 01</p>
-            </div>
-            <Link
-              href="/reports/southport-bid-budget-2024"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-400 transition-colors flex-shrink-0"
-            >
-              Read the report
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Analysis prominence band */}
-      <section className="bg-[#1e293b] border-b border-[#334155]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
-            <div className="flex items-center gap-3 flex-shrink-0">
-              <span className="flex-shrink-0 w-1 h-6 rounded-full bg-[#94a3b8]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">Analysis</span>
-            </div>
-            <p className="text-sm text-[#cbd5e1] leading-snug flex-1 min-w-0">
-              How BIDs breed cronyism by design. A structural analysis of why every BID produces the same outcome.
-            </p>
-            <Link
-              href="/analysis/bid-cronyism-by-design"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#94a3b8] hover:text-white transition-colors flex-shrink-0"
-            >
-              Read
-              <ArrowRight size={14} />
-            </Link>
+      {/* Latest from the investigation */}
+      <section className="bg-[#0f172a]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-[#475569] mb-4">
+            Latest from the investigation
+          </p>
+          <div className="space-y-0 divide-y divide-[#1e293b]">
+            {[
+              {
+                category: "Governance",
+                categoryColor: "text-[#f97316]",
+                borderColor: "border-[#f97316]",
+                title: "Southport's BID Treasurer is an active director of the town's biggest hospitality group",
+                href: "/analysis/bid-treasurer-mikhail",
+                label: "Read analysis",
+              },
+              {
+                category: "Report",
+                categoryColor: "text-[#60a5fa]",
+                borderColor: "border-[#60a5fa]",
+                title: "The council officer running Southport's tourism platform",
+                href: "/reports/mark-catherall-visit-southport",
+                label: "Read report",
+              },
+              {
+                category: "Editorial Review",
+                categoryColor: "text-[#a78bfa]",
+                borderColor: "border-[#a78bfa]",
+                title: "Which businesses does VisitSouthport.com actually promote?",
+                href: "/analysis/selective-promotion",
+                label: "Read analysis",
+              },
+              {
+                category: "Report",
+                categoryColor: "text-[#60a5fa]",
+                borderColor: "border-[#60a5fa]",
+                title: "Where does Southport BID spend your levy? Line-by-line breakdown of the 2024 budget.",
+                href: "/reports/southport-bid-budget-2024",
+                label: "Read report",
+              },
+            ].map((item) => (
+              <div key={item.href} className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-3.5">
+                <span
+                  className={`flex-shrink-0 text-[10px] font-bold uppercase tracking-widest ${item.categoryColor} w-28 hidden sm:block`}
+                >
+                  {item.category}
+                </span>
+                <div className={`flex-shrink-0 w-0.5 h-5 rounded-full hidden sm:block ${item.borderColor.replace("border-", "bg-")}`} />
+                <p className="text-sm font-medium text-[#cbd5e1] leading-snug flex-1 min-w-0">
+                  {item.title}
+                </p>
+                <Link
+                  href={item.href}
+                  className={`inline-flex items-center gap-1 text-xs font-semibold flex-shrink-0 ${item.categoryColor} hover:opacity-80 transition-opacity`}
+                >
+                  {item.label}
+                  <ArrowRight size={11} />
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
