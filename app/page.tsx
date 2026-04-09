@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const stats = [
   { value: "£2,400+", label: "Avg. annual BID levy", sub: "PR9 business" },
   { value: "£0", label: "SIBA membership", sub: "Always free" },
-  { value: "14", label: "FOI requests submitted", sub: "Sefton Council" },
+  { value: "15", label: "FOI requests submitted", sub: "Sefton Council" },
   { value: "150k+", label: "Open 2026 visitors", sub: "Royal Birkdale, July" },
   { value: "515k", label: "MLEC visitors p/a", sub: "Projected from 2027" },
 ];
@@ -134,9 +134,17 @@ export default function HomePage() {
           <div className="space-y-0 divide-y divide-[#1e293b]">
             {[
               {
-                category: "Governance",
+                category: "Media Contracts",
                 categoryColor: "text-[#f97316]",
                 borderColor: "border-[#f97316]",
+                title: "Southport BID's contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+                href: "/analysis/andrew-brown-bid-media",
+                label: "Read analysis",
+              },
+              {
+                category: "Governance",
+                categoryColor: "text-[#fb923c]",
+                borderColor: "border-[#fb923c]",
                 title: "Southport's BID Treasurer is an active director of the town's biggest hospitality group",
                 href: "/analysis/bid-treasurer-mikhail",
                 label: "Read analysis",

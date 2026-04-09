@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: "andrew-brown-bid-media",
+    title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
+    subtitle:
+      "Andrew Brown's Stand Up For Southport has held a paid contract with Southport BID since 2021. In his own words, he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure.",
+    date: "April 2026",
+    category: "Media Contracts",
+  },
+  {
     slug: "bid-treasurer-mikhail",
     title: "Southport's BID Treasurer Is an Active Director of the Town's Biggest Hospitality Group",
     subtitle:

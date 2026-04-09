@@ -6,14 +6,14 @@ import FoiCountdown from "@/components/FoiCountdown";
 export const metadata: Metadata = {
   title: "FOI Requests: Sefton Council | SIBA",
   description:
-    "SIBA has submitted 14 Freedom of Information requests to Sefton Council covering BID ballot integrity, governance conflicts of interest, public spending, and editorial decisions on publicly-funded platforms.",
+    "SIBA has submitted 15 Freedom of Information requests to Sefton Council covering BID ballot integrity, governance conflicts of interest, public spending, media contractor payments, and editorial decisions on publicly-funded platforms.",
   alternates: {
     canonical: "https://www.siba.digital/foi",
   },
   openGraph: {
     title: "FOI Requests: Sefton Council | SIBA",
     description:
-      "14 Freedom of Information requests to Sefton Council. All responses will be published in full.",
+      "15 Freedom of Information requests to Sefton Council. All responses will be published in full.",
     url: "https://www.siba.digital/foi",
     type: "website",
   },
@@ -176,9 +176,21 @@ const requests = [
     due: "7 May 2026",
     status: "awaiting",
     summary:
-      "Asks for full details of the Southport Business Recovery Fund including the total allocation, source of funding, a complete list of recipients and amounts received, the eligibility criteria applied, and the names of the officers or decision-makers who approved each payment.",
+      "Asks for full details of the Southport Business Recovery Fund including the total allocation, source of funding, a complete list of recipients and payments received, the eligibility criteria applied, and the names of the officers or decision-makers who approved each payment.",
     relatedLabel: null,
     relatedHref: null,
+  },
+  {
+    number: "15",
+    title: "BID Media Contractor Payments and Procurement",
+    slug: "foi_request_15_bid_media_contrac",
+    due: "7 May 2026",
+    status: "awaiting",
+    summary:
+      "Three-part request. Part 1 asks for all payments made by Sefton Council, or from any council-administered fund, to Stand Up For Southport Limited (company 12553604), Andrew Brown Media, or Andrew Edward Brown personally, from January 2019 to the date of the request. Part 2 asks whether such payments appear in the council transparency data and whether any records were removed. Part 3 asks for any tender or procurement documentation held by the council relating to the appointment of Stand Up For Southport or Andrew Brown as a media supplier to Southport BID.",
+    relatedLabel: "BID Media Analysis",
+    relatedHref: "/analysis/andrew-brown-bid-media",
+    highlight: true,
   },
 ];
 
@@ -196,7 +208,7 @@ export default function FoiPage() {
           </h1>
           <p className="text-lg text-[#475569] leading-relaxed max-w-2xl mb-6">
             SIBA has submitted {requests.length} Freedom of Information requests
-            to Sefton Council under the Freedom of Information Act 2000. Every
+            to Sefton Council under the Freedom of Information Act 2000.  Every
             request is publicly listed on WhatDoTheyKnow. Every response will be
             published in full on this platform.
           </p>
@@ -227,7 +239,7 @@ export default function FoiPage() {
           <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#94a3b8] mt-1.5" />
           <p className="text-xs text-[#94a3b8] leading-relaxed">
             The countdown above tracks the statutory deadline for FOI requests 1–9 (5–6 May 2026).
-            FOI requests 10–14, submitted 8 April 2026, have a response deadline of{" "}
+            FOI requests 10–15, submitted 8–9 April 2026, have a response deadline of{" "}
             <span className="font-semibold text-[#64748b]">7 May 2026</span>.
           </p>
         </div>
