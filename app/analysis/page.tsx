@@ -66,6 +66,12 @@ export default function AnalysisPage() {
             Not reactive complaints about individual boards. Analysis of why
             the model itself produces predictable outcomes regardless of intent.
           </p>
+          <div className="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#94a3b8] flex-shrink-0" />
+            <p className="text-xs text-[#64748b] leading-relaxed">
+              The active investigation phase is complete. 15 Freedom of Information requests remain outstanding with responses due by 7 May 2026. All findings are published in full and will remain so. FOI responses will be added to the public record as they arrive.
+            </p>
+          </div>
         </div>
       </div>
 

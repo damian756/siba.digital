@@ -128,9 +128,15 @@ export default function HomePage() {
       {/* Latest from the investigation */}
       <section className="bg-[#0f172a]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[#475569] mb-4">
-            Latest from the investigation
-          </p>
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#475569]">
+              The investigation
+            </p>
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-[#475569] border border-[#1e293b] rounded px-2.5 py-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#475569]" />
+              Active investigation phase complete. 15 FOI requests outstanding. All findings published.
+            </span>
+          </div>
           <div className="space-y-0 divide-y divide-[#1e293b]">
             {[
               {
