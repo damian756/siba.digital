@@ -7,6 +7,7 @@ import SibaLogo from "@/components/SibaLogo";
 
 const links = [
   { href: "/about", label: "About" },
+  { href: "/philosophy", label: "Philosophy" },
   { href: "/manifesto", label: "Manifesto" },
   { href: "/audit", label: "Audit Hub" },
   { href: "/reports", label: "Reports" },

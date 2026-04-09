@@ -264,13 +264,22 @@ export default function ManifestoPage() {
             If that sounds like the kind of organisation Southport should have had ten years
             ago, you&apos;re right. Request an audit and let&apos;s get started.
           </p>
-          <Link
-            href="/audit"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
-          >
-            Request a Free SEO Audit
-            <ArrowRight size={15} />
-          </Link>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href="/audit"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+            >
+              Request a Free SEO Audit
+              <ArrowRight size={15} />
+            </Link>
+            <Link
+              href="/philosophy"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+            >
+              Our Philosophy
+              <ArrowRight size={15} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
