@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, FileText, Calendar, Lock, Clock, ExternalLink } from "lucide-react";
+import { ArrowRight, FileText, Calendar, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "SIBA Reports: The Southport Accountability Project",
   description:
-    "An ongoing investigation into BID governance, levy spending, and the corporate interests shaping Southport's regeneration. Publishing in sequence.",
+    "Published reports on BID governance, levy spending, and the corporate interests shaping Southport's regeneration. The investigation is complete.",
   alternates: {
     canonical: "https://www.siba.digital/reports",
   },
   openGraph: {
     title: "SIBA Reports: The Southport Accountability Project",
     description:
-      "An ongoing investigation into BID governance, levy spending, and the corporate interests shaping Southport's regeneration. Publishing in sequence.",
+      "Published reports on BID governance, levy spending, and the corporate interests shaping Southport's regeneration.",
     url: "https://www.siba.digital/reports",
     type: "website",
   },
@@ -41,28 +41,11 @@ const publishedReports = [
   },
 ];
 
-const upcomingReports = [
-  {
-    number: "03",
-    title: "BID Board Composition: Directorships, Conflicts, and the Wareham Question",
-    subtitle: "A documented timeline of outside commercial interests held by BID board members",
-    date: "May 2026",
-    category: "Governance",
-  },
-  {
-    number: "04",
-    title: "Corporate Interests and Southport's Regeneration Funding",
-    subtitle: "The private sector connections behind Southport's public funding allocation",
-    date: "In preparation",
-    category: "Accountability",
-  },
-];
-
 const methodologyStats = [
   { value: "12+", label: "Months of research" },
   { value: "55+", label: "Companies House filings reviewed" },
-  { value: "5", label: "Reports in preparation" },
-  { value: "14", label: "FOI requests submitted" },
+  { value: "2", label: "Published reports" },
+  { value: "15", label: "FOI requests submitted" },
 ];
 
 export default function ReportsPage() {
@@ -71,14 +54,14 @@ export default function ReportsPage() {
       {/* Header */}
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-navy mb-5">Ongoing Investigation</span>
+          <span className="badge badge-navy mb-5">Investigation Archive</span>
           <h1 className="text-4xl font-bold text-[#0f172a] mb-4">
             The Southport Accountability Project
           </h1>
           <p className="text-lg text-[#475569] leading-relaxed max-w-2xl mb-6">
             This investigation began with a single question: where does the BID levy money go?
-            What the research uncovered took us considerably further than Southport.
-            We are publishing in sequence. We are not finished.
+            Two published reports, four structural analyses, and fifteen Freedom of Information
+            requests later, that question has a detailed public answer.
           </p>
 
           {/* Methodology stats */}
@@ -145,41 +128,6 @@ export default function ReportsPage() {
           </div>
         </div>
 
-        {/* Upcoming reports */}
-        <div className="mt-10">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-5">
-            In preparation
-          </p>
-          <div className="space-y-4">
-            {upcomingReports.map((r) => (
-              <div
-                key={r.number}
-                className="card bg-white p-7 flex flex-col sm:flex-row gap-6 opacity-75"
-              >
-                <div className="flex-shrink-0">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
-                    <span className="text-sm font-bold text-[#94a3b8]">{r.number}</span>
-                  </div>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <span className="badge badge-navy">{r.category}</span>
-                    <span className="inline-flex items-center gap-1 text-xs text-[#94a3b8]">
-                      <Clock size={11} />
-                      {r.date}
-                    </span>
-                  </div>
-                  <h2 className="text-lg font-bold text-[#475569] mb-1">{r.title}</h2>
-                  <p className="text-sm text-[#94a3b8]">{r.subtitle}</p>
-                </div>
-                <div className="flex-shrink-0 self-center">
-                  <Lock size={16} className="text-[#cbd5e1]" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* FOI block */}
         <div className="mt-10">
           <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-5">
@@ -188,20 +136,20 @@ export default function ReportsPage() {
           <div className="card bg-white p-7 border-l-4 border-l-[#0f172a]">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
-                  <span className="text-sm font-bold text-[#0f172a]">14</span>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#f1f5f9] border border-[#e2e8f0]">
+                  <span className="text-sm font-bold text-[#0f172a]">15</span>
                 </div>
               </div>
               <div className="flex-1">
                 <h2 className="text-base font-bold text-[#0f172a] mb-2">
-                  14 FOI Requests Submitted to Sefton Council
+                  15 FOI Requests Submitted to Sefton Council
                 </h2>
                 <p className="text-sm text-[#475569] leading-relaxed mb-4">
-                  SIBA has submitted 14 Freedom of Information requests to Sefton Council
-                  covering BID ballot integrity, governance conflicts of interest, public spending,
-                  COVID grant recipients, and the editorial decisions behind Southport&apos;s
-                  publicly-funded tourism platform. All requests are publicly listed on
-                  WhatDoTheyKnow. All responses will be published in full.
+                  SIBA submitted 15 Freedom of Information requests to Sefton Council covering
+                  BID ballot integrity, governance conflicts of interest, public spending, COVID
+                  grant recipients, media contractor payments, and the editorial decisions behind
+                  Southport&apos;s publicly-funded tourism platform. All requests are publicly
+                  listed on WhatDoTheyKnow.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
@@ -213,7 +161,7 @@ export default function ReportsPage() {
                   </Link>
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-3 py-1.5 bg-[#f8fafc]">
                     <Clock size={11} />
-                    All awaiting response
+                    Responses due 7 May 2026
                   </span>
                 </div>
               </div>
@@ -224,19 +172,24 @@ export default function ReportsPage() {
         {/* Investigation sign-off */}
         <div className="mt-14 border-t border-[#e2e8f0] pt-10">
           <div className="max-w-2xl">
+            <p className="text-sm font-semibold text-[#0f172a] mb-3">
+              A note on where this project goes from here
+            </p>
             <p className="text-sm text-[#475569] leading-relaxed mb-4">
-              Our research has identified structural patterns connecting local governance decisions
-              to corporate interests at a national and international level. Some of what we have
-              found involves organisations with revenues in the hundreds of millions. We are being
-              thorough. We are taking our time.
+              When SIBA launched, the objective was clear: document, with evidence, how
+              Southport&apos;s Business Improvement District operates and who benefits from it.
+              That work is done. The reports and analysis published here remain available in full
+              and will not be removed.
+            </p>
+            <p className="text-sm text-[#64748b] leading-relaxed mb-4">
+              FOI responses, when issued by Sefton Council, will be published in accordance with
+              their transparency obligations and listed publicly on WhatDoTheyKnow. No further
+              investigation reports are planned.
             </p>
             <p className="text-sm text-[#64748b] leading-relaxed">
-              If you have information relevant to BID governance, Town Deal funding, or business
-              representation in PR8 or PR9, contact{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
-                damian@siba.digital
-              </a>
-              . All communications handled in strict confidence.
+              SIBA&apos;s focus is now on building the digital infrastructure that Southport&apos;s
+              independent businesses actually need. The investigation was the foundation. This is
+              the building.
             </p>
           </div>
         </div>

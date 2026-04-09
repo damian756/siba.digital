@@ -66,10 +66,18 @@ export default function AnalysisPage() {
             Not reactive complaints about individual boards. Analysis of why
             the model itself produces predictable outcomes regardless of intent.
           </p>
-          <div className="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-[#f8fafc] px-4 py-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#94a3b8] flex-shrink-0" />
-            <p className="text-xs text-[#64748b] leading-relaxed">
-              The active investigation phase is complete. 15 Freedom of Information requests remain outstanding with responses due by 7 May 2026. All findings are published in full and will remain so. FOI responses will be added to the public record as they arrive.
+          <div className="mt-6 rounded-lg border border-[#e2e8f0] bg-[#f8fafc] px-5 py-4 max-w-2xl">
+            <p className="text-xs font-semibold text-[#0f172a] mb-2">A note on where this project goes from here</p>
+            <p className="text-xs text-[#64748b] leading-relaxed mb-2">
+              When SIBA launched, the objective was to document, with evidence, how Southport&apos;s
+              Business Improvement District operates and who benefits from it. That work is done.
+              Everything published here remains available in full and will not be removed. No
+              further analysis is planned.
+            </p>
+            <p className="text-xs text-[#94a3b8] leading-relaxed">
+              15 Freedom of Information requests are on the public record via WhatDoTheyKnow.
+              Responses, when issued by Sefton Council, will be published under their transparency
+              obligations. SIBA&apos;s focus is now on building Southport&apos;s digital infrastructure.
             </p>
           </div>
         </div>

@@ -134,7 +134,7 @@ export default function HomePage() {
             </p>
             <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-[#475569] border border-[#1e293b] rounded px-2.5 py-1">
               <span className="w-1.5 h-1.5 rounded-full bg-[#475569]" />
-              Active investigation phase complete. 15 FOI requests outstanding. All findings published.
+              Investigation complete. All findings published.
             </span>
           </div>
           <div className="space-y-0 divide-y divide-[#1e293b]">
