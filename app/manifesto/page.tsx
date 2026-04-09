@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "The SIBA Manifesto",
@@ -65,6 +66,11 @@ export default function ManifestoPage() {
             Business Improvement District model is not fit for purpose in 2026.
           </p>
         </div>
+      </div>
+
+      {/* Investigation closed note */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-10">
+        <InvestigationClosed />
       </div>
 
       {/* Cover image */}

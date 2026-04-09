@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, FileText, Calendar, Clock } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "SIBA Reports: The Southport Accountability Project",
@@ -171,27 +172,7 @@ export default function ReportsPage() {
 
         {/* Investigation sign-off */}
         <div className="mt-14 border-t border-[#e2e8f0] pt-10">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold text-[#0f172a] mb-3">
-              A note on where this project goes from here
-            </p>
-            <p className="text-sm text-[#475569] leading-relaxed mb-4">
-              When SIBA launched, the objective was clear: document, with evidence, how
-              Southport&apos;s Business Improvement District operates and who benefits from it.
-              That work is done. The reports and analysis published here remain available in full
-              and will not be removed.
-            </p>
-            <p className="text-sm text-[#64748b] leading-relaxed mb-4">
-              FOI responses, when issued by Sefton Council, will be published in accordance with
-              their transparency obligations and listed publicly on WhatDoTheyKnow. No further
-              investigation reports are planned.
-            </p>
-            <p className="text-sm text-[#64748b] leading-relaxed">
-              SIBA&apos;s focus is now on building the digital infrastructure that Southport&apos;s
-              independent businesses actually need. The investigation was the foundation. This is
-              the building.
-            </p>
-          </div>
+          <InvestigationClosed />
         </div>
       </div>
     </div>

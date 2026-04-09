@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AlertTriangle, Phone, Eye, Clock, Calendar, Info } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "Contact Log | SIBA",
@@ -120,6 +121,7 @@ export default function ContactLogPage() {
 
       {/* Entries */}
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12 space-y-6">
+        <InvestigationClosed />
 
         {entries.map((entry) => (
           <div

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Clock } from "lucide-react";
 import FoiCountdown from "@/components/FoiCountdown";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "FOI Requests: Sefton Council | SIBA",
@@ -233,6 +234,10 @@ export default function FoiPage() {
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
 
+        <div className="mb-10">
+          <InvestigationClosed />
+        </div>
+
         <FoiCountdown />
 
         <div className="rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
@@ -359,19 +364,8 @@ export default function FoiPage() {
                 WhatDoTheyKnow
                 <ExternalLink size={11} />
               </a>
-              . Responses are automatically published there and will also be
-              published in full on this platform with analysis.
-            </p>
-            <p className="text-sm text-[#64748b] leading-relaxed">
-              If you have information relevant to any of these requests, or
-              to BID governance and public spending in Southport, contact{" "}
-              <a
-                href="mailto:damian@siba.digital"
-                className="text-[#f97316] hover:underline"
-              >
-                damian@siba.digital
-              </a>
-              . All communications handled in strict confidence.
+              . Responses will be published by Sefton Council under their transparency
+              obligations and listed publicly there.
             </p>
           </div>
         </div>
