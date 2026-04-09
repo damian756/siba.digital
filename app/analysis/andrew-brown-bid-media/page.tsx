@@ -96,9 +96,9 @@ const coverageRows = [
     date: "May 2025",
     headline: "The Bold celebrates winning Southport Hotel of The Year honour at Your Southport Stars Awards",
     url: BOLD_WIN_URL,
-    disclosure: "None",
-    note: "Dedicated follow-up on Mikhail venue winning BID award. No BID sponsored label.",
-    flagged: true,
+    disclosure: "The Bold sponsored feature",
+    note: "Dedicated follow-up on Mikhail venue winning BID award. Labelled as a The Bold sponsored feature. Does not disclose the broader ongoing commercial relationship with Mikhail.",
+    flagged: false,
   },
   {
     date: "May 2025",
@@ -244,10 +244,11 @@ export default function AndrewBrownBidMediaPage() {
                 Mikhail&apos;s holding company while serving as Treasurer of Southport BID.
               </p>
               <p>
-                Stand Up For Southport publishes promotional content about Mikhail venues and covers
-                the BID&apos;s own annual awards, which Mikhail businesses have won and which are held at
-                a Mikhail venue. Some of this content carries a &ldquo;Southport BID sponsored feature&rdquo;
-                label. Some does not.
+              Stand Up For Southport publishes promotional content about Mikhail venues and covers
+              the BID&apos;s own annual awards, which Mikhail businesses have won and which are held at
+              a Mikhail venue. Individual commissioned pieces carry sponsored labels. What is never
+              disclosed is the broader, ongoing commercial relationship between the outlet and Mikhail
+              as a PR client. News articles about Mikhail are presented as independent editorial.
               </p>
               <p>
                 This article documents the structure. SIBA does not allege that any individual has
@@ -527,11 +528,14 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-5 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 flex items-start gap-3">
             <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#f97316] mt-1.5" />
             <p className="text-sm text-[#475569] leading-relaxed">
-              Some Stand Up For Southport articles covering BID activity carry an explicit label:
-              &ldquo;Southport BID sponsored feature by Stand Up For Southport.&rdquo; This label confirms
-              the editorial team is aware that the commercial relationship requires disclosure. Its
-              absence from articles covering Mikhail is therefore notable. Readers cannot distinguish
-              between paid promotional content and independent editorial reporting.
+              Andrew Brown does label some content as sponsored: individual articles directly
+              commissioned by the BID carry a &ldquo;Southport BID sponsored feature&rdquo; label, and articles
+              directly commissioned by Mikhail venues carry a &ldquo;The Bold sponsored feature&rdquo; or similar
+              label. What is not disclosed in any of these articles is the broader, ongoing commercial
+              relationship between Stand Up For Southport and Mikhail Hotel and Leisure Group as a PR
+              client. News articles about Mikhail&apos;s revenues, investment plans, and planning appeals
+              are presented as independent editorial. Readers have no way to know the outlet covering
+              that news is also being paid by the subject for media and PR services.
             </p>
           </div>
         </section>
