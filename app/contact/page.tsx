@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle, AlertTriangle, Lock, Shield, Users, HandHeart, Info, MessageSquare } from "lucide-react";
+import { ArrowRight, CheckCircle, AlertTriangle, Users, HandHeart, Info, MessageSquare } from "lucide-react";
 
-type Category = "join-siba" | "support-siba" | "support-anonymous" | "provide-information" | "general" | "";
+type Category = "join-siba" | "support-siba" | "general" | "";
 
 const categories: { value: Category; label: string; description: string; icon: React.ReactNode }[] = [
   {
@@ -15,24 +15,12 @@ const categories: { value: Category; label: string; description: string; icon: R
   {
     value: "support-siba",
     label: "Support SIBA",
-    description: "Back the investigation. Fundraising, skills, amplification.",
+    description: "Get involved. Skills, connections, or just a conversation.",
     icon: <HandHeart size={16} />,
   },
   {
-    value: "support-anonymous",
-    label: "Support SIBA anonymously",
-    description: "Support without identifying yourself.",
-    icon: <Shield size={16} />,
-  },
-  {
-    value: "provide-information",
-    label: "Provide information",
-    description: "Share something relevant to the investigation. Treated in strict confidence.",
-    icon: <Lock size={16} />,
-  },
-  {
     value: "general",
-    label: "General contact",
+    label: "General enquiry",
     description: "Anything else.",
     icon: <MessageSquare size={16} />,
   },
@@ -140,9 +128,7 @@ export default function ContactPage() {
           </div>
           <h2 className="text-2xl font-bold text-[#0f172a] mb-3">Message received</h2>
           <p className="text-[#475569] leading-relaxed mb-6">
-            {category === "provide-information" || category === "support-anonymous"
-              ? "Your message has been received and will be treated in strict confidence."
-              : "Thank you for getting in touch. SIBA will respond as soon as possible."}
+            Thank you for getting in touch. SIBA will respond as soon as possible.
           </p>
           <button
             onClick={() => {
@@ -169,8 +155,8 @@ export default function ContactPage() {
             Get in touch
           </h1>
           <p className="text-lg text-[#94a3b8] leading-relaxed">
-            Join SIBA, support the investigation, provide information in confidence, or just ask a
-            question. Use the form below or email{" "}
+            Join SIBA, support the platform, or just ask a question. Use the
+            form below or email{" "}
             <a
               href="mailto:damian@siba.digital"
               className="text-[#f97316] hover:underline font-semibold"
@@ -219,38 +205,6 @@ export default function ContactPage() {
           </div>
 
           {/* Context notes */}
-          {category === "support-anonymous" && (
-            <div className="rounded-lg bg-[#0f172a] p-4 flex gap-3">
-              <Shield size={14} className="text-[#f97316] flex-shrink-0 mt-0.5" />
-              <div className="space-y-1.5">
-                <p className="text-xs font-semibold text-white">About anonymous submissions</p>
-                <p className="text-xs text-[#94a3b8] leading-relaxed">
-                  We will not ask for your name or email address. Your message will be treated in
-                  strict confidence. Be aware that no browser-based form is completely anonymous.
-                  Server logs record connection data. If you require stronger anonymity, consider
-                  using a VPN and a separate email address not linked to your identity before
-                  submitting.
-                </p>
-              </div>
-            </div>
-          )}
-
-          {category === "provide-information" && (
-            <div className="rounded-lg bg-[#0f172a] p-4 flex gap-3">
-              <Lock size={14} className="text-[#f97316] flex-shrink-0 mt-0.5" />
-              <div className="space-y-1.5">
-                <p className="text-xs font-semibold text-white">Confidentiality</p>
-                <p className="text-xs text-[#94a3b8] leading-relaxed">
-                  All information provided is treated in strict confidence. You do not need to
-                  provide your name or email address. SIBA will not disclose your identity without
-                  your explicit written consent under any circumstances. If you need stronger
-                  anonymity guarantees, contact us via Signal or use a VPN and a throwaway email
-                  address.
-                </p>
-              </div>
-            </div>
-          )}
-
           {category === "join-siba" && (
             <div className="rounded-lg bg-[#fff7ed] border border-[#fed7aa] p-4 flex gap-3">
               <Info size={14} className="text-[#f97316] flex-shrink-0 mt-0.5" />
@@ -270,27 +224,14 @@ export default function ContactPage() {
               </p>
 
               {/* Name */}
-              {(category === "join-siba" || category === "support-siba" || category === "general") && (
-                <Field
-                  label="Your name"
-                  id="name"
-                  required
-                  placeholder="First and last name"
-                  value={fields.name}
-                  onChange={set("name")}
-                />
-              )}
-
-              {category === "provide-information" && (
-                <Field
-                  label="Your name"
-                  id="name"
-                  optional
-                  placeholder="You do not need to provide this"
-                  value={fields.name}
-                  onChange={set("name")}
-                />
-              )}
+              <Field
+                label="Your name"
+                id="name"
+                required
+                placeholder="First and last name"
+                value={fields.name}
+                onChange={set("name")}
+              />
 
               {/* Business name */}
               {category === "join-siba" && (
@@ -317,29 +258,15 @@ export default function ContactPage() {
               )}
 
               {/* Email */}
-              {(category === "join-siba" || category === "support-siba" || category === "general") && (
-                <Field
-                  label="Email address"
-                  id="email"
-                  type="email"
-                  required
-                  placeholder="your@email.com"
-                  value={fields.email}
-                  onChange={set("email")}
-                />
-              )}
-
-              {category === "provide-information" && (
-                <Field
-                  label="Email address"
-                  id="email"
-                  type="email"
-                  optional
-                  placeholder="Only if you want a response"
-                  value={fields.email}
-                  onChange={set("email")}
-                />
-              )}
+              <Field
+                label="Email address"
+                id="email"
+                type="email"
+                required
+                placeholder="your@email.com"
+                value={fields.email}
+                onChange={set("email")}
+              />
 
               {/* Phone */}
               {category === "join-siba" && (
@@ -360,23 +287,12 @@ export default function ContactPage() {
                   category === "join-siba"
                     ? "Anything you want to tell us"
                     : category === "support-siba"
-                    ? "How would you like to support?"
-                    : category === "support-anonymous"
-                    ? "Your message"
-                    : category === "provide-information"
-                    ? "Your information"
+                    ? "How would you like to get involved?"
                     : "Your message"
                 }
                 id="message"
                 type="textarea"
                 required
-                placeholder={
-                  category === "provide-information"
-                    ? "Tell us what you know. Include dates, names, or references if relevant. You can be as brief or as detailed as you like."
-                    : category === "support-anonymous"
-                    ? "Your message will be received without any identifying information required."
-                    : undefined
-                }
                 value={fields.message}
                 onChange={set("message")}
               />
@@ -400,9 +316,7 @@ export default function ContactPage() {
                   {status !== "sending" && <ArrowRight size={15} />}
                 </button>
                 <p className="mt-3 text-xs text-[#94a3b8]">
-                  {category === "provide-information" || category === "support-anonymous"
-                    ? "Your message is transmitted securely and treated in strict confidence."
-                    : "SIBA responds to all messages. Typically within one working day."}
+                  SIBA responds to all messages. Typically within one working day.
                 </p>
               </div>
             </div>
