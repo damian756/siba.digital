@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowLeft, Info } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "How BIDs Breed Cronyism by Design | SIBA",
@@ -87,6 +88,11 @@ export default function CronyismAnalysisPage() {
             regardless of intent. Here is why.
           </p>
         </div>
+      </div>
+
+      {/* Investigation closed */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-6">
+        <InvestigationClosed />
       </div>
 
       {/* Sticky section nav */}

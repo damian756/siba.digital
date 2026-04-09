@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, Info } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group | SIBA",
@@ -180,6 +181,11 @@ export default function AndrewBrownBidMediaPage() {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Investigation closed */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-6">
+        <InvestigationClosed />
       </div>
 
       {/* Sticky nav */}

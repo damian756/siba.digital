@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "Where does Southport BID spend your levy? | SIBA Reports",
@@ -139,6 +140,11 @@ export default function BidBudgetReportPage() {
       </div>
 
       {/* Sticky section nav */}
+      {/* Investigation closed */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-6">
+        <InvestigationClosed />
+      </div>
+
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">

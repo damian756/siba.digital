@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowLeft, ExternalLink, Info } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title:
@@ -270,6 +271,11 @@ export default function SelectivePromotionPage() {
             independently verifiable.
           </p>
         </div>
+      </div>
+
+      {/* Investigation closed */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-6">
+        <InvestigationClosed />
       </div>
 
       {/* Sticky section nav */}

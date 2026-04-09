@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle } from "lucide-react";
+import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
   title: "The Council Officer Running Southport's Tourism Platform | SIBA Reports",
@@ -150,6 +151,11 @@ export default function CaterallReportPage() {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Investigation closed */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-6">
+        <InvestigationClosed />
       </div>
 
       {/* Sticky nav */}
