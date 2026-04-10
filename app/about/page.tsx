@@ -57,20 +57,24 @@ export default function AboutPage() {
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#0a1628]/78" />
+        {/* Top vignette — keeps nav legible without darkening the whole image */}
+        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#0a1628]/70 to-transparent" />
+        {/* Left gradient — text readability without killing the chess pieces on the right */}
+        <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, rgba(10,22,40,0.82) 0%, rgba(10,22,40,0.55) 50%, rgba(10,22,40,0.18) 100%)" }} />
+        {/* Bottom fade to cream content */}
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
         <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-20 pt-36">
           <h1
             className="text-white mb-5 leading-[1.12]"
             style={{
               fontSize: "clamp(2rem, 1.4rem + 2.4vw, 3.2rem)",
-              textShadow: "0 2px 20px rgba(0,0,0,0.4)",
+              textShadow: "0 2px 24px rgba(0,0,0,0.6)",
             }}
           >
             Built from a real investigation.{" "}
             <span className="text-white/55">Now available commercially.</span>
           </h1>
-          <p className="text-white/78 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.35)" }}>
+          <p className="text-white/80 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 1px 10px rgba(0,0,0,0.5)" }}>
             SIBA began as a 12-month open-source investigation into BID
             governance in Southport. The methodology proved robust enough to
             attract institutional attention from central government, national
