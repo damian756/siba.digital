@@ -102,7 +102,7 @@ export default function AuditForm() {
         <button
           type="submit"
           disabled={state === "submitting"}
-          className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-2.5 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#1e293b] transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {state === "submitting" ? "Submitting..." : "Submit Audit Request"}
           <Send size={14} />

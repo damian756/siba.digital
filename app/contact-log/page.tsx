@@ -64,7 +64,7 @@ const entries = [
 ];
 
 function MethodIcon({ type }: { type: string }) {
-  if (type === "phone") return <Phone size={14} className="text-[#f97316]" />;
+  if (type === "phone") return <Phone size={14} className="text-[#111827]" />;
   if (type === "eye") return <Eye size={14} className="text-[#94a3b8]" />;
   return null;
 }
@@ -100,7 +100,7 @@ export default function ContactLogPage() {
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex gap-3 items-start">
-            <Info size={15} className="text-[#f97316] flex-shrink-0 mt-0.5" />
+            <Info size={15} className="text-[#111827] flex-shrink-0 mt-0.5" />
             <div className="space-y-2">
               <p className="text-xs font-bold uppercase tracking-widest text-[#0f172a]">
                 Why SIBA publishes this log
@@ -203,7 +203,7 @@ export default function ContactLogPage() {
               <div
                 className={`rounded-lg p-4 ${
                   entry.highlight
-                    ? "bg-[#fff7ed] border border-[#fed7aa]"
+                    ? "bg-[#f9fafb] border border-[#e5e7eb]"
                     : "bg-[#f8fafc] border border-[#e2e8f0]"
                 }`}
               >
@@ -226,8 +226,8 @@ export default function ContactLogPage() {
         {/* Right of reply */}
         <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8 space-y-4">
           <div className="flex items-center gap-2">
-            <AlertTriangle size={14} className="text-[#f97316] flex-shrink-0" />
-            <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+            <AlertTriangle size={14} className="text-[#111827] flex-shrink-0" />
+            <p className="text-xs font-bold uppercase tracking-widest text-[#111827]">
               Right of reply
             </p>
           </div>
@@ -240,7 +240,7 @@ export default function ContactLogPage() {
             If you believe any entry in this log contains a factual inaccuracy, contact SIBA at{" "}
             <a
               href="mailto:damian@siba.digital"
-              className="text-[#f97316] hover:underline font-semibold"
+              className="text-[#111827] hover:underline font-semibold"
             >
               damian@siba.digital
             </a>

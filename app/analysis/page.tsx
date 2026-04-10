@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
 const articles = [
   {
     slug: "andrew-brown-bid-media",
-    title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
+    title: "Southport BID\u2019s Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
     subtitle:
-      "Andrew Brown's Stand Up For Southport has held a paid contract with Southport BID since 2021. In his own words, he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure.",
+      "Andrew Brown\u2019s Stand Up For Southport has held a paid contract with Southport BID since 2021. In his own words, he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure.",
     date: "April 2026",
     category: "Media Contracts",
   },
   {
     slug: "bid-treasurer-mikhail",
-    title: "Southport's BID Treasurer Is an Active Director of the Town's Biggest Hospitality Group",
+    title: "Southport\u2019s BID Treasurer Is an Active Director of the Town\u2019s Biggest Hospitality Group",
     subtitle:
       "Companies House confirms Geoffrey Wareham is currently a registered active director of Mikhail Hotels and Leisure Holdings Limited while simultaneously serving as Treasurer of Southport BID. No termination has ever been filed. This analysis documents the structure.",
     date: "April 2026",
@@ -40,7 +40,7 @@ const articles = [
     slug: "selective-promotion",
     title: "Which Businesses Does VisitSouthport.com Actually Promote?",
     subtitle:
-      "A manual review of editorial content on Southport's publicly-funded tourism platform. Four seasonal pages. Every mention. Every link. Zero independent restaurants or pubs. One commercial group on every page.",
+      "A manual review of editorial content on Southport\u2019s publicly-funded tourism platform. Four seasonal pages. Every mention. Every link. Zero independent restaurants or pubs. One commercial group on every page.",
     date: "April 2026",
     category: "Editorial Review",
   },
@@ -56,52 +56,44 @@ const articles = [
 
 export default function AnalysisPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
-      {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-navy mb-5">Original Research</span>
-          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">Analysis</h1>
-          <p className="text-lg text-[#64748b] leading-relaxed max-w-2xl">
-            Structural critiques of the Business Improvement District model.
-            Not reactive complaints about individual boards. Analysis of why
-            the model itself produces predictable outcomes regardless of intent.
-          </p>
-          <div className="mt-6">
-            <InvestigationClosed />
-          </div>
-        </div>
-      </div>
+    <div className="min-h-screen">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
-        <div className="space-y-4">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+          Original Research
+        </p>
+        <h1 className="text-4xl text-[#111827] mb-4">Analysis</h1>
+        <p className="text-lg text-[#374151] leading-relaxed max-w-xl mb-8">
+          Structural critiques of the Business Improvement District model.
+          Not reactive complaints about individual boards. Analysis of why
+          the model itself produces predictable outcomes regardless of intent.
+        </p>
+        <div className="mb-14">
+          <InvestigationClosed />
+        </div>
+
+        <div className="space-y-0 divide-y divide-[#e5e7eb]">
           {articles.map((a) => (
             <Link
               key={a.slug}
               href={`/analysis/${a.slug}`}
-              className="card card-hover bg-white p-7 flex flex-col sm:flex-row gap-6 group block"
+              className="block py-8 first:pt-0 last:pb-0 group"
             >
-              <div className="flex-shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#fff7ed] border border-[#fed7aa]">
-                  <span className="text-lg font-bold text-[#f97316]">&sect;</span>
-                </div>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af]">
+                  {a.category}
+                </span>
+                <span className="text-[11px] text-[#d1d5db]">&middot;</span>
+                <span className="text-[11px] text-[#9ca3af]">{a.date}</span>
               </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <span className="badge badge-orange">{a.category}</span>
-                  <span className="inline-flex items-center gap-1 text-xs text-[#94a3b8]">
-                    <Calendar size={11} />
-                    {a.date}
-                  </span>
-                </div>
-                <h2 className="text-lg font-bold text-[#0f172a] mb-1 group-hover:text-[#f97316] transition-colors">
-                  {a.title}
-                </h2>
-                <p className="text-sm text-[#64748b] leading-relaxed">{a.subtitle}</p>
-              </div>
-              <div className="flex-shrink-0 self-center">
-                <ArrowRight size={18} className="text-[#cbd5e1] group-hover:text-[#f97316] transition-colors" />
-              </div>
+              <h2 className="text-lg font-semibold text-[#111827] mb-1.5 group-hover:text-[#374151] transition-colors">
+                {a.title}
+              </h2>
+              <p className="text-sm text-[#6b7280] leading-relaxed mb-2">{a.subtitle}</p>
+              <span className="inline-flex items-center gap-1 text-[13px] text-[#9ca3af] group-hover:text-[#111827] transition-colors">
+                Read
+                <ArrowRight size={12} />
+              </span>
             </Link>
           ))}
         </div>

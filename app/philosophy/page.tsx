@@ -45,55 +45,49 @@ const schema = {
 
 export default function PhilosophyPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      {/* Header */}
-      <div className="border-b border-[#e2e8f0] bg-[#f8fafc]">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-orange mb-5">SIBA, April 2026</span>
-          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">Our Philosophy</h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
-            Why SIBA exists. Who it is here for. And what it is built on.
-          </p>
-        </div>
-      </div>
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-      {/* Body */}
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-16 space-y-14">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+          SIBA, April 2026
+        </p>
+        <h1 className="text-4xl text-[#111827] mb-4">Our Philosophy</h1>
+        <p className="text-lg text-[#374151] leading-relaxed mb-16">
+          Why SIBA exists. Who it is here for. And what it is built on.
+        </p>
 
         {/* Opening: direct address */}
-        <section>
-          <div className="rounded-xl bg-[#0f172a] px-7 py-8 sm:px-10 sm:py-10">
-            <p className="text-[#94a3b8] text-xs font-bold uppercase tracking-widest mb-5">
-              If you are reading this
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+            If you are reading this
+          </p>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
+            <p>
+              If you are a business owner in PR8 or PR9 who has spent years paying a levy you do
+              not fully understand, to an organisation you did not choose, for outcomes you cannot
+              measure, this page is for you.
             </p>
-            <div className="space-y-4 text-[#e2e8f0] text-base leading-relaxed">
-              <p>
-                If you are a business owner in PR8 or PR9 who has spent years paying a levy you do
-                not fully understand, to an organisation you did not choose, for outcomes you cannot
-                measure, this page is for you.
-              </p>
-              <p>
-                If you have asked where the money goes and not received a straight answer. If you
-                have watched certain businesses get promoted on publicly-funded platforms while yours
-                was ignored. If you felt something was wrong but had no way to document it.
-              </p>
-              <p className="text-white font-medium">
-                You were not wrong. Nobody had simply sat down and read the documents carefully.
-                SIBA did.
-              </p>
-            </div>
+            <p>
+              If you have asked where the money goes and not received a straight answer. If you
+              have watched certain businesses get promoted on publicly-funded platforms while yours
+              was ignored. If you felt something was wrong but had no way to document it.
+            </p>
+            <p className="font-semibold text-[#111827]">
+              You were not wrong. Nobody had simply sat down and read the documents carefully.
+              SIBA did.
+            </p>
           </div>
         </section>
 
         {/* The belief */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-5">The belief we are built on</h2>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <h2 className="text-2xl text-[#111827] mb-5">The belief we are built on</h2>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               The people who pay for something have a right to know how it is spent, who decided to
               spend it, and what relationships shaped those decisions.
@@ -108,7 +102,7 @@ export default function PhilosophyPage() {
               Companies House filings. Published committee minutes. BID business plans. Council
               websites. Freedom of Information requests. Everything SIBA has found was already
               there. Nobody had read it carefully. We did. And{" "}
-              <Link href="/analysis" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis" className="text-[#111827] underline hover:text-[#374151]">
                 we published what we found
               </Link>
               .
@@ -116,18 +110,16 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* Who we serve */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-5">The businesses we are here for</h2>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <h2 className="text-2xl text-[#111827] mb-5">The businesses we are here for</h2>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               The independent restaurant on a side street that has never been mentioned on{" "}
-              <Link href="/analysis/selective-promotion" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/selective-promotion" className="text-[#111827] underline hover:text-[#374151]">
                 Southport&apos;s publicly-funded tourism platform
               </Link>
-              . The retailer paying £2,400 a year who got a letter saying their levy had increased
+              . The retailer paying &pound;2,400 a year who got a letter saying their levy had increased
               and did not get a reply when they asked what it was spent on last year. The cafe owner
               who cannot get a straight answer from the BID. The hotel on the seafront that is not
               part of a connected commercial group and has never appeared in a BID feature.
@@ -145,12 +137,10 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* Horizontal networks */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-5">What the BID replaced</h2>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <h2 className="text-2xl text-[#111827] mb-5">What the BID replaced</h2>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               Before the BID existed, businesses in Southport talked directly to each other.
               Horizontal. Peer to peer. A restaurant called the hotel next door because the hotel
@@ -162,11 +152,11 @@ export default function PhilosophyPage() {
               When the BID was established, it inserted itself between those businesses as a
               mandatory intermediary. Businesses no longer reach out directly. They route through
               the BID. Or through BID-controlled platforms. Or through{" "}
-              <Link href="/analysis/andrew-brown-bid-media" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/andrew-brown-bid-media" className="text-[#111827] underline hover:text-[#374151]">
                 BID-contracted media
               </Link>
               . The levy funds this intermediary. The intermediary is compulsory.{" "}
-              <Link href="/analysis/bid-cronyism-by-design" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/bid-cronyism-by-design" className="text-[#111827] underline hover:text-[#374151]">
                 And the intermediary is governed by a board
               </Link>
               .
@@ -183,7 +173,7 @@ export default function PhilosophyPage() {
               relationships between businesses, direct access to digital tools, direct accountability
               to the people we serve. If we are not useful, businesses do not join us. That is the
               correct incentive structure and{" "}
-              <Link href="/manifesto" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/manifesto" className="text-[#111827] underline hover:text-[#374151]">
                 it is written into our founding charter
               </Link>
               .
@@ -191,12 +181,10 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* What we are not */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-5">Three things worth stating clearly</h2>
-          <div className="space-y-5">
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <h2 className="text-2xl text-[#111827] mb-5">Three things worth stating clearly</h2>
+          <div className="space-y-6">
             {[
               {
                 heading: "We are not anti-business.",
@@ -211,28 +199,26 @@ export default function PhilosophyPage() {
                 body: "SIBA does not campaign for political positions, endorse candidates or align with parties. We publish documented findings. We file Freedom of Information requests. We offer right of reply to every party named in every publication. We correct factual errors promptly and transparently. We let the evidence speak and trust readers to draw their own conclusions. That independence is not a constraint. It is the source of everything SIBA has achieved in its first days. The moment a transparency organisation becomes identified with a political position its findings become deniable. We will not let that happen.",
               },
             ].map((item) => (
-              <div key={item.heading} className="rounded-lg border border-[#e2e8f0] bg-[#f8fafc] px-6 py-5">
-                <p className="text-sm font-bold text-[#0f172a] mb-2">{item.heading}</p>
-                <p className="text-sm text-[#475569] leading-relaxed">{item.body}</p>
+              <div key={item.heading}>
+                <p className="text-sm font-semibold text-[#111827] mb-2">{item.heading}</p>
+                <p className="text-sm text-[#374151] leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* How we work */}
-        <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-5">Transparency is protective, not destructive</h2>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+        <section className="mb-14 pb-14 border-b border-[#e5e7eb]">
+          <h2 className="text-2xl text-[#111827] mb-5">Transparency is protective, not destructive</h2>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               Every party named in a SIBA publication is offered a right of reply. Every factual
               claim is sourced to a public document and linked directly. Every{" "}
-              <Link href="/foi" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/foi" className="text-[#111827] underline hover:text-[#374151]">
                 FOI response is published in full
               </Link>
               . Every contact received in connection with the investigation is{" "}
-              <Link href="/contact-log" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/contact-log" className="text-[#111827] underline hover:text-[#374151]">
                 logged publicly
               </Link>
               .
@@ -245,20 +231,20 @@ export default function PhilosophyPage() {
             </p>
             <p>
               Four days in, SIBA has documented{" "}
-              <Link href="/analysis/bid-treasurer-mikhail" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/bid-treasurer-mikhail" className="text-[#111827] underline hover:text-[#374151]">
                 a governance conflict at the heart of the BID board
               </Link>
               ,{" "}
-              <Link href="/analysis/selective-promotion" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/selective-promotion" className="text-[#111827] underline hover:text-[#374151]">
                 a pattern of selective promotion on a publicly-funded platform
               </Link>
               ,{" "}
-              <Link href="/analysis/andrew-brown-bid-media" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/analysis/andrew-brown-bid-media" className="text-[#111827] underline hover:text-[#374151]">
                 an undisclosed commercial relationship between the BID&apos;s contracted media partner
                 and its Treasurer&apos;s employer
               </Link>
               , and{" "}
-              <Link href="/reports/mark-catherall-visit-southport" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/reports/mark-catherall-visit-southport" className="text-[#111827] underline hover:text-[#374151]">
                 a council officer running the town&apos;s tourism platform while sitting on the BID board
               </Link>
               . All of it from public documents. None of it required inside information. It required
@@ -266,7 +252,7 @@ export default function PhilosophyPage() {
             </p>
             <p>
               We have submitted{" "}
-              <Link href="/foi" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/foi" className="text-[#111827] underline hover:text-[#374151]">
                 15 Freedom of Information requests to Sefton Council
               </Link>
               . Every response will be published in full. If the answers are unremarkable, we will
@@ -275,32 +261,20 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* Closing */}
-        <section>
-          <div className="rounded-xl border border-[#e2e8f0] bg-white px-7 py-8 sm:px-10 sm:py-10 text-center space-y-6">
-            <div className="space-y-3">
-              <p className="text-2xl sm:text-3xl font-bold text-[#0f172a] leading-snug">
-                We are not finished.
-              </p>
-              <p className="text-2xl sm:text-3xl font-bold text-[#0f172a] leading-snug">
-                We are not stopping.
-              </p>
-              <p className="text-2xl sm:text-3xl font-bold text-[#f97316] leading-snug">
-                And we are not for sale.
-              </p>
-            </div>
-            <p className="text-[#64748b] leading-relaxed max-w-lg mx-auto text-sm">
-              If you are a business in PR8 or PR9 and you want to understand what the levy costs
-              you, what it should be doing, and what SIBA has found, start here.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <p className="text-sm text-[#94a3b8]">
-                This page is part of SIBA&apos;s founding case study archive.
-              </p>
-            </div>
+        <section className="text-center py-8">
+          <div className="space-y-2 mb-8">
+            <p className="text-2xl text-[#111827]">We are not finished.</p>
+            <p className="text-2xl text-[#111827]">We are not stopping.</p>
+            <p className="text-2xl font-semibold text-[#111827]">And we are not for sale.</p>
           </div>
+          <p className="text-sm text-[#6b7280] leading-relaxed max-w-md mx-auto mb-6">
+            If you are a business in PR8 or PR9 and you want to understand what the levy costs
+            you, what it should be doing, and what SIBA has found, start here.
+          </p>
+          <p className="text-[13px] text-[#9ca3af]">
+            This page is part of SIBA&apos;s founding case study archive.
+          </p>
         </section>
 
       </div>

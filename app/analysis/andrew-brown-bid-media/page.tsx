@@ -123,7 +123,7 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
     </div>
   );
@@ -148,7 +148,7 @@ export default function AndrewBrownBidMediaPage() {
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Governance</span>
+            <span className="badge badge-navy">Governance</span>
             <span className="badge badge-navy">Media Contracts</span>
             <span className="text-xs text-[#94a3b8]">April 2026</span>
           </div>
@@ -192,7 +192,7 @@ export default function AndrewBrownBidMediaPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -210,7 +210,7 @@ export default function AndrewBrownBidMediaPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
               >
                 {l.label}
               </a>
@@ -226,8 +226,8 @@ export default function AndrewBrownBidMediaPage() {
         <section id="summary" className="scroll-mt-32">
           <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#f97316] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
                 What this article is about
               </p>
             </div>
@@ -318,7 +318,7 @@ export default function AndrewBrownBidMediaPage() {
                 href={CH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#f97316] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors"
               >
                 View on Companies House
                 <ExternalLink size={11} />
@@ -340,7 +340,7 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Quote block */}
-          <div className="mt-6 rounded-lg border-l-4 border-l-[#f97316] bg-white border border-[#e2e8f0] px-6 py-5">
+          <div className="mt-6 rounded-lg border-l-4 border-l-[#111827] bg-white border border-[#e2e8f0] px-6 py-5">
             <p className="text-sm text-[#0f172a] leading-relaxed italic mb-3">
               &ldquo;Southport BID has now contracted Stand Up For Southport to support its media, PR and
               communications strategy, highlight the BID&apos;s ongoing work and promote local businesses
@@ -353,7 +353,7 @@ export default function AndrewBrownBidMediaPage() {
               href={BID_CONTRACT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity mt-3"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-3"
             >
               Source: southportbid.com
               <ExternalLink size={11} />
@@ -380,7 +380,7 @@ export default function AndrewBrownBidMediaPage() {
               href={SUFS_ABOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity mt-3"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-3"
             >
               Source: standupforsouthport.com/about
               <ExternalLink size={11} />
@@ -394,7 +394,7 @@ export default function AndrewBrownBidMediaPage() {
               its &ldquo;Promotion&rdquo; budget line, described as covering the YourSouthport platform and
               associated marketing. This contract sits within that line. The specific contract value
               is the subject of{" "}
-              <Link href="/foi#15" className="text-[#f97316] hover:underline font-semibold">
+              <Link href="/foi#15" className="text-[#111827] underline font-semibold">
                 FOI Request 15
               </Link>
               .
@@ -415,14 +415,14 @@ export default function AndrewBrownBidMediaPage() {
 
           {/* Key quote */}
           <div className="mt-6 rounded-xl bg-[#0f172a] p-6 sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#f97316] mb-4">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-4">
               Andrew Brown, in his own words (November 2024)
             </p>
             <p className="text-[#e2e8f0] text-base leading-relaxed italic">
               &ldquo;We provide media and PR services for local businesses, working with the likes of{" "}
-              <span className="text-[#f97316] font-bold not-italic">Southport BID</span>,
+              <span className="text-[#f9fafb] font-bold not-italic">Southport BID</span>,
               Southport Flower Show, Southport Comedy Festival,{" "}
-              <span className="text-[#f97316] font-bold not-italic">
+              <span className="text-[#f9fafb] font-bold not-italic">
                 Mikhail Hotel and Leisure Group
               </span>
               , and others.&rdquo;
@@ -435,7 +435,7 @@ export default function AndrewBrownBidMediaPage() {
                 href={MEDIUM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity"
               >
                 Source
                 <ExternalLink size={11} />
@@ -498,7 +498,7 @@ export default function AndrewBrownBidMediaPage() {
               </thead>
               <tbody className="divide-y divide-[#e2e8f0]">
                 {coverageRows.map((row) => (
-                  <tr key={row.url} className={row.flagged ? "bg-[#fff7ed]" : ""}>
+                  <tr key={row.url} className={row.flagged ? "bg-[#f9fafb]" : ""}>
                     <td className="px-4 py-3 text-[#64748b] whitespace-nowrap align-top">
                       {row.date}
                     </td>
@@ -507,7 +507,7 @@ export default function AndrewBrownBidMediaPage() {
                         href={row.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#0f172a] hover:text-[#f97316] transition-colors font-medium leading-snug inline-flex items-start gap-1"
+                        className="text-[#0f172a] hover:text-[#374151] transition-colors font-medium leading-snug inline-flex items-start gap-1"
                       >
                         {row.headline}
                         <ExternalLink size={10} className="flex-shrink-0 mt-1" />
@@ -532,7 +532,7 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           <div className="mt-5 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 flex items-start gap-3">
-            <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#f97316] mt-1.5" />
+            <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#111827] mt-1.5" />
             <p className="text-sm text-[#475569] leading-relaxed">
               Andrew Brown does label some content as sponsored: individual articles directly
               commissioned by the BID carry a &ldquo;Southport BID sponsored feature&rdquo; label, and articles
@@ -580,13 +580,13 @@ export default function AndrewBrownBidMediaPage() {
                 label: "Awards venue",
                 value: "The Grand, Lord Street",
                 sub: "Mikhail Hotel and Leisure Group, 2024 and 2025",
-                color: "border-[#f97316]",
+                color: "border-[#111827]",
               },
               {
                 label: "2025 Hotel of the Year",
                 value: "The Bold Hotel",
                 sub: "Won Business Leaders Award. Panel-judged, not public vote.",
-                color: "border-[#f97316]",
+                color: "border-[#111827]",
               },
               {
                 label: "2025 finalist, same category",
@@ -628,7 +628,7 @@ export default function AndrewBrownBidMediaPage() {
               href={BOLD_WIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#f97316] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
             >
               The Bold winning article
               <ExternalLink size={11} />
@@ -637,7 +637,7 @@ export default function AndrewBrownBidMediaPage() {
               href={STARS_2026_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#f97316] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
             >
               2026 Stars Awards nominations (SUFS)
               <ExternalLink size={11} />
@@ -708,7 +708,7 @@ export default function AndrewBrownBidMediaPage() {
                 key={s.step}
                 className={`rounded-lg border p-5 flex gap-4 ${
                   s.highlight
-                    ? "border-[#fed7aa] bg-[#fff7ed]"
+                    ? "border-[#e5e7eb] bg-[#f9fafb]"
                     : "border-[#e2e8f0] bg-white"
                 }`}
               >
@@ -716,7 +716,7 @@ export default function AndrewBrownBidMediaPage() {
                   <div
                     className={`h-9 w-9 rounded-lg flex items-center justify-center text-sm font-bold ${
                       s.highlight
-                        ? "bg-[#f97316] text-white"
+                        ? "bg-[#111827] text-white"
                         : "bg-[#f1f5f9] text-[#64748b]"
                     }`}
                   >
@@ -729,7 +729,7 @@ export default function AndrewBrownBidMediaPage() {
                   {"link" in s && s.link && (
                     <Link
                       href={s.link.href}
-                      className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity mt-2"
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-2"
                     >
                       {s.link.label}
                       <ArrowRight size={11} />
@@ -765,7 +765,7 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-4">
             <Link
               href="/contact-log"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity border border-[#fed7aa] rounded-md px-3 py-1.5 bg-[#fff7ed]"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity border border-[#e5e7eb] rounded-md px-3 py-1.5 bg-[#f9fafb]"
             >
               View SIBA contact log (entries CL-001 and CL-002)
               <ArrowRight size={11} />
@@ -790,7 +790,7 @@ export default function AndrewBrownBidMediaPage() {
                 "Who sits on the Business Leaders Award judging panel for the Stars Awards and what process governs their selection.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm">
-                  <span className="flex-shrink-0 w-1 h-1 rounded-full bg-[#f97316] mt-2" />
+                  <span className="flex-shrink-0 w-1 h-1 rounded-full bg-[#111827] mt-2" />
                   {item}
                 </li>
               ))}
@@ -819,7 +819,7 @@ export default function AndrewBrownBidMediaPage() {
                 "Any tender documentation, procurement records, or contract award notices held by the council in relation to the appointment of Stand Up For Southport or Andrew Brown as a media supplier to the BID.",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
-                  <span className="flex-shrink-0 font-bold text-[#f97316]">{i + 1}.</span>
+                  <span className="flex-shrink-0 font-bold text-[#111827]">{i + 1}.</span>
                   {item}
                 </li>
               ))}
@@ -829,8 +829,8 @@ export default function AndrewBrownBidMediaPage() {
               on this platform.
             </p>
           </div>
-          <div className="mt-5 rounded-lg border border-[#fed7aa] bg-[#fff7ed] px-5 py-4 flex items-start gap-3">
-            <span className="flex-shrink-0 font-bold text-[#f97316] text-sm">15</span>
+          <div className="mt-5 rounded-lg border border-[#e5e7eb] bg-[#f9fafb] px-5 py-4 flex items-start gap-3">
+            <span className="flex-shrink-0 font-bold text-[#111827] text-sm">15</span>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-bold text-[#0f172a] mb-1">
                 FOI Request 15: BID Media Contractor Payments and Procurement
@@ -842,7 +842,7 @@ export default function AndrewBrownBidMediaPage() {
                 href={WDTK_FOI15}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#f97316] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors"
               >
                 View on WhatDoTheyKnow
                 <ExternalLink size={11} />
@@ -852,7 +852,7 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-4">
             <Link
               href="/foi"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:opacity-80 transition-opacity"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity"
             >
               View all 15 FOI requests
               <ArrowRight size={11} />
@@ -875,7 +875,7 @@ export default function AndrewBrownBidMediaPage() {
                 key={i}
                 className="rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 flex gap-3"
               >
-                <span className="flex-shrink-0 font-bold text-[#f97316] text-sm w-5">{i + 1}.</span>
+                <span className="flex-shrink-0 font-bold text-[#111827] text-sm w-5">{i + 1}.</span>
                 <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
               </div>
             ))}
@@ -890,7 +890,7 @@ export default function AndrewBrownBidMediaPage() {
               Andrew Brown, Southport BID, Rachel Fitzgerald, and Sefton Council are each invited to
               respond to the factual claims and questions documented in this analysis. Any response
               received will be published here in full and without editing. Contact:{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+              <a href="mailto:damian@siba.digital" className="text-[#111827] underline">
                 damian@siba.digital
               </a>
               .
@@ -924,15 +924,15 @@ export default function AndrewBrownBidMediaPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="flex items-center gap-4 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 hover:border-[#f97316] transition-colors group"
+                className="flex items-center gap-4 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 hover:border-[#111827] transition-colors group"
               >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] w-24 flex-shrink-0">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] w-24 flex-shrink-0">
                   {r.label}
                 </span>
-                <p className="text-sm font-semibold text-[#0f172a] group-hover:text-[#f97316] transition-colors flex-1 leading-snug">
+                <p className="text-sm font-semibold text-[#0f172a] group-hover:text-[#374151] transition-colors flex-1 leading-snug">
                   {r.title}
                 </p>
-                <ArrowRight size={14} className="text-[#cbd5e1] group-hover:text-[#f97316] transition-colors flex-shrink-0" />
+                <ArrowRight size={14} className="text-[#cbd5e1] group-hover:text-[#374151] transition-colors flex-shrink-0" />
               </Link>
             ))}
           </div>

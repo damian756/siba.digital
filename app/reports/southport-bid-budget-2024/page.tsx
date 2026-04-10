@@ -48,7 +48,7 @@ function Source({ children }: { children: React.ReactNode }) {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
     </div>
   );
@@ -106,7 +106,7 @@ export default function BidBudgetReportPage() {
             Reports
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Budget Transparency</span>
+            <span className="badge badge-navy">Budget Transparency</span>
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
               Report 01 of an ongoing investigation
             </span>
@@ -148,7 +148,7 @@ export default function BidBudgetReportPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -161,7 +161,7 @@ export default function BidBudgetReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#111827] transition-colors"
               >
                 {l.label}
               </a>
@@ -189,7 +189,7 @@ export default function BidBudgetReportPage() {
             href={BID_PDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+            className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
           >
             View the original PDF
             <ExternalLink size={11} />
@@ -215,7 +215,7 @@ export default function BidBudgetReportPage() {
               href={BID_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+              className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
             >
               publicly available at southportbid.com
               <ExternalLink size={11} />
@@ -261,12 +261,12 @@ export default function BidBudgetReportPage() {
                 {levyProjections.map((row) => (
                   <tr
                     key={row.year}
-                    className={row.bold ? "bg-[#fff7ed]" : "hover:bg-[#f8fafc]"}
+                    className={row.bold ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
                   >
                     <td className={`px-5 py-3 ${row.bold ? "font-bold text-[#0f172a]" : "text-[#475569]"}`}>
                       {row.year}
                     </td>
-                    <td className={`px-5 py-3 text-right ${row.bold ? "font-bold text-[#f97316]" : "text-[#0f172a] font-medium"}`}>
+                    <td className={`px-5 py-3 text-right ${row.bold ? "font-bold text-[#111827]" : "text-[#0f172a] font-medium"}`}>
                       {row.income}
                     </td>
                     <td className="px-5 py-3 text-right text-[#94a3b8] text-xs">{row.increase}</td>
@@ -277,7 +277,7 @@ export default function BidBudgetReportPage() {
             <Source>
               <span className="px-5 pb-3 block">
                 Source: Southport BID Business Plan 2024-2029, p.14.{" "}
-                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline inline-flex items-center gap-0.5">
+                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
                   View PDF <ExternalLink size={10} />
                 </a>
               </span>
@@ -314,9 +314,9 @@ export default function BidBudgetReportPage() {
                 {budgetRows.map((row) => (
                   <tr
                     key={row.category}
-                    className={row.highlight ? "bg-[#fff7ed]" : "hover:bg-[#f8fafc]"}
+                    className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
                   >
-                    <td className={`px-5 py-3.5 font-medium ${row.highlight ? "text-[#f97316]" : "text-[#0f172a]"}`}>
+                    <td className={`px-5 py-3.5 font-medium ${row.highlight ? "text-[#111827]" : "text-[#0f172a]"}`}>
                       {row.category}
                       {row.highlight && (
                         <span className="ml-2 text-xs font-normal text-[#94a3b8]">see below</span>
@@ -338,7 +338,7 @@ export default function BidBudgetReportPage() {
             <Source>
               <span className="px-5 pb-3 block">
                 Source: Southport BID Business Plan 2024-2029.{" "}
-                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline inline-flex items-center gap-0.5">
+                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
                   View PDF <ExternalLink size={10} />
                 </a>
               </span>
@@ -367,7 +367,7 @@ export default function BidBudgetReportPage() {
           <div className="card bg-white p-5">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
               <div>
-                <p className="text-2xl font-bold text-[#f97316]">£110,000</p>
+                <p className="text-2xl font-bold text-[#111827]">£110,000</p>
                 <p className="text-xs text-[#94a3b8] mt-1">Annual operating cost</p>
               </div>
               <div>
@@ -416,28 +416,28 @@ export default function BidBudgetReportPage() {
             </p>
           </div>
 
-          <div className="card p-5 bg-[#fff7ed] border-[#fed7aa]">
+          <div className="card p-5 bg-[#f9fafb] border-[#e5e7eb]">
             <p className="text-sm font-semibold text-[#0f172a] mb-2">Three sources. One conclusion.</p>
             <ul className="space-y-2 text-sm text-[#64748b]">
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#f97316]">1.</span>
+                <span className="flex-shrink-0 font-bold text-[#111827]">1.</span>
                 The Business Plan lists YourSouthport as the BID&apos;s primary marketing tool,
                 funded by the levy.
               </li>
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#f97316]">2.</span>
+                <span className="flex-shrink-0 font-bold text-[#111827]">2.</span>
                 The Business Plan lists a named paid BID employee whose sole job title is
                 Your Southport Marketing Manager.
               </li>
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#f97316]">3.</span>
+                <span className="flex-shrink-0 font-bold text-[#111827]">3.</span>
                 The BID&apos;s own homepage describes it as &ldquo;the platform we use&rdquo; in the
                 first person.
               </li>
             </ul>
             <Source>
               Sources: Southport BID Business Plan 2024-2029{" "}
-              <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#f97316] hover:underline inline-flex items-center gap-0.5">
+              <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
                 (PDF) <ExternalLink size={10} />
               </a>{" "}
               and southportbid.com (homepage, April 2026).
@@ -504,7 +504,7 @@ export default function BidBudgetReportPage() {
           </div>
           <Link
             href="/audit#request"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
           >
             Request a free audit
             <ArrowRight size={14} />
@@ -520,7 +520,7 @@ export default function BidBudgetReportPage() {
             href={BID_PDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-[#f97316] hover:underline font-medium"
+            className="inline-flex items-center gap-2 text-sm text-[#111827] hover:underline font-medium"
           >
             Southport BID Business Plan 2024-2029 (PDF, southportbid.com)
             <ExternalLink size={13} />

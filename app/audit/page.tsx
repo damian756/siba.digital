@@ -75,7 +75,7 @@ export default function AuditPage() {
       {/* Header */}
       <div className="bg-white border-b border-[#e2e8f0]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-orange mb-5">Free for PR8 and PR9 Businesses</span>
+          <span className="badge badge-navy mb-5">Free for PR8 and PR9 Businesses</span>
           <h1 className="text-4xl font-bold text-[#0f172a] mb-4">The Audit Hub</h1>
           <p className="text-lg text-[#64748b] leading-relaxed max-w-2xl">
             Two tools in one place. Calculate the real cost of your BID levy versus what SIBA
@@ -109,9 +109,9 @@ export default function AuditPage() {
               return (
                 <div key={p.step} className="card p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xs font-bold text-[#f97316] font-mono">{p.step}</span>
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#fff7ed] border border-[#fed7aa]">
-                      <Icon size={16} className="text-[#f97316]" />
+                    <span className="text-xs font-bold text-[#111827] font-mono">{p.step}</span>
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb]">
+                      <Icon size={16} className="text-[#111827]" />
                     </div>
                   </div>
                   <p className="text-sm font-bold text-[#0f172a] mb-2">{p.title}</p>
@@ -127,7 +127,7 @@ export default function AuditPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {covers.map((item) => (
                 <div key={item} className="flex items-center gap-2">
-                  <CheckCircle2 size={14} className="text-[#f97316] flex-shrink-0" />
+                  <CheckCircle2 size={14} className="text-[#111827] flex-shrink-0" />
                   <span className="text-sm text-[#475569]">{item}</span>
                 </div>
               ))}
@@ -138,9 +138,9 @@ export default function AuditPage() {
         <div className="border-t border-[#e2e8f0]" />
 
         {/* Urgency */}
-        <div className="card p-5 bg-[#fff7ed] border-[#fed7aa]">
+        <div className="card p-5 bg-[#f9fafb] border-[#e5e7eb]">
           <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 text-sm font-bold text-[#f97316] mt-0.5">!</span>
+            <span className="flex-shrink-0 text-sm font-bold text-[#111827] mt-0.5">!</span>
             <div>
               <p className="text-sm font-semibold text-[#0f172a] mb-1">
                 The Open is in July. Start now.
@@ -152,7 +152,7 @@ export default function AuditPage() {
               </p>
               <a
                 href="#request"
-                className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-[#f97316] hover:text-orange-500"
+                className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-[#111827] hover:text-[#374151]"
               >
                 Jump to the form
                 <ArrowRight size={13} />

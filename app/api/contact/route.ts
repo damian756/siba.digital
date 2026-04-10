@@ -30,7 +30,7 @@ function buildHtml(category: Category, data: Record<string, string>): string {
   return `
     <div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;">
       <div style="background:#0f172a;padding:24px 28px;border-radius:8px 8px 0 0;">
-        <p style="margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#f97316;">SIBA Contact Form</p>
+        <p style="margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#111827;">SIBA Contact Form</p>
         <h2 style="margin:6px 0 0;font-size:20px;color:#ffffff;">${categoryLabels[category]}</h2>
       </div>
       <div style="background:#ffffff;padding:24px 28px;border-radius:0 0 8px 8px;border:1px solid #e2e8f0;border-top:none;">

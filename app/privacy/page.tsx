@@ -43,7 +43,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl font-bold text-[#0f172a] mb-3">Privacy and Legal</h1>
           <p className="text-[#64748b] text-sm">
             Last updated: {LAST_UPDATED}. Questions?{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+            <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
               damian@siba.digital
             </a>
           </p>
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -66,7 +66,7 @@ export default function PrivacyPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#111827] transition-colors"
               >
                 {l.label}
               </a>
@@ -101,11 +101,11 @@ export default function PrivacyPage() {
                 SIBA Digital (a trading name of Churchtown Media Ltd), Southport, Merseyside.
                 <br />
                 Email:{" "}
-                <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+                <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
                   damian@siba.digital
                 </a>
                 {" "}&nbsp;|&nbsp; Tel:{" "}
-                <a href="tel:01704635785" className="text-[#f97316] hover:underline">
+                <a href="tel:01704635785" className="text-[#111827] hover:underline">
                   01704 635785
                 </a>
               </p>
@@ -140,7 +140,7 @@ export default function PrivacyPage() {
             <p>
               Audit request data is retained for 24 months from submission or until you
               request deletion. To request deletion, email{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+              <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
                 damian@siba.digital
               </a>{" "}
               with your name and business name.
@@ -150,7 +150,7 @@ export default function PrivacyPage() {
               Under UK GDPR, you have the right to access, correct, or delete personal data
               we hold about you. You also have the right to object to processing and to data
               portability. Contact{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+              <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
                 damian@siba.digital
               </a>{" "}
               to exercise any of these rights.

@@ -167,7 +167,7 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
     </div>
   );
@@ -192,7 +192,7 @@ export default function BidTreasurerMikhailPage() {
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Governance</span>
+            <span className="badge badge-navy">Governance</span>
             <span className="badge badge-navy">Conflicts of Interest</span>
             <span className="text-xs text-[#94a3b8]">April 2026</span>
           </div>
@@ -237,7 +237,7 @@ export default function BidTreasurerMikhailPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -255,7 +255,7 @@ export default function BidTreasurerMikhailPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
               >
                 {l.label}
               </a>
@@ -271,8 +271,8 @@ export default function BidTreasurerMikhailPage() {
         <section id="summary" className="scroll-mt-32">
           <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#f97316] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
                 What this article is about
               </p>
             </div>
@@ -366,7 +366,7 @@ export default function BidTreasurerMikhailPage() {
                       href={BID_TEAM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       BID Our Team <ExternalLink size={10} />
                     </a>
@@ -382,16 +382,16 @@ export default function BidTreasurerMikhailPage() {
                       href={BID_TEAM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       BID Our Team <ExternalLink size={10} />
                     </a>
                   </td>
                 </tr>
-                <tr className="bg-[#fff7ed]">
+                <tr className="bg-[#f9fafb]">
                   <td className="px-5 py-3 font-semibold text-[#0f172a]">
                     Active Director
-                    <span className="ml-2 inline-flex items-center rounded-full bg-[#f97316] px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-widest">
+                    <span className="ml-2 inline-flex items-center rounded-full bg-[#111827] px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-widest">
                       Live
                     </span>
                   </td>
@@ -403,7 +403,7 @@ export default function BidTreasurerMikhailPage() {
                       href={CH_OFFICERS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       Companies House <ExternalLink size={10} />
                     </a>
@@ -427,8 +427,8 @@ export default function BidTreasurerMikhailPage() {
 
           <div className="rounded-xl border-2 border-[#0f172a] bg-white overflow-hidden">
             <div className="bg-[#0f172a] px-6 py-4">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
-                Companies House — Live Register
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
+                Companies House: Live Register
               </p>
               <p className="text-xs text-[#94a3b8]">
                 Mikhail Hotels and Leisure Holdings Limited · Company 10533763
@@ -455,7 +455,7 @@ export default function BidTreasurerMikhailPage() {
                     <div
                       key={f.label}
                       className={`rounded-lg px-3 py-2 ${
-                        f.highlight ? "bg-[#fff7ed] border border-[#fed7aa]" : "bg-[#f8fafc]"
+                        f.highlight ? "bg-[#f9fafb] border border-[#e5e7eb]" : "bg-[#f8fafc]"
                       }`}
                     >
                       <p className="text-[10px] font-semibold uppercase tracking-widest text-[#94a3b8]">
@@ -463,7 +463,7 @@ export default function BidTreasurerMikhailPage() {
                       </p>
                       <p
                         className={`text-sm font-semibold mt-0.5 ${
-                          f.highlight ? "text-[#f97316]" : "text-[#0f172a]"
+                          f.highlight ? "text-[#111827]" : "text-[#0f172a]"
                         }`}
                       >
                         {f.value}
@@ -473,7 +473,7 @@ export default function BidTreasurerMikhailPage() {
                 </div>
               </div>
               <div className="pt-4 flex items-start gap-3">
-                <AlertTriangle size={14} className="text-[#f97316] flex-shrink-0 mt-0.5" />
+                <AlertTriangle size={14} className="text-[#111827] flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-[#475569] leading-relaxed">
                     Sheldon, Stephen is the only resignation on this register (resigned 1 December
@@ -485,7 +485,7 @@ export default function BidTreasurerMikhailPage() {
                     href={CH_OFFICERS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:underline"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#111827] underline"
                   >
                     Verify at Companies House <ExternalLink size={10} />
                   </a>
@@ -527,7 +527,7 @@ export default function BidTreasurerMikhailPage() {
                   key={v}
                   className="px-5 py-3 flex items-center gap-3 text-sm text-[#0f172a] hover:bg-[#f8fafc]"
                 >
-                  <span className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-[#f97316]" />
+                  <span className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-[#111827]" />
                   {v}
                 </li>
               ))}
@@ -583,7 +583,7 @@ export default function BidTreasurerMikhailPage() {
                   {awardsRows.map((row, i) => (
                     <tr
                       key={i}
-                      className={row.highlight ? "bg-[#fff7ed]" : "hover:bg-[#f8fafc]"}
+                      className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
                     >
                       <td className="px-5 py-3 text-[#475569] font-mono text-xs">{row.year}</td>
                       <td className="px-5 py-3 font-medium text-[#0f172a]">{row.venue}</td>
@@ -592,7 +592,7 @@ export default function BidTreasurerMikhailPage() {
                         <span
                           className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${
                             row.result === "Won"
-                              ? "bg-[#fff7ed] text-[#f97316]"
+                              ? "bg-[#f9fafb] text-[#111827]"
                               : "bg-[#f1f5f9] text-[#64748b]"
                           }`}
                         >
@@ -683,7 +683,7 @@ export default function BidTreasurerMikhailPage() {
                 <div
                   className={`rounded-xl border p-5 flex gap-4 ${
                     s.highlight
-                      ? "bg-[#fff7ed] border-[#fed7aa]"
+                      ? "bg-[#f9fafb] border-[#e5e7eb]"
                       : "bg-white border-[#e2e8f0]"
                   }`}
                 >
@@ -693,7 +693,7 @@ export default function BidTreasurerMikhailPage() {
                     </span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#111827] mb-0.5">
                       {s.actor}
                     </p>
                     <p className="text-sm font-semibold text-[#0f172a] mb-1.5">{s.title}</p>
@@ -712,12 +712,12 @@ export default function BidTreasurerMikhailPage() {
             {/* Loop back node */}
             <div className="rounded-xl bg-[#0f172a] p-5 flex gap-4 items-start">
               <div className="flex-shrink-0">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#f97316] text-white text-base font-bold leading-none">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#e2e8f0] text-[#0f172a] text-base font-bold leading-none">
                   ↻
                 </span>
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
                   The cycle
                 </p>
                 <p className="text-sm font-semibold text-white mb-1.5">
@@ -736,7 +736,7 @@ export default function BidTreasurerMikhailPage() {
           {/* Hospitality ecosystem map */}
           <div className="card bg-white overflow-hidden">
             <div className="px-5 py-4 bg-[#0f172a]">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316] mb-0.5">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
                 The Mikhail hospitality ecosystem: Southport town centre
               </p>
               <p className="text-xs text-[#94a3b8] leading-relaxed">
@@ -757,7 +757,7 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
                         <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
                       </div>
                       <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
@@ -777,7 +777,7 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
                         <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
                       </div>
                       <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
@@ -797,7 +797,7 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
                         <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
                       </div>
                       <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
@@ -806,7 +806,7 @@ export default function BidTreasurerMikhailPage() {
                 </div>
               </div>
             </div>
-            <div className="px-5 py-3 bg-[#fff7ed] border-t border-[#fed7aa]">
+            <div className="px-5 py-3 bg-[#f9fafb] border-t border-[#e5e7eb]">
               <p className="text-xs text-[#475569] leading-relaxed">
                 This is not a criticism of Mikhail Group&apos;s investment in Southport or the quality of
                 its venues. It is a description of a market structure in which the publicly-funded
@@ -856,7 +856,7 @@ export default function BidTreasurerMikhailPage() {
               </p>
             </div>
 
-            <div className="card bg-white p-6 border-l-4 border-l-[#f97316]">
+            <div className="card bg-white p-6 border-l-4 border-l-[#111827]">
               <p className="text-sm font-bold text-[#0f172a] mb-2">
                 2. No TM01 has ever been filed
               </p>
@@ -983,7 +983,7 @@ export default function BidTreasurerMikhailPage() {
             href="/foi#10"
             className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f8fafc] transition-colors block"
           >
-            <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff7ed] border border-[#fed7aa] text-sm font-bold text-[#f97316]">
+            <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb] text-sm font-bold text-[#111827]">
               10
             </span>
             <div className="flex-1 min-w-0">
@@ -999,7 +999,7 @@ export default function BidTreasurerMikhailPage() {
           <p className="text-sm text-[#64748b] leading-relaxed">
             SIBA has submitted 14 Freedom of Information requests to Sefton Council in total,
             covering BID governance, public spending, and tourism platform management.{" "}
-            <Link href="/foi" className="text-[#f97316] hover:underline">
+            <Link href="/foi" className="text-[#111827] underline">
               View all FOI requests.
             </Link>
           </p>
@@ -1016,7 +1016,7 @@ export default function BidTreasurerMikhailPage() {
             If you are Geoffrey Wareham, a representative of Southport BID, Mikhail Hotel and
             Leisure Group, or Sefton Council and you wish to respond to any aspect of this
             analysis, contact{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+            <a href="mailto:damian@siba.digital" className="text-[#111827] underline">
               damian@siba.digital
             </a>
             . Responses will be published in full without editing. The right of reply is open

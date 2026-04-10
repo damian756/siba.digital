@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 
 const orgTypes = [
   "Business Improvement District",
@@ -60,9 +59,9 @@ export default function CommissionForm() {
 
   if (status === "success") {
     return (
-      <div className="border border-[#e2e8f0] bg-white px-8 py-10 max-w-xl">
-        <p className="text-lg font-bold text-[#0f172a] mb-2">Enquiry received</p>
-        <p className="text-sm text-[#64748b] leading-relaxed">
+      <div className="border border-[#e5e7eb] px-8 py-10 max-w-xl">
+        <p className="text-lg font-semibold text-[#111827] mb-2">Enquiry received</p>
+        <p className="text-sm text-[#374151] leading-relaxed">
           Thank you. SIBA will respond within one working day to discuss scope
           and next steps.
         </p>
@@ -71,10 +70,10 @@ export default function CommissionForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="border border-[#e2e8f0] bg-white p-6 sm:p-8 max-w-xl space-y-5">
+    <form onSubmit={handleSubmit} className="border border-[#e5e7eb] p-6 sm:p-8 max-w-xl space-y-5">
       <div className="space-y-1.5">
-        <label htmlFor="orgName" className="block text-sm font-semibold text-[#0f172a]">
-          Organisation name <span className="text-[#f97316]">*</span>
+        <label htmlFor="orgName" className="block text-sm font-semibold text-[#111827]">
+          Organisation name <span className="text-[#991b1b]">*</span>
         </label>
         <input
           id="orgName"
@@ -87,8 +86,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="orgType" className="block text-sm font-semibold text-[#0f172a]">
-          Organisation type <span className="text-[#f97316]">*</span>
+        <label htmlFor="orgType" className="block text-sm font-semibold text-[#111827]">
+          Organisation type <span className="text-[#991b1b]">*</span>
         </label>
         <select
           id="orgType"
@@ -105,8 +104,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="role" className="block text-sm font-semibold text-[#0f172a]">
-          Your name and role <span className="text-[#f97316]">*</span>
+        <label htmlFor="role" className="block text-sm font-semibold text-[#111827]">
+          Your name and role <span className="text-[#991b1b]">*</span>
         </label>
         <input
           id="role"
@@ -120,8 +119,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="email" className="block text-sm font-semibold text-[#0f172a]">
-          Email address <span className="text-[#f97316]">*</span>
+        <label htmlFor="email" className="block text-sm font-semibold text-[#111827]">
+          Email address <span className="text-[#991b1b]">*</span>
         </label>
         <input
           id="email"
@@ -134,8 +133,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="scope" className="block text-sm font-semibold text-[#0f172a]">
-          What prompted this enquiry? <span className="text-[#f97316]">*</span>
+        <label htmlFor="scope" className="block text-sm font-semibold text-[#111827]">
+          What prompted this enquiry? <span className="text-[#991b1b]">*</span>
         </label>
         <textarea
           id="scope"
@@ -149,19 +148,18 @@ export default function CommissionForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-600">{errorMsg}</p>
+        <p className="text-sm text-red-700">{errorMsg}</p>
       )}
 
       <div className="pt-2">
         <button
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex items-center gap-2 rounded bg-[#0f172a] px-6 py-3 text-sm font-semibold text-white hover:bg-[#1e293b] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+          className="text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {status === "sending" ? "Sending..." : "Submit Enquiry"}
-          {status !== "sending" && <ArrowRight size={14} />}
         </button>
-        <p className="mt-3 text-xs text-[#94a3b8]">
+        <p className="mt-3 text-[12px] text-[#9ca3af]">
           SIBA responds to all enquiries within one working day.
         </p>
       </div>

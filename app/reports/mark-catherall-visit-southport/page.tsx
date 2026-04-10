@@ -88,7 +88,7 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
     </div>
   );
@@ -113,7 +113,7 @@ export default function CaterallReportPage() {
             Reports
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Governance</span>
+            <span className="badge badge-navy">Governance</span>
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
               Report 02 of an ongoing investigation
             </span>
@@ -162,7 +162,7 @@ export default function CaterallReportPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -176,7 +176,7 @@ export default function CaterallReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#111827] transition-colors"
               >
                 {l.label}
               </a>
@@ -248,7 +248,7 @@ export default function CaterallReportPage() {
                       href={LINKEDIN_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       LinkedIn <ExternalLink size={10} />
                     </a>
@@ -262,7 +262,7 @@ export default function CaterallReportPage() {
                       href={LCRDP_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       LCRDP interview <ExternalLink size={10} />
                     </a>
@@ -278,7 +278,7 @@ export default function CaterallReportPage() {
                       href={MODGOV_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#f97316] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       Sefton cabinet minutes <ExternalLink size={10} />
                     </a>
@@ -293,7 +293,7 @@ export default function CaterallReportPage() {
                   href={MODGOV_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
                 >
                   Sefton Council committee minutes <ExternalLink size={10} />
                 </a>
@@ -302,7 +302,7 @@ export default function CaterallReportPage() {
                   href={BID_TEAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
                 >
                   Southport BID &ldquo;Our Team&rdquo; <ExternalLink size={10} />
                 </a>
@@ -311,7 +311,7 @@ export default function CaterallReportPage() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
                 >
                   Mark Catherall LinkedIn <ExternalLink size={10} />
                 </a>
@@ -336,7 +336,7 @@ export default function CaterallReportPage() {
                 href={MODGOV_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
               >
                 Sefton Council modgov, Officer Outside Body Appointments{" "}
                 <ExternalLink size={10} />
@@ -372,7 +372,7 @@ export default function CaterallReportPage() {
                 {careerRows.map((row) => (
                   <tr
                     key={row.period}
-                    className={row.highlight ? "bg-[#fff7ed]" : "hover:bg-[#f8fafc]"}
+                    className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
                   >
                     <td className="px-5 py-3 text-[#475569] text-xs font-mono">{row.period}</td>
                     <td
@@ -395,7 +395,7 @@ export default function CaterallReportPage() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
                 >
                   Mark Catherall, LinkedIn <ExternalLink size={10} />
                 </a>
@@ -478,7 +478,7 @@ export default function CaterallReportPage() {
                 href={BID_TEAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
               >
                 Southport BID, Our Team page <ExternalLink size={10} />
               </a>
@@ -538,7 +538,7 @@ export default function CaterallReportPage() {
           <p className="text-sm text-[#475569] leading-relaxed">
             A companion analysis documents a separate but structurally related governance conflict
             at the BID board level.{" "}
-            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#f97316] hover:underline">
+            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#111827] hover:underline">
               Southport&apos;s BID Treasurer is a registered active director of Mikhail Hotels and
               Leisure Holdings Limited
             </Link>{" "}
@@ -567,7 +567,7 @@ export default function CaterallReportPage() {
                 href={f.href}
                 className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f8fafc] transition-colors block"
               >
-                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#fff7ed] border border-[#fed7aa] text-sm font-bold text-[#f97316]">
+                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb] text-sm font-bold text-[#111827]">
                   {f.number}
                 </span>
                 <div className="flex-1 min-w-0">
@@ -590,7 +590,7 @@ export default function CaterallReportPage() {
           <p className="text-sm text-[#475569] leading-relaxed">
             If you are Mark Catherall, a representative of Sefton Council, Visit Southport, or
             Southport BID and you wish to respond to any aspect of this report, contact{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
+            <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
               damian@siba.digital
             </a>
             . Responses will be published in full without editing. The right of reply is open

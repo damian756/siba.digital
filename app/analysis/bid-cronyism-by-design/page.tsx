@@ -51,7 +51,7 @@ const articleSchema = {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
     </div>
   );
@@ -76,7 +76,7 @@ export default function CronyismAnalysisPage() {
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Structural Analysis</span>
+            <span className="badge badge-navy">Structural Analysis</span>
             <span className="text-xs text-[#94a3b8]">April 2026</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
@@ -99,7 +99,7 @@ export default function CronyismAnalysisPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -113,7 +113,7 @@ export default function CronyismAnalysisPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
               >
                 {l.label}
               </a>
@@ -129,8 +129,8 @@ export default function CronyismAnalysisPage() {
         <section className="scroll-mt-32">
           <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#f97316] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
                 What this article is about
               </p>
             </div>
@@ -243,7 +243,7 @@ export default function CronyismAnalysisPage() {
               The businesses without those connections pay exactly the same levy. They receive
               proportionally less benefit. They have no practical mechanism to challenge it.
             </p>
-            <div className="my-6 card p-6 bg-[#fff7ed] border-[#fed7aa]">
+            <div className="my-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
               <p className="text-sm font-semibold text-[#0f172a] mb-2">The structural point</p>
               <p className="text-sm text-[#64748b] leading-relaxed">
                 That is cronyism produced not by individual bad actors but by a structure
@@ -353,7 +353,7 @@ export default function CronyismAnalysisPage() {
 
         {/* Evidence links */}
         <section className="scroll-mt-32 space-y-4">
-          <div className="card card-hover p-6 border-l-4 border-l-[#f97316]">
+          <div className="card card-hover p-6 border-l-4 border-l-[#111827]">
             <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
               The empirical evidence
             </p>
@@ -365,7 +365,7 @@ export default function CronyismAnalysisPage() {
             </p>
             <Link
               href="/analysis/selective-promotion"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#111827] underline hover:text-[#374151] transition-colors"
             >
               Which businesses does VisitSouthport.com actually promote?
               <ArrowRight size={14} />
@@ -382,7 +382,7 @@ export default function CronyismAnalysisPage() {
             </p>
             <Link
               href="/analysis/bid-treasurer-mikhail"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#111827] underline hover:text-[#374151] transition-colors"
             >
               The BID Treasurer and Mikhail Hotels
               <ArrowRight size={14} />
@@ -426,7 +426,7 @@ export default function CronyismAnalysisPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/audit"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
             >
               Request a Free Audit
               <ArrowRight size={15} />

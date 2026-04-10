@@ -49,67 +49,41 @@ const manifestoSchema = {
 
 export default function ManifestoPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(manifestoSchema) }}
       />
-      {/* Header */}
-      <div className="border-b border-[#e2e8f0] bg-[#f8fafc]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-orange mb-5">SIBA Technical Charter, April 2026</span>
-          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">The Manifesto</h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
-            Why SIBA exists, what it is committed to delivering, and why the current
-            Business Improvement District model is not fit for purpose in 2026.
-          </p>
+
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+          SIBA Technical Charter, April 2026
+        </p>
+        <h1 className="text-4xl text-[#111827] mb-4">The Manifesto</h1>
+        <p className="text-lg text-[#374151] leading-relaxed mb-10">
+          Why SIBA exists, what it is committed to delivering, and why the current
+          Business Improvement District model is not fit for purpose in 2026.
+        </p>
+
+        <div className="mb-14">
+          <InvestigationClosed />
         </div>
-      </div>
 
-      {/* Investigation closed note */}
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-10">
-        <InvestigationClosed />
-      </div>
-
-      {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
-              Jump to
-            </span>
-            {[
-              { href: "#vision", label: "01. 2026 Vision" },
-              { href: "#levy", label: "02. The Levy Failure" },
-              { href: "#charter", label: "03. Technical Charter" },
-            ].map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
-              >
-                {l.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+        {/* Section nav */}
+        <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 border-y border-[#e5e7eb] py-3 mb-16 text-[13px]">
+          <span className="text-[#9ca3af] font-medium mr-1">Jump to</span>
+          <a href="#vision" className="text-[#6b7280] hover:text-[#111827] transition-colors">01. 2026 Vision</a>
+          <a href="#levy" className="text-[#6b7280] hover:text-[#111827] transition-colors">02. The Levy Failure</a>
+          <a href="#charter" className="text-[#6b7280] hover:text-[#111827] transition-colors">03. Technical Charter</a>
+        </nav>
 
         {/* 01 */}
-        <section id="vision" className="scroll-mt-32">
-          <div className="flex items-start gap-5 mb-7">
-            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
-              01
-            </span>
-            <div>
-              <h2 className="text-2xl font-bold text-[#0f172a]">The 2026 Vision</h2>
-              <p className="text-sm text-[#94a3b8] mt-1">The commercial case for acting now</p>
-            </div>
-          </div>
-          <div className="space-y-4 text-[#475569] leading-relaxed pl-14">
+        <section id="vision" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">01</p>
+          <h2 className="text-2xl text-[#111827] mb-2">The 2026 Vision</h2>
+          <p className="text-sm text-[#6b7280] mb-6">The commercial case for acting now</p>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               The Open Championship comes to Royal Birkdale in July 2026. That means roughly
               150,000 visitors arriving in this town over seven days, most of them on
@@ -136,20 +110,12 @@ export default function ManifestoPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* 02 */}
-        <section id="levy" className="scroll-mt-32">
-          <div className="flex items-start gap-5 mb-7">
-            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
-              02
-            </span>
-            <div>
-              <h2 className="text-2xl font-bold text-[#0f172a]">The Failure of the Mandatory Levy Model</h2>
-              <p className="text-sm text-[#94a3b8] mt-1">A structural critique, not a political one</p>
-            </div>
-          </div>
-          <div className="space-y-4 text-[#475569] leading-relaxed pl-14">
+        <section id="levy" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">02</p>
+          <h2 className="text-2xl text-[#111827] mb-2">The Failure of the Mandatory Levy Model</h2>
+          <p className="text-sm text-[#6b7280] mb-6">A structural critique, not a political one</p>
+          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
             <p>
               Business Improvement Districts were a reasonable idea in 2004. A collective levy,
               pooled for collective benefit. Events, marketing, street improvements. The model
@@ -159,7 +125,7 @@ export default function ManifestoPage() {
             <p>
               The BID levy is mandatory. If your business falls within the defined zone, you
               pay. There is no opt-out based on whether you are receiving value. A restaurant
-              paying £2,400 per year has no practical way to direct any of that money toward
+              paying &pound;2,400 per year has no practical way to direct any of that money toward
               the SEO audit that would fill its tables on a Tuesday in November.
             </p>
             <p>
@@ -168,11 +134,11 @@ export default function ManifestoPage() {
               Search is. Mobile is. Page speed is. Google Business Profile completeness is.
             </p>
 
-            <div className="my-6 card p-5 bg-[#fff7ed] border-[#fed7aa]">
-              <p className="text-sm font-semibold text-[#0f172a] mb-2">The calculation</p>
-              <p className="text-sm text-[#64748b]">
-                A Southport business with a rateable value of £120,000 pays approximately
-                £2,400 per year in BID levy at a 2% rate. At the time of this case study,
+            <div className="border-l-2 border-[#d1d5db] pl-5 py-2 my-6">
+              <p className="text-sm font-semibold text-[#111827] mb-2">The calculation</p>
+              <p className="text-sm text-[#6b7280]">
+                A Southport business with a rateable value of &pound;120,000 pays approximately
+                &pound;2,400 per year in BID levy at a 2% rate. At the time of this case study,
                 SIBA provided SEO audits, local ranking reports, and levy ROI analysis
                 to affected businesses.
               </p>
@@ -186,27 +152,19 @@ export default function ManifestoPage() {
             <p>
               For the full structural analysis of why the BID model breeds cronyism by
               design, regardless of who runs it,{" "}
-              <Link href="/analysis/bid-cronyism-by-design" className="text-[#f97316] hover:underline font-medium">
+              <Link href="/analysis/bid-cronyism-by-design" className="text-[#111827] underline hover:text-[#374151]">
                 read the analysis
               </Link>.
             </p>
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
-
         {/* 03 */}
-        <section id="charter" className="scroll-mt-32">
-          <div className="flex items-start gap-5 mb-7">
-            <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#fff7ed] border border-[#fed7aa] flex items-center justify-center text-xs font-bold text-[#f97316]">
-              03
-            </span>
-            <div>
-              <h2 className="text-2xl font-bold text-[#0f172a]">The SIBA Technical Charter</h2>
-              <p className="text-sm text-[#94a3b8] mt-1">Commitments, not aspirations</p>
-            </div>
-          </div>
-          <div className="pl-14 space-y-4">
+        <section id="charter" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">03</p>
+          <h2 className="text-2xl text-[#111827] mb-2">The SIBA Technical Charter</h2>
+          <p className="text-sm text-[#6b7280] mb-8">Commitments, not aspirations</p>
+          <div className="space-y-6">
             {[
               {
                 title: "Transparency as default",
@@ -233,18 +191,13 @@ export default function ManifestoPage() {
                 body: "Any analysis SIBA conducts for a business belongs to that business. We do not use audit data to create dependency. We hand over the report.",
               },
             ].map((item) => (
-              <div key={item.title} className="card p-5 flex gap-4">
-                <div className="flex-shrink-0 mt-1 h-2 w-2 rounded-full bg-[#f97316]" />
-                <div>
-                  <p className="text-sm font-semibold text-[#0f172a] mb-1">{item.title}</p>
-                  <p className="text-sm text-[#64748b] leading-relaxed">{item.body}</p>
-                </div>
+              <div key={item.title}>
+                <p className="text-sm font-semibold text-[#111827] mb-1.5">{item.title}</p>
+                <p className="text-sm text-[#374151] leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
         </section>
-
-        <div className="border-t border-[#e2e8f0]" />
       </div>
     </div>
   );

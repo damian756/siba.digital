@@ -227,7 +227,7 @@ const absentBusinesses = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#f97316]" />
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
       <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">
         {children}
       </h2>
@@ -258,7 +258,7 @@ export default function SelectivePromotionPage() {
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
-            <span className="badge badge-orange">Editorial Review</span>
+            <span className="badge badge-navy">Editorial Review</span>
             <span className="text-xs text-[#94a3b8]">April 2026</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
@@ -282,7 +282,7 @@ export default function SelectivePromotionPage() {
       <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -298,7 +298,7 @@ export default function SelectivePromotionPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#f97316] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
               >
                 {l.label}
               </a>
@@ -314,8 +314,8 @@ export default function SelectivePromotionPage() {
         <section className="scroll-mt-32">
           <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#f97316] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
                 What this article is about
               </p>
             </div>
@@ -493,7 +493,7 @@ export default function SelectivePromotionPage() {
                     key={row.business}
                     className={`hover:bg-[#f8fafc] transition-colors ${
                       "highlight" in row && row.highlight
-                        ? "bg-[#fff7ed]"
+                        ? "bg-[#f9fafb]"
                         : ""
                     }`}
                   >
@@ -524,7 +524,7 @@ export default function SelectivePromotionPage() {
             </table>
           </div>
 
-          <div className="mt-6 card p-6 bg-[#fff7ed] border-[#fed7aa]">
+          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
             <p className="text-sm font-semibold text-[#0f172a] mb-2">
               The pattern in the data
             </p>
@@ -573,7 +573,7 @@ export default function SelectivePromotionPage() {
                       {page.total} outbound links
                     </span>
                     {page.allDofollow && page.total > 0 && (
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#f97316]">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827]">
                         All dofollow
                       </span>
                     )}
@@ -638,7 +638,7 @@ export default function SelectivePromotionPage() {
             ))}
           </div>
 
-          <div className="mt-6 card p-6 bg-[#fff7ed] border-[#fed7aa]">
+          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
             <p className="text-sm font-semibold text-[#0f172a] mb-2">
               Zero mentions. Zero links. Every page.
             </p>
@@ -701,7 +701,7 @@ export default function SelectivePromotionPage() {
               of{" "}
               <Link
                 href="/analysis/bid-cronyism-by-design"
-                className="text-[#f97316] hover:underline font-medium"
+                className="text-[#111827] underline font-medium"
               >
                 how BIDs breed cronyism by design
               </Link>
@@ -733,7 +733,7 @@ export default function SelectivePromotionPage() {
           </div>
 
           {/* Pull quote */}
-          <div className="my-6 border-l-4 border-l-[#f97316] bg-white rounded-r-lg p-6 shadow-sm">
+          <div className="my-6 border-l-4 border-l-[#111827] bg-white rounded-r-lg p-6 shadow-sm">
             <p className="text-lg font-medium text-[#0f172a] leading-relaxed italic mb-4">
               &ldquo;Christmas is another time when the town comes alive and
               working alongside the Visit Southport team on marketing helps us
@@ -741,7 +741,7 @@ export default function SelectivePromotionPage() {
             </p>
             <div className="flex items-center gap-3">
               <div className="h-px flex-1 bg-[#e2e8f0]" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#111827]">
                 Rachel Fitzgerald
               </p>
               <div className="h-px flex-1 bg-[#e2e8f0]" />
@@ -801,7 +801,7 @@ export default function SelectivePromotionPage() {
                 ].map((row) => (
                   <tr
                     key={row.name}
-                    className={`hover:bg-[#f8fafc] transition-colors ${row.highlight ? "bg-[#fff7ed]" : ""}`}
+                    className={`hover:bg-[#f8fafc] transition-colors ${row.highlight ? "bg-[#f9fafb]" : ""}`}
                   >
                     <td className="px-5 py-3">
                       <p className="font-semibold text-[#0f172a] text-sm">{row.name}</p>
@@ -815,7 +815,7 @@ export default function SelectivePromotionPage() {
             </table>
           </div>
 
-          <div className="mt-6 card p-6 bg-[#fff7ed] border-[#fed7aa]">
+          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
             <p className="text-sm font-semibold text-[#0f172a] mb-2">
               What this means
             </p>
@@ -847,7 +847,7 @@ export default function SelectivePromotionPage() {
               "Has Sefton Council conducted any review of the editorial content or linking decisions on a platform it funds?",
             ].map((q) => (
               <div key={q} className="card p-4 flex gap-3">
-                <span className="flex-shrink-0 mt-0.5 h-2 w-2 rounded-full bg-[#f97316]" />
+                <span className="flex-shrink-0 mt-0.5 h-2 w-2 rounded-full bg-[#111827]" />
                 <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
               </div>
             ))}
@@ -861,7 +861,7 @@ export default function SelectivePromotionPage() {
               href="/foi#09"
               className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
             >
-              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#fff7ed] border border-[#fed7aa] text-[9px] font-bold text-[#f97316]">
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f9fafb] border border-[#e5e7eb] text-[9px] font-bold text-[#111827]">
                 09
               </span>
               FOI 09: VisitSouthport Link Management
@@ -871,7 +871,7 @@ export default function SelectivePromotionPage() {
               href="/foi#04"
               className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
             >
-              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#fff7ed] border border-[#fed7aa] text-[9px] font-bold text-[#f97316]">
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f9fafb] border border-[#e5e7eb] text-[9px] font-bold text-[#111827]">
                 04
               </span>
               FOI 04: Mark Catherall Register of Interests
@@ -900,7 +900,7 @@ export default function SelectivePromotionPage() {
                 href="https://ahrefs.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#111827] underline inline-flex items-center gap-0.5"
               >
                 Ahrefs
                 <ExternalLink size={11} />
@@ -917,7 +917,7 @@ export default function SelectivePromotionPage() {
                 href="https://liverpoolcityregiondp.com/2025/09/16/southport-leaders-in-conversation-rachel-fitzgerald-and-mark-catherall-on-the-towns-incredible-future/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#111827] underline inline-flex items-center gap-0.5"
               >
                 liverpoolcityregiondp.com
                 <ExternalLink size={11} />
@@ -946,7 +946,7 @@ export default function SelectivePromotionPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/analysis/bid-cronyism-by-design"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
             >
               Read: Cronyism by Design
               <ArrowRight size={15} />

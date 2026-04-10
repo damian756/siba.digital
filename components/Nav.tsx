@@ -37,19 +37,19 @@ export default function Nav() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#e2e8f0]">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#e5e7eb]">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[60px] items-center justify-between">
           <Link href="/" aria-label="SIBA Digital home">
-            <SibaLogo markSize={28} />
+            <SibaLogo markSize={24} />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-6">
             {topLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                className="px-3 py-2 text-sm font-medium text-[#475569] hover:text-[#0f172a] transition-colors"
+                className="text-[13px] font-medium text-[#6b7280] hover:text-[#111827] transition-colors"
               >
                 {l.label}
               </Link>
@@ -58,23 +58,23 @@ export default function Nav() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-[#475569] hover:text-[#0f172a] transition-colors"
+                className="inline-flex items-center gap-1 text-[13px] font-medium text-[#6b7280] hover:text-[#111827] transition-colors"
               >
                 Case Study
                 <ChevronDown
-                  size={12}
+                  size={11}
                   className={`transition-transform duration-150 ${dropdownOpen ? "rotate-180" : ""}`}
                 />
               </button>
 
               {dropdownOpen && (
-                <div className="absolute right-0 top-full mt-1 w-48 border border-[#e2e8f0] bg-white shadow-lg py-1 z-50">
+                <div className="absolute right-0 top-full mt-2 w-44 border border-[#e5e7eb] bg-white shadow-sm py-1 z-50">
                   {caseStudyLinks.map((l) => (
                     <Link
                       key={l.href}
                       href={l.href}
                       onClick={() => setDropdownOpen(false)}
-                      className="block px-4 py-2.5 text-sm font-medium text-[#475569] hover:text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+                      className="block px-4 py-2 text-[13px] text-[#6b7280] hover:text-[#111827] hover:bg-[#f9fafb] transition-colors"
                     >
                       {l.label}
                     </Link>
@@ -83,19 +83,17 @@ export default function Nav() {
               )}
             </div>
 
-            <div className="ml-3 pl-3 border-l border-[#e2e8f0]">
-              <Link
-                href="/services#commission"
-                className="inline-flex items-center rounded bg-[#0f172a] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1e293b] transition-colors"
-              >
-                Commission an Audit
-              </Link>
-            </div>
+            <Link
+              href="/services#commission"
+              className="text-[13px] font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors"
+            >
+              Commission an Audit
+            </Link>
           </nav>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-[#475569] hover:text-[#0f172a] transition-colors"
+            className="md:hidden p-2 text-[#6b7280] hover:text-[#111827] transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -104,20 +102,20 @@ export default function Nav() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden border-t border-[#e2e8f0] bg-white px-4 py-4 space-y-1">
+        <div className="md:hidden border-t border-[#e5e7eb] bg-white px-4 py-4 space-y-1">
           {topLinks.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setMobileOpen(false)}
-              className="block px-3 py-2.5 text-sm font-medium text-[#475569] hover:text-[#0f172a]"
+              className="block px-3 py-2.5 text-sm text-[#6b7280] hover:text-[#111827]"
             >
               {l.label}
             </Link>
           ))}
 
-          <div className="pt-1">
-            <p className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-[#94a3b8]">
+          <div className="pt-2">
+            <p className="px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-[#9ca3af]">
               Case Study
             </p>
             {caseStudyLinks.map((l) => (
@@ -125,18 +123,18 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2.5 text-sm font-medium text-[#475569] hover:text-[#0f172a]"
+                className="block px-3 py-2.5 text-sm text-[#6b7280] hover:text-[#111827]"
               >
                 {l.label}
               </Link>
             ))}
           </div>
 
-          <div className="pt-2">
+          <div className="pt-3 px-3">
             <Link
               href="/services#commission"
               onClick={() => setMobileOpen(false)}
-              className="block w-full rounded bg-[#0f172a] px-4 py-2.5 text-center text-sm font-semibold text-white"
+              className="block text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 w-fit"
             >
               Commission an Audit
             </Link>

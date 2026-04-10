@@ -94,8 +94,8 @@ export default function FoiCountdown() {
       {/* Header bar */}
       <div className="bg-[#0f172a] border-b border-[#1e293b] px-6 py-3 flex items-center justify-between gap-3 flex-wrap">
         <div className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-[#f97316] animate-pulse flex-shrink-0" />
-          <p className="text-xs font-bold uppercase tracking-widest text-[#f97316]">
+          <span className="h-2 w-2 rounded-full bg-[#111827] animate-pulse flex-shrink-0" />
+          <p className="text-xs font-bold uppercase tracking-widest text-[#111827]">
             Statutory Deadline — Freedom of Information Act 2000, s.10(1)
           </p>
         </div>
@@ -139,12 +139,12 @@ export default function FoiCountdown() {
           </div>
           <div className="w-full h-2 rounded-full bg-[#1e293b]">
             <div
-              className="h-2 rounded-full bg-[#f97316] transition-all duration-1000"
+              className="h-2 rounded-full bg-[#111827] transition-all duration-1000"
               style={{ width: `${pctUsed}%` }}
             />
           </div>
           <div className="flex justify-between mt-1.5">
-            <p className="text-xs font-bold text-[#f97316]">
+            <p className="text-xs font-bold text-[#111827]">
               {elapsed} of {TOTAL_WORKING_DAYS} days used
             </p>
             <p className="text-xs text-[#475569]">

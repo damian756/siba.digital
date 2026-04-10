@@ -277,7 +277,7 @@ export default function FoiPage() {
               key={r.number}
               className={`card bg-white p-6 sm:p-7 ${
                 "highlight" in r && r.highlight
-                  ? "border-l-4 border-l-[#f97316]"
+                  ? "border-l-4 border-l-[#111827]"
                   : ""
               }`}
             >
@@ -287,14 +287,14 @@ export default function FoiPage() {
                   <div
                     className={`flex h-11 w-11 items-center justify-center rounded-lg border ${
                       "highlight" in r && r.highlight
-                        ? "bg-[#fff7ed] border-[#fed7aa]"
+                        ? "bg-[#f9fafb] border-[#e5e7eb]"
                         : "bg-[#f1f5f9] border-[#e2e8f0]"
                     }`}
                   >
                     <span
                       className={`text-sm font-bold ${
                         "highlight" in r && r.highlight
-                          ? "text-[#f97316]"
+                          ? "text-[#111827]"
                           : "text-[#475569]"
                       }`}
                     >
@@ -324,7 +324,7 @@ export default function FoiPage() {
                       href={`${BASE_WDTK}/${r.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#f97316] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#111827] transition-colors"
                     >
                       View on WhatDoTheyKnow
                       <ExternalLink size={11} />
@@ -337,7 +337,7 @@ export default function FoiPage() {
                     {r.relatedLabel && r.relatedHref && (
                       <Link
                         href={r.relatedHref}
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#f97316] hover:text-orange-500 transition-colors"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:text-[#374151] transition-colors"
                       >
                         Related: {r.relatedLabel}
                         <ArrowRight size={11} />
@@ -359,7 +359,7 @@ export default function FoiPage() {
                 href="https://www.whatdotheyknow.com/user/southport_independent_business_a"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#f97316] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
               >
                 WhatDoTheyKnow
                 <ExternalLink size={11} />
