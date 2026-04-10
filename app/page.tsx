@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
@@ -23,16 +24,26 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 sm:pt-40 lg:pt-52 pb-24 lg:pb-32">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative -mt-[60px] flex min-h-[80vh] items-center justify-center overflow-hidden">
+        <Image
+          src="/images/siba-hero.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0a1628]/65" />
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
+
+        <div className="relative z-10 mx-auto max-w-3xl px-4 pt-[60px] pb-20 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] text-[#112d6e] mb-10 leading-[1.12]">
+            <h1 className="mb-10 text-[32px] leading-[1.12] text-white sm:text-[40px] lg:text-[48px]">
               We find the vulnerabilities<br />
               before the public does.
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="text-[17px] text-[#3d3d3d] leading-relaxed max-w-lg mx-auto mb-12">
+            <p className="mx-auto mb-12 max-w-lg text-[17px] leading-relaxed text-white/65">
               SIBA maps the corporate relationships, procurement chains, and
               digital footprints behind public funding decisions. Open-source
               intelligence and digital governance audits for BIDs, councils,
@@ -43,13 +54,13 @@ export default function HomePage() {
             <div className="flex items-center justify-center gap-8">
               <Link
                 href="/services#commission"
-                className="text-sm text-[#2c4a52] border-b border-[#2c4a52] pb-0.5 hover:text-[#1c1c1c] hover:border-[#1c1c1c] transition-colors"
+                className="border-b border-white/40 pb-0.5 text-sm text-white/90 transition-colors hover:border-white hover:text-white"
               >
                 Commission an Audit
               </Link>
               <Link
                 href="/analysis"
-                className="text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors"
+                className="text-sm text-white/40 transition-colors hover:text-white/80"
               >
                 Read the Case Study
               </Link>
@@ -58,22 +69,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <hr className="border-[#ddddd5] mx-auto max-w-3xl" />
-
       {/* Methodology */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <h2 className="text-xl text-[#112d6e] mb-12 text-center">Methodology</h2>
+            <h2 className="mb-12 text-center text-xl">Methodology</h2>
           </Reveal>
 
-          <div className="space-y-10 max-w-xl mx-auto">
+          <div className="mx-auto max-w-xl space-y-10">
             <Reveal>
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-2">
+                <p className="mb-2 text-sm font-medium text-[#1c1c1c]">
                   OSINT and Corporate Mapping
                 </p>
-                <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                <p className="text-[15px] leading-relaxed text-[#3d3d3d]">
                   Companies House director networks, related-party transactions,
                   beneficial ownership structures, and corporate group hierarchies.
                   We map the relationships that public documents reveal but
@@ -84,10 +93,10 @@ export default function HomePage() {
 
             <Reveal>
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-2">
+                <p className="mb-2 text-sm font-medium text-[#1c1c1c]">
                   Digital Footprint Analysis
                 </p>
-                <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                <p className="text-[15px] leading-relaxed text-[#3d3d3d]">
                   Procurement trails, media contracts, undeclared sponsorships,
                   editorial conflict patterns, and public-facing disclosure
                   consistency. Every claim is sourced, linked, and independently
@@ -98,10 +107,10 @@ export default function HomePage() {
 
             <Reveal>
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-2">
+                <p className="mb-2 text-sm font-medium text-[#1c1c1c]">
                   Public Records and FOI Strategy
                 </p>
-                <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                <p className="text-[15px] leading-relaxed text-[#3d3d3d]">
                   Structured information requests under the Freedom of Information
                   Act 2000, transparency obligation mapping, and public record
                   monitoring. We build the paper trail that holds governance to
@@ -113,23 +122,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      <hr className="border-[#ddddd5] mx-auto max-w-3xl" />
+      <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
       {/* Case Study */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4 text-center">
+            <p className="mb-4 text-center text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
               Published Investigation
             </p>
           </Reveal>
           <Reveal>
-            <h2 className="text-xl text-[#112d6e] mb-6 text-center">
+            <h2 className="mb-6 text-center text-xl">
               Southport BID Governance Audit
             </h2>
           </Reveal>
           <Reveal>
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-8 max-w-lg mx-auto text-center">
+            <p className="mx-auto mb-8 max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
               A 12-month open-source investigation into a Business Improvement
               District managing over &pound;448,000 in compulsory levy income.
               The audit mapped director conflicts of interest, undeclared media
@@ -142,7 +151,7 @@ export default function HomePage() {
             <div className="text-center">
               <Link
                 href="/analysis"
-                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
               >
                 Read the full case study
                 <ArrowRight size={13} />
@@ -152,16 +161,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <hr className="border-[#ddddd5] mx-auto max-w-3xl" />
+      <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
       {/* Reach */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="text-xl text-[#112d6e] mb-6">Reach</h2>
+            <h2 className="mb-6 text-xl">Reach</h2>
           </Reveal>
           <Reveal>
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-lg mx-auto">
+            <p className="mx-auto max-w-lg text-[15px] leading-relaxed text-[#3d3d3d]">
               A single published analysis generated over 7,300 impressions on
               LinkedIn. The readership included government administration
               professionals, compliance officers, construction and real estate
@@ -172,18 +181,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <hr className="border-[#ddddd5] mx-auto max-w-3xl" />
+      <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
       {/* Contact */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="text-xl text-[#112d6e] mb-6">
+            <h2 className="mb-6 text-xl">
               Your organisation manages public money.
             </h2>
           </Reveal>
           <Reveal>
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-lg mx-auto mb-8">
+            <p className="mx-auto mb-8 max-w-lg text-[15px] leading-relaxed text-[#3d3d3d]">
               We make sure the digital and corporate trail is clean before
               someone else finds it.
             </p>
@@ -191,7 +200,7 @@ export default function HomePage() {
           <Reveal>
             <Link
               href="/services#commission"
-              className="text-sm text-[#2c4a52] border-b border-[#2c4a52] pb-0.5 hover:text-[#1c1c1c] hover:border-[#1c1c1c] transition-colors"
+              className="border-b border-[#2c4a52] pb-0.5 text-sm text-[#2c4a52] transition-colors hover:border-[#1c1c1c] hover:text-[#1c1c1c]"
             >
               Commission an Audit
             </Link>

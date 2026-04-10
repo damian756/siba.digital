@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import SibaLogo from "@/components/SibaLogo";
@@ -22,8 +23,11 @@ const caseStudyLinks = [
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,12 +40,31 @@ export default function Nav() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (!isHome) {
+      setScrolled(false);
+      return;
+    }
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
+
+  const transparent = isHome && !scrolled;
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f6f6ef]/95 backdrop-blur-sm border-b border-[#ddddd5]">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+        transparent
+          ? "bg-transparent border-transparent"
+          : "bg-[#f6f6ef]/95 backdrop-blur-sm border-[#ddddd5]"
+      }`}
+    >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-[60px] items-center justify-between">
           <Link href="/" aria-label="SIBA Digital home">
-            <SibaLogo markSize={24} />
+            <SibaLogo markSize={24} variant={transparent ? "light" : "default"} />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -49,7 +72,11 @@ export default function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-[13px] font-medium text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
+                className={`text-[13px] font-medium transition-colors duration-300 ${
+                  transparent
+                    ? "text-white/70 hover:text-white"
+                    : "text-[#6b6b6b] hover:text-[#1c1c1c]"
+                }`}
               >
                 {l.label}
               </Link>
@@ -58,7 +85,11 @@ export default function Nav() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="inline-flex items-center gap-1 text-[13px] font-medium text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
+                className={`inline-flex items-center gap-1 text-[13px] font-medium transition-colors duration-300 ${
+                  transparent
+                    ? "text-white/70 hover:text-white"
+                    : "text-[#6b6b6b] hover:text-[#1c1c1c]"
+                }`}
               >
                 Case Study
                 <ChevronDown
@@ -85,7 +116,11 @@ export default function Nav() {
 
             <Link
               href="/services#commission"
-              className="text-[13px] font-medium text-[#2c4a52] border-b border-[#2c4a52] pb-0.5 hover:text-[#1c1c1c] hover:border-[#1c1c1c] transition-colors"
+              className={`text-[13px] font-medium pb-0.5 border-b transition-colors duration-300 ${
+                transparent
+                  ? "text-white/80 border-white/40 hover:text-white hover:border-white"
+                  : "text-[#2c4a52] border-[#2c4a52] hover:text-[#1c1c1c] hover:border-[#1c1c1c]"
+              }`}
             >
               Commission an Audit
             </Link>
@@ -93,7 +128,11 @@ export default function Nav() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
+            className={`md:hidden p-2 transition-colors duration-300 ${
+              transparent
+                ? "text-white/70 hover:text-white"
+                : "text-[#6b6b6b] hover:text-[#1c1c1c]"
+            }`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
