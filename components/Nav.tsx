@@ -21,7 +21,7 @@ const caseStudyLinks = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const hasHero = pathname === "/" || pathname === "/about";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +38,7 @@ export default function Nav() {
   }, []);
 
   useEffect(() => {
-    if (!isHome) {
+    if (!hasHero) {
       setScrolled(false);
       return;
     }
@@ -46,9 +46,9 @@ export default function Nav() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome]);
+  }, [hasHero]);
 
-  const transparent = isHome && !scrolled;
+  const transparent = hasHero && !scrolled;
 
   return (
     <header

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Reveal from "@/components/Reveal";
@@ -47,23 +48,39 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
-
-        <Reveal>
-          <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-6 leading-[1.15]">
+      {/* Hero */}
+      <div className="relative min-h-[65vh] flex items-end">
+        <Image
+          src="/images/about-hero.jpg"
+          alt="SIBA Digital — built from a real investigation"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-[#0a1628]/78" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
+        <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-20 pt-36">
+          <h1
+            className="text-white mb-5 leading-[1.12]"
+            style={{
+              fontSize: "clamp(2rem, 1.4rem + 2.4vw, 3.2rem)",
+              textShadow: "0 2px 20px rgba(0,0,0,0.4)",
+            }}
+          >
             Built from a real investigation.{" "}
-            <span className="text-[#a0a0a0]">Now available commercially.</span>
+            <span className="text-white/55">Now available commercially.</span>
           </h1>
-        </Reveal>
-        <Reveal delay={150}>
-          <p className="text-[17px] text-[#3d3d3d] leading-relaxed max-w-xl mb-20">
+          <p className="text-white/78 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.35)" }}>
             SIBA began as a 12-month open-source investigation into BID
             governance in Southport. The methodology proved robust enough to
             attract institutional attention from central government, national
             media, and compliance professionals. It is now offered as a
             commercial audit service for organisations managing public money.
           </p>
-        </Reveal>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
 
         {/* Founder */}
         <Reveal>
@@ -213,6 +230,7 @@ export default function AboutPage() {
             </Link>
           </section>
         </Reveal>
+
       </div>
     </div>
   );
