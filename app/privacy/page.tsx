@@ -21,7 +21,7 @@ const LAST_UPDATED = "April 2026";
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="scroll-mt-28">
-      <h2 className="text-xl font-bold text-[#1c1c1c] mb-5 pb-4 border-b border-[#e8e8e4]">
+      <h2 className="text-xl font-bold text-[#1c1c1c] mb-5 pb-4 border-b border-[#ddddd5]">
         {title}
       </h2>
       <div className="space-y-4 text-sm text-[#4a4a4a] leading-relaxed">{children}</div>
@@ -35,9 +35,9 @@ function H3({ children }: { children: React.ReactNode }) {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <span className="badge badge-navy mb-5">Legal and Transparency</span>
           <h1 className="text-4xl font-bold text-[#1c1c1c] mb-3">Privacy and Legal</h1>
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
               any other mandatory business levy organisation. SIBA does not collect compulsory
               levies. Membership and engagement are entirely voluntary.
             </p>
-            <div className="mt-4 card p-4 bg-[#f5f5f0]">
+            <div className="mt-4 card p-4 bg-[#eeeee6]">
               <p className="text-xs font-semibold text-[#1c1c1c] mb-2">Contact</p>
               <p>
                 SIBA Digital (a trading name of Churchtown Media Ltd), Southport, Merseyside.

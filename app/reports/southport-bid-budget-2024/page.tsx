@@ -90,13 +90,13 @@ const articleSchema = {
 
 export default function BidBudgetReportPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/reports"
@@ -107,7 +107,7 @@ export default function BidBudgetReportPage() {
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Budget Transparency</span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#ddddd5] rounded px-2 py-0.5 bg-[#eeeee6]">
               Report 01 of an ongoing investigation
             </span>
             <span className="text-xs text-[#a0a0a0]">April 2026</span>
@@ -123,7 +123,7 @@ export default function BidBudgetReportPage() {
       </div>
 
       {/* Legal disclaimer */}
-      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
+      <div className="bg-[#eeeee6] border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
             <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
@@ -172,7 +172,7 @@ export default function BidBudgetReportPage() {
 
       {/* Feature graphic */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-10">
-        <div className="rounded-xl overflow-hidden border border-[#e8e8e4] shadow-sm">
+        <div className="rounded-xl overflow-hidden border border-[#ddddd5] shadow-sm">
           <Image
             src="/images/bid-transparency-chart.svg"
             alt="Southport BID budget breakdown: where does the levy go?"
@@ -224,7 +224,7 @@ export default function BidBudgetReportPage() {
           </p>
         </div>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The levy */}
         <section id="levy" className="scroll-mt-32 space-y-5">
@@ -244,24 +244,24 @@ export default function BidBudgetReportPage() {
           </div>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+            <div className="px-5 py-3 bg-[#eeeee6] border-b border-[#ddddd5]">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Projected levy income, 2024-2029
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e8e8e4]">
+                <tr className="border-b border-[#ddddd5]">
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Year</th>
                   <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Levy income</th>
                   <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Change</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e8e8e4]">
+              <tbody className="divide-y divide-[#ddddd5]">
                 {levyProjections.map((row) => (
                   <tr
                     key={row.year}
-                    className={row.bold ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
+                    className={row.bold ? "bg-[#eeeee6]" : "hover:bg-[#eeeee6]"}
                   >
                     <td className={`px-5 py-3 ${row.bold ? "font-bold text-[#1c1c1c]" : "text-[#4a4a4a]"}`}>
                       {row.year}
@@ -285,7 +285,7 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The budget */}
         <section id="budget" className="scroll-mt-32 space-y-5">
@@ -296,25 +296,25 @@ export default function BidBudgetReportPage() {
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+            <div className="px-5 py-3 bg-[#eeeee6] border-b border-[#ddddd5]">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Year one expenditure breakdown
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e8e8e4]">
+                <tr className="border-b border-[#ddddd5]">
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Category</th>
                   <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Amount</th>
                   <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">% of spend</th>
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">Description</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e8e8e4]">
+              <tbody className="divide-y divide-[#ddddd5]">
                 {budgetRows.map((row) => (
                   <tr
                     key={row.category}
-                    className={row.highlight ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
+                    className={row.highlight ? "bg-[#eeeee6]" : "hover:bg-[#eeeee6]"}
                   >
                     <td className={`px-5 py-3.5 font-medium ${row.highlight ? "text-[#1c1c1c]" : "text-[#1c1c1c]"}`}>
                       {row.category}
@@ -327,7 +327,7 @@ export default function BidBudgetReportPage() {
                     <td className="px-5 py-3.5 text-[#6b6b6b] hidden sm:table-cell">{row.note}</td>
                   </tr>
                 ))}
-                <tr className="bg-[#f5f5f0] border-t-2 border-[#e8e8e4]">
+                <tr className="bg-[#eeeee6] border-t-2 border-[#ddddd5]">
                   <td className="px-5 py-3 font-bold text-[#1c1c1c]">Total</td>
                   <td className="px-5 py-3 text-right font-bold text-[#1c1c1c]">£455,000</td>
                   <td className="px-5 py-3 text-right font-bold text-[#1c1c1c]">100%</td>
@@ -346,7 +346,7 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Operating costs */}
         <section id="operating" className="scroll-mt-32 space-y-4">
@@ -382,7 +382,7 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* YourSouthport */}
         <section id="yoursouthport" className="scroll-mt-32 space-y-4">
@@ -416,7 +416,7 @@ export default function BidBudgetReportPage() {
             </p>
           </div>
 
-          <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4]">
+          <div className="card p-5 bg-[#eeeee6] border-[#ddddd5]">
             <p className="text-sm font-semibold text-[#1c1c1c] mb-2">Three sources. One conclusion.</p>
             <ul className="space-y-2 text-sm text-[#6b6b6b]">
               <li className="flex items-start gap-2">
@@ -452,7 +452,7 @@ export default function BidBudgetReportPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Transparency */}
         <section id="transparency" className="scroll-mt-32 space-y-4">
@@ -488,7 +488,7 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* 2026 */}
         <section className="space-y-4">
@@ -512,7 +512,7 @@ export default function BidBudgetReportPage() {
         </section>
 
         {/* Source footer */}
-        <div className="border-t border-[#e8e8e4] pt-8">
+        <div className="border-t border-[#ddddd5] pt-8">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">
             Primary source
           </p>

@@ -128,12 +128,12 @@ export default function Hub2026Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(hub2026Schema) }}
       />
 
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Royal Birkdale, 12-19 July 2026
         </p>
-        <h1 className="text-3xl text-[#1c1c1c] mb-4">The 2026 Hub</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">The 2026 Hub</h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           The Open Championship comes to Southport in July. 150,000 visitors, most of them
           on smartphones, all of them searching. This is the technical roadmap to make sure
@@ -141,7 +141,7 @@ export default function Hub2026Page() {
         </p>
 
         {/* Urgency */}
-        <div className="border-l-2 border-[#d4d4cf] pl-5 py-2 mb-14">
+        <div className="border-l-2 border-[#ccccc4] pl-5 py-2 mb-14">
           <div className="flex gap-3">
             <AlertTriangle size={16} className="text-[#6b6b6b] flex-shrink-0 mt-0.5" />
             <div>
@@ -160,15 +160,15 @@ export default function Hub2026Page() {
         </div>
 
         {/* Technical metrics */}
-        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
-          <h2 className="text-2xl text-[#1c1c1c] mb-2">The technical targets</h2>
+        <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+          <h2 className="text-2xl text-[#0b1d3a] mb-2">The technical targets</h2>
           <p className="text-sm text-[#6b6b6b] mb-8">
             Specific thresholds, not guidelines. These are the numbers that determine whether
             your site ranks and converts during Open week.
           </p>
           <div className="grid grid-cols-2 gap-6">
             {metrics.map((m) => (
-              <div key={m.label} className="border-l-2 border-[#e8e8e4] pl-4">
+              <div key={m.label} className="border-l-2 border-[#ddddd5] pl-4">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-[11px] font-mono font-semibold text-[#a0a0a0]">{m.label}</span>
                   <span className="text-[10px] text-[#a0a0a0] uppercase tracking-wider">{m.status}</span>
@@ -181,8 +181,8 @@ export default function Hub2026Page() {
         </section>
 
         {/* Roadmap */}
-        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
-          <h2 className="text-2xl text-[#1c1c1c] mb-2">Readiness roadmap</h2>
+        <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+          <h2 className="text-2xl text-[#0b1d3a] mb-2">Readiness roadmap</h2>
           <p className="text-sm text-[#6b6b6b] mb-8">
             Month by month. What needs to happen, and when.
           </p>
@@ -196,7 +196,7 @@ export default function Hub2026Page() {
                 <ul className="space-y-1.5">
                   {phase.tasks.map((task) => (
                     <li key={task} className="flex items-start gap-2">
-                      <CheckCircle2 size={13} className="flex-shrink-0 mt-0.5 text-[#d4d4cf]" />
+                      <CheckCircle2 size={13} className="flex-shrink-0 mt-0.5 text-[#ccccc4]" />
                       <span className="text-sm text-[#3d3d3d]">{task}</span>
                     </li>
                   ))}
@@ -207,8 +207,8 @@ export default function Hub2026Page() {
         </section>
 
         {/* Search queries */}
-        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
-          <h2 className="text-2xl text-[#1c1c1c] mb-2">
+        <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+          <h2 className="text-2xl text-[#0b1d3a] mb-2">
             The searches that will happen in July
           </h2>
           <p className="text-sm text-[#6b6b6b] mb-8">

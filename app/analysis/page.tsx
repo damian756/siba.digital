@@ -57,12 +57,12 @@ const articles = [
 export default function AnalysisPage() {
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Original Research
         </p>
-        <h1 className="text-3xl text-[#1c1c1c] mb-4">Analysis</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">Analysis</h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-8">
           Structural critiques of the Business Improvement District model.
           Not reactive complaints about individual boards. Analysis of why
@@ -72,7 +72,7 @@ export default function AnalysisPage() {
           <InvestigationClosed />
         </div>
 
-        <div className="space-y-0 divide-y divide-[#e8e8e4]">
+        <div className="space-y-0 divide-y divide-[#ddddd5]">
           {articles.map((a) => (
             <Link
               key={a.slug}
@@ -83,7 +83,7 @@ export default function AnalysisPage() {
                 <span className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
                   {a.category}
                 </span>
-                <span className="text-[11px] text-[#d4d4cf]">&middot;</span>
+                <span className="text-[11px] text-[#ccccc4]">&middot;</span>
                 <span className="text-[11px] text-[#a0a0a0]">{a.date}</span>
               </div>
               <h2 className="text-lg font-semibold text-[#1c1c1c] mb-1.5 group-hover:text-[#3d3d3d] transition-colors">

@@ -59,14 +59,14 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default function CronyismAnalysisPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
@@ -99,7 +99,7 @@ export default function CronyismAnalysisPage() {
       <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#ccccc4] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -129,12 +129,12 @@ export default function CronyismAnalysisPage() {
         <section className="scroll-mt-32">
           <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
+              <Info size={14} className="text-[#ccccc4] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#ccccc4]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#ccccc4] text-sm leading-relaxed">
               <p>
                 A BID is a Business Improvement District. Businesses in a defined town centre area
                 pay a compulsory levy. The money is collected by the council and handed to a BID
@@ -198,7 +198,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The intermediary problem */}
         <section id="intermediary" className="scroll-mt-32">
@@ -218,7 +218,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Why the board spends with people it knows */}
         <section id="board" className="scroll-mt-32">
@@ -243,7 +243,7 @@ export default function CronyismAnalysisPage() {
               The businesses without those connections pay exactly the same levy. They receive
               proportionally less benefit. They have no practical mechanism to challenge it.
             </p>
-            <div className="my-6 card p-6 bg-[#f5f5f0] border-[#e8e8e4]">
+            <div className="my-6 card p-6 bg-[#eeeee6] border-[#ddddd5]">
               <p className="text-sm font-semibold text-[#1c1c1c] mb-2">The structural point</p>
               <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 That is cronyism produced not by individual bad actors but by a structure
@@ -254,13 +254,13 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The Southport illustration */}
         <section id="illustration" className="scroll-mt-32">
           <SectionHeading>The Southport illustration</SectionHeading>
           <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
-            <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4] mb-2">
+            <div className="card p-5 bg-[#eeeee6] border-[#ddddd5] mb-2">
               <p className="text-xs text-[#a0a0a0] leading-relaxed">
                 The following is a description of how structural incentives operate within
                 Southport&apos;s BID. It is not an allegation of deliberate impropriety by any
@@ -295,7 +295,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The suppression effect */}
         <section id="suppression" className="scroll-mt-32">
@@ -326,7 +326,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Why this argument matters */}
         <section id="conclusion" className="scroll-mt-32">
@@ -349,7 +349,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Evidence links */}
         <section className="scroll-mt-32 space-y-4">
@@ -390,7 +390,7 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* FOI cross-link */}
         <section>
@@ -407,14 +407,14 @@ export default function CronyismAnalysisPage() {
           </p>
           <Link
             href="/foi"
-            className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] transition-colors"
           >
             View all 14 FOI requests
             <ArrowRight size={12} />
           </Link>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* CTA */}
         <div className="text-center py-4">
@@ -433,7 +433,7 @@ export default function CronyismAnalysisPage() {
             </Link>
             <Link
               href="/reports"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-6 py-3 text-sm font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] hover:border-[#d4d4cf] transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-6 py-3 text-sm font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] hover:border-[#ccccc4] transition-colors"
             >
               Read the Reports
               <ArrowRight size={15} />

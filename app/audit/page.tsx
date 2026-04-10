@@ -67,13 +67,13 @@ const auditSchema = {
 
 export default function AuditPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(auditSchema) }}
       />
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
           <span className="badge badge-navy mb-5">Free for PR8 and PR9 Businesses</span>
           <h1 className="text-4xl font-bold text-[#1c1c1c] mb-4">The Audit Hub</h1>
@@ -98,7 +98,7 @@ export default function AuditPage() {
           <LevyCalculator />
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* How it works */}
         <section>
@@ -110,7 +110,7 @@ export default function AuditPage() {
                 <div key={p.step} className="card p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-xs font-bold text-[#1c1c1c] font-mono">{p.step}</span>
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4]">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#eeeee6] border border-[#ddddd5]">
                       <Icon size={16} className="text-[#1c1c1c]" />
                     </div>
                   </div>
@@ -135,10 +135,10 @@ export default function AuditPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Urgency */}
-        <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4]">
+        <div className="card p-5 bg-[#eeeee6] border-[#ddddd5]">
           <div className="flex items-start gap-3">
             <span className="flex-shrink-0 text-sm font-bold text-[#1c1c1c] mt-0.5">!</span>
             <div>
@@ -161,7 +161,7 @@ export default function AuditPage() {
           </div>
         </div>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Form */}
         <section id="request" className="scroll-mt-24">

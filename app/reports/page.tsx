@@ -43,12 +43,12 @@ const publishedReports = [
 export default function ReportsPage() {
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Investigation Archive
         </p>
-        <h1 className="text-3xl text-[#1c1c1c] mb-4">
+        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">
           The Southport Accountability Project
         </h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
@@ -58,7 +58,7 @@ export default function ReportsPage() {
         </p>
 
         {/* Source notice */}
-        <div className="border-l-2 border-[#d4d4cf] pl-5 py-1 mb-14">
+        <div className="border-l-2 border-[#ccccc4] pl-5 py-1 mb-14">
           <p className="text-sm text-[#3d3d3d] leading-relaxed">
             Every factual claim in SIBA reports is sourced from publicly available documents
             and linked directly. SIBA welcomes corrections from any party named or referenced
@@ -71,7 +71,7 @@ export default function ReportsPage() {
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-6">
             Published
           </p>
-          <div className="space-y-0 divide-y divide-[#e8e8e4]">
+          <div className="space-y-0 divide-y divide-[#ddddd5]">
             {publishedReports.map((r) => (
               <Link
                 key={r.slug}
@@ -82,7 +82,7 @@ export default function ReportsPage() {
                   <span className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
                     {r.category}
                   </span>
-                  <span className="text-[11px] text-[#d4d4cf]">&middot;</span>
+                  <span className="text-[11px] text-[#ccccc4]">&middot;</span>
                   <span className="text-[11px] text-[#a0a0a0]">{r.date}</span>
                 </div>
                 <h2 className="text-lg font-semibold text-[#1c1c1c] mb-1.5 group-hover:text-[#3d3d3d] transition-colors">
@@ -100,7 +100,7 @@ export default function ReportsPage() {
         </div>
 
         {/* FOI block */}
-        <div className="pb-14 mb-14 border-b border-[#e8e8e4]">
+        <div className="pb-14 mb-14 border-b border-[#ddddd5]">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
             Freedom of Information
           </p>

@@ -96,14 +96,14 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default function CaterallReportPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/reports"
@@ -114,7 +114,7 @@ export default function CaterallReportPage() {
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Governance</span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#ddddd5] rounded px-2 py-0.5 bg-[#eeeee6]">
               Report 02 of an ongoing investigation
             </span>
             <span className="text-xs text-[#a0a0a0]">April 2026</span>
@@ -132,7 +132,7 @@ export default function CaterallReportPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
+      <div className="bg-[#eeeee6] border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
             <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
@@ -209,7 +209,7 @@ export default function CaterallReportPage() {
           </p>
         </div>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* The Roles */}
         <section id="roles" className="scroll-mt-32 space-y-5">
@@ -220,14 +220,14 @@ export default function CaterallReportPage() {
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+            <div className="px-5 py-3 bg-[#eeeee6] border-b border-[#ddddd5]">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Confirmed roles, April 2026
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e8e8e4]">
+                <tr className="border-b border-[#ddddd5]">
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Role</th>
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Organisation</th>
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">
@@ -235,8 +235,8 @@ export default function CaterallReportPage() {
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e8e8e4]">
-                <tr className="hover:bg-[#f5f5f0]">
+              <tbody className="divide-y divide-[#ddddd5]">
+                <tr className="hover:bg-[#eeeee6]">
                   <td className="px-5 py-3 text-[#1c1c1c] font-medium">
                     Service Manager – Tourism
                   </td>
@@ -254,7 +254,7 @@ export default function CaterallReportPage() {
                     </a>
                   </td>
                 </tr>
-                <tr className="hover:bg-[#f5f5f0]">
+                <tr className="hover:bg-[#eeeee6]">
                   <td className="px-5 py-3 text-[#1c1c1c] font-medium">Leads Visit Southport</td>
                   <td className="px-5 py-3 text-[#4a4a4a]">Sefton Council tourism service</td>
                   <td className="px-5 py-3 hidden sm:table-cell">
@@ -268,7 +268,7 @@ export default function CaterallReportPage() {
                     </a>
                   </td>
                 </tr>
-                <tr className="hover:bg-[#f5f5f0]">
+                <tr className="hover:bg-[#eeeee6]">
                   <td className="px-5 py-3 text-[#1c1c1c] font-medium">
                     Board director (council representative)
                   </td>
@@ -286,7 +286,7 @@ export default function CaterallReportPage() {
                 </tr>
               </tbody>
             </table>
-            <div className="px-5 pb-4 pt-2 border-t border-[#e8e8e4]">
+            <div className="px-5 pb-4 pt-2 border-t border-[#ddddd5]">
               <p className="text-xs text-[#a0a0a0]">
                 Sources:{" "}
                 <a
@@ -324,7 +324,7 @@ export default function CaterallReportPage() {
               His BID board appointment is not informal. It is listed in Sefton Council&apos;s
               committee minutes as an &ldquo;Officer Only Appointment&rdquo; approved by cabinet:
             </p>
-            <blockquote className="mt-4 pl-4 border-l-2 border-[#e8e8e4]">
+            <blockquote className="mt-4 pl-4 border-l-2 border-[#ddddd5]">
               <p className="text-sm font-medium text-[#1c1c1c] italic">
                 &ldquo;Southport Business Improvement District (BID) Board: 1 Service Manager –
                 Tourism (Mark Catherall)&rdquo;
@@ -345,7 +345,7 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Career */}
         <section id="career" className="scroll-mt-32 space-y-5">
@@ -356,23 +356,23 @@ export default function CaterallReportPage() {
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+            <div className="px-5 py-3 bg-[#eeeee6] border-b border-[#ddddd5]">
               <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Career history at Sefton Council
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e8e8e4]">
+                <tr className="border-b border-[#ddddd5]">
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Period</th>
                   <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Role</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e8e8e4]">
+              <tbody className="divide-y divide-[#ddddd5]">
                 {careerRows.map((row) => (
                   <tr
                     key={row.period}
-                    className={row.highlight ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
+                    className={row.highlight ? "bg-[#eeeee6]" : "hover:bg-[#eeeee6]"}
                   >
                     <td className="px-5 py-3 text-[#4a4a4a] text-xs font-mono">{row.period}</td>
                     <td
@@ -388,7 +388,7 @@ export default function CaterallReportPage() {
                 ))}
               </tbody>
             </table>
-            <div className="px-5 pb-4 pt-2 border-t border-[#e8e8e4]">
+            <div className="px-5 pb-4 pt-2 border-t border-[#ddddd5]">
               <p className="text-xs text-[#a0a0a0]">
                 Source:{" "}
                 <a
@@ -417,7 +417,7 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* What this creates */}
         <section id="structure" className="scroll-mt-32 space-y-5">
@@ -448,20 +448,20 @@ export default function CaterallReportPage() {
           </div>
           <Link
             href="/analysis/selective-promotion"
-            className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] transition-colors"
           >
             Read: Which Businesses Does VisitSouthport.com Actually Promote?
             <ArrowRight size={12} />
           </Link>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Declared interests */}
         <section id="interests" className="scroll-mt-32 space-y-5">
           <SectionHeading>Declared interests</SectionHeading>
 
-          <div className="card bg-white p-6 border-l-4 border-l-[#e8e8e4]">
+          <div className="card bg-white p-6 border-l-4 border-l-[#ddddd5]">
             <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">
               From the Southport BID website
             </p>
@@ -503,7 +503,7 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Questions */}
         <section id="questions" className="scroll-mt-32 space-y-5">
@@ -515,7 +515,7 @@ export default function CaterallReportPage() {
           <div className="space-y-3">
             {questions.map((q, i) => (
               <div key={i} className="card bg-white p-5 flex gap-4">
-                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#f5f5f0] text-xs font-bold text-[#4a4a4a]">
+                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#eeeee6] text-xs font-bold text-[#4a4a4a]">
                   {i + 1}
                 </span>
                 <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
@@ -524,7 +524,7 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* FOI */}
         <section id="foi" className="scroll-mt-32 space-y-5">
@@ -565,22 +565,22 @@ export default function CaterallReportPage() {
               <Link
                 key={f.number}
                 href={f.href}
-                className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f5f5f0] transition-colors block"
+                className="card bg-white p-5 flex items-center gap-4 hover:bg-[#eeeee6] transition-colors block"
               >
-                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4] text-sm font-bold text-[#1c1c1c]">
+                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#eeeee6] border border-[#ddddd5] text-sm font-bold text-[#1c1c1c]">
                   {f.number}
                 </span>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-semibold text-[#1c1c1c]">{f.title}</p>
                   <p className="text-xs text-[#a0a0a0] mt-0.5">Response due {f.due}</p>
                 </div>
-                <ArrowRight size={14} className="text-[#d4d4cf] flex-shrink-0" />
+                <ArrowRight size={14} className="text-[#ccccc4] flex-shrink-0" />
               </Link>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-[#e8e8e4]" />
+        <div className="border-t border-[#ddddd5]" />
 
         {/* Right of reply */}
         <section className="space-y-4">

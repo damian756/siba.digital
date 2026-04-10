@@ -105,7 +105,7 @@ export default function RootLayout({
       </head>
       <body>
         <Nav />
-        <main className="pt-16">{children}</main>
+        <main className="pt-[60px]">{children}</main>
         <Footer />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"

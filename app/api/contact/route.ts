@@ -33,11 +33,11 @@ function buildHtml(category: Category, data: Record<string, string>): string {
         <p style="margin:0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#1c1c1c;">SIBA Contact Form</p>
         <h2 style="margin:6px 0 0;font-size:20px;color:#ffffff;">${categoryLabels[category]}</h2>
       </div>
-      <div style="background:#ffffff;padding:24px 28px;border-radius:0 0 8px 8px;border:1px solid #e8e8e4;border-top:none;">
+      <div style="background:#ffffff;padding:24px 28px;border-radius:0 0 8px 8px;border:1px solid #ddddd5;border-top:none;">
         <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
           ${rows}
         </table>
-        <p style="margin:20px 0 0;font-size:11px;color:#a0a0a0;border-top:1px solid #e8e8e4;padding-top:16px;">
+        <p style="margin:20px 0 0;font-size:11px;color:#a0a0a0;border-top:1px solid #ddddd5;padding-top:16px;">
           Submitted via siba.digital/contact — ${new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })}
         </p>
       </div>

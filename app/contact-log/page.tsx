@@ -71,7 +71,7 @@ function MethodIcon({ type }: { type: string }) {
 
 export default function ContactLogPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       {/* Header */}
       <div className="bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
@@ -97,7 +97,7 @@ export default function ContactLogPage() {
       </div>
 
       {/* Why we publish this */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex gap-3 items-start">
             <Info size={15} className="text-[#1c1c1c] flex-shrink-0 mt-0.5" />
@@ -129,7 +129,7 @@ export default function ContactLogPage() {
             className={`rounded-xl border overflow-hidden ${
               entry.highlight
                 ? "border-[#fca5a5] shadow-sm"
-                : "border-[#e8e8e4]"
+                : "border-[#ddddd5]"
             } bg-white`}
           >
             {/* Entry header */}
@@ -137,7 +137,7 @@ export default function ContactLogPage() {
               className={`px-6 py-4 border-b flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 ${
                 entry.highlight
                   ? "bg-red-50 border-[#fca5a5]"
-                  : "bg-[#f5f5f0] border-[#e8e8e4]"
+                  : "bg-[#eeeee6] border-[#ddddd5]"
               }`}
             >
               <div className="flex items-center gap-3">
@@ -145,7 +145,7 @@ export default function ContactLogPage() {
                   className={`text-xs font-bold font-mono px-2 py-0.5 rounded ${
                     entry.highlight
                       ? "bg-red-100 text-red-700"
-                      : "bg-[#f5f5f0] text-[#6b6b6b]"
+                      : "bg-[#eeeee6] text-[#6b6b6b]"
                   }`}
                 >
                   {entry.id}
@@ -203,8 +203,8 @@ export default function ContactLogPage() {
               <div
                 className={`rounded-lg p-4 ${
                   entry.highlight
-                    ? "bg-[#f5f5f0] border border-[#e8e8e4]"
-                    : "bg-[#f5f5f0] border border-[#e8e8e4]"
+                    ? "bg-[#eeeee6] border border-[#ddddd5]"
+                    : "bg-[#eeeee6] border border-[#ddddd5]"
                 }`}
               >
                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-2">
@@ -217,7 +217,7 @@ export default function ContactLogPage() {
         ))}
 
         {/* Placeholder for future entries */}
-        <div className="rounded-xl border border-dashed border-[#e8e8e4] px-6 py-5 text-center">
+        <div className="rounded-xl border border-dashed border-[#ddddd5] px-6 py-5 text-center">
           <p className="text-xs text-[#a0a0a0]">
             Future contact will be documented here in chronological order as received.
           </p>
@@ -231,12 +231,12 @@ export default function ContactLogPage() {
               Right of reply
             </p>
           </div>
-          <p className="text-sm text-[#d4d4cf] leading-relaxed">
+          <p className="text-sm text-[#ccccc4] leading-relaxed">
             Every party named in this log, and every party named in any SIBA publication, retains
             a permanent right of reply. Responses will be published in full, unedited, alongside
             the relevant entry or report. There is no time limit on this offer.
           </p>
-          <p className="text-sm text-[#d4d4cf] leading-relaxed">
+          <p className="text-sm text-[#ccccc4] leading-relaxed">
             If you believe any entry in this log contains a factual inaccuracy, contact SIBA at{" "}
             <a
               href="mailto:damian@siba.digital"

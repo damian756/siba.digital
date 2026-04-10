@@ -1,6 +1,6 @@
 export default function InvestigationClosed() {
   return (
-    <div className="border-l-2 border-[#d4d4cf] pl-5 py-1 max-w-xl">
+    <div className="border-l-2 border-[#ccccc4] pl-5 py-1 max-w-xl">
       <p className="text-[13px] font-semibold text-[#1c1c1c] mb-2">
         A note on this case study
       </p>

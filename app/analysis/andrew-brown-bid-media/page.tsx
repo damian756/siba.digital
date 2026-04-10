@@ -131,14 +131,14 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default function AndrewBrownBidMediaPage() {
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
@@ -165,7 +165,7 @@ export default function AndrewBrownBidMediaPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
+      <div className="bg-[#eeeee6] border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
             <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
@@ -192,7 +192,7 @@ export default function AndrewBrownBidMediaPage() {
       <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#ccccc4] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -226,12 +226,12 @@ export default function AndrewBrownBidMediaPage() {
         <section id="summary" className="scroll-mt-32">
           <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
+              <Info size={14} className="text-[#ccccc4] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#ccccc4]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#ccccc4] text-sm leading-relaxed">
               <p>
                 Southport BID is funded by a compulsory charge on around 720 town centre businesses.
                 Part of that money, allocated under the &ldquo;Promotion&rdquo; budget line, is used to pay
@@ -290,8 +290,8 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Company card */}
-          <div className="mt-6 rounded-lg border border-[#e8e8e4] bg-white overflow-hidden">
-            <div className="bg-[#f5f5f0] border-b border-[#e8e8e4] px-5 py-3">
+          <div className="mt-6 rounded-lg border border-[#ddddd5] bg-white overflow-hidden">
+            <div className="bg-[#eeeee6] border-b border-[#ddddd5] px-5 py-3">
               <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
                 Companies House Record
               </p>
@@ -313,7 +313,7 @@ export default function AndrewBrownBidMediaPage() {
                 </div>
               ))}
             </div>
-            <div className="border-t border-[#e8e8e4] px-5 py-3">
+            <div className="border-t border-[#ddddd5] px-5 py-3">
               <a
                 href={CH_URL}
                 target="_blank"
@@ -340,7 +340,7 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Quote block */}
-          <div className="mt-6 rounded-lg border-l-4 border-l-[#1c1c1c] bg-white border border-[#e8e8e4] px-6 py-5">
+          <div className="mt-6 rounded-lg border-l-4 border-l-[#1c1c1c] bg-white border border-[#ddddd5] px-6 py-5">
             <p className="text-sm text-[#1c1c1c] leading-relaxed italic mb-3">
               &ldquo;Southport BID has now contracted Stand Up For Southport to support its media, PR and
               communications strategy, highlight the BID&apos;s ongoing work and promote local businesses
@@ -367,7 +367,7 @@ export default function AndrewBrownBidMediaPage() {
             </p>
           </div>
 
-          <div className="mt-4 rounded-lg border-l-4 border-l-[#6b6b6b] bg-white border border-[#e8e8e4] px-6 py-5">
+          <div className="mt-4 rounded-lg border-l-4 border-l-[#6b6b6b] bg-white border border-[#ddddd5] px-6 py-5">
             <p className="text-sm text-[#1c1c1c] leading-relaxed italic mb-3">
               &ldquo;He launched Stand Up For Southport alongside Phil Gee, providing media, PR, social media
               and marketing services to firms and organisations including Southport Business Improvement
@@ -415,14 +415,14 @@ export default function AndrewBrownBidMediaPage() {
 
           {/* Key quote */}
           <div className="mt-6 rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf] mb-4">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#ccccc4] mb-4">
               Andrew Brown, in his own words (November 2024)
             </p>
-            <p className="text-[#e8e8e4] text-base leading-relaxed italic">
+            <p className="text-[#ddddd5] text-base leading-relaxed italic">
               &ldquo;We provide media and PR services for local businesses, working with the likes of{" "}
-              <span className="text-[#f5f5f0] font-bold not-italic">Southport BID</span>,
+              <span className="text-[#eeeee6] font-bold not-italic">Southport BID</span>,
               Southport Flower Show, Southport Comedy Festival,{" "}
-              <span className="text-[#f5f5f0] font-bold not-italic">
+              <span className="text-[#eeeee6] font-bold not-italic">
                 Mikhail Hotel and Leisure Group
               </span>
               , and others.&rdquo;
@@ -448,7 +448,7 @@ export default function AndrewBrownBidMediaPage() {
               Brown also confirms the awards co-organisation on the Stand Up For Southport About page,
               currently live:
             </p>
-            <blockquote className="border-l-4 border-[#e8e8e4] pl-4 text-[#4a4a4a] italic">
+            <blockquote className="border-l-4 border-[#ddddd5] pl-4 text-[#4a4a4a] italic">
               &ldquo;We are proud to co-organise the Grand Pride Of Sefton Awards with Mikhail Hotel And
               Leisure Group which celebrates the amazing people across our borough.&rdquo;
             </blockquote>
@@ -481,10 +481,10 @@ export default function AndrewBrownBidMediaPage() {
             </p>
           </div>
 
-          <div className="mt-6 overflow-x-auto rounded-lg border border-[#e8e8e4] bg-white">
+          <div className="mt-6 overflow-x-auto rounded-lg border border-[#ddddd5] bg-white">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e8e8e4] bg-[#f5f5f0]">
+                <tr className="border-b border-[#ddddd5] bg-[#eeeee6]">
                   <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0]">
                     Date
                   </th>
@@ -496,9 +496,9 @@ export default function AndrewBrownBidMediaPage() {
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e8e8e4]">
+              <tbody className="divide-y divide-[#ddddd5]">
                 {coverageRows.map((row) => (
-                  <tr key={row.url} className={row.flagged ? "bg-[#f5f5f0]" : ""}>
+                  <tr key={row.url} className={row.flagged ? "bg-[#eeeee6]" : ""}>
                     <td className="px-4 py-3 text-[#6b6b6b] whitespace-nowrap align-top">
                       {row.date}
                     </td>
@@ -531,7 +531,7 @@ export default function AndrewBrownBidMediaPage() {
             </table>
           </div>
 
-          <div className="mt-5 rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 flex items-start gap-3">
+          <div className="mt-5 rounded-lg border border-[#ddddd5] bg-white px-5 py-4 flex items-start gap-3">
             <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#1c1c1c] mt-1.5" />
             <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Andrew Brown does label some content as sponsored: individual articles directly
@@ -628,7 +628,7 @@ export default function AndrewBrownBidMediaPage() {
               href={BOLD_WIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#e8e8e4] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#ddddd5] rounded-md px-3 py-1.5"
             >
               The Bold winning article
               <ExternalLink size={11} />
@@ -637,7 +637,7 @@ export default function AndrewBrownBidMediaPage() {
               href={STARS_2026_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#e8e8e4] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#ddddd5] rounded-md px-3 py-1.5"
             >
               2026 Stars Awards nominations (SUFS)
               <ExternalLink size={11} />
@@ -708,8 +708,8 @@ export default function AndrewBrownBidMediaPage() {
                 key={s.step}
                 className={`rounded-lg border p-5 flex gap-4 ${
                   s.highlight
-                    ? "border-[#e8e8e4] bg-[#f5f5f0]"
-                    : "border-[#e8e8e4] bg-white"
+                    ? "border-[#ddddd5] bg-[#eeeee6]"
+                    : "border-[#ddddd5] bg-white"
                 }`}
               >
                 <div className="flex-shrink-0">
@@ -717,7 +717,7 @@ export default function AndrewBrownBidMediaPage() {
                     className={`h-9 w-9 rounded-lg flex items-center justify-center text-sm font-bold ${
                       s.highlight
                         ? "bg-[#1c1c1c] text-white"
-                        : "bg-[#f5f5f0] text-[#6b6b6b]"
+                        : "bg-[#eeeee6] text-[#6b6b6b]"
                     }`}
                   >
                     {s.step}
@@ -765,7 +765,7 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-4">
             <Link
               href="/contact-log"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity border border-[#e8e8e4] rounded-md px-3 py-1.5 bg-[#f5f5f0]"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity border border-[#ddddd5] rounded-md px-3 py-1.5 bg-[#eeeee6]"
             >
               View SIBA contact log (entries CL-001 and CL-002)
               <ArrowRight size={11} />
@@ -829,7 +829,7 @@ export default function AndrewBrownBidMediaPage() {
               on this platform.
             </p>
           </div>
-          <div className="mt-5 rounded-lg border border-[#e8e8e4] bg-[#f5f5f0] px-5 py-4 flex items-start gap-3">
+          <div className="mt-5 rounded-lg border border-[#ddddd5] bg-[#eeeee6] px-5 py-4 flex items-start gap-3">
             <span className="flex-shrink-0 font-bold text-[#1c1c1c] text-sm">15</span>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-bold text-[#1c1c1c] mb-1">
@@ -873,7 +873,7 @@ export default function AndrewBrownBidMediaPage() {
             {questions.map((q, i) => (
               <div
                 key={i}
-                className="rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 flex gap-3"
+                className="rounded-lg border border-[#ddddd5] bg-white px-5 py-4 flex gap-3"
               >
                 <span className="flex-shrink-0 font-bold text-[#1c1c1c] text-sm w-5">{i + 1}.</span>
                 <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
@@ -884,7 +884,7 @@ export default function AndrewBrownBidMediaPage() {
 
         {/* Right of reply */}
         <section className="scroll-mt-32">
-          <div className="rounded-lg border border-[#e8e8e4] bg-white p-6">
+          <div className="rounded-lg border border-[#ddddd5] bg-white p-6">
             <p className="text-sm font-bold text-[#1c1c1c] mb-2">Right of reply</p>
             <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Andrew Brown, Southport BID, Rachel Fitzgerald, and Sefton Council are each invited to
@@ -899,7 +899,7 @@ export default function AndrewBrownBidMediaPage() {
         </section>
 
         {/* Related */}
-        <section className="border-t border-[#e8e8e4] pt-10">
+        <section className="border-t border-[#ddddd5] pt-10">
           <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-5">
             Related analysis and reports
           </p>
@@ -924,7 +924,7 @@ export default function AndrewBrownBidMediaPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="flex items-center gap-4 rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 hover:border-[#1c1c1c] transition-colors group"
+                className="flex items-center gap-4 rounded-lg border border-[#ddddd5] bg-white px-5 py-4 hover:border-[#1c1c1c] transition-colors group"
               >
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] w-24 flex-shrink-0">
                   {r.label}
@@ -932,7 +932,7 @@ export default function AndrewBrownBidMediaPage() {
                 <p className="text-sm font-semibold text-[#1c1c1c] group-hover:text-[#3d3d3d] transition-colors flex-1 leading-snug">
                   {r.title}
                 </p>
-                <ArrowRight size={14} className="text-[#d4d4cf] group-hover:text-[#3d3d3d] transition-colors flex-shrink-0" />
+                <ArrowRight size={14} className="text-[#ccccc4] group-hover:text-[#3d3d3d] transition-colors flex-shrink-0" />
               </Link>
             ))}
           </div>

@@ -96,8 +96,8 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <h1 className="text-3xl text-[#1c1c1c] mb-4">Get in touch</h1>
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
+        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">Get in touch</h1>
         <p className="text-sm text-[#3d3d3d] leading-relaxed mb-12">
           Use the form below or email{" "}
           <a
@@ -142,8 +142,8 @@ export default function ContactPage() {
                     onClick={() => setCategory(c.value)}
                     className={`w-full text-left border p-4 transition-colors ${
                       category === c.value
-                        ? "border-[#1c1c1c] bg-[#f5f5f0]"
-                        : "border-[#e8e8e4] bg-white hover:border-[#d4d4cf]"
+                        ? "border-[#1c1c1c] bg-[#eeeee6]"
+                        : "border-[#ddddd5] bg-white hover:border-[#ccccc4]"
                     }`}
                   >
                     <p className="text-sm font-semibold text-[#1c1c1c]">{c.label}</p>
@@ -154,7 +154,7 @@ export default function ContactPage() {
             </div>
 
             {(category === "partnership" || category === "general") && (
-              <div className="border border-[#e8e8e4] bg-white p-6 sm:p-8 space-y-5">
+              <div className="border border-[#ddddd5] bg-white p-6 sm:p-8 space-y-5">
                 <div className="space-y-1.5">
                   <label htmlFor="name" className="block text-sm font-semibold text-[#1c1c1c]">
                     Your name <span className="text-[#8b1a1a]">*</span>
@@ -231,7 +231,7 @@ export default function ContactPage() {
           </form>
         )}
 
-        <div className="mt-12 pt-8 border-t border-[#e8e8e4]">
+        <div className="mt-12 pt-8 border-t border-[#ddddd5]">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
             Direct contact
           </p>

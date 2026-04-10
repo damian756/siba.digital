@@ -34,9 +34,9 @@ export default function LevyCalculator() {
   return (
     <div className="card overflow-hidden">
       {/* Input panel */}
-      <div className="p-6 sm:p-8 border-b border-[#e8e8e4] bg-[#f5f5f0]">
+      <div className="p-6 sm:p-8 border-b border-[#ddddd5] bg-[#eeeee6]">
         <div className="flex items-center gap-3 mb-6">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4]">
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#eeeee6] border border-[#ddddd5]">
             <Calculator size={18} className="text-[#1c1c1c]" />
           </div>
           <div>
@@ -70,7 +70,7 @@ export default function LevyCalculator() {
               value={raw}
               onChange={(e) => { setRaw(e.target.value); setDone(false); }}
               placeholder="e.g. 48,000"
-              className="w-full rounded-lg border border-[#e8e8e4] bg-white pl-8 pr-4 py-2.5 text-sm text-[#1c1c1c] placeholder-[#a0a0a0] outline-none focus:border-[#1c1c1c] focus:ring-2 focus:ring-[#3d3d3d]/10"
+              className="w-full rounded-lg border border-[#ddddd5] bg-white pl-8 pr-4 py-2.5 text-sm text-[#1c1c1c] placeholder-[#a0a0a0] outline-none focus:border-[#1c1c1c] focus:ring-2 focus:ring-[#3d3d3d]/10"
             />
           </div>
           <button
@@ -93,7 +93,7 @@ export default function LevyCalculator() {
               <p className="text-xl font-bold text-red-600">{fmt(levy)}</p>
               <p className="text-xs text-[#a0a0a0] mt-0.5">you pay this</p>
             </div>
-            <div className="text-center p-4 rounded-lg bg-[#f5f5f0] border border-[#e8e8e4]">
+            <div className="text-center p-4 rounded-lg bg-[#eeeee6] border border-[#ddddd5]">
               <p className="text-xs text-[#a0a0a0] mb-1">SIBA Cost</p>
               <p className="text-xl font-bold text-[#1c1c1c]">{fmt(0)}</p>
               <p className="text-xs text-[#a0a0a0] mt-0.5">always free</p>
@@ -110,19 +110,19 @@ export default function LevyCalculator() {
             <p className="text-sm font-semibold text-[#1c1c1c] mb-3">
               What SIBA provides free (estimated market value)
             </p>
-            <div className="border border-[#e8e8e4] rounded-lg overflow-hidden">
+            <div className="border border-[#ddddd5] rounded-lg overflow-hidden">
               {SIBA_SERVICES.map((s, i) => (
                 <div
                   key={s.name}
                   className={`flex items-center justify-between px-4 py-3 text-sm ${
-                    i < SIBA_SERVICES.length - 1 ? "border-b border-[#e8e8e4]" : ""
-                  } hover:bg-[#f5f5f0]`}
+                    i < SIBA_SERVICES.length - 1 ? "border-b border-[#ddddd5]" : ""
+                  } hover:bg-[#eeeee6]`}
                 >
                   <span className="text-[#4a4a4a]">{s.name}</span>
                   <span className="font-medium text-[#1c1c1c]">{fmt(s.value)}</span>
                 </div>
               ))}
-              <div className="flex items-center justify-between px-4 py-3 bg-[#f5f5f0] border-t border-[#e8e8e4]">
+              <div className="flex items-center justify-between px-4 py-3 bg-[#eeeee6] border-t border-[#ddddd5]">
                 <span className="text-sm font-bold text-[#1c1c1c]">Total SIBA value</span>
                 <span className="text-sm font-bold text-[#1c1c1c]">{fmt(SIBA_TOTAL)}</span>
               </div>
@@ -130,7 +130,7 @@ export default function LevyCalculator() {
           </div>
 
           {/* Summary */}
-          <div className="rounded-lg bg-[#f5f5f0] border border-[#e8e8e4] p-4">
+          <div className="rounded-lg bg-[#eeeee6] border border-[#ddddd5] p-4">
             <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Based on a rateable value of {fmt(rv)}, your annual BID levy is approximately{" "}
               <span className="font-semibold text-[#1c1c1c]">{fmt(levy)}</span>. SIBA

@@ -199,9 +199,9 @@ export default function FoiPage() {
   const awaiting = requests.filter((r) => r.status === "awaiting").length;
 
   return (
-    <div className="min-h-screen bg-[#f5f5f0]">
+    <div className="min-h-screen bg-[#eeeee6]">
       {/* Header */}
-      <div className="bg-white border-b border-[#e8e8e4]">
+      <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
           <span className="badge badge-navy mb-5">Accountability</span>
           <h1 className="text-4xl font-bold text-[#1c1c1c] mb-4">
@@ -215,7 +215,7 @@ export default function FoiPage() {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 divide-x divide-[#e8e8e4] border border-[#e8e8e4] rounded-lg bg-[#f5f5f0] max-w-sm">
+          <div className="grid grid-cols-3 divide-x divide-[#ddddd5] border border-[#ddddd5] rounded-lg bg-[#eeeee6] max-w-sm">
             {[
               { value: String(requests.length), label: "Requests submitted" },
               { value: String(awaiting), label: "Awaiting response" },
@@ -240,7 +240,7 @@ export default function FoiPage() {
 
         <FoiCountdown />
 
-        <div className="rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
+        <div className="rounded-lg border border-[#ddddd5] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
           <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#a0a0a0] mt-1.5" />
           <p className="text-xs text-[#a0a0a0] leading-relaxed">
             The countdown above tracks the statutory deadline for FOI requests 1–9 (5–6 May 2026).
@@ -287,8 +287,8 @@ export default function FoiPage() {
                   <div
                     className={`flex h-11 w-11 items-center justify-center rounded-lg border ${
                       "highlight" in r && r.highlight
-                        ? "bg-[#f5f5f0] border-[#e8e8e4]"
-                        : "bg-[#f5f5f0] border-[#e8e8e4]"
+                        ? "bg-[#eeeee6] border-[#ddddd5]"
+                        : "bg-[#eeeee6] border-[#ddddd5]"
                     }`}
                   >
                     <span
@@ -309,7 +309,7 @@ export default function FoiPage() {
                     <h2 className="text-base font-bold text-[#1c1c1c]">
                       {r.title}
                     </h2>
-                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
+                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] border border-[#ddddd5] rounded px-2 py-0.5 bg-[#eeeee6]">
                       <Clock size={10} />
                       Awaiting response
                     </span>
@@ -351,7 +351,7 @@ export default function FoiPage() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-14 border-t border-[#e8e8e4] pt-10">
+        <div className="mt-14 border-t border-[#ddddd5] pt-10">
           <div className="max-w-2xl space-y-4">
             <p className="text-sm text-[#4a4a4a] leading-relaxed">
               All requests are publicly visible on{" "}

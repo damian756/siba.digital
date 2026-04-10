@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[#e8e8e4]">
+    <footer className="border-t border-[#ddddd5]">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto_auto] gap-8 md:gap-12">
           <div className="max-w-xs">
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-[#e8e8e4]">
+        <div className="mt-10 pt-6 border-t border-[#ddddd5]">
           <p className="text-[12px] text-[#a0a0a0] leading-relaxed">
             &copy; {year} Strategic Intelligence &amp; Business Audits.
             SIBA Digital is a trading name of Churchtown Media Ltd. All rights reserved.

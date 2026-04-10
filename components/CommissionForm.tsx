@@ -59,7 +59,7 @@ export default function CommissionForm() {
 
   if (status === "success") {
     return (
-      <div className="border border-[#e8e8e4] px-8 py-10 max-w-xl">
+      <div className="border border-[#ddddd5] px-8 py-10 max-w-xl">
         <p className="text-lg font-semibold text-[#1c1c1c] mb-2">Enquiry received</p>
         <p className="text-sm text-[#3d3d3d] leading-relaxed">
           Thank you. SIBA will respond within one working day to discuss scope
@@ -70,7 +70,7 @@ export default function CommissionForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="border border-[#e8e8e4] p-6 sm:p-8 max-w-xl space-y-5">
+    <form onSubmit={handleSubmit} className="border border-[#ddddd5] p-6 sm:p-8 max-w-xl space-y-5">
       <div className="space-y-1.5">
         <label htmlFor="orgName" className="block text-sm font-semibold text-[#1c1c1c]">
           Organisation name <span className="text-[#8b1a1a]">*</span>
