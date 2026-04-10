@@ -20,25 +20,19 @@ export function SibaMark({ size = 28, variant = "default" }: { size?: number; va
     >
       {/* Container square */}
       <rect width="28" height="28" rx="4" fill={bg} />
-      {/*
-        Chess pawn silhouette — single traced path:
-        Start at bottom-left of head circle, arc over the top,
-        concave neck curves inward, body sweeps out convexly,
-        wide base with raised step collar.
-      */}
       <path
         d="
-          M 12 9.2
-          A 4 4 0 1 1 16 9.2
-          C 17.5 10.6, 17 12.5, 15.5 14
-          C 14.5 15.5, 21.5 18.5, 21.5 21.5
-          L 23.5 21.5
-          L 23.5 25.5
-          L 4.5 25.5
-          L 4.5 21.5
-          L 6.5 21.5
-          C 6.5 18.5, 13.5 15.5, 12.5 14
-          C 11 12.5, 10.5 10.6, 12 9.2
+          M 11 9
+          A 3.2 3.2 0 1 1 17 9
+          C 16.5 10.3, 16 11.5, 15.5 12.5
+          C 15.2 14, 18.5 17, 18.2 19.2
+          L 20 19.8
+          L 20 23.5
+          L 8 23.5
+          L 8 19.8
+          L 9.8 19.2
+          C 9.5 17, 12.8 14, 12.5 12.5
+          C 12 11.5, 11.5 10.3, 11 9
           Z
         "
         fill={fg}
