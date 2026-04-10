@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import CommissionForm from "@/components/CommissionForm";
 import Reveal from "@/components/Reveal";
 
@@ -22,36 +21,19 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
-      {/* Hero */}
-      <div className="relative w-full aspect-[1920/1620] flex items-end">
-        <Image
-          src="/images/services-hero.png"
-          alt="SIBA Digital services"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-[#0a1628]/80" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
-        <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-[22%] pt-12">
-          <h1
-            className="text-white mb-5 leading-[1.12]"
-            style={{
-              fontSize: "clamp(2rem, 1.4rem + 2.4vw, 3.2rem)",
-              textShadow: "0 2px 20px rgba(0,0,0,0.4)",
-            }}
-          >
+        <Reveal>
+          <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-6 leading-[1.15]">
             Digital Governance Audits
           </h1>
-          <p className="text-white/80 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.35)" }}>
+        </Reveal>
+        <Reveal delay={150}>
+          <p className="text-[17px] text-[#3d3d3d] leading-relaxed max-w-xl mb-20">
             Structured analysis from public records. Every engagement is
             scoped to your organisation and delivered confidentially.
           </p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        </Reveal>
 
         {/* Tier 1 */}
         <Reveal>
