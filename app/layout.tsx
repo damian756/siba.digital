@@ -6,11 +6,11 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "SIBA Digital | Southport Independent Business Alliance",
+    default: "SIBA Digital | Strategic Intelligence & Business Audits",
     template: "%s | SIBA Digital",
   },
   description:
-    "Digital infrastructure for PR8 and PR9 independent businesses. Free SEO audits, levy analysis, and automated promotion. No mandatory levy.",
+    "Digital governance audits and open-source intelligence for BIDs, councils, and major developments across the UK.",
   metadataBase: new URL("https://www.siba.digital"),
   openGraph: {
     siteName: "SIBA Digital",
@@ -21,14 +21,12 @@ export const metadata: Metadata = {
         url: "/images/siba-og.png",
         width: 1080,
         height: 1080,
-        alt: "SIBA: Southport Independent Business Alliance",
+        alt: "SIBA Digital: Strategic Intelligence & Business Audits",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@SouthportIBA",
-    creator: "@SouthportIBA",
     images: ["/images/siba-og.png"],
   },
   robots: {
@@ -50,8 +48,8 @@ const organizationSchema = {
     {
       "@type": "Organization",
       "@id": "https://www.siba.digital/#organization",
-      name: "Southport Independent Business Alliance",
-      alternateName: "SIBA",
+      name: "Strategic Intelligence & Business Audits",
+      alternateName: "SIBA Digital",
       url: "https://www.siba.digital",
       logo: {
         "@type": "ImageObject",
@@ -61,12 +59,8 @@ const organizationSchema = {
       telephone: "+441704635785",
       areaServed: {
         "@type": "Place",
-        name: "Southport, Merseyside, England",
+        name: "United Kingdom",
       },
-      sameAs: [
-        "https://x.com/SouthportIBA",
-        "https://www.facebook.com/SouthportIBA/",
-      ],
     },
     {
       "@type": "WebSite",
@@ -74,7 +68,7 @@ const organizationSchema = {
       url: "https://www.siba.digital",
       name: "SIBA Digital",
       description:
-        "Digital infrastructure for PR8 and PR9 independent businesses in Southport.",
+        "Digital governance audits and open-source intelligence for BIDs, councils, and major developments.",
       publisher: {
         "@id": "https://www.siba.digital/#organization",
       },

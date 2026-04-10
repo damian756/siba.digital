@@ -42,47 +42,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--border); }
 ::-webkit-scrollbar-thumb { background: var(--slate-light); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--orange); }
+::-webkit-scrollbar-thumb:hover { background: var(--slate); }
 
-/* Card */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 4px;
 }
 .card-hover {
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: border-color 0.15s ease;
 }
 .card-hover:hover {
   border-color: var(--border-strong);
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
 }
 
-/* Input */
 .input {
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 0.625rem 0.875rem;
   font-size: 0.875rem;
   color: var(--navy);
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: border-color 0.15s ease;
 }
 .input::placeholder {
   color: var(--slate-light);
 }
 .input:focus {
-  border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+  border-color: var(--navy);
 }
 
-/* Badge */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -92,7 +86,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.25rem 0.625rem;
-  border-radius: 100px;
+  border-radius: 2px;
 }
 .badge-orange {
   background: var(--orange-bg);

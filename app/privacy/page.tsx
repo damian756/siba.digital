@@ -86,10 +86,9 @@ export default function PrivacyPage() {
               responsible for all content published on this website.
             </p>
             <p>
-              SIBA is a non-mandatory advocacy organisation. It is not a legally incorporated
-              body and does not hold funds, employ staff, or enter into contracts. Its
-              activities are coordinated and published on behalf of participating PR8 and PR9
-              businesses.
+              SIBA Digital is a trading name of Churchtown Media Ltd. It provides
+              digital governance audits and open-source intelligence services for
+              public bodies, BIDs, and major developments across the UK.
             </p>
             <p>
               SIBA is not affiliated with, endorsed by, or related to the Southport BID or
@@ -99,7 +98,7 @@ export default function PrivacyPage() {
             <div className="mt-4 card p-4 bg-[#f8fafc]">
               <p className="text-xs font-semibold text-[#0f172a] mb-2">Contact</p>
               <p>
-                Southport Independent Business Alliance, Southport, Merseyside.
+                SIBA Digital (a trading name of Churchtown Media Ltd), Southport, Merseyside.
                 <br />
                 Email:{" "}
                 <a href="mailto:damian@siba.digital" className="text-[#f97316] hover:underline">
