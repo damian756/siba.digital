@@ -48,38 +48,41 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
-      {/* Uncropped Hero Image */}
-      <div className="mt-[60px] w-full bg-[#112d6e]">
-        <div className="mx-auto max-w-5xl">
-          <Image
-            src="/images/about-hero.jpg"
-            alt="SIBA Digital — built from a real investigation"
-            width={1168}
-            height={880}
-            className="w-full h-auto block"
-            priority
-          />
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-
-        {/* Intro */}
-        <Reveal>
-          <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-6 leading-[1.15]">
+      {/* Hero */}
+      <div className="relative min-h-[65vh] flex items-end">
+        <Image
+          src="/images/about-hero.jpg"
+          alt="SIBA Digital — built from a real investigation"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Light overlay — lets the chess pieces show through */}
+        <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, rgba(10,22,40,0.45) 0%, rgba(10,22,40,0.30) 50%, rgba(10,22,40,0.10) 100%)" }} />
+        {/* Bottom fade to cream content */}
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
+        <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-20 pt-36">
+          <h1
+            className="text-white mb-5 leading-[1.12]"
+            style={{
+              fontSize: "clamp(2rem, 1.4rem + 2.4vw, 3.2rem)",
+              textShadow: "0 2px 30px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,0.7)",
+            }}
+          >
             Built from a real investigation.{" "}
-            <span className="text-[#a0a0a0]">Now available commercially.</span>
+            <span className="text-white/60">Now available commercially.</span>
           </h1>
-        </Reveal>
-        <Reveal delay={150}>
-          <p className="text-[17px] text-[#3d3d3d] leading-relaxed max-w-xl mb-16">
+          <p className="text-white/85 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 2px 20px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.6)" }}>
             SIBA began as a 12-month open-source investigation into BID
             governance in Southport. The methodology proved robust enough to
             attract institutional attention from central government, national
             media, and compliance professionals. It is now offered as a
             commercial audit service for organisations managing public money.
           </p>
-        </Reveal>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
 
         {/* Founder */}
         <Reveal>
