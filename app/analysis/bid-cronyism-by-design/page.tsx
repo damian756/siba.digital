@@ -51,38 +51,38 @@ const articleSchema = {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">{children}</h2>
     </div>
   );
 }
 
 export default function CronyismAnalysisPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Structural Analysis</span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             How BIDs Breed Cronyism by Design
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             Most critics of Business Improvement Districts focus on bad actors. This is the
             wrong analysis. The BID model creates the conditions for cronyism structurally,
             regardless of intent. Here is why.
@@ -96,10 +96,10 @@ export default function CronyismAnalysisPage() {
       </div>
 
       {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -113,7 +113,7 @@ export default function CronyismAnalysisPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#3d3d3d] transition-colors"
               >
                 {l.label}
               </a>
@@ -127,14 +127,14 @@ export default function CronyismAnalysisPage() {
 
         {/* Plain language summary */}
         <section className="scroll-mt-32">
-          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+          <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
+              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
               <p>
                 A BID is a Business Improvement District. Businesses in a defined town centre area
                 pay a compulsory levy. The money is collected by the council and handed to a BID
@@ -169,7 +169,7 @@ export default function CronyismAnalysisPage() {
                 itself is the problem. Better people running the same structure will produce the
                 same result.
               </p>
-              <p className="text-[#94a3b8] text-xs pt-2 border-t border-[#1e293b]">
+              <p className="text-[#a0a0a0] text-xs pt-2 border-t border-[#2a2a2a]">
                 This is a structural analysis. It does not allege impropriety by any specific
                 individual or organisation. The Southport-specific evidence for this argument
                 is documented in two companion pieces linked at the bottom of this article.
@@ -182,7 +182,7 @@ export default function CronyismAnalysisPage() {
         {/* Before the BID */}
         <section id="before" className="scroll-mt-32">
           <SectionHeading>Before the BID existed</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Before a BID exists, businesses talk to each other. Horizontal. Peer to peer.
               No intermediary. No gatekeeper. A restaurant recommends a hotel because the
@@ -198,12 +198,12 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The intermediary problem */}
         <section id="intermediary" className="scroll-mt-32">
           <SectionHeading>The moment a BID is created, that structure changes permanently</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               When a BID is established, it inserts itself between businesses as a mandatory
               intermediary. Businesses no longer outreach directly to each other for the
@@ -218,12 +218,12 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Why the board spends with people it knows */}
         <section id="board" className="scroll-mt-32">
           <SectionHeading>Why the board always spends money with people it knows</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The BID board is self-selecting. Incumbents recruit successors. The people
               already in the room choose who joins them.
@@ -243,9 +243,9 @@ export default function CronyismAnalysisPage() {
               The businesses without those connections pay exactly the same levy. They receive
               proportionally less benefit. They have no practical mechanism to challenge it.
             </p>
-            <div className="my-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
-              <p className="text-sm font-semibold text-[#0f172a] mb-2">The structural point</p>
-              <p className="text-sm text-[#64748b] leading-relaxed">
+            <div className="my-6 card p-6 bg-[#f5f5f0] border-[#e8e8e4]">
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-2">The structural point</p>
+              <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 That is cronyism produced not by individual bad actors but by a structure
                 operating exactly as designed. A well-intentioned board produces the same
                 outcome as a self-interested one because the mechanism is identical.
@@ -254,14 +254,14 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The Southport illustration */}
         <section id="illustration" className="scroll-mt-32">
           <SectionHeading>The Southport illustration</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
-            <div className="card p-5 bg-[#f8fafc] border-[#e2e8f0] mb-2">
-              <p className="text-xs text-[#94a3b8] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
+            <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4] mb-2">
+              <p className="text-xs text-[#a0a0a0] leading-relaxed">
                 The following is a description of how structural incentives operate within
                 Southport&apos;s BID. It is not an allegation of deliberate impropriety by any
                 individual. The point is precisely that deliberate impropriety is not required
@@ -295,12 +295,12 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The suppression effect */}
         <section id="suppression" className="scroll-mt-32">
           <SectionHeading>The suppression effect</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The BID does not simply create cronyism among its board members. It actively
               suppresses the organic peer-to-peer networks that would otherwise exist.
@@ -326,12 +326,12 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Why this argument matters */}
         <section id="conclusion" className="scroll-mt-32">
           <SectionHeading>Why this argument matters</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Most anti-BID arguments are reactive. Bad governance. Poor return on investment.
               Undemocratic ballots. These are important critiques but they treat cronyism as
@@ -342,22 +342,22 @@ export default function CronyismAnalysisPage() {
               outcome as a self-interested one because the mechanism is identical. Cronyism in
               a BID is not a bug. It is an emergent property of the model itself.
             </p>
-            <p className="font-semibold text-[#0f172a]">
+            <p className="font-semibold text-[#1c1c1c]">
               That is not an argument for better BID governance. It is an argument against the
               BID model. Better people running the same structure will produce the same result.
             </p>
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Evidence links */}
         <section className="scroll-mt-32 space-y-4">
-          <div className="card card-hover p-6 border-l-4 border-l-[#111827]">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+          <div className="card card-hover p-6 border-l-4 border-l-[#1c1c1c]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-3">
               The empirical evidence
             </p>
-            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed mb-3">
               This analysis describes the structural theory. For the evidence
               that confirms it in practice, read our manual editorial review of
               which businesses Southport&apos;s publicly-funded tourism platform
@@ -365,24 +365,24 @@ export default function CronyismAnalysisPage() {
             </p>
             <Link
               href="/analysis/selective-promotion"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#111827] underline hover:text-[#374151] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1c1c1c] underline hover:text-[#3d3d3d] transition-colors"
             >
               Which businesses does VisitSouthport.com actually promote?
               <ArrowRight size={14} />
             </Link>
           </div>
-          <div className="card card-hover p-6 border-l-4 border-l-[#0f172a]">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+          <div className="card card-hover p-6 border-l-4 border-l-[#1c1c1c]">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-3">
               A live case study
             </p>
-            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed mb-3">
               The structural pattern described here is documented in a specific, named case.
               Southport BID&apos;s Treasurer is a registered active director of the largest
               hospitality group in the town, with no TM01 ever filed. Read the analysis.
             </p>
             <Link
               href="/analysis/bid-treasurer-mikhail"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#111827] underline hover:text-[#374151] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#1c1c1c] underline hover:text-[#3d3d3d] transition-colors"
             >
               The BID Treasurer and Mikhail Hotels
               <ArrowRight size={14} />
@@ -390,14 +390,14 @@ export default function CronyismAnalysisPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* FOI cross-link */}
         <section>
-          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-4">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-4">
             Active FOI Requests
           </p>
-          <p className="text-sm text-[#475569] leading-relaxed mb-5">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed mb-5">
             The governance patterns described in this analysis are the subject
             of formal Freedom of Information requests to Sefton Council. SIBA
             is asking for the BID operating agreement, declarations of interest
@@ -407,18 +407,18 @@ export default function CronyismAnalysisPage() {
           </p>
           <Link
             href="/foi"
-            className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
           >
             View all 14 FOI requests
             <ArrowRight size={12} />
           </Link>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* CTA */}
         <div className="text-center py-4">
-          <p className="text-[#64748b] mb-6 leading-relaxed max-w-xl mx-auto">
+          <p className="text-[#6b6b6b] mb-6 leading-relaxed max-w-xl mx-auto">
             SIBA is building the alternative. Free membership. No levy. No intermediary.
             If you are a PR8 or PR9 business, request an audit or read our ongoing
             investigation into Southport BID.
@@ -426,14 +426,14 @@ export default function CronyismAnalysisPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/audit"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
             >
               Request a Free Audit
               <ArrowRight size={15} />
             </Link>
             <Link
               href="/reports"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-6 py-3 text-sm font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] hover:border-[#d4d4cf] transition-colors"
             >
               Read the Reports
               <ArrowRight size={15} />

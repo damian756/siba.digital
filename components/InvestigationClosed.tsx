@@ -1,17 +1,17 @@
 export default function InvestigationClosed() {
   return (
-    <div className="border-l-2 border-[#d1d5db] pl-5 py-1 max-w-xl">
-      <p className="text-[13px] font-semibold text-[#111827] mb-2">
+    <div className="border-l-2 border-[#d4d4cf] pl-5 py-1 max-w-xl">
+      <p className="text-[13px] font-semibold text-[#1c1c1c] mb-2">
         A note on this case study
       </p>
-      <p className="text-[13px] text-[#374151] leading-relaxed mb-2">
+      <p className="text-[13px] text-[#3d3d3d] leading-relaxed mb-2">
         This work was conducted as SIBA&apos;s founding investigation. The
         objective was to document, with evidence, how a Business Improvement
         District operates and who benefits from it. That work is complete.
         Everything published here remains available in full and will not be
         removed.
       </p>
-      <p className="text-[12px] text-[#6b7280] leading-relaxed">
+      <p className="text-[12px] text-[#6b6b6b] leading-relaxed">
         15 Freedom of Information requests are on the public record via
         WhatDoTheyKnow. Responses, when issued by Sefton Council, will be
         published under their transparency obligations. SIBA now provides

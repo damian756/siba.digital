@@ -199,15 +199,15 @@ export default function FoiPage() {
   const awaiting = requests.filter((r) => r.status === "awaiting").length;
 
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
           <span className="badge badge-navy mb-5">Accountability</span>
-          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">
+          <h1 className="text-4xl font-bold text-[#1c1c1c] mb-4">
             Freedom of Information Requests
           </h1>
-          <p className="text-lg text-[#475569] leading-relaxed max-w-2xl mb-6">
+          <p className="text-lg text-[#4a4a4a] leading-relaxed max-w-2xl mb-6">
             SIBA has submitted {requests.length} Freedom of Information requests
             to Sefton Council under the Freedom of Information Act 2000.  Every
             request is publicly listed on WhatDoTheyKnow. Every response will be
@@ -215,15 +215,15 @@ export default function FoiPage() {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-[#f8fafc] max-w-sm">
+          <div className="grid grid-cols-3 divide-x divide-[#e8e8e4] border border-[#e8e8e4] rounded-lg bg-[#f5f5f0] max-w-sm">
             {[
               { value: String(requests.length), label: "Requests submitted" },
               { value: String(awaiting), label: "Awaiting response" },
               { value: "0", label: "Substantive responses" },
             ].map((s) => (
               <div key={s.label} className="px-5 py-4 text-center">
-                <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
-                <p className="text-xs text-[#64748b] leading-tight mt-0.5">
+                <p className="text-xl font-bold text-[#1c1c1c]">{s.value}</p>
+                <p className="text-xs text-[#6b6b6b] leading-tight mt-0.5">
                   {s.label}
                 </p>
               </div>
@@ -240,21 +240,21 @@ export default function FoiPage() {
 
         <FoiCountdown />
 
-        <div className="rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
-          <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#94a3b8] mt-1.5" />
-          <p className="text-xs text-[#94a3b8] leading-relaxed">
+        <div className="rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
+          <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#a0a0a0] mt-1.5" />
+          <p className="text-xs text-[#a0a0a0] leading-relaxed">
             The countdown above tracks the statutory deadline for FOI requests 1–9 (5–6 May 2026).
             FOI requests 10–15, submitted 8–9 April 2026, have a response deadline of{" "}
-            <span className="font-semibold text-[#64748b]">7 May 2026</span>.
+            <span className="font-semibold text-[#6b6b6b]">7 May 2026</span>.
           </p>
         </div>
 
         {/* What FOI is */}
-        <div className="card p-6 bg-white border-l-4 border-l-[#0f172a] mb-10">
-          <p className="text-sm font-semibold text-[#0f172a] mb-2">
+        <div className="card p-6 bg-white border-l-4 border-l-[#1c1c1c] mb-10">
+          <p className="text-sm font-semibold text-[#1c1c1c] mb-2">
             Why we are using FOI
           </p>
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             The Freedom of Information Act 2000 gives anyone the right to
             request recorded information held by public authorities. Sefton
             Council is a public authority. It funds VisitSouthport.com, collects
@@ -266,7 +266,7 @@ export default function FoiPage() {
         </div>
 
         {/* Request list */}
-        <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-5">
+        <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-5">
           All requests to Sefton Borough Council
         </p>
 
@@ -277,7 +277,7 @@ export default function FoiPage() {
               key={r.number}
               className={`card bg-white p-6 sm:p-7 ${
                 "highlight" in r && r.highlight
-                  ? "border-l-4 border-l-[#111827]"
+                  ? "border-l-4 border-l-[#1c1c1c]"
                   : ""
               }`}
             >
@@ -287,15 +287,15 @@ export default function FoiPage() {
                   <div
                     className={`flex h-11 w-11 items-center justify-center rounded-lg border ${
                       "highlight" in r && r.highlight
-                        ? "bg-[#f9fafb] border-[#e5e7eb]"
-                        : "bg-[#f1f5f9] border-[#e2e8f0]"
+                        ? "bg-[#f5f5f0] border-[#e8e8e4]"
+                        : "bg-[#f5f5f0] border-[#e8e8e4]"
                     }`}
                   >
                     <span
                       className={`text-sm font-bold ${
                         "highlight" in r && r.highlight
-                          ? "text-[#111827]"
-                          : "text-[#475569]"
+                          ? "text-[#1c1c1c]"
+                          : "text-[#4a4a4a]"
                       }`}
                     >
                       {r.number}
@@ -306,16 +306,16 @@ export default function FoiPage() {
                 {/* Content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h2 className="text-base font-bold text-[#0f172a]">
+                    <h2 className="text-base font-bold text-[#1c1c1c]">
                       {r.title}
                     </h2>
-                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
+                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
                       <Clock size={10} />
                       Awaiting response
                     </span>
                   </div>
 
-                  <p className="text-sm text-[#475569] leading-relaxed mb-4">
+                  <p className="text-sm text-[#4a4a4a] leading-relaxed mb-4">
                     {r.summary}
                   </p>
 
@@ -324,20 +324,20 @@ export default function FoiPage() {
                       href={`${BASE_WDTK}/${r.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#111827] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#1c1c1c] transition-colors"
                     >
                       View on WhatDoTheyKnow
                       <ExternalLink size={11} />
                     </a>
 
-                    <span className="text-xs text-[#94a3b8]">
+                    <span className="text-xs text-[#a0a0a0]">
                       Response due {r.due}
                     </span>
 
                     {r.relatedLabel && r.relatedHref && (
                       <Link
                         href={r.relatedHref}
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:text-[#374151] transition-colors"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
                       >
                         Related: {r.relatedLabel}
                         <ArrowRight size={11} />
@@ -351,15 +351,15 @@ export default function FoiPage() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-14 border-t border-[#e2e8f0] pt-10">
+        <div className="mt-14 border-t border-[#e8e8e4] pt-10">
           <div className="max-w-2xl space-y-4">
-            <p className="text-sm text-[#475569] leading-relaxed">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               All requests are publicly visible on{" "}
               <a
                 href="https://www.whatdotheyknow.com/user/southport_independent_business_a"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
               >
                 WhatDoTheyKnow
                 <ExternalLink size={11} />

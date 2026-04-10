@@ -43,8 +43,8 @@ export default function AuditForm() {
     return (
       <div className="card p-10 text-center bg-[#f0fdf4] border-green-200">
         <CheckCircle2 className="mx-auto mb-4 text-green-600" size={40} />
-        <h3 className="text-lg font-bold text-[#0f172a] mb-2">Audit request received</h3>
-        <p className="text-sm text-[#64748b]">
+        <h3 className="text-lg font-bold text-[#1c1c1c] mb-2">Audit request received</h3>
+        <p className="text-sm text-[#6b6b6b]">
           We will confirm by email within one business day and deliver the audit within 48 hours.
         </p>
       </div>
@@ -56,7 +56,7 @@ export default function AuditForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {fields.map((f) => (
           <div key={f.name}>
-            <label className="block text-sm font-semibold text-[#0f172a] mb-1.5">
+            <label className="block text-sm font-semibold text-[#1c1c1c] mb-1.5">
               {f.label}{" "}
               {f.required && <span className="text-red-500">*</span>}
             </label>
@@ -74,7 +74,7 @@ export default function AuditForm() {
       </div>
 
       <div className="mt-5">
-        <label className="block text-sm font-semibold text-[#0f172a] mb-1.5">
+        <label className="block text-sm font-semibold text-[#1c1c1c] mb-1.5">
           Anything specific you want us to look at?
         </label>
         <textarea
@@ -102,14 +102,14 @@ export default function AuditForm() {
         <button
           type="submit"
           disabled={state === "submitting"}
-          className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#1e293b] transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#2a2a2a] transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {state === "submitting" ? "Submitting..." : "Submit Audit Request"}
           <Send size={14} />
         </button>
-        <p className="text-xs text-[#94a3b8]">
+        <p className="text-xs text-[#a0a0a0]">
           We will never share your data.{" "}
-          <a href="/privacy" className="underline hover:text-[#64748b]">
+          <a href="/privacy" className="underline hover:text-[#6b6b6b]">
             Privacy policy
           </a>
         </p>

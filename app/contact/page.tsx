@@ -75,8 +75,8 @@ export default function ContactPage() {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
-          <h2 className="text-2xl text-[#111827] mb-3">Message received</h2>
-          <p className="text-sm text-[#374151] leading-relaxed mb-6">
+          <h2 className="text-2xl text-[#1c1c1c] mb-3">Message received</h2>
+          <p className="text-sm text-[#3d3d3d] leading-relaxed mb-6">
             Thank you. SIBA will respond within one working day.
           </p>
           <button
@@ -85,7 +85,7 @@ export default function ContactPage() {
               setCategory("");
               setFields({ name: "", organisation: "", email: "", message: "" });
             }}
-            className="text-sm text-[#6b7280] hover:text-[#111827] transition-colors"
+            className="text-sm text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
           >
             Send another message
           </button>
@@ -97,12 +97,12 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <h1 className="text-4xl text-[#111827] mb-4">Get in touch</h1>
-        <p className="text-sm text-[#374151] leading-relaxed mb-12">
+        <h1 className="text-3xl text-[#1c1c1c] mb-4">Get in touch</h1>
+        <p className="text-sm text-[#3d3d3d] leading-relaxed mb-12">
           Use the form below or email{" "}
           <a
             href="mailto:damian@siba.digital"
-            className="font-medium text-[#111827] hover:underline"
+            className="font-medium text-[#2c4a52] underline hover:text-[#1c1c1c]"
           >
             damian@siba.digital
           </a>{" "}
@@ -111,19 +111,19 @@ export default function ContactPage() {
 
         {category === "commission" ? (
           <div className="space-y-4">
-            <p className="text-sm text-[#374151]">
+            <p className="text-sm text-[#3d3d3d]">
               For audit commissions, use the dedicated form on the Services page.
             </p>
             <Link
               href="/services#commission"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-medium text-[#2c4a52] border-b border-[#2c4a52] pb-0.5 hover:text-[#1c1c1c] hover:border-[#1c1c1c] transition-colors"
             >
               Go to Commission Form
               <ArrowRight size={13} />
             </Link>
             <button
               onClick={() => setCategory("")}
-              className="block text-sm text-[#9ca3af] hover:text-[#111827] transition-colors mt-2"
+              className="block text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mt-2"
             >
               Back to options
             </button>
@@ -131,8 +131,8 @@ export default function ContactPage() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="space-y-3">
-              <p className="text-[11px] font-semibold text-[#111827] uppercase tracking-widest">
-                What is this about? <span className="text-[#991b1b]">*</span>
+              <p className="text-[11px] font-semibold text-[#1c1c1c] uppercase tracking-widest">
+                What is this about? <span className="text-[#8b1a1a]">*</span>
               </p>
               <div className="space-y-2">
                 {categories.map((c) => (
@@ -142,22 +142,22 @@ export default function ContactPage() {
                     onClick={() => setCategory(c.value)}
                     className={`w-full text-left border p-4 transition-colors ${
                       category === c.value
-                        ? "border-[#111827] bg-[#f9fafb]"
-                        : "border-[#e5e7eb] bg-white hover:border-[#d1d5db]"
+                        ? "border-[#1c1c1c] bg-[#f5f5f0]"
+                        : "border-[#e8e8e4] bg-white hover:border-[#d4d4cf]"
                     }`}
                   >
-                    <p className="text-sm font-semibold text-[#111827]">{c.label}</p>
-                    <p className="text-[13px] text-[#6b7280] mt-0.5">{c.description}</p>
+                    <p className="text-sm font-semibold text-[#1c1c1c]">{c.label}</p>
+                    <p className="text-[13px] text-[#6b6b6b] mt-0.5">{c.description}</p>
                   </button>
                 ))}
               </div>
             </div>
 
             {(category === "partnership" || category === "general") && (
-              <div className="border border-[#e5e7eb] bg-white p-6 sm:p-8 space-y-5">
+              <div className="border border-[#e8e8e4] bg-white p-6 sm:p-8 space-y-5">
                 <div className="space-y-1.5">
-                  <label htmlFor="name" className="block text-sm font-semibold text-[#111827]">
-                    Your name <span className="text-[#991b1b]">*</span>
+                  <label htmlFor="name" className="block text-sm font-semibold text-[#1c1c1c]">
+                    Your name <span className="text-[#8b1a1a]">*</span>
                   </label>
                   <input
                     id="name"
@@ -170,8 +170,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="organisation" className="block text-sm font-semibold text-[#111827]">
-                    Organisation <span className="text-[13px] font-normal text-[#9ca3af]">(optional)</span>
+                  <label htmlFor="organisation" className="block text-sm font-semibold text-[#1c1c1c]">
+                    Organisation <span className="text-[13px] font-normal text-[#a0a0a0]">(optional)</span>
                   </label>
                   <input
                     id="organisation"
@@ -183,8 +183,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="email" className="block text-sm font-semibold text-[#111827]">
-                    Email address <span className="text-[#991b1b]">*</span>
+                  <label htmlFor="email" className="block text-sm font-semibold text-[#1c1c1c]">
+                    Email address <span className="text-[#8b1a1a]">*</span>
                   </label>
                   <input
                     id="email"
@@ -197,8 +197,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <label htmlFor="message" className="block text-sm font-semibold text-[#111827]">
-                    Your message <span className="text-[#991b1b]">*</span>
+                  <label htmlFor="message" className="block text-sm font-semibold text-[#1c1c1c]">
+                    Your message <span className="text-[#8b1a1a]">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -218,11 +218,11 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="text-sm font-medium text-[#1c1c1c] border-b border-[#1c1c1c] pb-0.5 hover:text-[#3d3d3d] hover:border-[#3d3d3d] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {status === "sending" ? "Sending..." : "Send message"}
                   </button>
-                  <p className="mt-3 text-[12px] text-[#9ca3af]">
+                  <p className="mt-3 text-[12px] text-[#a0a0a0]">
                     SIBA responds to all messages within one working day.
                   </p>
                 </div>
@@ -231,20 +231,20 @@ export default function ContactPage() {
           </form>
         )}
 
-        <div className="mt-12 pt-8 border-t border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-4">
+        <div className="mt-12 pt-8 border-t border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
             Direct contact
           </p>
           <div className="space-y-2">
             <p className="text-sm">
-              <span className="text-[#9ca3af]">Email: </span>
-              <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
+              <span className="text-[#a0a0a0]">Email: </span>
+              <a href="mailto:damian@siba.digital" className="text-[#2c4a52] underline hover:text-[#1c1c1c]">
                 damian@siba.digital
               </a>
             </p>
             <p className="text-sm">
-              <span className="text-[#9ca3af]">Phone: </span>
-              <a href="tel:01704635785" className="text-[#111827] hover:underline">
+              <span className="text-[#a0a0a0]">Phone: </span>
+              <a href="tel:01704635785" className="text-[#2c4a52] underline hover:text-[#1c1c1c]">
                 01704 635785
               </a>
             </p>

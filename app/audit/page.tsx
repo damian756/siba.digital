@@ -67,17 +67,17 @@ const auditSchema = {
 
 export default function AuditPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(auditSchema) }}
       />
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
           <span className="badge badge-navy mb-5">Free for PR8 and PR9 Businesses</span>
-          <h1 className="text-4xl font-bold text-[#0f172a] mb-4">The Audit Hub</h1>
-          <p className="text-lg text-[#64748b] leading-relaxed max-w-2xl">
+          <h1 className="text-4xl font-bold text-[#1c1c1c] mb-4">The Audit Hub</h1>
+          <p className="text-lg text-[#6b6b6b] leading-relaxed max-w-2xl">
             Two tools in one place. Calculate the real cost of your BID levy versus what SIBA
             provides for free. Then request your official technical SEO audit.
           </p>
@@ -89,8 +89,8 @@ export default function AuditPage() {
         {/* Levy Calculator */}
         <section>
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-[#0f172a] mb-2">Levy ROI Calculator</h2>
-            <p className="text-[#64748b] leading-relaxed">
+            <h2 className="text-2xl font-bold text-[#1c1c1c] mb-2">Levy ROI Calculator</h2>
+            <p className="text-[#6b6b6b] leading-relaxed">
               Enter your business rateable value to see your annual BID levy cost compared to
               the market value of what SIBA provides at no charge.
             </p>
@@ -98,24 +98,24 @@ export default function AuditPage() {
           <LevyCalculator />
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* How it works */}
         <section>
-          <h2 className="text-2xl font-bold text-[#0f172a] mb-8">How the audit works</h2>
+          <h2 className="text-2xl font-bold text-[#1c1c1c] mb-8">How the audit works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
             {process.map((p) => {
               const Icon = p.icon;
               return (
                 <div key={p.step} className="card p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xs font-bold text-[#111827] font-mono">{p.step}</span>
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb]">
-                      <Icon size={16} className="text-[#111827]" />
+                    <span className="text-xs font-bold text-[#1c1c1c] font-mono">{p.step}</span>
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4]">
+                      <Icon size={16} className="text-[#1c1c1c]" />
                     </div>
                   </div>
-                  <p className="text-sm font-bold text-[#0f172a] mb-2">{p.title}</p>
-                  <p className="text-sm text-[#64748b] leading-relaxed">{p.body}</p>
+                  <p className="text-sm font-bold text-[#1c1c1c] mb-2">{p.title}</p>
+                  <p className="text-sm text-[#6b6b6b] leading-relaxed">{p.body}</p>
                 </div>
               );
             })}
@@ -123,36 +123,36 @@ export default function AuditPage() {
 
           {/* What's covered */}
           <div className="card p-6 bg-white">
-            <h3 className="text-sm font-bold text-[#0f172a] mb-4">What the audit covers</h3>
+            <h3 className="text-sm font-bold text-[#1c1c1c] mb-4">What the audit covers</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {covers.map((item) => (
                 <div key={item} className="flex items-center gap-2">
-                  <CheckCircle2 size={14} className="text-[#111827] flex-shrink-0" />
-                  <span className="text-sm text-[#475569]">{item}</span>
+                  <CheckCircle2 size={14} className="text-[#1c1c1c] flex-shrink-0" />
+                  <span className="text-sm text-[#4a4a4a]">{item}</span>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Urgency */}
-        <div className="card p-5 bg-[#f9fafb] border-[#e5e7eb]">
+        <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4]">
           <div className="flex items-start gap-3">
-            <span className="flex-shrink-0 text-sm font-bold text-[#111827] mt-0.5">!</span>
+            <span className="flex-shrink-0 text-sm font-bold text-[#1c1c1c] mt-0.5">!</span>
             <div>
-              <p className="text-sm font-semibold text-[#0f172a] mb-1">
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-1">
                 The Open is in July. Start now.
               </p>
-              <p className="text-sm text-[#64748b] leading-relaxed">
+              <p className="text-sm text-[#6b6b6b] leading-relaxed">
                 SEO improvements take weeks to index. If you start in June, you are already
                 late. Request an audit today and we will prioritise the fixes that matter most
                 before the first tee shot.
               </p>
               <a
                 href="#request"
-                className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-[#111827] hover:text-[#374151]"
+                className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-[#1c1c1c] hover:text-[#3d3d3d]"
               >
                 Jump to the form
                 <ArrowRight size={13} />
@@ -161,13 +161,13 @@ export default function AuditPage() {
           </div>
         </div>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Form */}
         <section id="request" className="scroll-mt-24">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-[#0f172a] mb-2">Request Your Official Audit</h2>
-            <p className="text-[#64748b] leading-relaxed">
+            <h2 className="text-2xl font-bold text-[#1c1c1c] mb-2">Request Your Official Audit</h2>
+            <p className="text-[#6b6b6b] leading-relaxed">
               Complete the form below. We confirm receipt within one business day and deliver
               the audit within 48 hours of confirmation.
             </p>

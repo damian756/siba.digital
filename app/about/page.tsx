@@ -48,11 +48,11 @@ export default function AboutPage() {
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-        <h1 className="text-4xl text-[#111827] mb-6">
+        <h1 className="text-3xl text-[#1c1c1c] mb-6">
           Built from a real investigation.{" "}
-          <span className="text-[#6b7280]">Now available commercially.</span>
+          <span className="text-[#6b6b6b]">Now available commercially.</span>
         </h1>
-        <p className="text-lg text-[#374151] leading-relaxed max-w-xl mb-16">
+        <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-16">
           SIBA began as a 12-month open-source investigation into BID
           governance in Southport. The methodology proved robust enough to
           attract institutional attention from central government, national
@@ -61,12 +61,12 @@ export default function AboutPage() {
         </p>
 
         {/* Founder */}
-        <section className="pb-12 mb-12 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-4">
+        <section className="pb-12 mb-12 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
             Founder
           </p>
-          <h2 className="text-xl text-[#111827] mb-5">Damian Roche</h2>
-          <div className="space-y-4 text-sm text-[#374151] leading-relaxed max-w-xl">
+          <h2 className="text-xl text-[#1c1c1c] mb-5">Damian Roche</h2>
+          <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed max-w-xl">
             <p>
               Ex-British Army, Queen&apos;s Guards. 20 years in web development
               and SEO, 15 years focused on organic search. Self-taught developer.
@@ -92,7 +92,7 @@ export default function AboutPage() {
               href="https://www.churchtownmedia.co.uk"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-[13px] text-[#6b7280] hover:text-[#111827] transition-colors"
+              className="inline-flex items-center gap-1.5 text-[13px] text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
             >
               Churchtown Media
               <ExternalLink size={11} />
@@ -101,7 +101,7 @@ export default function AboutPage() {
               href="https://www.linkedin.com/in/damian-roche-7ba8293a5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-[13px] text-[#6b7280] hover:text-[#111827] transition-colors"
+              className="inline-flex items-center gap-1.5 text-[13px] text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
             >
               LinkedIn
               <ExternalLink size={11} />
@@ -110,14 +110,14 @@ export default function AboutPage() {
         </section>
 
         {/* Origin */}
-        <section className="pb-12 mb-12 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-4">
+        <section className="pb-12 mb-12 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
             Origin
           </p>
-          <h2 className="text-xl text-[#111827] mb-5">
+          <h2 className="text-xl text-[#1c1c1c] mb-5">
             How a local investigation became a national capability
           </h2>
-          <div className="space-y-4 text-sm text-[#374151] leading-relaxed max-w-xl">
+          <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed max-w-xl">
             <p>
               In 2025, SIBA set out to answer a single question: where does
               the Southport BID levy money go? The research uncovered
@@ -137,7 +137,7 @@ export default function AboutPage() {
               requests to Sefton Council, and produced six published analyses
               and reports, all sourced entirely from public documents.
             </p>
-            <p className="font-semibold text-[#111827]">
+            <p className="font-semibold text-[#1c1c1c]">
               That methodology is now available to any organisation that
               manages public money and wants to know what their corporate
               trail looks like before someone else maps it for them.
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
           <Link
             href="/analysis"
-            className="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-[#111827] hover:text-[#374151] transition-colors"
+            className="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
           >
             Read the full case study
             <ArrowRight size={13} />
@@ -154,8 +154,8 @@ export default function AboutPage() {
         </section>
 
         {/* What SIBA is not */}
-        <section className="pb-12 mb-12 border-b border-[#e5e7eb]">
-          <h2 className="text-xl text-[#111827] mb-8">What SIBA is not</h2>
+        <section className="pb-12 mb-12 border-b border-[#e8e8e4]">
+          <h2 className="text-xl text-[#1c1c1c] mb-8">What SIBA is not</h2>
           <div className="space-y-6">
             {[
               {
@@ -176,10 +176,10 @@ export default function AboutPage() {
               },
             ].map((item) => (
               <div key={item.label}>
-                <p className="text-sm font-semibold text-[#111827] mb-1.5">
+                <p className="text-sm font-semibold text-[#1c1c1c] mb-1.5">
                   {item.label}
                 </p>
-                <p className="text-sm text-[#374151] leading-relaxed">
+                <p className="text-sm text-[#3d3d3d] leading-relaxed">
                   {item.detail}
                 </p>
               </div>
@@ -189,13 +189,13 @@ export default function AboutPage() {
 
         {/* CTA */}
         <section>
-          <h2 className="text-xl text-[#111827] mb-4">Commission an audit</h2>
-          <p className="text-sm text-[#374151] leading-relaxed max-w-lg mb-6">
+          <h2 className="text-xl text-[#1c1c1c] mb-4">Commission an audit</h2>
+          <p className="text-sm text-[#3d3d3d] leading-relaxed max-w-lg mb-6">
             Tell us about your organisation and what prompted your enquiry.
           </p>
           <Link
             href="/services#commission"
-            className="text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors"
+            className="text-sm font-medium text-[#2c4a52] border-b border-[#2c4a52] pb-0.5 hover:text-[#1c1c1c] hover:border-[#1c1c1c] transition-colors"
           >
             Get started
           </Link>

@@ -59,9 +59,9 @@ export default function CommissionForm() {
 
   if (status === "success") {
     return (
-      <div className="border border-[#e5e7eb] px-8 py-10 max-w-xl">
-        <p className="text-lg font-semibold text-[#111827] mb-2">Enquiry received</p>
-        <p className="text-sm text-[#374151] leading-relaxed">
+      <div className="border border-[#e8e8e4] px-8 py-10 max-w-xl">
+        <p className="text-lg font-semibold text-[#1c1c1c] mb-2">Enquiry received</p>
+        <p className="text-sm text-[#3d3d3d] leading-relaxed">
           Thank you. SIBA will respond within one working day to discuss scope
           and next steps.
         </p>
@@ -70,10 +70,10 @@ export default function CommissionForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="border border-[#e5e7eb] p-6 sm:p-8 max-w-xl space-y-5">
+    <form onSubmit={handleSubmit} className="border border-[#e8e8e4] p-6 sm:p-8 max-w-xl space-y-5">
       <div className="space-y-1.5">
-        <label htmlFor="orgName" className="block text-sm font-semibold text-[#111827]">
-          Organisation name <span className="text-[#991b1b]">*</span>
+        <label htmlFor="orgName" className="block text-sm font-semibold text-[#1c1c1c]">
+          Organisation name <span className="text-[#8b1a1a]">*</span>
         </label>
         <input
           id="orgName"
@@ -86,8 +86,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="orgType" className="block text-sm font-semibold text-[#111827]">
-          Organisation type <span className="text-[#991b1b]">*</span>
+        <label htmlFor="orgType" className="block text-sm font-semibold text-[#1c1c1c]">
+          Organisation type <span className="text-[#8b1a1a]">*</span>
         </label>
         <select
           id="orgType"
@@ -104,8 +104,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="role" className="block text-sm font-semibold text-[#111827]">
-          Your name and role <span className="text-[#991b1b]">*</span>
+        <label htmlFor="role" className="block text-sm font-semibold text-[#1c1c1c]">
+          Your name and role <span className="text-[#8b1a1a]">*</span>
         </label>
         <input
           id="role"
@@ -119,8 +119,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="email" className="block text-sm font-semibold text-[#111827]">
-          Email address <span className="text-[#991b1b]">*</span>
+        <label htmlFor="email" className="block text-sm font-semibold text-[#1c1c1c]">
+          Email address <span className="text-[#8b1a1a]">*</span>
         </label>
         <input
           id="email"
@@ -133,8 +133,8 @@ export default function CommissionForm() {
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="scope" className="block text-sm font-semibold text-[#111827]">
-          What prompted this enquiry? <span className="text-[#991b1b]">*</span>
+        <label htmlFor="scope" className="block text-sm font-semibold text-[#1c1c1c]">
+          What prompted this enquiry? <span className="text-[#8b1a1a]">*</span>
         </label>
         <textarea
           id="scope"
@@ -155,11 +155,11 @@ export default function CommissionForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="text-sm font-medium text-[#111827] border-b border-[#111827] pb-0.5 hover:text-[#374151] hover:border-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+          className="text-sm font-medium text-[#1c1c1c] border-b border-[#1c1c1c] pb-0.5 hover:text-[#3d3d3d] hover:border-[#3d3d3d] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {status === "sending" ? "Sending..." : "Submit Enquiry"}
         </button>
-        <p className="mt-3 text-[12px] text-[#9ca3af]">
+        <p className="mt-3 text-[12px] text-[#a0a0a0]">
           SIBA responds to all enquiries within one working day.
         </p>
       </div>

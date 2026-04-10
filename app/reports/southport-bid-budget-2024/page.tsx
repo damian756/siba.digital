@@ -41,15 +41,15 @@ const levyProjections = [
 
 function Source({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs text-[#94a3b8] mt-3 italic">{children}</p>
+    <p className="text-xs text-[#a0a0a0] mt-3 italic">{children}</p>
   );
 }
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">{children}</h2>
     </div>
   );
 }
@@ -90,32 +90,32 @@ const articleSchema = {
 
 export default function BidBudgetReportPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/reports"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Reports
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Budget Transparency</span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
               Report 01 of an ongoing investigation
             </span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             Where does Southport BID spend your levy?
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             A line-by-line breakdown of the 2024-2029 Business Plan budget. All figures
             are taken directly from Southport BID&apos;s own publicly available documents.
           </p>
@@ -123,15 +123,15 @@ export default function BidBudgetReportPage() {
       </div>
 
       {/* Legal disclaimer */}
-      <div className="bg-[#f8fafc] border-b border-[#e2e8f0]">
+      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
-            <AlertTriangle size={14} className="text-[#94a3b8] flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-[#94a3b8] leading-relaxed">
+            <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
+            <p className="text-xs text-[#a0a0a0] leading-relaxed">
               Every factual claim in this report is sourced from publicly available documents,
               linked directly below. SIBA welcomes corrections or responses from Southport BID
               and will publish them in full at{" "}
-              <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+              <a href="mailto:damian@siba.digital" className="underline hover:text-[#6b6b6b]">
                 damian@siba.digital
               </a>
             </p>
@@ -145,10 +145,10 @@ export default function BidBudgetReportPage() {
         <InvestigationClosed />
       </div>
 
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -161,7 +161,7 @@ export default function BidBudgetReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#111827] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
               >
                 {l.label}
               </a>
@@ -172,7 +172,7 @@ export default function BidBudgetReportPage() {
 
       {/* Feature graphic */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-10">
-        <div className="rounded-xl overflow-hidden border border-[#e2e8f0] shadow-sm">
+        <div className="rounded-xl overflow-hidden border border-[#e8e8e4] shadow-sm">
           <Image
             src="/images/bid-transparency-chart.svg"
             alt="Southport BID budget breakdown: where does the levy go?"
@@ -189,7 +189,7 @@ export default function BidBudgetReportPage() {
             href={BID_PDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+            className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
           >
             View the original PDF
             <ExternalLink size={11} />
@@ -201,7 +201,7 @@ export default function BidBudgetReportPage() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14 space-y-16">
 
         {/* Intro */}
-        <div className="space-y-4 text-[#475569] leading-relaxed">
+        <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
           <p>
             If your business is on Lord Street, Chapel Street, Market Street, or any of the
             other streets in Southport&apos;s town centre, there is a good chance you are paying
@@ -215,7 +215,7 @@ export default function BidBudgetReportPage() {
               href={BID_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+              className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
             >
               publicly available at southportbid.com
               <ExternalLink size={11} />
@@ -224,52 +224,52 @@ export default function BidBudgetReportPage() {
           </p>
         </div>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The levy */}
         <section id="levy" className="scroll-mt-32 space-y-5">
           <SectionHeading>The levy income</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               In year one of the current BID term, which runs from November 2024, the BID
-              collected approximately <strong className="text-[#0f172a]">£448,211</strong> in
+              collected approximately <strong className="text-[#1c1c1c]">£448,211</strong> in
               levy income from around 720 Southport businesses. That figure rises automatically
               every year. From year two onwards, the levy rate increases by 3% per annum
               regardless of performance or prevailing business conditions.
             </p>
             <p>
               Over the full five-year term, total projected levy income is{" "}
-              <strong className="text-[#0f172a]">£2,379,613</strong>.
+              <strong className="text-[#1c1c1c]">£2,379,613</strong>.
             </p>
           </div>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Projected levy income, 2024-2029
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Year</th>
-                  <th className="text-right px-5 py-3 font-semibold text-[#0f172a]">Levy income</th>
-                  <th className="text-right px-5 py-3 font-semibold text-[#0f172a]">Change</th>
+                <tr className="border-b border-[#e8e8e4]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Year</th>
+                  <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Levy income</th>
+                  <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Change</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {levyProjections.map((row) => (
                   <tr
                     key={row.year}
-                    className={row.bold ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
+                    className={row.bold ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
                   >
-                    <td className={`px-5 py-3 ${row.bold ? "font-bold text-[#0f172a]" : "text-[#475569]"}`}>
+                    <td className={`px-5 py-3 ${row.bold ? "font-bold text-[#1c1c1c]" : "text-[#4a4a4a]"}`}>
                       {row.year}
                     </td>
-                    <td className={`px-5 py-3 text-right ${row.bold ? "font-bold text-[#111827]" : "text-[#0f172a] font-medium"}`}>
+                    <td className={`px-5 py-3 text-right ${row.bold ? "font-bold text-[#1c1c1c]" : "text-[#1c1c1c] font-medium"}`}>
                       {row.income}
                     </td>
-                    <td className="px-5 py-3 text-right text-[#94a3b8] text-xs">{row.increase}</td>
+                    <td className="px-5 py-3 text-right text-[#a0a0a0] text-xs">{row.increase}</td>
                   </tr>
                 ))}
               </tbody>
@@ -277,7 +277,7 @@ export default function BidBudgetReportPage() {
             <Source>
               <span className="px-5 pb-3 block">
                 Source: Southport BID Business Plan 2024-2029, p.14.{" "}
-                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
+                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5">
                   View PDF <ExternalLink size={10} />
                 </a>
               </span>
@@ -285,52 +285,52 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The budget */}
         <section id="budget" className="scroll-mt-32 space-y-5">
           <SectionHeading>Where it goes</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             The BID&apos;s own budget breakdown for year one is as follows. All figures are
             taken directly from their published Business Plan.
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Year one expenditure breakdown
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Category</th>
-                  <th className="text-right px-5 py-3 font-semibold text-[#0f172a]">Amount</th>
-                  <th className="text-right px-5 py-3 font-semibold text-[#0f172a]">% of spend</th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a] hidden sm:table-cell">Description</th>
+                <tr className="border-b border-[#e8e8e4]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Category</th>
+                  <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">Amount</th>
+                  <th className="text-right px-5 py-3 font-semibold text-[#1c1c1c]">% of spend</th>
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">Description</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {budgetRows.map((row) => (
                   <tr
                     key={row.category}
-                    className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
+                    className={row.highlight ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
                   >
-                    <td className={`px-5 py-3.5 font-medium ${row.highlight ? "text-[#111827]" : "text-[#0f172a]"}`}>
+                    <td className={`px-5 py-3.5 font-medium ${row.highlight ? "text-[#1c1c1c]" : "text-[#1c1c1c]"}`}>
                       {row.category}
                       {row.highlight && (
-                        <span className="ml-2 text-xs font-normal text-[#94a3b8]">see below</span>
+                        <span className="ml-2 text-xs font-normal text-[#a0a0a0]">see below</span>
                       )}
                     </td>
-                    <td className="px-5 py-3.5 text-right font-semibold text-[#0f172a]">{row.amount}</td>
-                    <td className="px-5 py-3.5 text-right text-[#94a3b8]">{row.pct}</td>
-                    <td className="px-5 py-3.5 text-[#64748b] hidden sm:table-cell">{row.note}</td>
+                    <td className="px-5 py-3.5 text-right font-semibold text-[#1c1c1c]">{row.amount}</td>
+                    <td className="px-5 py-3.5 text-right text-[#a0a0a0]">{row.pct}</td>
+                    <td className="px-5 py-3.5 text-[#6b6b6b] hidden sm:table-cell">{row.note}</td>
                   </tr>
                 ))}
-                <tr className="bg-[#f8fafc] border-t-2 border-[#e2e8f0]">
-                  <td className="px-5 py-3 font-bold text-[#0f172a]">Total</td>
-                  <td className="px-5 py-3 text-right font-bold text-[#0f172a]">£455,000</td>
-                  <td className="px-5 py-3 text-right font-bold text-[#0f172a]">100%</td>
+                <tr className="bg-[#f5f5f0] border-t-2 border-[#e8e8e4]">
+                  <td className="px-5 py-3 font-bold text-[#1c1c1c]">Total</td>
+                  <td className="px-5 py-3 text-right font-bold text-[#1c1c1c]">£455,000</td>
+                  <td className="px-5 py-3 text-right font-bold text-[#1c1c1c]">100%</td>
                   <td className="hidden sm:table-cell" />
                 </tr>
               </tbody>
@@ -338,7 +338,7 @@ export default function BidBudgetReportPage() {
             <Source>
               <span className="px-5 pb-3 block">
                 Source: Southport BID Business Plan 2024-2029.{" "}
-                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
+                <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5">
                   View PDF <ExternalLink size={10} />
                 </a>
               </span>
@@ -346,15 +346,15 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Operating costs */}
         <section id="operating" className="scroll-mt-32 space-y-4">
           <SectionHeading>The operating cost question</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               £110,000 per year in operating costs, every year for five years, totals{" "}
-              <strong className="text-[#0f172a]">£550,000</strong> over the term. That is more
+              <strong className="text-[#1c1c1c]">£550,000</strong> over the term. That is more
               than the entire collaboration and celebration budgets combined. It is more than
               what the BID spends on actually representing the interests of Southport businesses.
             </p>
@@ -367,27 +367,27 @@ export default function BidBudgetReportPage() {
           <div className="card bg-white p-5">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
               <div>
-                <p className="text-2xl font-bold text-[#111827]">£110,000</p>
-                <p className="text-xs text-[#94a3b8] mt-1">Annual operating cost</p>
+                <p className="text-2xl font-bold text-[#1c1c1c]">£110,000</p>
+                <p className="text-xs text-[#a0a0a0] mt-1">Annual operating cost</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-[#0f172a]">£550,000</p>
-                <p className="text-xs text-[#94a3b8] mt-1">5-year total</p>
+                <p className="text-2xl font-bold text-[#1c1c1c]">£550,000</p>
+                <p className="text-xs text-[#a0a0a0] mt-1">5-year total</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-[#0f172a]">23%</p>
-                <p className="text-xs text-[#94a3b8] mt-1">Of all BID expenditure</p>
+                <p className="text-2xl font-bold text-[#1c1c1c]">23%</p>
+                <p className="text-xs text-[#a0a0a0] mt-1">Of all BID expenditure</p>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* YourSouthport */}
         <section id="yoursouthport" className="scroll-mt-32 space-y-4">
           <SectionHeading>What YourSouthport actually is</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Many Southport businesses and visitors encounter YourSouthport and assume it is
               an independent local guide. It is not.
@@ -416,35 +416,35 @@ export default function BidBudgetReportPage() {
             </p>
           </div>
 
-          <div className="card p-5 bg-[#f9fafb] border-[#e5e7eb]">
-            <p className="text-sm font-semibold text-[#0f172a] mb-2">Three sources. One conclusion.</p>
-            <ul className="space-y-2 text-sm text-[#64748b]">
+          <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4]">
+            <p className="text-sm font-semibold text-[#1c1c1c] mb-2">Three sources. One conclusion.</p>
+            <ul className="space-y-2 text-sm text-[#6b6b6b]">
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#111827]">1.</span>
+                <span className="flex-shrink-0 font-bold text-[#1c1c1c]">1.</span>
                 The Business Plan lists YourSouthport as the BID&apos;s primary marketing tool,
                 funded by the levy.
               </li>
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#111827]">2.</span>
+                <span className="flex-shrink-0 font-bold text-[#1c1c1c]">2.</span>
                 The Business Plan lists a named paid BID employee whose sole job title is
                 Your Southport Marketing Manager.
               </li>
               <li className="flex items-start gap-2">
-                <span className="flex-shrink-0 font-bold text-[#111827]">3.</span>
+                <span className="flex-shrink-0 font-bold text-[#1c1c1c]">3.</span>
                 The BID&apos;s own homepage describes it as &ldquo;the platform we use&rdquo; in the
                 first person.
               </li>
             </ul>
             <Source>
               Sources: Southport BID Business Plan 2024-2029{" "}
-              <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#111827] hover:underline inline-flex items-center gap-0.5">
+              <a href={BID_PDF} target="_blank" rel="noopener noreferrer" className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5">
                 (PDF) <ExternalLink size={10} />
               </a>{" "}
               and southportbid.com (homepage, April 2026).
             </Source>
           </div>
 
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             The BID values the content produced through YourSouthport at over £200,000 per
             year. That is the BID&apos;s own assessment of the value of content produced by its
             own paid employee, using levy funds. No independent verification of this figure
@@ -452,12 +452,12 @@ export default function BidBudgetReportPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Transparency */}
         <section id="transparency" className="scroll-mt-32 space-y-4">
           <SectionHeading>The transparency question</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The BID&apos;s resources page states that board meeting minutes are available on
               request by emailing info@southportbid.com. They are not published publicly.
@@ -471,8 +471,8 @@ export default function BidBudgetReportPage() {
           </div>
 
           <div className="card bg-white p-5">
-            <p className="text-sm font-semibold text-[#0f172a] mb-3">What SIBA says</p>
-            <div className="space-y-3 text-sm text-[#64748b]">
+            <p className="text-sm font-semibold text-[#1c1c1c] mb-3">What SIBA says</p>
+            <div className="space-y-3 text-sm text-[#6b6b6b]">
               <p>
                 SIBA is not arguing that Southport BID has done nothing of value. The Christmas
                 lights exist. The floral displays happen. The crime reduction network operates.
@@ -488,12 +488,12 @@ export default function BidBudgetReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* 2026 */}
         <section className="space-y-4">
           <SectionHeading>Before July</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The Open Championship comes to Royal Birkdale in July 2026. 150,000 visitors.
               Potentially the busiest trading period Southport has seen in years. Every
@@ -504,7 +504,7 @@ export default function BidBudgetReportPage() {
           </div>
           <Link
             href="/audit#request"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
           >
             Request a free audit
             <ArrowRight size={14} />
@@ -512,24 +512,24 @@ export default function BidBudgetReportPage() {
         </section>
 
         {/* Source footer */}
-        <div className="border-t border-[#e2e8f0] pt-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8] mb-3">
+        <div className="border-t border-[#e8e8e4] pt-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">
             Primary source
           </p>
           <a
             href={BID_PDF}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-[#111827] hover:underline font-medium"
+            className="inline-flex items-center gap-2 text-sm text-[#1c1c1c] hover:underline font-medium"
           >
             Southport BID Business Plan 2024-2029 (PDF, southportbid.com)
             <ExternalLink size={13} />
           </a>
-          <p className="text-xs text-[#94a3b8] mt-3">
+          <p className="text-xs text-[#a0a0a0] mt-3">
             All factual claims in this report are sourced from the document above or from
             southportbid.com (accessed April 2026). SIBA welcomes corrections or responses
             and will publish them in full. Contact{" "}
-            <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+            <a href="mailto:damian@siba.digital" className="underline hover:text-[#6b6b6b]">
               damian@siba.digital
             </a>
           </p>

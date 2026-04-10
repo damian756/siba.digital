@@ -88,41 +88,41 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">{children}</h2>
     </div>
   );
 }
 
 export default function CaterallReportPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/reports"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Reports
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Governance</span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#94a3b8] border border-[#e2e8f0] rounded px-2 py-0.5 bg-[#f8fafc]">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#a0a0a0] border border-[#e8e8e4] rounded px-2 py-0.5 bg-[#f5f5f0]">
               Report 02 of an ongoing investigation
             </span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             The council officer running Southport&apos;s tourism platform
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             Mark Catherall is Sefton Council&apos;s Service Manager for Tourism. He runs Visit
             Southport. He sits on the BID board as the council&apos;s formally appointed
             representative. He helped design the BID before moving into his current post. This
@@ -132,18 +132,18 @@ export default function CaterallReportPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-[#f8fafc] border-b border-[#e2e8f0]">
+      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
-            <AlertTriangle size={14} className="text-[#94a3b8] flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-[#94a3b8] leading-relaxed">
+            <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
+            <p className="text-xs text-[#a0a0a0] leading-relaxed">
               Every factual claim in this report is sourced from publicly available documents,
               linked directly below. SIBA does not allege misconduct by any individual. SIBA
               welcomes corrections or responses from any party named and will publish them in full
               at{" "}
               <a
                 href="mailto:damian@siba.digital"
-                className="underline hover:text-[#64748b]"
+                className="underline hover:text-[#6b6b6b]"
               >
                 damian@siba.digital
               </a>
@@ -159,10 +159,10 @@ export default function CaterallReportPage() {
       </div>
 
       {/* Sticky nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -176,7 +176,7 @@ export default function CaterallReportPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#111827] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
               >
                 {l.label}
               </a>
@@ -189,7 +189,7 @@ export default function CaterallReportPage() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14 space-y-16">
 
         {/* Intro */}
-        <div className="space-y-4 text-[#475569] leading-relaxed">
+        <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
           <p>
             Sefton Council has one officer responsible for tourism in Southport. He has held that
             role for over a decade. In that time, he has run the council&apos;s Visit Southport
@@ -209,38 +209,38 @@ export default function CaterallReportPage() {
           </p>
         </div>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The Roles */}
         <section id="roles" className="scroll-mt-32 space-y-5">
           <SectionHeading>The roles</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             Mark Catherall holds three overlapping positions, all confirmed by publicly available
             primary sources.
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Confirmed roles, April 2026
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Role</th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Organisation</th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a] hidden sm:table-cell">
+                <tr className="border-b border-[#e8e8e4]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Role</th>
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Organisation</th>
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">
                     Source
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
-                <tr className="hover:bg-[#f8fafc]">
-                  <td className="px-5 py-3 text-[#0f172a] font-medium">
+              <tbody className="divide-y divide-[#e8e8e4]">
+                <tr className="hover:bg-[#f5f5f0]">
+                  <td className="px-5 py-3 text-[#1c1c1c] font-medium">
                     Service Manager – Tourism
                   </td>
-                  <td className="px-5 py-3 text-[#475569]">
+                  <td className="px-5 py-3 text-[#4a4a4a]">
                     Sefton Metropolitan Borough Council
                   </td>
                   <td className="px-5 py-3 hidden sm:table-cell">
@@ -248,37 +248,37 @@ export default function CaterallReportPage() {
                       href={LINKEDIN_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       LinkedIn <ExternalLink size={10} />
                     </a>
                   </td>
                 </tr>
-                <tr className="hover:bg-[#f8fafc]">
-                  <td className="px-5 py-3 text-[#0f172a] font-medium">Leads Visit Southport</td>
-                  <td className="px-5 py-3 text-[#475569]">Sefton Council tourism service</td>
+                <tr className="hover:bg-[#f5f5f0]">
+                  <td className="px-5 py-3 text-[#1c1c1c] font-medium">Leads Visit Southport</td>
+                  <td className="px-5 py-3 text-[#4a4a4a]">Sefton Council tourism service</td>
                   <td className="px-5 py-3 hidden sm:table-cell">
                     <a
                       href={LCRDP_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       LCRDP interview <ExternalLink size={10} />
                     </a>
                   </td>
                 </tr>
-                <tr className="hover:bg-[#f8fafc]">
-                  <td className="px-5 py-3 text-[#0f172a] font-medium">
+                <tr className="hover:bg-[#f5f5f0]">
+                  <td className="px-5 py-3 text-[#1c1c1c] font-medium">
                     Board director (council representative)
                   </td>
-                  <td className="px-5 py-3 text-[#475569]">Southport BID</td>
+                  <td className="px-5 py-3 text-[#4a4a4a]">Southport BID</td>
                   <td className="px-5 py-3 hidden sm:table-cell">
                     <a
                       href={MODGOV_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] hover:underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5 text-xs"
                     >
                       Sefton cabinet minutes <ExternalLink size={10} />
                     </a>
@@ -286,14 +286,14 @@ export default function CaterallReportPage() {
                 </tr>
               </tbody>
             </table>
-            <div className="px-5 pb-4 pt-2 border-t border-[#e2e8f0]">
-              <p className="text-xs text-[#94a3b8]">
+            <div className="px-5 pb-4 pt-2 border-t border-[#e8e8e4]">
+              <p className="text-xs text-[#a0a0a0]">
                 Sources:{" "}
                 <a
                   href={MODGOV_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
                 >
                   Sefton Council committee minutes <ExternalLink size={10} />
                 </a>
@@ -302,7 +302,7 @@ export default function CaterallReportPage() {
                   href={BID_TEAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
                 >
                   Southport BID &ldquo;Our Team&rdquo; <ExternalLink size={10} />
                 </a>
@@ -311,7 +311,7 @@ export default function CaterallReportPage() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
                 >
                   Mark Catherall LinkedIn <ExternalLink size={10} />
                 </a>
@@ -319,24 +319,24 @@ export default function CaterallReportPage() {
             </div>
           </div>
 
-          <div className="card bg-white p-6 border-l-4 border-l-[#0f172a]">
-            <p className="text-sm text-[#475569] leading-relaxed">
+          <div className="card bg-white p-6 border-l-4 border-l-[#1c1c1c]">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               His BID board appointment is not informal. It is listed in Sefton Council&apos;s
               committee minutes as an &ldquo;Officer Only Appointment&rdquo; approved by cabinet:
             </p>
-            <blockquote className="mt-4 pl-4 border-l-2 border-[#e2e8f0]">
-              <p className="text-sm font-medium text-[#0f172a] italic">
+            <blockquote className="mt-4 pl-4 border-l-2 border-[#e8e8e4]">
+              <p className="text-sm font-medium text-[#1c1c1c] italic">
                 &ldquo;Southport Business Improvement District (BID) Board: 1 Service Manager –
                 Tourism (Mark Catherall)&rdquo;
               </p>
             </blockquote>
-            <p className="text-xs text-[#94a3b8] mt-3">
+            <p className="text-xs text-[#a0a0a0] mt-3">
               Source:{" "}
               <a
                 href={MODGOV_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
               >
                 Sefton Council modgov, Officer Outside Body Appointments{" "}
                 <ExternalLink size={10} />
@@ -345,41 +345,41 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Career */}
         <section id="career" className="scroll-mt-32 space-y-5">
           <SectionHeading>Twenty years in the same building</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             Mark Catherall has worked at Sefton Council since at least 2005. His LinkedIn profile,
             which is publicly visible, records the following progression:
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Career history at Sefton Council
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Period</th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Role</th>
+                <tr className="border-b border-[#e8e8e4]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Period</th>
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Role</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {careerRows.map((row) => (
                   <tr
                     key={row.period}
-                    className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
+                    className={row.highlight ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
                   >
-                    <td className="px-5 py-3 text-[#475569] text-xs font-mono">{row.period}</td>
+                    <td className="px-5 py-3 text-[#4a4a4a] text-xs font-mono">{row.period}</td>
                     <td
                       className={`px-5 py-3 ${
                         row.highlight
-                          ? "font-semibold text-[#0f172a]"
-                          : "text-[#475569]"
+                          ? "font-semibold text-[#1c1c1c]"
+                          : "text-[#4a4a4a]"
                       }`}
                     >
                       {row.role}
@@ -388,14 +388,14 @@ export default function CaterallReportPage() {
                 ))}
               </tbody>
             </table>
-            <div className="px-5 pb-4 pt-2 border-t border-[#e2e8f0]">
-              <p className="text-xs text-[#94a3b8]">
+            <div className="px-5 pb-4 pt-2 border-t border-[#e8e8e4]">
+              <p className="text-xs text-[#a0a0a0]">
                 Source:{" "}
                 <a
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                  className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
                 >
                   Mark Catherall, LinkedIn <ExternalLink size={10} />
                 </a>
@@ -403,7 +403,7 @@ export default function CaterallReportPage() {
             </div>
           </div>
 
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The BID Development Manager role (May 2013 to September 2014) is significant. In
               that capacity, Catherall worked on establishing the Southport BID. He then moved
@@ -417,12 +417,12 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* What this creates */}
         <section id="structure" className="scroll-mt-32 space-y-5">
           <SectionHeading>What this structure creates</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Sefton Council operates Visit Southport as its tourism service. It runs
               visitsouthport.com, the primary public-facing platform for Southport tourism.
@@ -448,44 +448,44 @@ export default function CaterallReportPage() {
           </div>
           <Link
             href="/analysis/selective-promotion"
-            className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
           >
             Read: Which Businesses Does VisitSouthport.com Actually Promote?
             <ArrowRight size={12} />
           </Link>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Declared interests */}
         <section id="interests" className="scroll-mt-32 space-y-5">
           <SectionHeading>Declared interests</SectionHeading>
 
-          <div className="card bg-white p-6 border-l-4 border-l-[#e2e8f0]">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8] mb-3">
+          <div className="card bg-white p-6 border-l-4 border-l-[#e8e8e4]">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">
               From the Southport BID website
             </p>
             <blockquote>
-              <p className="text-sm text-[#0f172a] leading-relaxed italic">
+              <p className="text-sm text-[#1c1c1c] leading-relaxed italic">
                 &ldquo;Southport BID operates a robust policy where any pecuniary and personal
                 interests related to BID activities and decisions of board members or employees are
                 recorded. To view the policy and/or the records, please contact us.&rdquo;
               </p>
             </blockquote>
-            <p className="text-xs text-[#94a3b8] mt-3">
+            <p className="text-xs text-[#a0a0a0] mt-3">
               Source:{" "}
               <a
                 href={BID_TEAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#111827] hover:underline inline-flex items-center gap-0.5"
+                className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
               >
                 Southport BID, Our Team page <ExternalLink size={10} />
               </a>
             </p>
           </div>
 
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The register is not published. It is available only on direct request to the BID.
               There is no public searchable record of what has or has not been declared.
@@ -503,42 +503,42 @@ export default function CaterallReportPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Questions */}
         <section id="questions" className="scroll-mt-32 space-y-5">
           <SectionHeading>The questions</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             SIBA is not in a position to answer the following. Sefton Council and Southport BID
             are.
           </p>
           <div className="space-y-3">
             {questions.map((q, i) => (
               <div key={i} className="card bg-white p-5 flex gap-4">
-                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#f1f5f9] text-xs font-bold text-[#475569]">
+                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#f5f5f0] text-xs font-bold text-[#4a4a4a]">
                   {i + 1}
                 </span>
-                <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
+                <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* FOI */}
         <section id="foi" className="scroll-mt-32 space-y-5">
           <SectionHeading>Formal requests submitted</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             SIBA has submitted two Freedom of Information requests to Sefton Council directly
             relevant to the questions raised in this report. All responses will be published on
             this site in full, unedited.
           </p>
 
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             A companion analysis documents a separate but structurally related governance conflict
             at the BID board level.{" "}
-            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#111827] hover:underline">
+            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#1c1c1c] hover:underline">
               Southport&apos;s BID Treasurer is a registered active director of Mikhail Hotels and
               Leisure Holdings Limited
             </Link>{" "}
@@ -565,38 +565,38 @@ export default function CaterallReportPage() {
               <Link
                 key={f.number}
                 href={f.href}
-                className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f8fafc] transition-colors block"
+                className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f5f5f0] transition-colors block"
               >
-                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb] text-sm font-bold text-[#111827]">
+                <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4] text-sm font-bold text-[#1c1c1c]">
                   {f.number}
                 </span>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-[#0f172a]">{f.title}</p>
-                  <p className="text-xs text-[#94a3b8] mt-0.5">Response due {f.due}</p>
+                  <p className="text-sm font-semibold text-[#1c1c1c]">{f.title}</p>
+                  <p className="text-xs text-[#a0a0a0] mt-0.5">Response due {f.due}</p>
                 </div>
-                <ArrowRight size={14} className="text-[#cbd5e1] flex-shrink-0" />
+                <ArrowRight size={14} className="text-[#d4d4cf] flex-shrink-0" />
               </Link>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Right of reply */}
         <section className="space-y-4">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
             Right of reply
           </p>
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             If you are Mark Catherall, a representative of Sefton Council, Visit Southport, or
             Southport BID and you wish to respond to any aspect of this report, contact{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#111827] hover:underline">
+            <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
               damian@siba.digital
             </a>
             . Responses will be published in full without editing. The right of reply is open
             without time limit.
           </p>
-          <p className="text-sm text-[#64748b] leading-relaxed">
+          <p className="text-sm text-[#6b6b6b] leading-relaxed">
             If you have information relevant to governance at the BID, Visit Southport, or Sefton
             Council, you can contact SIBA in strict confidence at the same address.
           </p>

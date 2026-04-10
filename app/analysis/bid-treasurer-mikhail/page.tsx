@@ -167,26 +167,26 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">{children}</h2>
     </div>
   );
 }
 
 export default function BidTreasurerMikhailPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Analysis
@@ -194,13 +194,13 @@ export default function BidTreasurerMikhailPage() {
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Governance</span>
             <span className="badge badge-navy">Conflicts of Interest</span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             Southport&apos;s BID Treasurer is an active director of the town&apos;s biggest
             hospitality group
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             Companies House confirms Geoffrey Wareham is currently a registered active director of
             Mikhail Hotels and Leisure Holdings Limited. He is simultaneously the Treasurer of
             Southport BID. No termination has ever been filed. This analysis documents what that
@@ -210,16 +210,16 @@ export default function BidTreasurerMikhailPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-[#f8fafc] border-b border-[#e2e8f0]">
+      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
-            <AlertTriangle size={14} className="text-[#94a3b8] flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-[#94a3b8] leading-relaxed">
+            <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
+            <p className="text-xs text-[#a0a0a0] leading-relaxed">
               Every factual claim in this analysis is sourced from publicly available documents,
               linked directly below. SIBA does not allege misconduct by any individual. SIBA
               welcomes corrections or responses from any party named and will publish them in full
               at{" "}
-              <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+              <a href="mailto:damian@siba.digital" className="underline hover:text-[#6b6b6b]">
                 damian@siba.digital
               </a>
               .
@@ -234,10 +234,10 @@ export default function BidTreasurerMikhailPage() {
       </div>
 
       {/* Sticky nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -255,7 +255,7 @@ export default function BidTreasurerMikhailPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#3d3d3d] transition-colors"
               >
                 {l.label}
               </a>
@@ -269,14 +269,14 @@ export default function BidTreasurerMikhailPage() {
 
         {/* Plain language summary */}
         <section id="summary" className="scroll-mt-32">
-          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+          <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
+              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
               <p>
                 Southport BID is a local business organisation funded by a compulsory charge on
                 town centre businesses. Around 720 businesses pay it. The money is used to promote
@@ -304,7 +304,7 @@ export default function BidTreasurerMikhailPage() {
                 No paperwork has ever been filed at Companies House to say this directorship has
                 ended.
               </p>
-              <p className="text-[#94a3b8] text-xs pt-2 border-t border-[#1e293b]">
+              <p className="text-[#a0a0a0] text-xs pt-2 border-t border-[#2a2a2a]">
                 The detail below is thorough because the evidence needs to be thorough. Every claim
                 links to a primary source. Use the navigation above to skip to the section most
                 relevant to you.
@@ -314,11 +314,11 @@ export default function BidTreasurerMikhailPage() {
         </section>
 
         {/* Opening */}
-        <div className="space-y-4 text-[#475569] leading-relaxed">
+        <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
           <p>
             The Southport BID&apos;s own website lists its board of directors publicly. Under the
             name Geoff Wareham, it states his role as Treasurer and his employment as{" "}
-            <strong className="text-[#0f172a]">
+            <strong className="text-[#1c1c1c]">
               &ldquo;Commercial Director, Mikhail Hotel and Leisure Group.&rdquo;
             </strong>
           </p>
@@ -330,51 +330,51 @@ export default function BidTreasurerMikhailPage() {
           </p>
         </div>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The Roles */}
         <section id="roles" className="scroll-mt-32 space-y-5">
           <SectionHeading>Three roles. One person.</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             The following are confirmed by primary public sources.
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Geoffrey Richard George Wareham — confirmed roles, April 2026
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Role</th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a] hidden sm:table-cell">
+                <tr className="border-b border-[#e8e8e4]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Role</th>
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">
                     Organisation
                   </th>
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a] hidden sm:table-cell">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c] hidden sm:table-cell">
                     Source
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
-                <tr className="hover:bg-[#f8fafc]">
-                  <td className="px-5 py-3 font-semibold text-[#0f172a]">Treasurer</td>
-                  <td className="px-5 py-3 text-[#475569] hidden sm:table-cell">Southport BID</td>
+              <tbody className="divide-y divide-[#e8e8e4]">
+                <tr className="hover:bg-[#f5f5f0]">
+                  <td className="px-5 py-3 font-semibold text-[#1c1c1c]">Treasurer</td>
+                  <td className="px-5 py-3 text-[#4a4a4a] hidden sm:table-cell">Southport BID</td>
                   <td className="px-5 py-3 hidden sm:table-cell">
                     <a
                       href={BID_TEAM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       BID Our Team <ExternalLink size={10} />
                     </a>
                   </td>
                 </tr>
-                <tr className="hover:bg-[#f8fafc]">
-                  <td className="px-5 py-3 font-semibold text-[#0f172a]">Commercial Director</td>
-                  <td className="px-5 py-3 text-[#475569] hidden sm:table-cell">
+                <tr className="hover:bg-[#f5f5f0]">
+                  <td className="px-5 py-3 font-semibold text-[#1c1c1c]">Commercial Director</td>
+                  <td className="px-5 py-3 text-[#4a4a4a] hidden sm:table-cell">
                     Mikhail Hotel and Leisure Group
                   </td>
                   <td className="px-5 py-3 hidden sm:table-cell">
@@ -382,20 +382,20 @@ export default function BidTreasurerMikhailPage() {
                       href={BID_TEAM_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       BID Our Team <ExternalLink size={10} />
                     </a>
                   </td>
                 </tr>
-                <tr className="bg-[#f9fafb]">
-                  <td className="px-5 py-3 font-semibold text-[#0f172a]">
+                <tr className="bg-[#f5f5f0]">
+                  <td className="px-5 py-3 font-semibold text-[#1c1c1c]">
                     Active Director
-                    <span className="ml-2 inline-flex items-center rounded-full bg-[#111827] px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-widest">
+                    <span className="ml-2 inline-flex items-center rounded-full bg-[#1c1c1c] px-2 py-0.5 text-[10px] font-bold text-white uppercase tracking-widest">
                       Live
                     </span>
                   </td>
-                  <td className="px-5 py-3 text-[#475569] hidden sm:table-cell">
+                  <td className="px-5 py-3 text-[#4a4a4a] hidden sm:table-cell">
                     Mikhail Hotels and Leisure Holdings Limited (10533763)
                   </td>
                   <td className="px-5 py-3 hidden sm:table-cell">
@@ -403,7 +403,7 @@ export default function BidTreasurerMikhailPage() {
                       href={CH_OFFICERS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#111827] underline inline-flex items-center gap-0.5 text-xs"
+                      className="text-[#1c1c1c] underline inline-flex items-center gap-0.5 text-xs"
                     >
                       Companies House <ExternalLink size={10} />
                     </a>
@@ -414,29 +414,29 @@ export default function BidTreasurerMikhailPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Companies House today */}
         <section id="register" className="scroll-mt-32 space-y-5">
           <SectionHeading>What Companies House shows today</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             The following is taken directly from the People register for Mikhail Hotels and Leisure
             Holdings Limited (company number 10533763), as it appears on the Companies House
             website on 8 April 2026.
           </p>
 
-          <div className="rounded-xl border-2 border-[#0f172a] bg-white overflow-hidden">
-            <div className="bg-[#0f172a] px-6 py-4">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
+          <div className="rounded-xl border-2 border-[#1c1c1c] bg-white overflow-hidden">
+            <div className="bg-[#1c1c1c] px-6 py-4">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf] mb-0.5">
                 Companies House: Live Register
               </p>
-              <p className="text-xs text-[#94a3b8]">
+              <p className="text-xs text-[#a0a0a0]">
                 Mikhail Hotels and Leisure Holdings Limited · Company 10533763
               </p>
             </div>
-            <div className="px-6 py-5 divide-y divide-[#e2e8f0]">
+            <div className="px-6 py-5 divide-y divide-[#e8e8e4]">
               <div className="pb-4">
-                <p className="text-base font-bold text-[#0f172a]">
+                <p className="text-base font-bold text-[#1c1c1c]">
                   WAREHAM, Geoffrey Richard George
                 </p>
                 <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -455,15 +455,15 @@ export default function BidTreasurerMikhailPage() {
                     <div
                       key={f.label}
                       className={`rounded-lg px-3 py-2 ${
-                        f.highlight ? "bg-[#f9fafb] border border-[#e5e7eb]" : "bg-[#f8fafc]"
+                        f.highlight ? "bg-[#f5f5f0] border border-[#e8e8e4]" : "bg-[#f5f5f0]"
                       }`}
                     >
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#94a3b8]">
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
                         {f.label}
                       </p>
                       <p
                         className={`text-sm font-semibold mt-0.5 ${
-                          f.highlight ? "text-[#111827]" : "text-[#0f172a]"
+                          f.highlight ? "text-[#1c1c1c]" : "text-[#1c1c1c]"
                         }`}
                       >
                         {f.value}
@@ -473,9 +473,9 @@ export default function BidTreasurerMikhailPage() {
                 </div>
               </div>
               <div className="pt-4 flex items-start gap-3">
-                <AlertTriangle size={14} className="text-[#111827] flex-shrink-0 mt-0.5" />
+                <AlertTriangle size={14} className="text-[#1c1c1c] flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-xs text-[#475569] leading-relaxed">
+                  <p className="text-xs text-[#4a4a4a] leading-relaxed">
                     Sheldon, Stephen is the only resignation on this register (resigned 1 December
                     2023, TM01 filed 10 May 2024, five months late). No TM01 has ever been filed
                     for Wareham. Under section 167 of the Companies Act 2006, a company must
@@ -485,7 +485,7 @@ export default function BidTreasurerMikhailPage() {
                     href={CH_OFFICERS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#111827] underline"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] underline"
                   >
                     Verify at Companies House <ExternalLink size={10} />
                   </a>
@@ -494,7 +494,7 @@ export default function BidTreasurerMikhailPage() {
             </div>
           </div>
 
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             The 2024 annual accounts for Mikhail Hotels and Leisure Holdings Limited (filed
             September 2025, covering the year ended 31 December 2024) do not list Wareham as a
             director. The Companies House People register has not been updated to reflect this.
@@ -503,12 +503,12 @@ export default function BidTreasurerMikhailPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Mikhail's footprint */}
         <section id="venues" className="scroll-mt-32 space-y-5">
           <SectionHeading>Mikhail&apos;s footprint in the BID area</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             Mikhail Hotel and Leisure Group operates the following venues within the Southport BID
             levy zone. Every one of them is a levy-paying business. Every one of them benefits
             from the BID promotional activity overseen by the group&apos;s own Commercial Director
@@ -516,31 +516,31 @@ export default function BidTreasurerMikhailPage() {
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Mikhail Group venues in the BID zone
               </p>
             </div>
-            <ul className="divide-y divide-[#e2e8f0]">
+            <ul className="divide-y divide-[#e8e8e4]">
               {mikhailVenues.map((v) => (
                 <li
                   key={v}
-                  className="px-5 py-3 flex items-center gap-3 text-sm text-[#0f172a] hover:bg-[#f8fafc]"
+                  className="px-5 py-3 flex items-center gap-3 text-sm text-[#1c1c1c] hover:bg-[#f5f5f0]"
                 >
-                  <span className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-[#111827]" />
+                  <span className="flex-shrink-0 h-1.5 w-1.5 rounded-full bg-[#1c1c1c]" />
                   {v}
                 </li>
               ))}
             </ul>
-            <div className="px-5 py-3 bg-[#f8fafc] border-t border-[#e2e8f0]">
-              <p className="text-xs text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-t border-[#e8e8e4]">
+              <p className="text-xs text-[#a0a0a0]">
                 Six venues. Group revenues reported at over £20.7 million annually. The dominant
                 hospitality operator in Southport town centre.
               </p>
             </div>
           </div>
 
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             These venues compete directly with independent hotels, bars, and restaurants that also
             pay BID levy and have no director-level representation on the BID board. The
             person overseeing the BID&apos;s finances holds a legal directorial duty to the group
@@ -548,52 +548,52 @@ export default function BidTreasurerMikhailPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Stars Awards */}
         <section id="awards" className="scroll-mt-32 space-y-5">
           <SectionHeading>The BID&apos;s own awards</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             Southport BID organises the Your Southport Stars Awards annually. The awards are run
             by BID staff, funded by BID budget, and promoted across BID channels. They represent
             one of the BID&apos;s most prominent outputs.
           </p>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             The following is the record of Mikhail Group venues across three award cycles, sourced
             from published results.
           </p>
 
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a0a0a0]">
                 Mikhail venues in Your Southport Stars Awards: 2023, 2024, 2025
               </p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[#e2e8f0]">
-                    <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Year</th>
-                    <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Venue</th>
-                    <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Category</th>
-                    <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Result</th>
+                  <tr className="border-b border-[#e8e8e4]">
+                    <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Year</th>
+                    <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Venue</th>
+                    <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Category</th>
+                    <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Result</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#e2e8f0]">
+                <tbody className="divide-y divide-[#e8e8e4]">
                   {awardsRows.map((row, i) => (
                     <tr
                       key={i}
-                      className={row.highlight ? "bg-[#f9fafb]" : "hover:bg-[#f8fafc]"}
+                      className={row.highlight ? "bg-[#f5f5f0]" : "hover:bg-[#f5f5f0]"}
                     >
-                      <td className="px-5 py-3 text-[#475569] font-mono text-xs">{row.year}</td>
-                      <td className="px-5 py-3 font-medium text-[#0f172a]">{row.venue}</td>
-                      <td className="px-5 py-3 text-[#475569]">{row.category}</td>
+                      <td className="px-5 py-3 text-[#4a4a4a] font-mono text-xs">{row.year}</td>
+                      <td className="px-5 py-3 font-medium text-[#1c1c1c]">{row.venue}</td>
+                      <td className="px-5 py-3 text-[#4a4a4a]">{row.category}</td>
                       <td className="px-5 py-3">
                         <span
                           className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${
                             row.result === "Won"
-                              ? "bg-[#f9fafb] text-[#111827]"
-                              : "bg-[#f1f5f9] text-[#64748b]"
+                              ? "bg-[#f5f5f0] text-[#1c1c1c]"
+                              : "bg-[#f5f5f0] text-[#6b6b6b]"
                           }`}
                         >
                           {row.result}
@@ -604,14 +604,14 @@ export default function BidTreasurerMikhailPage() {
                 </tbody>
               </table>
             </div>
-            <div className="px-5 py-3 border-t border-[#e2e8f0] bg-[#f8fafc] space-y-1">
-              <p className="text-xs text-[#94a3b8]">
+            <div className="px-5 py-3 border-t border-[#e8e8e4] bg-[#f5f5f0] space-y-1">
+              <p className="text-xs text-[#a0a0a0]">
                 2023 and 2024 results are People&apos;s Choice awards based on public vote.
                 The 2025 Business Leaders Award for Hotel of the Year was decided by a judging
                 panel whose composition has not been published. The composition of that panel is
                 a governance question, not an accusation.
               </p>
-              <p className="text-xs text-[#94a3b8]">
+              <p className="text-xs text-[#a0a0a0]">
                 The 2025 ceremony was held at The Grand, Lord Street, Southport. The Grand is a
                 Mikhail Hotel and Leisure Group venue. It was simultaneously nominated in the
                 Restaurant of the Year category at that same ceremony.
@@ -624,7 +624,7 @@ export default function BidTreasurerMikhailPage() {
               href={STARS_2023_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#475569] border border-[#e2e8f0] rounded px-3 py-1.5 bg-white hover:bg-[#f8fafc] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4a4a4a] border border-[#e8e8e4] rounded px-3 py-1.5 bg-white hover:bg-[#f5f5f0] transition-colors"
             >
               2023 awards source <ExternalLink size={10} />
             </a>
@@ -632,7 +632,7 @@ export default function BidTreasurerMikhailPage() {
               href={STARS_2025_BOLD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#475569] border border-[#e2e8f0] rounded px-3 py-1.5 bg-white hover:bg-[#f8fafc] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4a4a4a] border border-[#e8e8e4] rounded px-3 py-1.5 bg-white hover:bg-[#f5f5f0] transition-colors"
             >
               2025 awards source <ExternalLink size={10} />
             </a>
@@ -640,13 +640,13 @@ export default function BidTreasurerMikhailPage() {
               href={STARS_2025_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#475569] border border-[#e2e8f0] rounded px-3 py-1.5 bg-white hover:bg-[#f8fafc] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#4a4a4a] border border-[#e8e8e4] rounded px-3 py-1.5 bg-white hover:bg-[#f5f5f0] transition-colors"
             >
               Full 2025 winners list <ExternalLink size={10} />
             </a>
           </div>
 
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             No allegation is made that Wareham influenced the outcome of any award. The question
             the structure creates is this: what steps were taken to ensure the BID Treasurer had
             no involvement in awards administration, shortlisting, venue selection, or panel
@@ -655,13 +655,13 @@ export default function BidTreasurerMikhailPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The full loop */}
         <section id="loop" className="scroll-mt-32 space-y-7">
           <SectionHeading>The full loop: what the structure produces</SectionHeading>
 
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Each element documented in this analysis operates within a larger structure. When
               assembled, the picture is a closed loop: the levy funds the infrastructure, the
@@ -683,47 +683,47 @@ export default function BidTreasurerMikhailPage() {
                 <div
                   className={`rounded-xl border p-5 flex gap-4 ${
                     s.highlight
-                      ? "bg-[#f9fafb] border-[#e5e7eb]"
-                      : "bg-white border-[#e2e8f0]"
+                      ? "bg-[#f5f5f0] border-[#e8e8e4]"
+                      : "bg-white border-[#e8e8e4]"
                   }`}
                 >
                   <div className="flex-shrink-0 flex flex-col items-center gap-1 pt-0.5">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0f172a] text-xs font-bold text-white">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1c1c1c] text-xs font-bold text-white">
                       {s.step}
                     </span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#111827] mb-0.5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] mb-0.5">
                       {s.actor}
                     </p>
-                    <p className="text-sm font-semibold text-[#0f172a] mb-1.5">{s.title}</p>
-                    <p className="text-sm text-[#475569] leading-relaxed">{s.body}</p>
+                    <p className="text-sm font-semibold text-[#1c1c1c] mb-1.5">{s.title}</p>
+                    <p className="text-sm text-[#4a4a4a] leading-relaxed">{s.body}</p>
                   </div>
                 </div>
                 <div className="flex justify-start pl-[1.1rem] py-1">
                   <div className="flex flex-col items-center gap-0.5">
-                    <div className="w-px h-3 bg-[#cbd5e1]" />
-                    <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-[#cbd5e1]" />
+                    <div className="w-px h-3 bg-[#d4d4cf]" />
+                    <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-[#d4d4cf]" />
                   </div>
                 </div>
               </div>
             ))}
 
             {/* Loop back node */}
-            <div className="rounded-xl bg-[#0f172a] p-5 flex gap-4 items-start">
+            <div className="rounded-xl bg-[#1c1c1c] p-5 flex gap-4 items-start">
               <div className="flex-shrink-0">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#e2e8f0] text-[#0f172a] text-base font-bold leading-none">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#e8e8e4] text-[#1c1c1c] text-base font-bold leading-none">
                   ↻
                 </span>
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] mb-0.5">
                   The cycle
                 </p>
                 <p className="text-sm font-semibold text-white mb-1.5">
                   Reinforces at the next ballot
                 </p>
-                <p className="text-xs text-[#94a3b8] leading-relaxed">
+                <p className="text-xs text-[#a0a0a0] leading-relaxed">
                   Mikhail&apos;s public profile grows through award wins and editorial coverage.
                   Independent competitors remain invisible on the official platform. The BID
                   renews. Wareham&apos;s board seat continues. The levy is collected again. The
@@ -735,18 +735,18 @@ export default function BidTreasurerMikhailPage() {
 
           {/* Hospitality ecosystem map */}
           <div className="card bg-white overflow-hidden">
-            <div className="px-5 py-4 bg-[#0f172a]">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-0.5">
+            <div className="px-5 py-4 bg-[#1c1c1c]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf] mb-0.5">
                 The Mikhail hospitality ecosystem: Southport town centre
               </p>
-              <p className="text-xs text-[#94a3b8] leading-relaxed">
+              <p className="text-xs text-[#a0a0a0] leading-relaxed">
                 A visitor following VisitSouthport&apos;s recommendations can complete their entire
                 stay within this single group&apos;s portfolio. Accommodation. Food. Drink. Events.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e2e8f0]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e8e8e4]">
               <div className="p-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-3">
                   Sleep
                 </p>
                 <div className="space-y-2.5">
@@ -757,16 +757,16 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
-                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#1c1c1c] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#1c1c1c]">{v.name}</p>
                       </div>
-                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                      <p className="text-[11px] text-[#a0a0a0] ml-3.5">{v.note}</p>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="p-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-3">
                   Drink
                 </p>
                 <div className="space-y-2.5">
@@ -777,16 +777,16 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
-                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#1c1c1c] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#1c1c1c]">{v.name}</p>
                       </div>
-                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                      <p className="text-[11px] text-[#a0a0a0] ml-3.5">{v.note}</p>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="p-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-3">
                   Eat and socialise
                 </p>
                 <div className="space-y-2.5">
@@ -797,17 +797,17 @@ export default function BidTreasurerMikhailPage() {
                   ].map((v) => (
                     <div key={v.name}>
                       <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#111827] flex-shrink-0" />
-                        <p className="text-sm font-medium text-[#0f172a]">{v.name}</p>
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#1c1c1c] flex-shrink-0" />
+                        <p className="text-sm font-medium text-[#1c1c1c]">{v.name}</p>
                       </div>
-                      <p className="text-[11px] text-[#94a3b8] ml-3.5">{v.note}</p>
+                      <p className="text-[11px] text-[#a0a0a0] ml-3.5">{v.note}</p>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
-            <div className="px-5 py-3 bg-[#f9fafb] border-t border-[#e5e7eb]">
-              <p className="text-xs text-[#475569] leading-relaxed">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-t border-[#e8e8e4]">
+              <p className="text-xs text-[#4a4a4a] leading-relaxed">
                 This is not a criticism of Mikhail Group&apos;s investment in Southport or the quality of
                 its venues. It is a description of a market structure in which the publicly-funded
                 promotional infrastructure consistently routes visitors to one commercial group,
@@ -817,7 +817,7 @@ export default function BidTreasurerMikhailPage() {
             </div>
           </div>
 
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             The 720 levy-paying businesses financing this system include Mikhail&apos;s direct
             competitors. Independent hotels competing for the same guests. Independent bars
             competing for the same customers. They fund the awards that consistently validate their
@@ -827,27 +827,27 @@ export default function BidTreasurerMikhailPage() {
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The accountability gap */}
         <section id="accountability" className="scroll-mt-32 space-y-5">
           <SectionHeading>The accountability gap</SectionHeading>
 
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             There are two specific gaps in public accountability here. Neither is a matter of
             speculation. Both can be verified.
           </p>
 
           <div className="space-y-4">
-            <div className="card bg-white p-6 border-l-4 border-l-[#0f172a]">
-              <p className="text-sm font-bold text-[#0f172a] mb-2">1. The interest register is not public</p>
-              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+            <div className="card bg-white p-6 border-l-4 border-l-[#1c1c1c]">
+              <p className="text-sm font-bold text-[#1c1c1c] mb-2">1. The interest register is not public</p>
+              <p className="text-sm text-[#4a4a4a] leading-relaxed mb-3">
                 The BID&apos;s website states: &ldquo;Southport BID operates a robust policy where
                 any pecuniary and personal interests related to BID activities and decisions of
                 board members or employees are recorded. To view the policy and/or the records,
                 please contact us.&rdquo;
               </p>
-              <p className="text-sm text-[#475569] leading-relaxed">
+              <p className="text-sm text-[#4a4a4a] leading-relaxed">
                 The register exists. It is not published. The 720 levy-paying businesses who fund
                 the BID have no way to verify what has been declared, what decisions Wareham has
                 participated in, or whether he has recused himself from any matter touching on
@@ -856,20 +856,20 @@ export default function BidTreasurerMikhailPage() {
               </p>
             </div>
 
-            <div className="card bg-white p-6 border-l-4 border-l-[#111827]">
-              <p className="text-sm font-bold text-[#0f172a] mb-2">
+            <div className="card bg-white p-6 border-l-4 border-l-[#1c1c1c]">
+              <p className="text-sm font-bold text-[#1c1c1c] mb-2">
                 2. No TM01 has ever been filed
               </p>
-              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              <p className="text-sm text-[#4a4a4a] leading-relaxed mb-3">
                 The one resignation in the Mikhail Holdings filing history, Stephen Sheldon
                 (resigned 1 December 2023), was notified to Companies House via TM01 on
                 10 May 2024 — five months late. The company is aware of the obligation.
               </p>
-              <p className="text-sm text-[#475569] leading-relaxed">
+              <p className="text-sm text-[#4a4a4a] leading-relaxed">
                 No TM01 has ever been filed for Wareham. The 2024 annual accounts do not list him
                 as a director, but the official Companies House People register currently shows
                 his role as{" "}
-                <strong className="text-[#0f172a]">Active</strong>. Until a TM01 is filed, the
+                <strong className="text-[#1c1c1c]">Active</strong>. Until a TM01 is filed, the
                 official legal register records him as a current director of Mikhail Holdings while
                 he simultaneously serves as BID Treasurer. The discrepancy between the accounts and
                 the register requires a TM01 to resolve it.
@@ -878,12 +878,12 @@ export default function BidTreasurerMikhailPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Effect on levy payers */}
         <section id="impact" className="scroll-mt-32 space-y-5">
           <SectionHeading>What this means for the other 720 businesses</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Every levy-paying business in the BID area contributes to a fund whose Treasurer
               holds a directorial duty, and an employed commercial role, at the dominant
@@ -914,32 +914,32 @@ export default function BidTreasurerMikhailPage() {
           </div>
 
           {/* Companion pieces */}
-          <div className="rounded-lg bg-[#f8fafc] border border-[#e2e8f0] p-5 space-y-3">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+          <div className="rounded-lg bg-[#f5f5f0] border border-[#e8e8e4] p-5 space-y-3">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
               Related analysis
             </p>
-            <p className="text-xs text-[#64748b]">
+            <p className="text-xs text-[#6b6b6b]">
               The governance pattern described here sits alongside two other documented structural
               problems at Southport BID and Visit Southport.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
               <Link
                 href="/reports/mark-catherall-visit-southport"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-white transition-colors"
               >
                 Report 02: The council officer running Visit Southport
                 <ArrowRight size={11} />
               </Link>
               <Link
                 href="/analysis/selective-promotion"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-white transition-colors"
               >
                 Which businesses does VisitSouthport.com promote?
                 <ArrowRight size={11} />
               </Link>
               <Link
                 href="/analysis/bid-cronyism-by-design"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-white transition-colors"
               >
                 How BIDs breed cronyism by design
                 <ArrowRight size={11} />
@@ -948,81 +948,81 @@ export default function BidTreasurerMikhailPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Questions */}
         <section id="questions" className="scroll-mt-32 space-y-5">
           <SectionHeading>The questions</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             SIBA cannot answer the following. Southport BID, Sefton Council, and Geoffrey Wareham
             can.
           </p>
           <div className="space-y-3">
             {questions.map((q, i) => (
               <div key={i} className="card bg-white p-5 flex gap-4">
-                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#f1f5f9] text-xs font-bold text-[#475569]">
+                <span className="flex-shrink-0 flex h-6 w-6 items-center justify-center rounded bg-[#f5f5f0] text-xs font-bold text-[#4a4a4a]">
                   {i + 1}
                 </span>
-                <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
+                <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* FOI */}
         <section id="foi" className="scroll-mt-32 space-y-5">
           <SectionHeading>Active FOI request</SectionHeading>
-          <p className="text-[#475569] leading-relaxed">
+          <p className="text-[#4a4a4a] leading-relaxed">
             SIBA has submitted a formal Freedom of Information request to Sefton Council directly
             relevant to the questions raised here. The response will be published in full,
             unedited.
           </p>
           <Link
             href="/foi#10"
-            className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f8fafc] transition-colors block"
+            className="card bg-white p-5 flex items-center gap-4 hover:bg-[#f5f5f0] transition-colors block"
           >
-            <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f9fafb] border border-[#e5e7eb] text-sm font-bold text-[#111827]">
+            <span className="flex-shrink-0 flex h-9 w-9 items-center justify-center rounded-lg bg-[#f5f5f0] border border-[#e8e8e4] text-sm font-bold text-[#1c1c1c]">
               10
             </span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-[#0f172a]">
+              <p className="text-sm font-semibold text-[#1c1c1c]">
                 FOI 10: BID Board Members&apos; Declarations of Interest and Outside
                 Directorships
               </p>
-              <p className="text-xs text-[#94a3b8] mt-0.5">Response due 7 May 2026</p>
+              <p className="text-xs text-[#a0a0a0] mt-0.5">Response due 7 May 2026</p>
             </div>
-            <ArrowRight size={14} className="text-[#cbd5e1] flex-shrink-0" />
+            <ArrowRight size={14} className="text-[#d4d4cf] flex-shrink-0" />
           </Link>
 
-          <p className="text-sm text-[#64748b] leading-relaxed">
+          <p className="text-sm text-[#6b6b6b] leading-relaxed">
             SIBA has submitted 14 Freedom of Information requests to Sefton Council in total,
             covering BID governance, public spending, and tourism platform management.{" "}
-            <Link href="/foi" className="text-[#111827] underline">
+            <Link href="/foi" className="text-[#1c1c1c] underline">
               View all FOI requests.
             </Link>
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Right of reply */}
         <section className="space-y-4">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
             Right of reply
           </p>
-          <p className="text-sm text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#4a4a4a] leading-relaxed">
             If you are Geoffrey Wareham, a representative of Southport BID, Mikhail Hotel and
             Leisure Group, or Sefton Council and you wish to respond to any aspect of this
             analysis, contact{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#111827] underline">
+            <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] underline">
               damian@siba.digital
             </a>
             . Responses will be published in full without editing. The right of reply is open
             without time limit.
           </p>
-          <p className="text-sm text-[#64748b] leading-relaxed">
+          <p className="text-sm text-[#6b6b6b] leading-relaxed">
             If you are a Southport business with information relevant to BID governance or
             spending decisions, you can contact SIBA in strict confidence at the same address.
           </p>

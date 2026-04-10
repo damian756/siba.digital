@@ -123,26 +123,26 @@ const questions = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">{children}</h2>
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">{children}</h2>
     </div>
   );
 }
 
 export default function AndrewBrownBidMediaPage() {
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Analysis
@@ -150,12 +150,12 @@ export default function AndrewBrownBidMediaPage() {
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Governance</span>
             <span className="badge badge-navy">Media Contracts</span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             Southport BID&apos;s contracted media partner is also paid by Mikhail Hotel and Leisure Group
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             Andrew Brown&apos;s Stand Up For Southport has held a paid contract with Southport BID since
             January 2021. In a published interview, Brown states he also provides paid media and PR services
             to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure
@@ -165,16 +165,16 @@ export default function AndrewBrownBidMediaPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-[#f8fafc] border-b border-[#e2e8f0]">
+      <div className="bg-[#f5f5f0] border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex gap-2.5 items-start">
-            <AlertTriangle size={14} className="text-[#94a3b8] flex-shrink-0 mt-0.5" />
-            <p className="text-xs text-[#94a3b8] leading-relaxed">
+            <AlertTriangle size={14} className="text-[#a0a0a0] flex-shrink-0 mt-0.5" />
+            <p className="text-xs text-[#a0a0a0] leading-relaxed">
               Every factual claim in this analysis is sourced from publicly available documents,
               linked directly below. SIBA does not allege misconduct by any individual. SIBA
               welcomes corrections or responses from any party named and will publish them in full
               at{" "}
-              <a href="mailto:damian@siba.digital" className="underline hover:text-[#64748b]">
+              <a href="mailto:damian@siba.digital" className="underline hover:text-[#6b6b6b]">
                 damian@siba.digital
               </a>
               .
@@ -189,10 +189,10 @@ export default function AndrewBrownBidMediaPage() {
       </div>
 
       {/* Sticky nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -210,7 +210,7 @@ export default function AndrewBrownBidMediaPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#3d3d3d] transition-colors"
               >
                 {l.label}
               </a>
@@ -224,14 +224,14 @@ export default function AndrewBrownBidMediaPage() {
 
         {/* Plain language summary */}
         <section id="summary" className="scroll-mt-32">
-          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+          <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
+              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
               <p>
                 Southport BID is funded by a compulsory charge on around 720 town centre businesses.
                 Part of that money, allocated under the &ldquo;Promotion&rdquo; budget line, is used to pay
@@ -268,7 +268,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* Who Andrew Brown is */}
         <section id="company" className="scroll-mt-32">
           <SectionHeading>The company and the man behind it</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Andrew Edward Brown is a Southport-based journalist and PR consultant with 25 years of
               experience. He was previously an editor at Reach plc, running the Southport Visiter,
@@ -277,7 +277,7 @@ export default function AndrewBrownBidMediaPage() {
             </p>
             <p>
               In April 2020, Brown incorporated{" "}
-              <strong className="text-[#0f172a]">STAND UP FOR SOUTHPORT LIMITED</strong>, company
+              <strong className="text-[#1c1c1c]">STAND UP FOR SOUTHPORT LIMITED</strong>, company
               number 12553604. He is its sole person with significant control, holding 75% or more of
               the shares and voting rights. He is also the sole director. The company is classified
               under SIC code 96090, Other service activities.
@@ -290,9 +290,9 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Company card */}
-          <div className="mt-6 rounded-lg border border-[#e2e8f0] bg-white overflow-hidden">
-            <div className="bg-[#f8fafc] border-b border-[#e2e8f0] px-5 py-3">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+          <div className="mt-6 rounded-lg border border-[#e8e8e4] bg-white overflow-hidden">
+            <div className="bg-[#f5f5f0] border-b border-[#e8e8e4] px-5 py-3">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
                 Companies House Record
               </p>
             </div>
@@ -306,19 +306,19 @@ export default function AndrewBrownBidMediaPage() {
                 { label: "Nature of control", value: "75%+ shares, voting rights, director appointment" },
               ].map((r) => (
                 <div key={r.label}>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-0.5">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-0.5">
                     {r.label}
                   </p>
-                  <p className="font-semibold text-[#0f172a] text-sm leading-snug">{r.value}</p>
+                  <p className="font-semibold text-[#1c1c1c] text-sm leading-snug">{r.value}</p>
                 </div>
               ))}
             </div>
-            <div className="border-t border-[#e2e8f0] px-5 py-3">
+            <div className="border-t border-[#e8e8e4] px-5 py-3">
               <a
                 href={CH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
               >
                 View on Companies House
                 <ExternalLink size={11} />
@@ -330,7 +330,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* The BID contract */}
         <section id="contract" className="scroll-mt-32">
           <SectionHeading>The BID contract: confirmed since January 2021</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               On 24 January 2021, Southport BID published an announcement on its own website confirming
               a formal contract with Stand Up For Southport. The announcement was simultaneously
@@ -340,61 +340,61 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Quote block */}
-          <div className="mt-6 rounded-lg border-l-4 border-l-[#111827] bg-white border border-[#e2e8f0] px-6 py-5">
-            <p className="text-sm text-[#0f172a] leading-relaxed italic mb-3">
+          <div className="mt-6 rounded-lg border-l-4 border-l-[#1c1c1c] bg-white border border-[#e8e8e4] px-6 py-5">
+            <p className="text-sm text-[#1c1c1c] leading-relaxed italic mb-3">
               &ldquo;Southport BID has now contracted Stand Up For Southport to support its media, PR and
               communications strategy, highlight the BID&apos;s ongoing work and promote local businesses
               in the town.&rdquo;
             </p>
-            <p className="text-xs text-[#94a3b8]">
+            <p className="text-xs text-[#a0a0a0]">
               Rachel Fitzgerald, CEO, Southport BID. Published on southportbid.com, January 2021.
             </p>
             <a
               href={BID_CONTRACT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-3"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity mt-3"
             >
               Source: southportbid.com
               <ExternalLink size={11} />
             </a>
           </div>
 
-          <div className="mt-5 space-y-4 text-[#475569] leading-relaxed">
+          <div className="mt-5 space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The contract has been in place for over four years. Stand Up For Southport&apos;s own About
               page, currently live, lists Southport BID as a client alongside Southport Market:
             </p>
           </div>
 
-          <div className="mt-4 rounded-lg border-l-4 border-l-[#64748b] bg-white border border-[#e2e8f0] px-6 py-5">
-            <p className="text-sm text-[#0f172a] leading-relaxed italic mb-3">
+          <div className="mt-4 rounded-lg border-l-4 border-l-[#6b6b6b] bg-white border border-[#e8e8e4] px-6 py-5">
+            <p className="text-sm text-[#1c1c1c] leading-relaxed italic mb-3">
               &ldquo;He launched Stand Up For Southport alongside Phil Gee, providing media, PR, social media
               and marketing services to firms and organisations including Southport Business Improvement
               District (Southport BID) and Southport Market.&rdquo;
             </p>
-            <p className="text-xs text-[#94a3b8]">
+            <p className="text-xs text-[#a0a0a0]">
               Stand Up For Southport, About page. Sourced April 2026.
             </p>
             <a
               href={SUFS_ABOUT_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-3"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity mt-3"
             >
               Source: standupforsouthport.com/about
               <ExternalLink size={11} />
             </a>
           </div>
 
-          <div className="mt-5 space-y-4 text-[#475569] leading-relaxed">
+          <div className="mt-5 space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The total value of payments made by Southport BID to Stand Up For Southport Limited over
               four-plus years is not publicly disclosed. Southport BID allocates £150,000 per year to
               its &ldquo;Promotion&rdquo; budget line, described as covering the YourSouthport platform and
               associated marketing. This contract sits within that line. The specific contract value
               is the subject of{" "}
-              <Link href="/foi#15" className="text-[#111827] underline font-semibold">
+              <Link href="/foi#15" className="text-[#1c1c1c] underline font-semibold">
                 FOI Request 15
               </Link>
               .
@@ -405,7 +405,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* The Mikhail relationship */}
         <section id="mikhail" className="scroll-mt-32">
           <SectionHeading>The Mikhail relationship: his own words</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               In November 2024, Andrew Brown gave a detailed interview to Behind Local News, published
               on Medium. Asked about his business model, he described his income sources. What follows
@@ -414,28 +414,28 @@ export default function AndrewBrownBidMediaPage() {
           </div>
 
           {/* Key quote */}
-          <div className="mt-6 rounded-xl bg-[#0f172a] p-6 sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-4">
+          <div className="mt-6 rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf] mb-4">
               Andrew Brown, in his own words (November 2024)
             </p>
-            <p className="text-[#e2e8f0] text-base leading-relaxed italic">
+            <p className="text-[#e8e8e4] text-base leading-relaxed italic">
               &ldquo;We provide media and PR services for local businesses, working with the likes of{" "}
-              <span className="text-[#f9fafb] font-bold not-italic">Southport BID</span>,
+              <span className="text-[#f5f5f0] font-bold not-italic">Southport BID</span>,
               Southport Flower Show, Southport Comedy Festival,{" "}
-              <span className="text-[#f9fafb] font-bold not-italic">
+              <span className="text-[#f5f5f0] font-bold not-italic">
                 Mikhail Hotel and Leisure Group
               </span>
               , and others.&rdquo;
             </p>
             <div className="mt-4 flex items-center gap-4">
-              <p className="text-xs text-[#64748b]">
+              <p className="text-xs text-[#6b6b6b]">
                 Behind Local News UK, Medium. Published 3 November 2024.
               </p>
               <a
                 href={MEDIUM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity"
               >
                 Source
                 <ExternalLink size={11} />
@@ -443,12 +443,12 @@ export default function AndrewBrownBidMediaPage() {
             </div>
           </div>
 
-          <div className="mt-6 space-y-4 text-[#475569] leading-relaxed">
+          <div className="mt-6 space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Brown also confirms the awards co-organisation on the Stand Up For Southport About page,
               currently live:
             </p>
-            <blockquote className="border-l-4 border-[#e2e8f0] pl-4 text-[#475569] italic">
+            <blockquote className="border-l-4 border-[#e8e8e4] pl-4 text-[#4a4a4a] italic">
               &ldquo;We are proud to co-organise the Grand Pride Of Sefton Awards with Mikhail Hotel And
               Leisure Group which celebrates the amazing people across our borough.&rdquo;
             </blockquote>
@@ -472,7 +472,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* The coverage */}
         <section id="coverage" className="scroll-mt-32">
           <SectionHeading>What Stand Up For Southport publishes about Mikhail</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               Stand Up For Southport regularly publishes articles about Mikhail Hotel and Leisure
               Group. These are written by Andrew Brown, presented in editorial news format, and carry
@@ -481,25 +481,25 @@ export default function AndrewBrownBidMediaPage() {
             </p>
           </div>
 
-          <div className="mt-6 overflow-x-auto rounded-lg border border-[#e2e8f0] bg-white">
+          <div className="mt-6 overflow-x-auto rounded-lg border border-[#e8e8e4] bg-white">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0] bg-[#f8fafc]">
-                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#94a3b8]">
+                <tr className="border-b border-[#e8e8e4] bg-[#f5f5f0]">
+                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0]">
                     Date
                   </th>
-                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#94a3b8]">
+                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0]">
                     Article
                   </th>
-                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#94a3b8]">
+                  <th className="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0]">
                     Disclosure
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {coverageRows.map((row) => (
-                  <tr key={row.url} className={row.flagged ? "bg-[#f9fafb]" : ""}>
-                    <td className="px-4 py-3 text-[#64748b] whitespace-nowrap align-top">
+                  <tr key={row.url} className={row.flagged ? "bg-[#f5f5f0]" : ""}>
+                    <td className="px-4 py-3 text-[#6b6b6b] whitespace-nowrap align-top">
                       {row.date}
                     </td>
                     <td className="px-4 py-3 align-top">
@@ -507,12 +507,12 @@ export default function AndrewBrownBidMediaPage() {
                         href={row.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#0f172a] hover:text-[#374151] transition-colors font-medium leading-snug inline-flex items-start gap-1"
+                        className="text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors font-medium leading-snug inline-flex items-start gap-1"
                       >
                         {row.headline}
                         <ExternalLink size={10} className="flex-shrink-0 mt-1" />
                       </a>
-                      <p className="text-xs text-[#94a3b8] mt-1">{row.note}</p>
+                      <p className="text-xs text-[#a0a0a0] mt-1">{row.note}</p>
                     </td>
                     <td className="px-4 py-3 align-top whitespace-nowrap">
                       {row.flagged ? (
@@ -531,9 +531,9 @@ export default function AndrewBrownBidMediaPage() {
             </table>
           </div>
 
-          <div className="mt-5 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 flex items-start gap-3">
-            <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#111827] mt-1.5" />
-            <p className="text-sm text-[#475569] leading-relaxed">
+          <div className="mt-5 rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 flex items-start gap-3">
+            <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#1c1c1c] mt-1.5" />
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Andrew Brown does label some content as sponsored: individual articles directly
               commissioned by the BID carry a &ldquo;Southport BID sponsored feature&rdquo; label, and articles
               directly commissioned by Mikhail venues carry a &ldquo;The Bold sponsored feature&rdquo; or similar
@@ -549,7 +549,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* Stars Awards */}
         <section id="awards" className="scroll-mt-32">
           <SectionHeading>The Stars Awards: a case study in converging interests</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The Your Southport Stars Awards is the BID&apos;s annual business recognition event. It is
               organised by BID staff, funded from the levy, and promoted across BID channels. Coverage
@@ -580,38 +580,38 @@ export default function AndrewBrownBidMediaPage() {
                 label: "Awards venue",
                 value: "The Grand, Lord Street",
                 sub: "Mikhail Hotel and Leisure Group, 2024 and 2025",
-                color: "border-[#111827]",
+                color: "border-[#1c1c1c]",
               },
               {
                 label: "2025 Hotel of the Year",
                 value: "The Bold Hotel",
                 sub: "Won Business Leaders Award. Panel-judged, not public vote.",
-                color: "border-[#111827]",
+                color: "border-[#1c1c1c]",
               },
               {
                 label: "2025 finalist, same category",
                 value: "Lord Street Hotel",
                 sub: "Also Mikhail Hotel and Leisure Group.",
-                color: "border-[#64748b]",
+                color: "border-[#6b6b6b]",
               },
             ].map((f) => (
               <div
                 key={f.label}
                 className={`rounded-lg border bg-white p-4 border-l-4 ${f.color}`}
               >
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#94a3b8] mb-1">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] mb-1">
                   {f.label}
                 </p>
-                <p className="text-base font-bold text-[#0f172a] leading-snug">{f.value}</p>
-                <p className="text-xs text-[#64748b] mt-1 leading-snug">{f.sub}</p>
+                <p className="text-base font-bold text-[#1c1c1c] leading-snug">{f.value}</p>
+                <p className="text-xs text-[#6b6b6b] mt-1 leading-snug">{f.sub}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-5 space-y-4 text-[#475569] leading-relaxed">
+          <div className="mt-5 space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The 2026 Stars Awards night is scheduled for{" "}
-              <strong className="text-[#0f172a]">14 April 2026</strong>, again at The Grand. Stand Up
+              <strong className="text-[#1c1c1c]">14 April 2026</strong>, again at The Grand. Stand Up
               For Southport is promoting the nominations process. The article carrying the nominations
               announcement is bylined Andrew Brown and includes his contact details at the footer.
             </p>
@@ -628,7 +628,7 @@ export default function AndrewBrownBidMediaPage() {
               href={BOLD_WIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#e8e8e4] rounded-md px-3 py-1.5"
             >
               The Bold winning article
               <ExternalLink size={11} />
@@ -637,7 +637,7 @@ export default function AndrewBrownBidMediaPage() {
               href={STARS_2026_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors border border-[#e2e8f0] rounded-md px-3 py-1.5"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors border border-[#e8e8e4] rounded-md px-3 py-1.5"
             >
               2026 Stars Awards nominations (SUFS)
               <ExternalLink size={11} />
@@ -648,7 +648,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* The loop */}
         <section id="loop" className="scroll-mt-32">
           <SectionHeading>How this connects to the wider structure</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               In our earlier analysis of the BID Treasurer&apos;s directorship, we documented a
               six-step loop showing how levy money consistently routes through connected interests
@@ -708,28 +708,28 @@ export default function AndrewBrownBidMediaPage() {
                 key={s.step}
                 className={`rounded-lg border p-5 flex gap-4 ${
                   s.highlight
-                    ? "border-[#e5e7eb] bg-[#f9fafb]"
-                    : "border-[#e2e8f0] bg-white"
+                    ? "border-[#e8e8e4] bg-[#f5f5f0]"
+                    : "border-[#e8e8e4] bg-white"
                 }`}
               >
                 <div className="flex-shrink-0">
                   <div
                     className={`h-9 w-9 rounded-lg flex items-center justify-center text-sm font-bold ${
                       s.highlight
-                        ? "bg-[#111827] text-white"
-                        : "bg-[#f1f5f9] text-[#64748b]"
+                        ? "bg-[#1c1c1c] text-white"
+                        : "bg-[#f5f5f0] text-[#6b6b6b]"
                     }`}
                   >
                     {s.step}
                   </div>
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-bold text-[#0f172a] mb-1">{s.title}</p>
-                  <p className="text-sm text-[#475569] leading-relaxed">{s.body}</p>
+                  <p className="text-sm font-bold text-[#1c1c1c] mb-1">{s.title}</p>
+                  <p className="text-sm text-[#4a4a4a] leading-relaxed">{s.body}</p>
                   {"link" in s && s.link && (
                     <Link
                       href={s.link.href}
-                      className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity mt-2"
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity mt-2"
                     >
                       {s.link.label}
                       <ArrowRight size={11} />
@@ -744,7 +744,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* Contact log */}
         <section id="contact-log" className="scroll-mt-32">
           <SectionHeading>8 April 2026</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               On 8 April 2026, at approximately 13:05 to 13:15, two LinkedIn profile views of SIBA
               founder Damian Roche were recorded within five minutes of each other. One was from
@@ -765,7 +765,7 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-4">
             <Link
               href="/contact-log"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity border border-[#e5e7eb] rounded-md px-3 py-1.5 bg-[#f9fafb]"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity border border-[#e8e8e4] rounded-md px-3 py-1.5 bg-[#f5f5f0]"
             >
               View SIBA contact log (entries CL-001 and CL-002)
               <ArrowRight size={11} />
@@ -776,7 +776,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* What we do not yet know */}
         <section className="scroll-mt-32">
           <SectionHeading>What we do not yet know</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The public record confirms the existence of both commercial relationships. It does not
               confirm:
@@ -790,7 +790,7 @@ export default function AndrewBrownBidMediaPage() {
                 "Who sits on the Business Leaders Award judging panel for the Stars Awards and what process governs their selection.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm">
-                  <span className="flex-shrink-0 w-1 h-1 rounded-full bg-[#111827] mt-2" />
+                  <span className="flex-shrink-0 w-1 h-1 rounded-full bg-[#1c1c1c] mt-2" />
                   {item}
                 </li>
               ))}
@@ -807,7 +807,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* FOI */}
         <section id="foi" className="scroll-mt-32">
           <SectionHeading>FOI Request 15: BID Media Contractor Payments and Procurement</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               SIBA has submitted Freedom of Information Request 15 to Sefton Borough Council. The
               request asks for three things:
@@ -819,7 +819,7 @@ export default function AndrewBrownBidMediaPage() {
                 "Any tender documentation, procurement records, or contract award notices held by the council in relation to the appointment of Stand Up For Southport or Andrew Brown as a media supplier to the BID.",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
-                  <span className="flex-shrink-0 font-bold text-[#111827]">{i + 1}.</span>
+                  <span className="flex-shrink-0 font-bold text-[#1c1c1c]">{i + 1}.</span>
                   {item}
                 </li>
               ))}
@@ -829,20 +829,20 @@ export default function AndrewBrownBidMediaPage() {
               on this platform.
             </p>
           </div>
-          <div className="mt-5 rounded-lg border border-[#e5e7eb] bg-[#f9fafb] px-5 py-4 flex items-start gap-3">
-            <span className="flex-shrink-0 font-bold text-[#111827] text-sm">15</span>
+          <div className="mt-5 rounded-lg border border-[#e8e8e4] bg-[#f5f5f0] px-5 py-4 flex items-start gap-3">
+            <span className="flex-shrink-0 font-bold text-[#1c1c1c] text-sm">15</span>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-bold text-[#0f172a] mb-1">
+              <p className="text-sm font-bold text-[#1c1c1c] mb-1">
                 FOI Request 15: BID Media Contractor Payments and Procurement
               </p>
-              <p className="text-xs text-[#64748b] mb-3">
+              <p className="text-xs text-[#6b6b6b] mb-3">
                 Submitted to Sefton Borough Council. Response due 7 May 2026.
               </p>
               <a
                 href={WDTK_FOI15}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0f172a] hover:text-[#374151] transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
               >
                 View on WhatDoTheyKnow
                 <ExternalLink size={11} />
@@ -852,7 +852,7 @@ export default function AndrewBrownBidMediaPage() {
           <div className="mt-4">
             <Link
               href="/foi"
-              className="inline-flex items-center gap-1 text-xs font-semibold text-[#111827] hover:opacity-80 transition-opacity"
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:opacity-80 transition-opacity"
             >
               View all 15 FOI requests
               <ArrowRight size={11} />
@@ -863,7 +863,7 @@ export default function AndrewBrownBidMediaPage() {
         {/* Governance questions */}
         <section id="questions" className="scroll-mt-32">
           <SectionHeading>Questions for the record</SectionHeading>
-          <div className="space-y-3 text-[#475569] leading-relaxed mb-5">
+          <div className="space-y-3 text-[#4a4a4a] leading-relaxed mb-5">
             <p>
               SIBA is not in a position to answer these questions from public records alone. They are
               addressed to Southport BID, Sefton Council, and Andrew Brown.
@@ -873,10 +873,10 @@ export default function AndrewBrownBidMediaPage() {
             {questions.map((q, i) => (
               <div
                 key={i}
-                className="rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 flex gap-3"
+                className="rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 flex gap-3"
               >
-                <span className="flex-shrink-0 font-bold text-[#111827] text-sm w-5">{i + 1}.</span>
-                <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
+                <span className="flex-shrink-0 font-bold text-[#1c1c1c] text-sm w-5">{i + 1}.</span>
+                <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
               </div>
             ))}
           </div>
@@ -884,13 +884,13 @@ export default function AndrewBrownBidMediaPage() {
 
         {/* Right of reply */}
         <section className="scroll-mt-32">
-          <div className="rounded-lg border border-[#e2e8f0] bg-white p-6">
-            <p className="text-sm font-bold text-[#0f172a] mb-2">Right of reply</p>
-            <p className="text-sm text-[#475569] leading-relaxed">
+          <div className="rounded-lg border border-[#e8e8e4] bg-white p-6">
+            <p className="text-sm font-bold text-[#1c1c1c] mb-2">Right of reply</p>
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Andrew Brown, Southport BID, Rachel Fitzgerald, and Sefton Council are each invited to
               respond to the factual claims and questions documented in this analysis. Any response
               received will be published here in full and without editing. Contact:{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#111827] underline">
+              <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] underline">
                 damian@siba.digital
               </a>
               .
@@ -899,8 +899,8 @@ export default function AndrewBrownBidMediaPage() {
         </section>
 
         {/* Related */}
-        <section className="border-t border-[#e2e8f0] pt-10">
-          <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8] mb-5">
+        <section className="border-t border-[#e8e8e4] pt-10">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-5">
             Related analysis and reports
           </p>
           <div className="space-y-3">
@@ -924,15 +924,15 @@ export default function AndrewBrownBidMediaPage() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="flex items-center gap-4 rounded-lg border border-[#e2e8f0] bg-white px-5 py-4 hover:border-[#111827] transition-colors group"
+                className="flex items-center gap-4 rounded-lg border border-[#e8e8e4] bg-white px-5 py-4 hover:border-[#1c1c1c] transition-colors group"
               >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827] w-24 flex-shrink-0">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] w-24 flex-shrink-0">
                   {r.label}
                 </span>
-                <p className="text-sm font-semibold text-[#0f172a] group-hover:text-[#374151] transition-colors flex-1 leading-snug">
+                <p className="text-sm font-semibold text-[#1c1c1c] group-hover:text-[#3d3d3d] transition-colors flex-1 leading-snug">
                   {r.title}
                 </p>
-                <ArrowRight size={14} className="text-[#cbd5e1] group-hover:text-[#374151] transition-colors flex-shrink-0" />
+                <ArrowRight size={14} className="text-[#d4d4cf] group-hover:text-[#3d3d3d] transition-colors flex-shrink-0" />
               </Link>
             ))}
           </div>

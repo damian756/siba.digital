@@ -65,11 +65,11 @@ export default function FoiCountdown() {
             Statutory Breach — Freedom of Information Act 2000, s.10(1)
           </p>
         </div>
-        <div className="bg-[#0f172a] px-6 py-8">
+        <div className="bg-[#1c1c1c] px-6 py-8">
           <p className="text-2xl sm:text-3xl font-bold text-red-500 mb-4 leading-tight">
             Sefton Council is in breach of the Freedom of Information Act 2000.
           </p>
-          <p className="text-sm text-[#94a3b8] leading-relaxed mb-6 max-w-2xl">
+          <p className="text-sm text-[#a0a0a0] leading-relaxed mb-6 max-w-2xl">
             Under s.10(1), a public authority must comply with a request
             promptly and in any event not later than 20 working days following
             the date of receipt. The deadline of{" "}
@@ -90,22 +90,22 @@ export default function FoiCountdown() {
   }
 
   return (
-    <div className="rounded-lg overflow-hidden mb-10 border border-[#1e293b]">
+    <div className="rounded-lg overflow-hidden mb-10 border border-[#2a2a2a]">
       {/* Header bar */}
-      <div className="bg-[#0f172a] border-b border-[#1e293b] px-6 py-3 flex items-center justify-between gap-3 flex-wrap">
+      <div className="bg-[#1c1c1c] border-b border-[#2a2a2a] px-6 py-3 flex items-center justify-between gap-3 flex-wrap">
         <div className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-[#111827] animate-pulse flex-shrink-0" />
-          <p className="text-xs font-bold uppercase tracking-widest text-[#111827]">
+          <span className="h-2 w-2 rounded-full bg-[#1c1c1c] animate-pulse flex-shrink-0" />
+          <p className="text-xs font-bold uppercase tracking-widest text-[#1c1c1c]">
             Statutory Deadline — Freedom of Information Act 2000, s.10(1)
           </p>
         </div>
-        <p className="text-xs text-[#475569]">
-          Clock started: <span className="text-[#94a3b8] font-semibold">7 April 2026</span>
+        <p className="text-xs text-[#4a4a4a]">
+          Clock started: <span className="text-[#a0a0a0] font-semibold">7 April 2026</span>
         </p>
       </div>
 
       {/* Main countdown */}
-      <div className="bg-[#0f172a] px-6 pt-6 pb-5">
+      <div className="bg-[#1c1c1c] px-6 pt-6 pb-5">
         <div className="grid grid-cols-4 gap-3 mb-6">
           {[
             { value: countdown.days, label: "Calendar Days" },
@@ -115,12 +115,12 @@ export default function FoiCountdown() {
           ].map((u) => (
             <div
               key={u.label}
-              className="text-center bg-[#1e293b] rounded-lg py-5 border border-[#334155]"
+              className="text-center bg-[#2a2a2a] rounded-lg py-5 border border-[#3d3d3d]"
             >
               <p className="text-5xl sm:text-6xl font-bold text-white tabular-nums leading-none">
                 {String(u.value).padStart(2, "0")}
               </p>
-              <p className="text-[10px] text-[#475569] mt-3 uppercase tracking-widest font-semibold">
+              <p className="text-[10px] text-[#4a4a4a] mt-3 uppercase tracking-widest font-semibold">
                 {u.label}
               </p>
             </div>
@@ -130,24 +130,24 @@ export default function FoiCountdown() {
         {/* Progress bar */}
         <div className="mb-2">
           <div className="flex justify-between items-center mb-1.5">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[#475569]">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#4a4a4a]">
               Working days elapsed
             </p>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-[#475569]">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#4a4a4a]">
               {remaining} remaining
             </p>
           </div>
-          <div className="w-full h-2 rounded-full bg-[#1e293b]">
+          <div className="w-full h-2 rounded-full bg-[#2a2a2a]">
             <div
-              className="h-2 rounded-full bg-[#111827] transition-all duration-1000"
+              className="h-2 rounded-full bg-[#1c1c1c] transition-all duration-1000"
               style={{ width: `${pctUsed}%` }}
             />
           </div>
           <div className="flex justify-between mt-1.5">
-            <p className="text-xs font-bold text-[#111827]">
+            <p className="text-xs font-bold text-[#1c1c1c]">
               {elapsed} of {TOTAL_WORKING_DAYS} days used
             </p>
-            <p className="text-xs text-[#475569]">
+            <p className="text-xs text-[#4a4a4a]">
               Due: <span className="text-white font-semibold">5 May 2026</span>
             </p>
           </div>
@@ -155,8 +155,8 @@ export default function FoiCountdown() {
       </div>
 
       {/* Legal footer */}
-      <div className="bg-[#0a0f1a] px-6 py-4 border-t border-[#1e293b]">
-        <p className="text-xs text-[#475569] leading-relaxed">
+      <div className="bg-[#0a0f1a] px-6 py-4 border-t border-[#2a2a2a]">
+        <p className="text-xs text-[#4a4a4a] leading-relaxed">
           Under s.10(1) of the Freedom of Information Act 2000, a public
           authority must comply promptly and in any event not later than 20
           working days following the date of receipt. All responses will be

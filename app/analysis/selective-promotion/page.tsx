@@ -227,8 +227,8 @@ const absentBusinesses = [
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#111827]" />
-      <h2 className="text-2xl font-bold text-[#0f172a] tracking-tight">
+      <span className="flex-shrink-0 w-1 h-7 rounded-full bg-[#1c1c1c]" />
+      <h2 className="text-2xl font-bold text-[#1c1c1c] tracking-tight">
         {children}
       </h2>
     </div>
@@ -241,30 +241,30 @@ export default function SelectivePromotionPage() {
     .reduce((sum, d) => sum + d.total, 0);
 
   return (
-    <div className="min-h-screen bg-[#f8fafc]">
+    <div className="min-h-screen bg-[#f5f5f0]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
 
       {/* Header */}
-      <div className="bg-white border-b border-[#e2e8f0]">
+      <div className="bg-white border-b border-[#e8e8e4]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
             href="/analysis"
-            className="inline-flex items-center gap-1.5 text-sm text-[#94a3b8] hover:text-[#0f172a] transition-colors mb-6"
+            className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
             Analysis
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Editorial Review</span>
-            <span className="text-xs text-[#94a3b8]">April 2026</span>
+            <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#0f172a] mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
             Which Businesses Does VisitSouthport.com Actually Promote?
           </h1>
-          <p className="text-lg text-[#64748b] leading-relaxed">
+          <p className="text-lg text-[#6b6b6b] leading-relaxed">
             A manual review of editorial content across every seasonal page on
             Southport&apos;s publicly-funded tourism platform. Every mention
             counted. Every outbound link checked. The pattern is consistent and
@@ -279,10 +279,10 @@ export default function SelectivePromotionPage() {
       </div>
 
       {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-[#0f172a] border-b border-[#1e293b]">
+      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#cbd5e1] pr-3 mr-1 border-r border-[#334155] flex-shrink-0">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#d4d4cf] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
               Jump to
             </span>
             {[
@@ -298,7 +298,7 @@ export default function SelectivePromotionPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#64748b] hover:text-[#374151] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#3d3d3d] transition-colors"
               >
                 {l.label}
               </a>
@@ -312,14 +312,14 @@ export default function SelectivePromotionPage() {
 
         {/* Plain language summary */}
         <section className="scroll-mt-32">
-          <div className="rounded-xl bg-[#0f172a] p-6 sm:p-8">
+          <div className="rounded-xl bg-[#1c1c1c] p-6 sm:p-8">
             <div className="flex items-center gap-2 mb-4">
-              <Info size={14} className="text-[#cbd5e1] flex-shrink-0" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#cbd5e1]">
+              <Info size={14} className="text-[#d4d4cf] flex-shrink-0" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#d4d4cf]">
                 What this article is about
               </p>
             </div>
-            <div className="space-y-3 text-[#cbd5e1] text-sm leading-relaxed">
+            <div className="space-y-3 text-[#d4d4cf] text-sm leading-relaxed">
               <p>
                 VisitSouthport.com is a publicly-funded tourism website operated by Sefton Council.
                 Its stated purpose is to promote Southport to visitors. It is not a private
@@ -348,7 +348,7 @@ export default function SelectivePromotionPage() {
                 The question this article asks is: who decided how that benefit should be
                 distributed, and how was that decision governed?
               </p>
-              <p className="text-[#94a3b8] text-xs pt-2 border-t border-[#1e293b]">
+              <p className="text-[#a0a0a0] text-xs pt-2 border-t border-[#2a2a2a]">
                 This analysis documents a pattern identified from publicly available data. It is
                 not an allegation of deliberate impropriety by any individual. Every claim is
                 independently verifiable by anyone with a web browser. Use the navigation above
@@ -359,7 +359,7 @@ export default function SelectivePromotionPage() {
         </section>
 
         {/* Key stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#e2e8f0] border border-[#e2e8f0] rounded-lg bg-white">
+        <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#e8e8e4] border border-[#e8e8e4] rounded-lg bg-white">
           {[
             { value: "4", label: "Pages reviewed" },
             { value: String(mikhailTotal), label: "Mikhail Group mentions" },
@@ -367,8 +367,8 @@ export default function SelectivePromotionPage() {
             { value: "3", label: "BID directors also governing Visit Southport" },
           ].map((s) => (
             <div key={s.label} className="px-5 py-4 text-center">
-              <p className="text-xl font-bold text-[#0f172a]">{s.value}</p>
-              <p className="text-xs text-[#64748b] leading-tight mt-0.5">
+              <p className="text-xl font-bold text-[#1c1c1c]">{s.value}</p>
+              <p className="text-xs text-[#6b6b6b] leading-tight mt-0.5">
                 {s.label}
               </p>
             </div>
@@ -378,7 +378,7 @@ export default function SelectivePromotionPage() {
         {/* What VisitSouthport is */}
         <section id="platform" className="scroll-mt-32">
           <SectionHeading>What VisitSouthport.com is</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               VisitSouthport.com is a publicly-funded tourism promotion platform
               for Southport. It holds a Domain Rating of 59 according to Ahrefs,
@@ -396,12 +396,12 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Method */}
         <section id="method" className="scroll-mt-32">
           <SectionHeading>What we did</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               We manually reviewed the full HTML source of every seasonal
               editorial page on VisitSouthport.com. We counted every mention of
@@ -409,7 +409,7 @@ export default function SelectivePromotionPage() {
               checked the dofollow/nofollow status of each link by inspecting the
               rendered HTML.
             </p>
-            <div className="card p-5 bg-[#f8fafc] font-mono text-xs text-[#64748b] space-y-1.5">
+            <div className="card p-5 bg-[#f5f5f0] font-mono text-xs text-[#6b6b6b] space-y-1.5">
               <p>
                 visitsouthport.com/whats-on/seasonal-events/christmas/
               </p>
@@ -439,14 +439,14 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The mentions */}
         <section id="mentions" className="scroll-mt-32">
           <SectionHeading>
             Who gets mentioned in the editorial content
           </SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The following table shows every business mentioned across the four
               seasonal editorial pages. Mention counts include editorial prose,
@@ -456,66 +456,66 @@ export default function SelectivePromotionPage() {
           </div>
 
           <div className="mt-6 card overflow-x-auto">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
                 Business mentions across seasonal editorial pages
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0] bg-[#f8fafc]">
-                  <th className="text-left px-4 py-3 font-semibold text-[#0f172a]">
+                <tr className="border-b border-[#e8e8e4] bg-[#f5f5f0]">
+                  <th className="text-left px-4 py-3 font-semibold text-[#1c1c1c]">
                     Business
                   </th>
-                  <th className="text-center px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-center px-3 py-3 font-semibold text-[#1c1c1c]">
                     Xmas
                   </th>
-                  <th className="text-center px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-center px-3 py-3 font-semibold text-[#1c1c1c]">
                     Hall.
                   </th>
-                  <th className="text-center px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-center px-3 py-3 font-semibold text-[#1c1c1c]">
                     Easter
                   </th>
-                  <th className="text-center px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-center px-3 py-3 font-semibold text-[#1c1c1c]">
                     H-Term
                   </th>
-                  <th className="text-center px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-center px-3 py-3 font-semibold text-[#1c1c1c]">
                     Total
                   </th>
-                  <th className="text-left px-3 py-3 font-semibold text-[#0f172a]">
+                  <th className="text-left px-3 py-3 font-semibold text-[#1c1c1c]">
                     Type
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {mentionData.map((row) => (
                   <tr
                     key={row.business}
-                    className={`hover:bg-[#f8fafc] transition-colors ${
+                    className={`hover:bg-[#f5f5f0] transition-colors ${
                       "highlight" in row && row.highlight
-                        ? "bg-[#f9fafb]"
+                        ? "bg-[#f5f5f0]"
                         : ""
                     }`}
                   >
-                    <td className="px-4 py-3 text-[#0f172a] font-medium text-xs">
+                    <td className="px-4 py-3 text-[#1c1c1c] font-medium text-xs">
                       {row.business}
                     </td>
-                    <td className="px-3 py-3 text-center text-[#475569]">
+                    <td className="px-3 py-3 text-center text-[#4a4a4a]">
                       {row.christmas || "\u2013"}
                     </td>
-                    <td className="px-3 py-3 text-center text-[#475569]">
+                    <td className="px-3 py-3 text-center text-[#4a4a4a]">
                       {row.halloween || "\u2013"}
                     </td>
-                    <td className="px-3 py-3 text-center text-[#475569]">
+                    <td className="px-3 py-3 text-center text-[#4a4a4a]">
                       {row.easter || "\u2013"}
                     </td>
-                    <td className="px-3 py-3 text-center text-[#475569]">
+                    <td className="px-3 py-3 text-center text-[#4a4a4a]">
                       {row.halfTerm || "\u2013"}
                     </td>
-                    <td className="px-3 py-3 text-center font-semibold text-[#0f172a]">
+                    <td className="px-3 py-3 text-center font-semibold text-[#1c1c1c]">
                       {row.total}
                     </td>
-                    <td className="px-3 py-3 text-[#64748b] text-xs">
+                    <td className="px-3 py-3 text-[#6b6b6b] text-xs">
                       {row.type}
                     </td>
                   </tr>
@@ -524,11 +524,11 @@ export default function SelectivePromotionPage() {
             </table>
           </div>
 
-          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
-            <p className="text-sm font-semibold text-[#0f172a] mb-2">
+          <div className="mt-6 card p-6 bg-[#f5f5f0] border-[#e8e8e4]">
+            <p className="text-sm font-semibold text-[#1c1c1c] mb-2">
               The pattern in the data
             </p>
-            <p className="text-sm text-[#475569] leading-relaxed">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               The Atkinson (council-run) and WWT Martin Mere (national charity)
               dominate total mentions. That is expected. They run large seasonal
               programmes. Among privately-owned commercial hospitality
@@ -540,14 +540,14 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The links */}
         <section id="links" className="scroll-mt-32">
           <SectionHeading>
             Who gets linked from the editorial content
           </SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               An outbound dofollow link from a Domain Rating 59 website is a
               tangible commercial asset. It passes authority to the receiving
@@ -564,16 +564,16 @@ export default function SelectivePromotionPage() {
           <div className="mt-6 space-y-4">
             {externalLinkData.map((page) => (
               <div key={page.page} className="card overflow-hidden">
-                <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0] flex items-center justify-between">
-                  <p className="text-sm font-semibold text-[#0f172a]">
+                <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4] flex items-center justify-between">
+                  <p className="text-sm font-semibold text-[#1c1c1c]">
                     {page.page} page
                   </p>
                   <div className="flex items-center gap-3">
-                    <span className="text-xs text-[#64748b]">
+                    <span className="text-xs text-[#6b6b6b]">
                       {page.total} outbound links
                     </span>
                     {page.allDofollow && page.total > 0 && (
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827]">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c]">
                         All dofollow
                       </span>
                     )}
@@ -584,7 +584,7 @@ export default function SelectivePromotionPage() {
                     {page.links.map((link) => (
                       <p
                         key={link}
-                        className="font-mono text-xs text-[#475569]"
+                        className="font-mono text-xs text-[#4a4a4a]"
                       >
                         {link}
                       </p>
@@ -592,7 +592,7 @@ export default function SelectivePromotionPage() {
                   </div>
                 ) : (
                   <div className="px-5 py-4">
-                    <p className="text-sm text-[#94a3b8] italic">
+                    <p className="text-sm text-[#a0a0a0] italic">
                       No external editorial links. Infrastructure links only
                       (Sefton Council, CMS, analytics).
                     </p>
@@ -602,23 +602,23 @@ export default function SelectivePromotionPage() {
             ))}
           </div>
 
-          <p className="mt-6 text-sm text-[#475569] leading-relaxed">
+          <p className="mt-6 text-sm text-[#4a4a4a] leading-relaxed">
             Every link was verified by HTML source inspection. None carry a{" "}
-            <code className="text-xs bg-[#f1f5f9] px-1.5 py-0.5 rounded">
+            <code className="text-xs bg-[#f5f5f0] px-1.5 py-0.5 rounded">
               rel=&quot;nofollow&quot;
             </code>{" "}
             attribute. All pass full link equity.
           </p>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The absent */}
         <section id="absent" className="scroll-mt-32">
           <SectionHeading>
             Who is completely absent from the editorial content
           </SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               These are established independent Southport restaurants, pubs, and
               cafes. They serve the same visitors. Many of them pay the same
@@ -631,18 +631,18 @@ export default function SelectivePromotionPage() {
             {absentBusinesses.map((biz) => (
               <div
                 key={biz}
-                className="card px-4 py-3 text-sm text-[#475569] text-center"
+                className="card px-4 py-3 text-sm text-[#4a4a4a] text-center"
               >
                 {biz}
               </div>
             ))}
           </div>
 
-          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
-            <p className="text-sm font-semibold text-[#0f172a] mb-2">
+          <div className="mt-6 card p-6 bg-[#f5f5f0] border-[#e8e8e4]">
+            <p className="text-sm font-semibold text-[#1c1c1c] mb-2">
               Zero mentions. Zero links. Every page.
             </p>
-            <p className="text-sm text-[#475569] leading-relaxed">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               Southport has dozens of independent restaurants, pubs and cafes.
               Across four seasonal editorial pages, not a single one is named,
               described, or linked to. The only commercial hospitality group that
@@ -652,14 +652,14 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* The pattern */}
         <section id="pattern" className="scroll-mt-32">
           <SectionHeading>The structural pattern</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
-            <div className="card p-5 bg-[#f8fafc] border-[#e2e8f0] mb-2">
-              <p className="text-xs text-[#94a3b8] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
+            <div className="card p-5 bg-[#f5f5f0] border-[#e8e8e4] mb-2">
+              <p className="text-xs text-[#a0a0a0] leading-relaxed">
                 The following describes a structural pattern identified from
                 publicly available data. It is not an allegation of deliberate
                 impropriety by any individual.
@@ -701,7 +701,7 @@ export default function SelectivePromotionPage() {
               of{" "}
               <Link
                 href="/analysis/bid-cronyism-by-design"
-                className="text-[#111827] underline font-medium"
+                className="text-[#1c1c1c] underline font-medium"
               >
                 how BIDs breed cronyism by design
               </Link>
@@ -711,17 +711,17 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Governance section */}
         <section id="governance" className="scroll-mt-32">
           <SectionHeading>The governance connection</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               This is not speculation about editorial influence. The BID and
               Visit Southport have confirmed their joint working on seasonal
               content in a published interview. In September 2025,{" "}
-              <strong className="text-[#0f172a]">Rachel Fitzgerald</strong>,
+              <strong className="text-[#1c1c1c]">Rachel Fitzgerald</strong>,
               CEO of Southport BID, sat down with Mark Catherall, Sefton
               Council&apos;s Tourism Service Manager and the person who runs
               Visit Southport day-to-day. The interview was published by
@@ -733,25 +733,25 @@ export default function SelectivePromotionPage() {
           </div>
 
           {/* Pull quote */}
-          <div className="my-6 border-l-4 border-l-[#111827] bg-white rounded-r-lg p-6 shadow-sm">
-            <p className="text-lg font-medium text-[#0f172a] leading-relaxed italic mb-4">
+          <div className="my-6 border-l-4 border-l-[#1c1c1c] bg-white rounded-r-lg p-6 shadow-sm">
+            <p className="text-lg font-medium text-[#1c1c1c] leading-relaxed italic mb-4">
               &ldquo;Christmas is another time when the town comes alive and
               working alongside the Visit Southport team on marketing helps us
               extend the reach of what we offer locally.&rdquo;
             </p>
             <div className="flex items-center gap-3">
-              <div className="h-px flex-1 bg-[#e2e8f0]" />
-              <p className="text-xs font-bold uppercase tracking-widest text-[#111827]">
+              <div className="h-px flex-1 bg-[#e8e8e4]" />
+              <p className="text-xs font-bold uppercase tracking-widest text-[#1c1c1c]">
                 Rachel Fitzgerald
               </p>
-              <div className="h-px flex-1 bg-[#e2e8f0]" />
+              <div className="h-px flex-1 bg-[#e8e8e4]" />
             </div>
-            <p className="text-xs text-[#94a3b8] text-center mt-1.5">
+            <p className="text-xs text-[#a0a0a0] text-center mt-1.5">
               CEO, Southport BID. Liverpool City Region Destination Partnership interview, September 2025.
             </p>
           </div>
 
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               The seasonal pages reviewed in this analysis are therefore a joint
               editorial product between two organisations whose governance
@@ -762,20 +762,20 @@ export default function SelectivePromotionPage() {
 
           {/* Governance table */}
           <div className="mt-6 card overflow-hidden">
-            <div className="px-5 py-3 bg-[#f8fafc] border-b border-[#e2e8f0]">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#94a3b8]">
+            <div className="px-5 py-3 bg-[#f5f5f0] border-b border-[#e8e8e4]">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0]">
                 Shared positions between Southport BID and Visit Southport
               </p>
             </div>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-[#e2e8f0] bg-[#f8fafc]">
-                  <th className="text-left px-5 py-3 font-semibold text-[#0f172a]">Person</th>
-                  <th className="text-left px-4 py-3 font-semibold text-[#0f172a]">BID role</th>
-                  <th className="text-left px-4 py-3 font-semibold text-[#0f172a]">Visit Southport role</th>
+                <tr className="border-b border-[#e8e8e4] bg-[#f5f5f0]">
+                  <th className="text-left px-5 py-3 font-semibold text-[#1c1c1c]">Person</th>
+                  <th className="text-left px-4 py-3 font-semibold text-[#1c1c1c]">BID role</th>
+                  <th className="text-left px-4 py-3 font-semibold text-[#1c1c1c]">Visit Southport role</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#e2e8f0]">
+              <tbody className="divide-y divide-[#e8e8e4]">
                 {[
                   {
                     name: "Geoff Wareham",
@@ -801,25 +801,25 @@ export default function SelectivePromotionPage() {
                 ].map((row) => (
                   <tr
                     key={row.name}
-                    className={`hover:bg-[#f8fafc] transition-colors ${row.highlight ? "bg-[#f9fafb]" : ""}`}
+                    className={`hover:bg-[#f5f5f0] transition-colors ${row.highlight ? "bg-[#f5f5f0]" : ""}`}
                   >
                     <td className="px-5 py-3">
-                      <p className="font-semibold text-[#0f172a] text-sm">{row.name}</p>
-                      <p className="text-xs text-[#94a3b8] mt-0.5">{row.note}</p>
+                      <p className="font-semibold text-[#1c1c1c] text-sm">{row.name}</p>
+                      <p className="text-xs text-[#a0a0a0] mt-0.5">{row.note}</p>
                     </td>
-                    <td className="px-4 py-3 text-sm text-[#475569]">{row.bid}</td>
-                    <td className="px-4 py-3 text-sm text-[#475569]">{row.visit}</td>
+                    <td className="px-4 py-3 text-sm text-[#4a4a4a]">{row.bid}</td>
+                    <td className="px-4 py-3 text-sm text-[#4a4a4a]">{row.visit}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="mt-6 card p-6 bg-[#f9fafb] border-[#e5e7eb]">
-            <p className="text-sm font-semibold text-[#0f172a] mb-2">
+          <div className="mt-6 card p-6 bg-[#f5f5f0] border-[#e8e8e4]">
+            <p className="text-sm font-semibold text-[#1c1c1c] mb-2">
               What this means
             </p>
-            <p className="text-sm text-[#475569] leading-relaxed">
+            <p className="text-sm text-[#4a4a4a] leading-relaxed">
               The organisation whose Treasurer is the Mikhail Group&apos;s
               Commercial Director collaborates directly with Visit Southport on
               the seasonal marketing content that consistently promotes Mikhail
@@ -832,7 +832,7 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Questions */}
         <section id="questions" className="scroll-mt-32">
@@ -847,21 +847,21 @@ export default function SelectivePromotionPage() {
               "Has Sefton Council conducted any review of the editorial content or linking decisions on a platform it funds?",
             ].map((q) => (
               <div key={q} className="card p-4 flex gap-3">
-                <span className="flex-shrink-0 mt-0.5 h-2 w-2 rounded-full bg-[#111827]" />
-                <p className="text-sm text-[#475569] leading-relaxed">{q}</p>
+                <span className="flex-shrink-0 mt-0.5 h-2 w-2 rounded-full bg-[#1c1c1c]" />
+                <p className="text-sm text-[#4a4a4a] leading-relaxed">{q}</p>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm text-[#64748b] leading-relaxed">
+          <p className="mt-6 text-sm text-[#6b6b6b] leading-relaxed">
             SIBA has submitted formal Freedom of Information requests to Sefton
             Council on these precise points.
           </p>
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <Link
               href="/foi#09"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
             >
-              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f9fafb] border border-[#e5e7eb] text-[9px] font-bold text-[#111827]">
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f5f5f0] border border-[#e8e8e4] text-[9px] font-bold text-[#1c1c1c]">
                 09
               </span>
               FOI 09: VisitSouthport Link Management
@@ -869,9 +869,9 @@ export default function SelectivePromotionPage() {
             </Link>
             <Link
               href="/foi#04"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-4 py-2.5 text-xs font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] transition-colors"
             >
-              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f9fafb] border border-[#e5e7eb] text-[9px] font-bold text-[#111827]">
+              <span className="flex h-5 w-5 items-center justify-center rounded bg-[#f5f5f0] border border-[#e8e8e4] text-[9px] font-bold text-[#1c1c1c]">
                 04
               </span>
               FOI 04: Mark Catherall Register of Interests
@@ -880,12 +880,12 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* Methodology */}
         <section className="scroll-mt-32">
           <SectionHeading>Methodology and sources</SectionHeading>
-          <div className="space-y-4 text-[#475569] leading-relaxed">
+          <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
               This analysis was conducted through manual review of publicly
               accessible web pages. No automated crawling tools were used for the
@@ -900,7 +900,7 @@ export default function SelectivePromotionPage() {
                 href="https://ahrefs.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#111827] underline inline-flex items-center gap-0.5"
+                className="text-[#1c1c1c] underline inline-flex items-center gap-0.5"
               >
                 Ahrefs
                 <ExternalLink size={11} />
@@ -917,7 +917,7 @@ export default function SelectivePromotionPage() {
                 href="https://liverpoolcityregiondp.com/2025/09/16/southport-leaders-in-conversation-rachel-fitzgerald-and-mark-catherall-on-the-towns-incredible-future/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#111827] underline inline-flex items-center gap-0.5"
+                className="text-[#1c1c1c] underline inline-flex items-center gap-0.5"
               >
                 liverpoolcityregiondp.com
                 <ExternalLink size={11} />
@@ -934,11 +934,11 @@ export default function SelectivePromotionPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#e2e8f0]" />
+        <div className="border-t border-[#e8e8e4]" />
 
         {/* CTA */}
         <div className="text-center py-4">
-          <p className="text-[#64748b] mb-6 leading-relaxed max-w-xl mx-auto">
+          <p className="text-[#6b6b6b] mb-6 leading-relaxed max-w-xl mx-auto">
             This analysis provides the empirical evidence for the structural
             argument made in our companion piece on BID cronyism by design. Read
             both.
@@ -946,14 +946,14 @@ export default function SelectivePromotionPage() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/analysis/bid-cronyism-by-design"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#111827] px-6 py-3 text-sm font-semibold text-white hover:bg-[#374151] transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
             >
               Read: Cronyism by Design
               <ArrowRight size={15} />
             </Link>
             <Link
               href="/reports"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] bg-white px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] hover:border-[#cbd5e1] transition-colors"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#e8e8e4] bg-white px-6 py-3 text-sm font-semibold text-[#1c1c1c] hover:bg-[#f5f5f0] hover:border-[#d4d4cf] transition-colors"
             >
               View All Reports
               <ArrowRight size={15} />

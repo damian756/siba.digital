@@ -45,21 +45,21 @@ export default function ReportsPage() {
     <div className="min-h-screen">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Investigation Archive
         </p>
-        <h1 className="text-4xl text-[#111827] mb-4">
+        <h1 className="text-3xl text-[#1c1c1c] mb-4">
           The Southport Accountability Project
         </h1>
-        <p className="text-lg text-[#374151] leading-relaxed max-w-xl mb-14">
+        <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           This investigation began with a single question: where does the BID levy money go?
           Two published reports, four structural analyses, and fifteen Freedom of Information
           requests later, that question has a detailed public answer.
         </p>
 
         {/* Source notice */}
-        <div className="border-l-2 border-[#d1d5db] pl-5 py-1 mb-14">
-          <p className="text-sm text-[#374151] leading-relaxed">
+        <div className="border-l-2 border-[#d4d4cf] pl-5 py-1 mb-14">
+          <p className="text-sm text-[#3d3d3d] leading-relaxed">
             Every factual claim in SIBA reports is sourced from publicly available documents
             and linked directly. SIBA welcomes corrections from any party named or referenced
             and will publish responses in full.
@@ -68,10 +68,10 @@ export default function ReportsPage() {
 
         {/* Published reports */}
         <div className="mb-14">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-6">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-6">
             Published
           </p>
-          <div className="space-y-0 divide-y divide-[#e5e7eb]">
+          <div className="space-y-0 divide-y divide-[#e8e8e4]">
             {publishedReports.map((r) => (
               <Link
                 key={r.slug}
@@ -79,18 +79,18 @@ export default function ReportsPage() {
                 className="block py-8 first:pt-0 last:pb-0 group"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af]">
+                  <span className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
                     {r.category}
                   </span>
-                  <span className="text-[11px] text-[#d1d5db]">&middot;</span>
-                  <span className="text-[11px] text-[#9ca3af]">{r.date}</span>
+                  <span className="text-[11px] text-[#d4d4cf]">&middot;</span>
+                  <span className="text-[11px] text-[#a0a0a0]">{r.date}</span>
                 </div>
-                <h2 className="text-lg font-semibold text-[#111827] mb-1.5 group-hover:text-[#374151] transition-colors">
+                <h2 className="text-lg font-semibold text-[#1c1c1c] mb-1.5 group-hover:text-[#3d3d3d] transition-colors">
                   {r.title}
                 </h2>
-                <p className="text-sm text-[#6b7280] mb-1">{r.subtitle}</p>
-                <p className="text-sm text-[#9ca3af] leading-relaxed mb-2">{r.summary}</p>
-                <span className="inline-flex items-center gap-1 text-[13px] text-[#9ca3af] group-hover:text-[#111827] transition-colors">
+                <p className="text-sm text-[#6b6b6b] mb-1">{r.subtitle}</p>
+                <p className="text-sm text-[#a0a0a0] leading-relaxed mb-2">{r.summary}</p>
+                <span className="inline-flex items-center gap-1 text-[13px] text-[#a0a0a0] group-hover:text-[#1c1c1c] transition-colors">
                   Read
                   <ArrowRight size={12} />
                 </span>
@@ -100,14 +100,14 @@ export default function ReportsPage() {
         </div>
 
         {/* FOI block */}
-        <div className="pb-14 mb-14 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+        <div className="pb-14 mb-14 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
             Freedom of Information
           </p>
-          <h2 className="text-lg font-semibold text-[#111827] mb-3">
+          <h2 className="text-lg font-semibold text-[#1c1c1c] mb-3">
             15 FOI Requests Submitted to Sefton Council
           </h2>
-          <p className="text-sm text-[#374151] leading-relaxed mb-4">
+          <p className="text-sm text-[#3d3d3d] leading-relaxed mb-4">
             SIBA submitted 15 Freedom of Information requests to Sefton Council covering
             BID ballot integrity, governance conflicts of interest, public spending, COVID
             grant recipients, media contractor payments, and the editorial decisions behind
@@ -116,7 +116,7 @@ export default function ReportsPage() {
           </p>
           <Link
             href="/foi"
-            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#111827] hover:text-[#374151] transition-colors"
+            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
           >
             View all FOI requests
             <ArrowRight size={12} />

@@ -59,11 +59,11 @@ export default function AnalysisPage() {
     <div className="min-h-screen">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Original Research
         </p>
-        <h1 className="text-4xl text-[#111827] mb-4">Analysis</h1>
-        <p className="text-lg text-[#374151] leading-relaxed max-w-xl mb-8">
+        <h1 className="text-3xl text-[#1c1c1c] mb-4">Analysis</h1>
+        <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-8">
           Structural critiques of the Business Improvement District model.
           Not reactive complaints about individual boards. Analysis of why
           the model itself produces predictable outcomes regardless of intent.
@@ -72,7 +72,7 @@ export default function AnalysisPage() {
           <InvestigationClosed />
         </div>
 
-        <div className="space-y-0 divide-y divide-[#e5e7eb]">
+        <div className="space-y-0 divide-y divide-[#e8e8e4]">
           {articles.map((a) => (
             <Link
               key={a.slug}
@@ -80,17 +80,17 @@ export default function AnalysisPage() {
               className="block py-8 first:pt-0 last:pb-0 group"
             >
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af]">
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
                   {a.category}
                 </span>
-                <span className="text-[11px] text-[#d1d5db]">&middot;</span>
-                <span className="text-[11px] text-[#9ca3af]">{a.date}</span>
+                <span className="text-[11px] text-[#d4d4cf]">&middot;</span>
+                <span className="text-[11px] text-[#a0a0a0]">{a.date}</span>
               </div>
-              <h2 className="text-lg font-semibold text-[#111827] mb-1.5 group-hover:text-[#374151] transition-colors">
+              <h2 className="text-lg font-semibold text-[#1c1c1c] mb-1.5 group-hover:text-[#3d3d3d] transition-colors">
                 {a.title}
               </h2>
-              <p className="text-sm text-[#6b7280] leading-relaxed mb-2">{a.subtitle}</p>
-              <span className="inline-flex items-center gap-1 text-[13px] text-[#9ca3af] group-hover:text-[#111827] transition-colors">
+              <p className="text-sm text-[#6b6b6b] leading-relaxed mb-2">{a.subtitle}</p>
+              <span className="inline-flex items-center gap-1 text-[13px] text-[#a0a0a0] group-hover:text-[#1c1c1c] transition-colors">
                 Read
                 <ArrowRight size={12} />
               </span>

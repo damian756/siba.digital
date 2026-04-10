@@ -130,29 +130,29 @@ export default function Hub2026Page() {
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Royal Birkdale, 12-19 July 2026
         </p>
-        <h1 className="text-4xl text-[#111827] mb-4">The 2026 Hub</h1>
-        <p className="text-lg text-[#374151] leading-relaxed max-w-xl mb-14">
+        <h1 className="text-3xl text-[#1c1c1c] mb-4">The 2026 Hub</h1>
+        <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           The Open Championship comes to Southport in July. 150,000 visitors, most of them
           on smartphones, all of them searching. This is the technical roadmap to make sure
           your business is findable when they do.
         </p>
 
         {/* Urgency */}
-        <div className="border-l-2 border-[#d1d5db] pl-5 py-2 mb-14">
+        <div className="border-l-2 border-[#d4d4cf] pl-5 py-2 mb-14">
           <div className="flex gap-3">
-            <AlertTriangle size={16} className="text-[#6b7280] flex-shrink-0 mt-0.5" />
+            <AlertTriangle size={16} className="text-[#6b6b6b] flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-sm font-semibold text-[#111827] mb-1">
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-1">
                 Book ahead. I am serious.
               </p>
-              <p className="text-sm text-[#374151] leading-relaxed">
+              <p className="text-sm text-[#3d3d3d] leading-relaxed">
                 The Open is in July. SEO improvements take weeks to index. Core Web Vitals
                 fixes take developer time. If you start in June, you are already late.
               </p>
-              <p className="mt-2 text-[12px] text-[#9ca3af]">
+              <p className="mt-2 text-[12px] text-[#a0a0a0]">
                 This page is part of SIBA&apos;s founding case study archive.
               </p>
             </div>
@@ -160,44 +160,44 @@ export default function Hub2026Page() {
         </div>
 
         {/* Technical metrics */}
-        <section className="pb-14 mb-14 border-b border-[#e5e7eb]">
-          <h2 className="text-2xl text-[#111827] mb-2">The technical targets</h2>
-          <p className="text-sm text-[#6b7280] mb-8">
+        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">The technical targets</h2>
+          <p className="text-sm text-[#6b6b6b] mb-8">
             Specific thresholds, not guidelines. These are the numbers that determine whether
             your site ranks and converts during Open week.
           </p>
           <div className="grid grid-cols-2 gap-6">
             {metrics.map((m) => (
-              <div key={m.label} className="border-l-2 border-[#e5e7eb] pl-4">
+              <div key={m.label} className="border-l-2 border-[#e8e8e4] pl-4">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-[11px] font-mono font-semibold text-[#9ca3af]">{m.label}</span>
-                  <span className="text-[10px] text-[#9ca3af] uppercase tracking-wider">{m.status}</span>
+                  <span className="text-[11px] font-mono font-semibold text-[#a0a0a0]">{m.label}</span>
+                  <span className="text-[10px] text-[#a0a0a0] uppercase tracking-wider">{m.status}</span>
                 </div>
-                <p className="text-lg font-semibold text-[#111827] mb-0.5">{m.value}</p>
-                <p className="text-[12px] text-[#6b7280]">{m.desc}</p>
+                <p className="text-lg font-semibold text-[#1c1c1c] mb-0.5">{m.value}</p>
+                <p className="text-[12px] text-[#6b6b6b]">{m.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Roadmap */}
-        <section className="pb-14 mb-14 border-b border-[#e5e7eb]">
-          <h2 className="text-2xl text-[#111827] mb-2">Readiness roadmap</h2>
-          <p className="text-sm text-[#6b7280] mb-8">
+        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">Readiness roadmap</h2>
+          <p className="text-sm text-[#6b6b6b] mb-8">
             Month by month. What needs to happen, and when.
           </p>
           <div className="space-y-8">
             {timeline.map((phase) => (
               <div key={phase.period}>
-                <p className={`text-[13px] font-mono font-semibold mb-1 ${phase.urgent ? "text-[#111827]" : "text-[#6b7280]"}`}>
+                <p className={`text-[13px] font-mono font-semibold mb-1 ${phase.urgent ? "text-[#1c1c1c]" : "text-[#6b6b6b]"}`}>
                   {phase.period}
                 </p>
-                <p className="text-sm font-semibold text-[#111827] mb-3">{phase.title}</p>
+                <p className="text-sm font-semibold text-[#1c1c1c] mb-3">{phase.title}</p>
                 <ul className="space-y-1.5">
                   {phase.tasks.map((task) => (
                     <li key={task} className="flex items-start gap-2">
-                      <CheckCircle2 size={13} className="flex-shrink-0 mt-0.5 text-[#d1d5db]" />
-                      <span className="text-sm text-[#374151]">{task}</span>
+                      <CheckCircle2 size={13} className="flex-shrink-0 mt-0.5 text-[#d4d4cf]" />
+                      <span className="text-sm text-[#3d3d3d]">{task}</span>
                     </li>
                   ))}
                 </ul>
@@ -207,30 +207,30 @@ export default function Hub2026Page() {
         </section>
 
         {/* Search queries */}
-        <section className="pb-14 mb-14 border-b border-[#e5e7eb]">
-          <h2 className="text-2xl text-[#111827] mb-2">
+        <section className="pb-14 mb-14 border-b border-[#e8e8e4]">
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">
             The searches that will happen in July
           </h2>
-          <p className="text-sm text-[#6b7280] mb-8">
+          <p className="text-sm text-[#6b6b6b] mb-8">
             These are the actual queries visitors will type during Open week. Your business
             needs to appear for the ones relevant to it.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <p className="text-sm font-semibold text-[#111827] mb-3">Restaurants and food</p>
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-3">Restaurants and food</p>
               <ul className="space-y-1.5">
                 {queries.restaurants.map((q) => (
-                  <li key={q} className="font-mono text-[13px] text-[#374151]">
+                  <li key={q} className="font-mono text-[13px] text-[#3d3d3d]">
                     &quot;{q}&quot;
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <p className="text-sm font-semibold text-[#111827] mb-3">Hotels and accommodation</p>
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-3">Hotels and accommodation</p>
               <ul className="space-y-1.5">
                 {queries.accommodation.map((q) => (
-                  <li key={q} className="font-mono text-[13px] text-[#374151]">
+                  <li key={q} className="font-mono text-[13px] text-[#3d3d3d]">
                     &quot;{q}&quot;
                   </li>
                 ))}
@@ -240,7 +240,7 @@ export default function Hub2026Page() {
         </section>
 
         <div className="text-center">
-          <p className="text-[13px] text-[#9ca3af]">
+          <p className="text-[13px] text-[#a0a0a0]">
             This page is part of SIBA&apos;s founding case study archive.
           </p>
         </div>

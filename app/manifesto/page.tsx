@@ -57,11 +57,11 @@ export default function ManifestoPage() {
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
 
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-5">
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           SIBA Technical Charter, April 2026
         </p>
-        <h1 className="text-4xl text-[#111827] mb-4">The Manifesto</h1>
-        <p className="text-lg text-[#374151] leading-relaxed mb-10">
+        <h1 className="text-3xl text-[#1c1c1c] mb-4">The Manifesto</h1>
+        <p className="text-lg text-[#3d3d3d] leading-relaxed mb-10">
           Why SIBA exists, what it is committed to delivering, and why the current
           Business Improvement District model is not fit for purpose in 2026.
         </p>
@@ -71,19 +71,19 @@ export default function ManifestoPage() {
         </div>
 
         {/* Section nav */}
-        <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 border-y border-[#e5e7eb] py-3 mb-16 text-[13px]">
-          <span className="text-[#9ca3af] font-medium mr-1">Jump to</span>
-          <a href="#vision" className="text-[#6b7280] hover:text-[#111827] transition-colors">01. 2026 Vision</a>
-          <a href="#levy" className="text-[#6b7280] hover:text-[#111827] transition-colors">02. The Levy Failure</a>
-          <a href="#charter" className="text-[#6b7280] hover:text-[#111827] transition-colors">03. Technical Charter</a>
+        <nav className="flex flex-wrap items-center gap-x-4 gap-y-1 border-y border-[#e8e8e4] py-3 mb-16 text-[13px]">
+          <span className="text-[#a0a0a0] font-medium mr-1">Jump to</span>
+          <a href="#vision" className="text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors">01. 2026 Vision</a>
+          <a href="#levy" className="text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors">02. The Levy Failure</a>
+          <a href="#charter" className="text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors">03. Technical Charter</a>
         </nav>
 
         {/* 01 */}
-        <section id="vision" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">01</p>
-          <h2 className="text-2xl text-[#111827] mb-2">The 2026 Vision</h2>
-          <p className="text-sm text-[#6b7280] mb-6">The commercial case for acting now</p>
-          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
+        <section id="vision" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">01</p>
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">The 2026 Vision</h2>
+          <p className="text-sm text-[#6b6b6b] mb-6">The commercial case for acting now</p>
+          <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               The Open Championship comes to Royal Birkdale in July 2026. That means roughly
               150,000 visitors arriving in this town over seven days, most of them on
@@ -111,11 +111,11 @@ export default function ManifestoPage() {
         </section>
 
         {/* 02 */}
-        <section id="levy" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">02</p>
-          <h2 className="text-2xl text-[#111827] mb-2">The Failure of the Mandatory Levy Model</h2>
-          <p className="text-sm text-[#6b7280] mb-6">A structural critique, not a political one</p>
-          <div className="space-y-4 text-sm text-[#374151] leading-relaxed">
+        <section id="levy" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">02</p>
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">The Failure of the Mandatory Levy Model</h2>
+          <p className="text-sm text-[#6b6b6b] mb-6">A structural critique, not a political one</p>
+          <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               Business Improvement Districts were a reasonable idea in 2004. A collective levy,
               pooled for collective benefit. Events, marketing, street improvements. The model
@@ -134,9 +134,9 @@ export default function ManifestoPage() {
               Search is. Mobile is. Page speed is. Google Business Profile completeness is.
             </p>
 
-            <div className="border-l-2 border-[#d1d5db] pl-5 py-2 my-6">
-              <p className="text-sm font-semibold text-[#111827] mb-2">The calculation</p>
-              <p className="text-sm text-[#6b7280]">
+            <div className="border-l-2 border-[#d4d4cf] pl-5 py-2 my-6">
+              <p className="text-sm font-semibold text-[#1c1c1c] mb-2">The calculation</p>
+              <p className="text-sm text-[#6b6b6b]">
                 A Southport business with a rateable value of &pound;120,000 pays approximately
                 &pound;2,400 per year in BID levy at a 2% rate. At the time of this case study,
                 SIBA provided SEO audits, local ranking reports, and levy ROI analysis
@@ -152,7 +152,7 @@ export default function ManifestoPage() {
             <p>
               For the full structural analysis of why the BID model breeds cronyism by
               design, regardless of who runs it,{" "}
-              <Link href="/analysis/bid-cronyism-by-design" className="text-[#111827] underline hover:text-[#374151]">
+              <Link href="/analysis/bid-cronyism-by-design" className="text-[#2c4a52] underline hover:text-[#1c1c1c]">
                 read the analysis
               </Link>.
             </p>
@@ -160,10 +160,10 @@ export default function ManifestoPage() {
         </section>
 
         {/* 03 */}
-        <section id="charter" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e5e7eb]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#9ca3af] mb-3">03</p>
-          <h2 className="text-2xl text-[#111827] mb-2">The SIBA Technical Charter</h2>
-          <p className="text-sm text-[#6b7280] mb-8">Commitments, not aspirations</p>
+        <section id="charter" className="scroll-mt-24 pb-14 mb-14 border-b border-[#e8e8e4]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">03</p>
+          <h2 className="text-2xl text-[#1c1c1c] mb-2">The SIBA Technical Charter</h2>
+          <p className="text-sm text-[#6b6b6b] mb-8">Commitments, not aspirations</p>
           <div className="space-y-6">
             {[
               {
@@ -192,8 +192,8 @@ export default function ManifestoPage() {
               },
             ].map((item) => (
               <div key={item.title}>
-                <p className="text-sm font-semibold text-[#111827] mb-1.5">{item.title}</p>
-                <p className="text-sm text-[#374151] leading-relaxed">{item.body}</p>
+                <p className="text-sm font-semibold text-[#1c1c1c] mb-1.5">{item.title}</p>
+                <p className="text-sm text-[#3d3d3d] leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
