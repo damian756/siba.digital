@@ -88,7 +88,7 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t border-[#ddddd5]">
           <p className="text-[12px] text-[#a0a0a0] leading-relaxed">
             &copy; {year} Strategic Intelligence &amp; Business Audits.
-            SIBA Digital is a trading name of Churchtown Media Ltd (Company No. 16960442). All rights reserved.
+            SIBA Digital is a trading name of Churchtown Media Ltd (Company No. 16960442, VAT No. GB511024262). All rights reserved.
           </p>
         </div>
       </div>
