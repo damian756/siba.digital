@@ -32,18 +32,18 @@ export default function HomePage() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#0a1628]/65" />
+        <div className="absolute inset-0 bg-[#0a1628]/80" />
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
 
         <div className="relative z-10 mx-auto max-w-3xl px-4 pt-[60px] pb-20 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <h1 className="mb-10 text-[32px] leading-[1.12] text-white sm:text-[40px] lg:text-[48px]">
+            <h1 className="mb-10 text-[36px] leading-[1.1] text-white drop-shadow-lg sm:text-[46px] lg:text-[56px]">
               We find the vulnerabilities<br />
               before the public does.
             </h1>
           </Reveal>
           <Reveal delay={200}>
-            <p className="mx-auto mb-12 max-w-lg text-[17px] leading-relaxed text-white/65">
+            <p className="mx-auto mb-12 max-w-lg text-[17px] leading-relaxed text-white/80">
               SIBA maps the corporate relationships, procurement chains, and
               digital footprints behind public funding decisions. Open-source
               intelligence and digital governance audits for BIDs, councils,
@@ -73,7 +73,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <h2 className="mb-12 text-center text-xl">Methodology</h2>
+            <h2 className="mb-12 text-center">Methodology</h2>
           </Reveal>
 
           <div className="mx-auto max-w-xl space-y-10">
@@ -133,7 +133,7 @@ export default function HomePage() {
             </p>
           </Reveal>
           <Reveal>
-            <h2 className="mb-6 text-center text-xl">
+            <h2 className="mb-6 text-center">
               Southport BID Governance Audit
             </h2>
           </Reveal>
@@ -167,7 +167,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="mb-6 text-xl">Reach</h2>
+            <h2 className="mb-6">Reach</h2>
           </Reveal>
           <Reveal>
             <p className="mx-auto max-w-lg text-[15px] leading-relaxed text-[#3d3d3d]">
@@ -187,7 +187,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="mb-6 text-xl">
+            <h2 className="mb-6">
               Your organisation manages public money.
             </h2>
           </Reveal>

@@ -71,7 +71,7 @@ export default function AboutPage() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
               Founder
             </p>
-            <h2 className="text-xl text-[#112d6e] mb-5">Damian Roche</h2>
+            <h2 className="text-[#112d6e] mb-5">Damian Roche</h2>
             <div className="space-y-4 text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl">
               <p>
                 Ex-British Army, Queen&apos;s Guards. 20 years in web development
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
               Origin
             </p>
-            <h2 className="text-xl text-[#112d6e] mb-5">
+            <h2 className="text-[#112d6e] mb-5">
               How a local investigation became a national capability
             </h2>
             <div className="space-y-4 text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl">
@@ -165,7 +165,7 @@ export default function AboutPage() {
         {/* What SIBA is not */}
         <Reveal>
           <section className="pb-14 mb-14 border-b border-[#ddddd5]">
-            <h2 className="text-xl text-[#112d6e] mb-10">What SIBA is not</h2>
+            <h2 className="text-[#112d6e] mb-10">What SIBA is not</h2>
             <div className="space-y-8">
               {[
                 {
@@ -201,7 +201,7 @@ export default function AboutPage() {
         {/* CTA */}
         <Reveal>
           <section>
-            <h2 className="text-xl text-[#112d6e] mb-4">Commission an audit</h2>
+            <h2 className="text-[#112d6e] mb-4">Commission an audit</h2>
             <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-lg mb-8">
               Tell us about your organisation and what prompted your enquiry.
             </p>

@@ -41,7 +41,7 @@ export default function ServicesPage() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
               Tier 1
             </p>
-            <h2 className="text-xl text-[#112d6e] mb-2">
+            <h2 className="text-[#112d6e] mb-2">
               Digital Governance Health Check
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: 5 working days</p>
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
               Tier 2
             </p>
-            <h2 className="text-xl text-[#112d6e] mb-2">
+            <h2 className="text-[#112d6e] mb-2">
               Deep Transparency Audit
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: 2 to 3 weeks</p>
@@ -93,7 +93,7 @@ export default function ServicesPage() {
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
               Tier 3
             </p>
-            <h2 className="text-xl text-[#112d6e] mb-2">
+            <h2 className="text-[#112d6e] mb-2">
               Ongoing Monitoring
             </h2>
             <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: Quarterly</p>
@@ -114,7 +114,7 @@ export default function ServicesPage() {
         {/* Methodology */}
         <Reveal>
           <section className="pb-14 mb-14 border-b border-[#ddddd5]">
-            <h2 className="text-xl text-[#112d6e] mb-10">How we work</h2>
+            <h2 className="text-[#112d6e] mb-10">How we work</h2>
 
             <div className="space-y-8">
               <div>
@@ -149,7 +149,7 @@ export default function ServicesPage() {
         {/* Commission form */}
         <Reveal>
           <section id="commission" className="scroll-mt-24">
-            <h2 className="text-xl text-[#112d6e] mb-2">Commission an Audit</h2>
+            <h2 className="text-[#112d6e] mb-2">Commission an Audit</h2>
             <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-10 max-w-lg">
               Tell us about your organisation and what prompted your enquiry.
               We respond to every submission within one working day.
