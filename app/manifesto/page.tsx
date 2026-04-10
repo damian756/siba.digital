@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "The SIBA Manifesto",
   description:
     "The 2026 Vision, the failure of the mandatory BID levy model, and the SIBA Technical Charter for Southport independent businesses.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.siba.digital/manifesto",
   },

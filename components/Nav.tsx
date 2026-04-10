@@ -17,9 +17,6 @@ const caseStudyLinks = [
   { href: "/reports", label: "Reports" },
   { href: "/foi", label: "FOI Requests" },
   { href: "/contact-log", label: "Contact Log" },
-  { href: "/manifesto", label: "Manifesto" },
-  { href: "/philosophy", label: "Philosophy" },
-  { href: "/2026", label: "2026 Readiness" },
 ];
 
 export default function Nav() {

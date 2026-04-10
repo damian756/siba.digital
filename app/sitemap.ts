@@ -89,24 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/manifesto`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${BASE_URL}/philosophy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: `${BASE_URL}/2026`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
       url: `${BASE_URL}/audit`,
       lastModified: new Date(),
       changeFrequency: "yearly",

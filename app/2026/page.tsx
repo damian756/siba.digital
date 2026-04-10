@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "2026 Hub: Open Championship Readiness for Southport Businesses",
   description:
     "The Open 2026 is at Royal Birkdale, 12-19 July. A technical roadmap for PR8 and PR9 shops and restaurants to be search-ready before the first tee shot.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.siba.digital/2026",
   },

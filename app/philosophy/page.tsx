@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Our Philosophy | SIBA Digital",
   description:
     "Why SIBA exists, who it serves, and how it works. The belief that the people who pay for something have a right to know how it is spent, who decided to spend it, and what relationships shaped those decisions.",
+  robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.siba.digital/philosophy",
   },
