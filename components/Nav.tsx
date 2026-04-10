@@ -21,7 +21,7 @@ const caseStudyLinks = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const hasHero = pathname === "/" || pathname === "/about";
+  const hasHero = pathname === "/";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
