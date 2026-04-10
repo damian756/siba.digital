@@ -24,7 +24,7 @@ export default function ServicesPage() {
     <div className="min-h-screen">
 
       {/* Hero */}
-      <div className="relative min-h-[65vh] flex items-end">
+      <div className="relative w-full aspect-[1920/1620] flex items-end">
         <Image
           src="/images/services-hero.png"
           alt="SIBA Digital services"
@@ -34,7 +34,7 @@ export default function ServicesPage() {
         />
         <div className="absolute inset-0 bg-[#0a1628]/80" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
-        <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-20 pt-36">
+        <div className="relative z-10 mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8 pb-[22%] pt-12">
           <h1
             className="text-white mb-5 leading-[1.12]"
             style={{
