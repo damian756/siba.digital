@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Philosophy | SIBA Digital",
@@ -297,27 +296,9 @@ export default function PhilosophyPage() {
               you, what it should be doing, and what SIBA has found, start here.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link
-                href="/audit#request"
-                className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-5 py-2.5 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
-              >
-                Request a Free Audit
-                <ArrowRight size={14} />
-              </Link>
-              <Link
-                href="/analysis"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] px-5 py-2.5 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
-              >
-                Read the Investigation
-                <ArrowRight size={14} />
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] px-5 py-2.5 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
-              >
-                Get in Touch
-                <ArrowRight size={14} />
-              </Link>
+              <p className="text-sm text-[#94a3b8]">
+                This page is part of SIBA&apos;s founding case study archive.
+              </p>
             </div>
           </div>
         </section>

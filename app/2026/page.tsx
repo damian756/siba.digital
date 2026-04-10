@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, CheckCircle2, AlertTriangle, Zap, Clock } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Zap, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "2026 Hub: Open Championship Readiness for Southport Businesses",
@@ -159,13 +158,9 @@ export default function Hub2026Page() {
                 fixes take developer time. If you start in June, you are already late. Request
                 an audit now and we will prioritise the fixes that matter most before the first tee shot.
               </p>
-              <Link
-                href="/audit"
-                className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-[#f97316] hover:text-orange-500"
-              >
-                Request your audit now
-                <ArrowRight size={13} />
-              </Link>
+              <p className="mt-2 text-xs text-[#94a3b8]">
+                This page is part of SIBA&apos;s founding case study archive.
+              </p>
             </div>
           </div>
         </div>
@@ -293,25 +288,11 @@ export default function Hub2026Page() {
           </div>
         </section>
 
-        {/* CTA */}
-        <div className="card bg-[#0f172a] border-[#0f172a] p-10 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#f97316] mb-3">
-            July is closer than it looks
+        {/* Archive note */}
+        <div className="border-t border-[#e2e8f0] pt-8 text-center">
+          <p className="text-sm text-[#94a3b8]">
+            This page is part of SIBA&apos;s founding case study archive.
           </p>
-          <h2 className="text-2xl font-bold text-white mb-3">
-            Get your audit done before May
-          </h2>
-          <p className="text-[#94a3b8] leading-relaxed max-w-md mx-auto mb-6 text-sm">
-            The businesses that rank in July are the ones that fixed their sites in April.
-            That is not a theory. That is how Google works.
-          </p>
-          <Link
-            href="/audit"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors"
-          >
-            Request a Free Audit
-            <ArrowRight size={14} />
-          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
@@ -71,20 +69,6 @@ export default function ManifestoPage() {
       {/* Investigation closed note */}
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-10">
         <InvestigationClosed />
-      </div>
-
-      {/* Cover image */}
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-10">
-        <div className="relative w-full overflow-hidden rounded-xl border border-[#e2e8f0] shadow-sm">
-          <Image
-            src="/images/manifesto-cover.png"
-            alt="Supporting Southport's Independents"
-            width={1280}
-            height={640}
-            className="w-full h-auto"
-            priority
-          />
-        </div>
       </div>
 
       {/* Sticky section nav */}
@@ -188,12 +172,9 @@ export default function ManifestoPage() {
               <p className="text-sm font-semibold text-[#0f172a] mb-2">The calculation</p>
               <p className="text-sm text-[#64748b]">
                 A Southport business with a rateable value of £120,000 pays approximately
-                £2,400 per year in BID levy at a 2% rate. SIBA provides SEO audits, local
-                ranking reports, and levy ROI analysis at no cost. Use the{" "}
-                <Link href="/audit" className="text-[#f97316] hover:underline font-medium">
-                  Levy ROI Calculator
-                </Link>{" "}
-                to see your own numbers.
+                £2,400 per year in BID levy at a 2% rate. At the time of this case study,
+                SIBA provided SEO audits, local ranking reports, and levy ROI analysis
+                to affected businesses.
               </p>
             </div>
 
@@ -264,29 +245,6 @@ export default function ManifestoPage() {
         </section>
 
         <div className="border-t border-[#e2e8f0]" />
-
-        <div className="text-center">
-          <p className="text-[#64748b] mb-6 leading-relaxed">
-            If that sounds like the kind of organisation Southport should have had ten years
-            ago, you&apos;re right. Request an audit and let&apos;s get started.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Link
-              href="/audit"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#f97316] px-6 py-3 text-sm font-semibold text-white hover:bg-orange-500 transition-colors shadow-sm"
-            >
-              Request a Free SEO Audit
-              <ArrowRight size={15} />
-            </Link>
-            <Link
-              href="/philosophy"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#e2e8f0] px-6 py-3 text-sm font-semibold text-[#0f172a] hover:bg-[#f8fafc] transition-colors"
-            >
-              Our Philosophy
-              <ArrowRight size={15} />
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   );
