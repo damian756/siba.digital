@@ -32,7 +32,7 @@ export default function HomePage() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[#0a1628]/60" />
+        <div className="absolute inset-0 bg-[#0a1628]/80" />
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#f6f6ef]" />
 
         <div className="relative z-10 mx-auto max-w-3xl px-4 pt-[60px] pb-20 text-center sm:px-6 lg:px-8">
