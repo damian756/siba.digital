@@ -57,8 +57,8 @@ export default function AboutPage() {
           className="object-cover object-center"
           priority
         />
-        {/* Top vignette — keeps nav legible without darkening the whole image */}
-        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#0a1628]/70 to-transparent" />
+        {/* Top vignette — keeps nav legible */}
+        <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#0a1628]/90 via-[#0a1628]/50 to-transparent" />
         {/* Left gradient — text readability without killing the chess pieces on the right */}
         <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, rgba(10,22,40,0.82) 0%, rgba(10,22,40,0.55) 50%, rgba(10,22,40,0.18) 100%)" }} />
         {/* Bottom fade to cream content */}
