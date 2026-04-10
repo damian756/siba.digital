@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SibaLogo from "./SibaLogo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -8,7 +9,9 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto_auto] gap-8 md:gap-12">
           <div className="max-w-xs">
-            <p className="text-[13px] font-semibold text-[#1c1c1c] mb-2">SIBA Digital</p>
+            <div className="mb-3">
+              <SibaLogo variant="default" markSize={28} />
+            </div>
             <p className="text-[13px] text-[#6b6b6b] leading-relaxed">
               Digital governance audits and open-source intelligence
               for BIDs, councils, and major developments.

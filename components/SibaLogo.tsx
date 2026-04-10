@@ -18,11 +18,19 @@ export function SibaMark({ size = 28, variant = "default" }: { size?: number; va
       fill="none"
       aria-hidden="true"
     >
+      {/* Container square */}
       <rect width="28" height="28" rx="4" fill={bg} />
-      <rect x="5.5" y="5.5" width="7.5" height="7.5" rx="1" fill={fg} />
-      <rect x="15" y="5.5" width="7.5" height="7.5" rx="1" fill={fg} fillOpacity="0.5" />
-      <rect x="5.5" y="15" width="7.5" height="7.5" rx="1" fill={fg} fillOpacity="0.25" />
-      <rect x="15" y="15" width="7.5" height="7.5" rx="1" fill={fg} />
+      {/* Chess pawn silhouette */}
+      {/* Head */}
+      <circle cx="14" cy="7" r="3.5" fill={fg} />
+      {/* Neck */}
+      <rect x="12" y="9" width="4" height="3.5" fill={fg} />
+      {/* Body */}
+      <ellipse cx="14" cy="15" rx="5.5" ry="4" fill={fg} />
+      {/* Stem */}
+      <rect x="12" y="17.5" width="4" height="3" fill={fg} />
+      {/* Base */}
+      <rect x="8" y="20" width="12" height="3.5" rx="1.5" fill={fg} />
     </svg>
   );
 }
