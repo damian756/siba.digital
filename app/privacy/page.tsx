@@ -21,40 +21,36 @@ const LAST_UPDATED = "April 2026";
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="scroll-mt-28">
-      <h2 className="text-xl font-bold text-[#1c1c1c] mb-5 pb-4 border-b border-[#ddddd5]">
+      <h2 className="mb-5 pb-4 border-b border-[#ddddd5]">
         {title}
       </h2>
-      <div className="space-y-4 text-sm text-[#4a4a4a] leading-relaxed">{children}</div>
+      <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">{children}</div>
     </section>
   );
 }
 
 function H3({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-sm font-bold text-[#1c1c1c] mt-6 mb-2">{children}</h3>;
+  return <h3 className="text-sm font-medium text-[#1c1c1c] mt-6 mb-2">{children}</h3>;
 }
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-[#eeeee6]">
-      {/* Header */}
-      <div className="bg-white border-b border-[#ddddd5]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-navy mb-5">Legal and Transparency</span>
-          <h1 className="text-4xl font-bold text-[#1c1c1c] mb-3">Privacy and Legal</h1>
-          <p className="text-[#6b6b6b] text-sm">
-            Last updated: {LAST_UPDATED}. Questions?{" "}
-            <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
-              damian@siba.digital
-            </a>
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen">
+      <div className="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
+        <p className="mb-4 text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
+          Legal and Transparency
+        </p>
+        <h1 className="mb-3">Privacy and Legal</h1>
+        <p className="mb-10 text-sm text-[#6b6b6b]">
+          Last updated: {LAST_UPDATED}. Questions?{" "}
+          <a href="mailto:damian@siba.digital" className="text-[#2c4a52] hover:underline">
+            damian@siba.digital
+          </a>
+        </p>
 
-      {/* Sticky section nav */}
-      <div className="sticky top-16 z-10 bg-[#1c1c1c] border-b border-[#2a2a2a]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="sticky top-[60px] z-10 mb-10 border-y border-[#ddddd5] bg-[#f6f6ef]/95 backdrop-blur-sm">
           <nav className="flex flex-wrap items-center gap-x-1 py-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] pr-3 mr-1 border-r border-[#3d3d3d] flex-shrink-0">
+            <span className="mr-1 flex-shrink-0 border-r border-[#ddddd5] pr-3 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
               Jump to
             </span>
             {[
@@ -66,18 +62,15 @@ export default function PrivacyPage() {
               <a
                 key={l.href}
                 href={l.href}
-                className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
+                className="flex-shrink-0 px-2.5 py-1 text-xs font-medium text-[#6b6b6b] transition-colors hover:text-[#1c1c1c]"
               >
                 {l.label}
               </a>
             ))}
           </nav>
         </div>
-      </div>
 
-      {/* Content */}
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
-        <div className="card bg-white p-8 sm:p-10 space-y-12">
+        <div className="space-y-12">
 
           <Section id="ownership" title="Statement of Ownership">
             <p>
@@ -95,17 +88,17 @@ export default function PrivacyPage() {
               any other mandatory business levy organisation. SIBA does not collect compulsory
               levies. Membership and engagement are entirely voluntary.
             </p>
-            <div className="mt-4 card p-4 bg-[#eeeee6]">
-              <p className="text-xs font-semibold text-[#1c1c1c] mb-2">Contact</p>
+            <div className="mt-4 border border-[#ddddd5] bg-[#f6f6ef] p-4">
+              <p className="text-xs font-medium text-[#1c1c1c] mb-2">Contact</p>
               <p>
                 SIBA Digital (a trading name of Churchtown Media Ltd, Company No. 16960442, VAT No. GB511024262), Southport, Merseyside.
                 <br />
                 Email:{" "}
-                <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
+                <a href="mailto:damian@siba.digital" className="text-[#2c4a52] hover:underline">
                   damian@siba.digital
                 </a>
                 {" "}&nbsp;|&nbsp; Tel:{" "}
-                <a href="tel:01704635785" className="text-[#1c1c1c] hover:underline">
+                <a href="tel:01704635785" className="text-[#2c4a52] hover:underline">
                   01704 635785
                 </a>
               </p>
@@ -140,7 +133,7 @@ export default function PrivacyPage() {
             <p>
               Audit request data is retained for 24 months from submission or until you
               request deletion. To request deletion, email{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
+              <a href="mailto:damian@siba.digital" className="text-[#2c4a52] hover:underline">
                 damian@siba.digital
               </a>{" "}
               with your name and business name.
@@ -150,7 +143,7 @@ export default function PrivacyPage() {
               Under UK GDPR, you have the right to access, correct, or delete personal data
               we hold about you. You also have the right to object to processing and to data
               portability. Contact{" "}
-              <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
+              <a href="mailto:damian@siba.digital" className="text-[#2c4a52] hover:underline">
                 damian@siba.digital
               </a>{" "}
               to exercise any of these rights.

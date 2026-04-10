@@ -199,40 +199,33 @@ export default function FoiPage() {
   const awaiting = requests.filter((r) => r.status === "awaiting").length;
 
   return (
-    <div className="min-h-screen bg-[#eeeee6]">
-      {/* Header */}
-      <div className="bg-white border-b border-[#ddddd5]">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
-          <span className="badge badge-navy mb-5">Accountability</span>
-          <h1 className="text-4xl font-bold text-[#1c1c1c] mb-4">
-            Freedom of Information Requests
-          </h1>
-          <p className="text-lg text-[#4a4a4a] leading-relaxed max-w-2xl mb-6">
-            SIBA has submitted {requests.length} Freedom of Information requests
-            to Sefton Council under the Freedom of Information Act 2000.  Every
-            request is publicly listed on WhatDoTheyKnow. Every response will be
-            published in full on this platform.
-          </p>
+    <div className="min-h-screen">
+      <div className="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
+        <p className="mb-4 text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
+          Accountability
+        </p>
+        <h1 className="mb-6">Freedom of Information Requests</h1>
+        <p className="mb-10 max-w-xl text-[15px] leading-relaxed text-[#3d3d3d]">
+          SIBA has submitted {requests.length} Freedom of Information requests
+          to Sefton Council under the Freedom of Information Act 2000. Every
+          request is publicly listed on WhatDoTheyKnow. Every response will be
+          published in full on this platform.
+        </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 divide-x divide-[#ddddd5] border border-[#ddddd5] rounded-lg bg-[#eeeee6] max-w-sm">
-            {[
-              { value: String(requests.length), label: "Requests submitted" },
-              { value: String(awaiting), label: "Awaiting response" },
-              { value: "0", label: "Substantive responses" },
-            ].map((s) => (
-              <div key={s.label} className="px-5 py-4 text-center">
-                <p className="text-xl font-bold text-[#1c1c1c]">{s.value}</p>
-                <p className="text-xs text-[#6b6b6b] leading-tight mt-0.5">
-                  {s.label}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="mb-14 grid max-w-sm grid-cols-3 divide-x divide-[#ddddd5] border border-[#ddddd5] bg-white">
+          {[
+            { value: String(requests.length), label: "Requests submitted" },
+            { value: String(awaiting), label: "Awaiting response" },
+            { value: "0", label: "Substantive responses" },
+          ].map((s) => (
+            <div key={s.label} className="px-5 py-4 text-center">
+              <p className="text-xl font-medium text-[#112d6e]">{s.value}</p>
+              <p className="mt-0.5 text-xs leading-tight text-[#6b6b6b]">
+                {s.label}
+              </p>
+            </div>
+          ))}
         </div>
-      </div>
-
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-14">
 
         <div className="mb-10">
           <InvestigationClosed />
@@ -240,21 +233,20 @@ export default function FoiPage() {
 
         <FoiCountdown />
 
-        <div className="rounded-lg border border-[#ddddd5] bg-white px-5 py-4 mb-10 -mt-6 flex items-start gap-3">
-          <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#a0a0a0] mt-1.5" />
-          <p className="text-xs text-[#a0a0a0] leading-relaxed">
-            The countdown above tracks the statutory deadline for FOI requests 1–9 (5–6 May 2026).
-            FOI requests 10–15, submitted 8–9 April 2026, have a response deadline of{" "}
+        <div className="mb-10 -mt-6 flex items-start gap-3 border border-[#ddddd5] bg-white px-5 py-4">
+          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#a0a0a0]" />
+          <p className="text-xs leading-relaxed text-[#a0a0a0]">
+            The countdown above tracks the statutory deadline for FOI requests 1-9 (5-6 May 2026).
+            FOI requests 10-15, submitted 8-9 April 2026, have a response deadline of{" "}
             <span className="font-semibold text-[#6b6b6b]">7 May 2026</span>.
           </p>
         </div>
 
-        {/* What FOI is */}
-        <div className="card p-6 bg-white border-l-4 border-l-[#1c1c1c] mb-10">
-          <p className="text-sm font-semibold text-[#1c1c1c] mb-2">
+        <div className="mb-14 border-l-2 border-[#112d6e] bg-white p-6">
+          <p className="mb-2 text-sm font-medium text-[#1c1c1c]">
             Why we are using FOI
           </p>
-          <p className="text-sm text-[#4a4a4a] leading-relaxed">
+          <p className="text-sm leading-relaxed text-[#3d3d3d]">
             The Freedom of Information Act 2000 gives anyone the right to
             request recorded information held by public authorities. Sefton
             Council is a public authority. It funds VisitSouthport.com, collects
@@ -265,57 +257,42 @@ export default function FoiPage() {
           </p>
         </div>
 
-        {/* Request list */}
-        <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-5">
+        <p className="mb-6 text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
           All requests to Sefton Borough Council
         </p>
 
-        <div className="space-y-4">
+        <div className="space-y-px">
           {requests.map((r) => (
             <div
               id={r.number}
               key={r.number}
-              className={`card bg-white p-6 sm:p-7 ${
+              className={`border-b border-[#ddddd5] bg-white p-6 sm:p-7 ${
                 "highlight" in r && r.highlight
-                  ? "border-l-4 border-l-[#1c1c1c]"
+                  ? "border-l-2 border-l-[#112d6e]"
                   : ""
               }`}
             >
-              <div className="flex flex-col sm:flex-row gap-5">
-                {/* Number */}
+              <div className="flex flex-col gap-5 sm:flex-row">
                 <div className="flex-shrink-0">
-                  <div
-                    className={`flex h-11 w-11 items-center justify-center rounded-lg border ${
-                      "highlight" in r && r.highlight
-                        ? "bg-[#eeeee6] border-[#ddddd5]"
-                        : "bg-[#eeeee6] border-[#ddddd5]"
-                    }`}
-                  >
-                    <span
-                      className={`text-sm font-bold ${
-                        "highlight" in r && r.highlight
-                          ? "text-[#1c1c1c]"
-                          : "text-[#4a4a4a]"
-                      }`}
-                    >
+                  <div className="flex h-10 w-10 items-center justify-center border border-[#ddddd5] bg-[#f6f6ef]">
+                    <span className="text-sm font-medium text-[#6b6b6b]">
                       {r.number}
                     </span>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <h2 className="text-base font-bold text-[#1c1c1c]">
+                <div className="min-w-0 flex-1">
+                  <div className="mb-2 flex flex-wrap items-center gap-3">
+                    <h2 className="text-base font-medium text-[#1c1c1c]">
                       {r.title}
                     </h2>
-                    <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-[#a0a0a0] border border-[#ddddd5] rounded px-2 py-0.5 bg-[#eeeee6]">
+                    <span className="inline-flex items-center gap-1 border border-[#ddddd5] bg-[#f6f6ef] px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
                       <Clock size={10} />
                       Awaiting response
                     </span>
                   </div>
 
-                  <p className="text-sm text-[#4a4a4a] leading-relaxed mb-4">
+                  <p className="mb-4 text-sm leading-relaxed text-[#3d3d3d]">
                     {r.summary}
                   </p>
 
@@ -324,7 +301,7 @@ export default function FoiPage() {
                       href={`${BASE_WDTK}/${r.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1c1c1c] hover:text-[#1c1c1c] transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
                     >
                       View on WhatDoTheyKnow
                       <ExternalLink size={11} />
@@ -337,7 +314,7 @@ export default function FoiPage() {
                     {r.relatedLabel && r.relatedHref && (
                       <Link
                         href={r.relatedHref}
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
+                        className="inline-flex items-center gap-1 text-xs font-medium text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
                       >
                         Related: {r.relatedLabel}
                         <ArrowRight size={11} />
@@ -350,24 +327,21 @@ export default function FoiPage() {
           ))}
         </div>
 
-        {/* Footer note */}
         <div className="mt-14 border-t border-[#ddddd5] pt-10">
-          <div className="max-w-2xl space-y-4">
-            <p className="text-sm text-[#4a4a4a] leading-relaxed">
-              All requests are publicly visible on{" "}
-              <a
-                href="https://www.whatdotheyknow.com/user/southport_independent_business_a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#1c1c1c] hover:underline inline-flex items-center gap-0.5"
-              >
-                WhatDoTheyKnow
-                <ExternalLink size={11} />
-              </a>
-              . Responses will be published by Sefton Council under their transparency
-              obligations and listed publicly there.
-            </p>
-          </div>
+          <p className="max-w-2xl text-sm leading-relaxed text-[#3d3d3d]">
+            All requests are publicly visible on{" "}
+            <a
+              href="https://www.whatdotheyknow.com/user/southport_independent_business_a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-0.5 text-[#2c4a52] hover:underline"
+            >
+              WhatDoTheyKnow
+              <ExternalLink size={11} />
+            </a>
+            . Responses will be published by Sefton Council under their transparency
+            obligations and listed publicly there.
+          </p>
         </div>
       </div>
     </div>
