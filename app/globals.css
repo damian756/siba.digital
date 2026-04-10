@@ -12,7 +12,7 @@ body {
   --ink-secondary: #3d3d3d;
   --ink-muted: #6b6b6b;
   --ink-faint: #a0a0a0;
-  --brand: #0b1d3a;
+  --brand: #112d6e;
   --teal: #2c4a52;
   --surface: #f6f6ef;
   --surface-alt: #eeeee6;
@@ -35,6 +35,8 @@ body {
   color: var(--ink);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   font-weight: 350;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -44,6 +46,19 @@ h1, h2, h3 {
   font-weight: 400;
   letter-spacing: -0.015em;
   line-height: 1.15;
+  color: var(--brand);
+}
+
+h1 {
+  font-size: clamp(1.8rem, 1.4rem + 1.6vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.25rem);
 }
 
 ::-webkit-scrollbar { width: 6px; }
@@ -69,6 +84,31 @@ h1, h2, h3 {
     transform: none;
     transition: none;
   }
+}
+
+/* Article cards on listing pages */
+.article-card {
+  display: block;
+  padding: 2rem 0;
+  transition: background-color 0.15s ease;
+}
+.article-card:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.article-card__title {
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+.article-card:hover .article-card__title {
+  color: var(--brand);
+}
+.article-card__read {
+  color: var(--brand);
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+.article-card:hover .article-card__read {
+  opacity: 1;
 }
 
 .card {

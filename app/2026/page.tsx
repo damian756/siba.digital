@@ -133,7 +133,7 @@ export default function Hub2026Page() {
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           Royal Birkdale, 12-19 July 2026
         </p>
-        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">The 2026 Hub</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-4 leading-[1.15]">The 2026 Hub</h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           The Open Championship comes to Southport in July. 150,000 visitors, most of them
           on smartphones, all of them searching. This is the technical roadmap to make sure
@@ -161,7 +161,7 @@ export default function Hub2026Page() {
 
         {/* Technical metrics */}
         <section className="pb-14 mb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">The technical targets</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-2">The technical targets</h2>
           <p className="text-sm text-[#6b6b6b] mb-8">
             Specific thresholds, not guidelines. These are the numbers that determine whether
             your site ranks and converts during Open week.
@@ -182,7 +182,7 @@ export default function Hub2026Page() {
 
         {/* Roadmap */}
         <section className="pb-14 mb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">Readiness roadmap</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-2">Readiness roadmap</h2>
           <p className="text-sm text-[#6b6b6b] mb-8">
             Month by month. What needs to happen, and when.
           </p>
@@ -208,7 +208,7 @@ export default function Hub2026Page() {
 
         {/* Search queries */}
         <section className="pb-14 mb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">
+          <h2 className="text-2xl text-[#112d6e] mb-2">
             The searches that will happen in July
           </h2>
           <p className="text-sm text-[#6b6b6b] mb-8">

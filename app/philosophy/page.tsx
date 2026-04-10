@@ -56,7 +56,7 @@ export default function PhilosophyPage() {
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           SIBA, April 2026
         </p>
-        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">Our Philosophy</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-4 leading-[1.15]">Our Philosophy</h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed mb-16">
           Why SIBA exists. Who it is here for. And what it is built on.
         </p>
@@ -86,7 +86,7 @@ export default function PhilosophyPage() {
 
         {/* The belief */}
         <section className="mb-14 pb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-5">The belief we are built on</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-5">The belief we are built on</h2>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               The people who pay for something have a right to know how it is spent, who decided to
@@ -112,7 +112,7 @@ export default function PhilosophyPage() {
 
         {/* Who we serve */}
         <section className="mb-14 pb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-5">The businesses we are here for</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-5">The businesses we are here for</h2>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               The independent restaurant on a side street that has never been mentioned on{" "}
@@ -139,7 +139,7 @@ export default function PhilosophyPage() {
 
         {/* Horizontal networks */}
         <section className="mb-14 pb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-5">What the BID replaced</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-5">What the BID replaced</h2>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               Before the BID existed, businesses in Southport talked directly to each other.
@@ -183,7 +183,7 @@ export default function PhilosophyPage() {
 
         {/* What we are not */}
         <section className="mb-14 pb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-5">Three things worth stating clearly</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-5">Three things worth stating clearly</h2>
           <div className="space-y-6">
             {[
               {
@@ -209,7 +209,7 @@ export default function PhilosophyPage() {
 
         {/* How we work */}
         <section className="mb-14 pb-14 border-b border-[#ddddd5]">
-          <h2 className="text-2xl text-[#0b1d3a] mb-5">Transparency is protective, not destructive</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-5">Transparency is protective, not destructive</h2>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
               Every party named in a SIBA publication is offered a right of reply. Every factual
@@ -264,9 +264,9 @@ export default function PhilosophyPage() {
         {/* Closing */}
         <section className="text-center py-8">
           <div className="space-y-2 mb-8">
-            <p className="text-2xl text-[#0b1d3a]">We are not finished.</p>
-            <p className="text-2xl text-[#0b1d3a]">We are not stopping.</p>
-            <p className="text-2xl font-medium text-[#0b1d3a]">And we are not for sale.</p>
+            <p className="text-2xl text-[#112d6e]">We are not finished.</p>
+            <p className="text-2xl text-[#112d6e]">We are not stopping.</p>
+            <p className="text-2xl font-medium text-[#112d6e]">And we are not for sale.</p>
           </div>
           <p className="text-sm text-[#6b6b6b] leading-relaxed max-w-md mx-auto mb-6">
             If you are a business in PR8 or PR9 and you want to understand what the levy costs

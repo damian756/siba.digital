@@ -97,7 +97,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
-        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">Get in touch</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-4 leading-[1.15]">Get in touch</h1>
         <p className="text-sm text-[#3d3d3d] leading-relaxed mb-12">
           Use the form below or email{" "}
           <a

@@ -45,10 +45,10 @@ export default function ReportsPage() {
     <div className="min-h-screen">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
+        <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-5">
           Investigation Archive
         </p>
-        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">
+        <h1 className="mb-4">
           The Southport Accountability Project
         </h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
@@ -68,29 +68,29 @@ export default function ReportsPage() {
 
         {/* Published reports */}
         <div className="mb-14">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-6">
+          <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-6">
             Published
           </p>
-          <div className="space-y-0 divide-y divide-[#ddddd5]">
+          <div className="divide-y divide-[#ddddd5]">
             {publishedReports.map((r) => (
               <Link
                 key={r.slug}
                 href={`/reports/${r.slug}`}
-                className="block py-8 first:pt-0 last:pb-0 group"
+                className="article-card first:pt-0 last:pb-0"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
+                  <span className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
                     {r.category}
                   </span>
                   <span className="text-[11px] text-[#ccccc4]">&middot;</span>
                   <span className="text-[11px] text-[#a0a0a0]">{r.date}</span>
                 </div>
-                <h2 className="text-lg font-semibold text-[#1c1c1c] mb-1.5 group-hover:text-[#3d3d3d] transition-colors">
+                <h2 className="article-card__title font-medium mb-1.5">
                   {r.title}
                 </h2>
                 <p className="text-sm text-[#6b6b6b] mb-1">{r.subtitle}</p>
-                <p className="text-sm text-[#a0a0a0] leading-relaxed mb-2">{r.summary}</p>
-                <span className="inline-flex items-center gap-1 text-[13px] text-[#a0a0a0] group-hover:text-[#1c1c1c] transition-colors">
+                <p className="text-sm text-[#a0a0a0] leading-relaxed mb-3">{r.summary}</p>
+                <span className="article-card__read inline-flex items-center gap-1 text-[13px] font-medium">
                   Read
                   <ArrowRight size={12} />
                 </span>
@@ -101,10 +101,10 @@ export default function ReportsPage() {
 
         {/* FOI block */}
         <div className="pb-14 mb-14 border-b border-[#ddddd5]">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
+          <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-5">
             Freedom of Information
           </p>
-          <h2 className="text-lg font-semibold text-[#1c1c1c] mb-3">
+          <h2 className="font-medium mb-3">
             15 FOI Requests Submitted to Sefton Council
           </h2>
           <p className="text-sm text-[#3d3d3d] leading-relaxed mb-4">
@@ -116,7 +116,7 @@ export default function ReportsPage() {
           </p>
           <Link
             href="/foi"
-            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#1c1c1c] hover:text-[#3d3d3d] transition-colors"
+            className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#112d6e] hover:text-[#1c1c1c] transition-colors"
           >
             View all FOI requests
             <ArrowRight size={12} />

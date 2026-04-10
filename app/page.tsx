@@ -26,7 +26,7 @@ export default function HomePage() {
       <section className="pt-32 sm:pt-40 lg:pt-52 pb-24 lg:pb-32">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] text-[#0b1d3a] mb-10 leading-[1.12]">
+            <h1 className="text-[32px] sm:text-[40px] lg:text-[48px] text-[#112d6e] mb-10 leading-[1.12]">
               We find the vulnerabilities<br />
               before the public does.
             </h1>
@@ -64,7 +64,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <h2 className="text-xl text-[#0b1d3a] mb-12 text-center">Methodology</h2>
+            <h2 className="text-xl text-[#112d6e] mb-12 text-center">Methodology</h2>
           </Reveal>
 
           <div className="space-y-10 max-w-xl mx-auto">
@@ -124,7 +124,7 @@ export default function HomePage() {
             </p>
           </Reveal>
           <Reveal>
-            <h2 className="text-xl text-[#0b1d3a] mb-6 text-center">
+            <h2 className="text-xl text-[#112d6e] mb-6 text-center">
               Southport BID Governance Audit
             </h2>
           </Reveal>
@@ -158,7 +158,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="text-xl text-[#0b1d3a] mb-6">Reach</h2>
+            <h2 className="text-xl text-[#112d6e] mb-6">Reach</h2>
           </Reveal>
           <Reveal>
             <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-lg mx-auto">
@@ -178,7 +178,7 @@ export default function HomePage() {
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <Reveal>
-            <h2 className="text-xl text-[#0b1d3a] mb-6">
+            <h2 className="text-xl text-[#112d6e] mb-6">
               Your organisation manages public money.
             </h2>
           </Reveal>

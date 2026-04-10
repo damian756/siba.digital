@@ -60,7 +60,7 @@ export default function ManifestoPage() {
         <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-5">
           SIBA Technical Charter, April 2026
         </p>
-        <h1 className="text-[32px] sm:text-[36px] text-[#0b1d3a] mb-4 leading-[1.15]">The Manifesto</h1>
+        <h1 className="text-[32px] sm:text-[36px] text-[#112d6e] mb-4 leading-[1.15]">The Manifesto</h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed mb-10">
           Why SIBA exists, what it is committed to delivering, and why the current
           Business Improvement District model is not fit for purpose in 2026.
@@ -81,7 +81,7 @@ export default function ManifestoPage() {
         {/* 01 */}
         <section id="vision" className="scroll-mt-24 pb-14 mb-14 border-b border-[#ddddd5]">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">01</p>
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">The 2026 Vision</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-2">The 2026 Vision</h2>
           <p className="text-sm text-[#6b6b6b] mb-6">The commercial case for acting now</p>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
@@ -113,7 +113,7 @@ export default function ManifestoPage() {
         {/* 02 */}
         <section id="levy" className="scroll-mt-24 pb-14 mb-14 border-b border-[#ddddd5]">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">02</p>
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">The Failure of the Mandatory Levy Model</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-2">The Failure of the Mandatory Levy Model</h2>
           <p className="text-sm text-[#6b6b6b] mb-6">A structural critique, not a political one</p>
           <div className="space-y-4 text-sm text-[#3d3d3d] leading-relaxed">
             <p>
@@ -162,7 +162,7 @@ export default function ManifestoPage() {
         {/* 03 */}
         <section id="charter" className="scroll-mt-24 pb-14 mb-14 border-b border-[#ddddd5]">
           <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-3">03</p>
-          <h2 className="text-2xl text-[#0b1d3a] mb-2">The SIBA Technical Charter</h2>
+          <h2 className="text-2xl text-[#112d6e] mb-2">The SIBA Technical Charter</h2>
           <p className="text-sm text-[#6b6b6b] mb-8">Commitments, not aspirations</p>
           <div className="space-y-6">
             {[
