@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/siba-og.png",
-        width: 1080,
-        height: 1080,
+        url: "/images/siba-hero.jpg",
+        width: 1168,
+        height: 784,
         alt: "SIBA Digital: Strategic Intelligence & Business Audits",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/siba-og.png"],
+    images: ["/images/siba-hero.jpg"],
   },
   robots: {
     index: true,
@@ -69,12 +69,33 @@ const organizationSchema = {
         "@type": "ImageObject",
         url: "https://www.siba.digital/icon.svg",
       },
+      image: "https://www.siba.digital/images/siba-hero.jpg",
       email: "damian@siba.digital",
       telephone: "+441704635785",
       areaServed: {
         "@type": "Place",
         name: "United Kingdom",
       },
+      parentOrganization: {
+        "@type": "Organization",
+        name: "Churchtown Media Ltd",
+        url: "https://www.churchtownmedia.co.uk",
+        sameAs:
+          "https://find-and-update.company-information.service.gov.uk/company/16960442",
+      },
+      founder: {
+        "@type": "Person",
+        name: "Damian Roche",
+        url: "https://www.siba.digital/about",
+        sameAs: [
+          "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+          "https://www.churchtownmedia.co.uk",
+        ],
+      },
+      sameAs: [
+        "https://www.churchtownmedia.co.uk",
+        "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+      ],
     },
     {
       "@type": "WebSite",

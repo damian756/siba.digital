@@ -98,7 +98,7 @@ export default function PrivacyPage() {
             <div className="mt-4 card p-4 bg-[#eeeee6]">
               <p className="text-xs font-semibold text-[#1c1c1c] mb-2">Contact</p>
               <p>
-                SIBA Digital (a trading name of Churchtown Media Ltd), Southport, Merseyside.
+                SIBA Digital (a trading name of Churchtown Media Ltd, Company No. 16960442), Southport, Merseyside.
                 <br />
                 Email:{" "}
                 <a href="mailto:damian@siba.digital" className="text-[#1c1c1c] hover:underline">
