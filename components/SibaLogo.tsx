@@ -20,12 +20,18 @@ export function SibaMark({ size = 28, variant = "default" }: { size?: number; va
     >
       {/* Container square */}
       <rect width="28" height="28" rx="4" fill={bg} />
-      {/* Chess pawn (FontAwesome 6 Free, CC BY 4.0) scaled to fit 28x28 */}
-      <g transform="translate(6.5,2) scale(0.046875)">
-        <path
-          d="M215.5 224c29.2-18.4 48.5-50.9 48.5-88C264 78.6 217.4 32 160 32S56 78.6 56 136c0 37.1 19.4 69.6 48.5 88H96c-17.7 0-32 14.3-32 32c0 16.5 12.5 30 28.5 31.8C64.6 326.3 48 363.6 48 404c0 0 16 36 16 36l192 0s16-36 16-36c0-40.4-16.6-77.7-44.5-116.2C243.5 286 256 272.5 256 256c0-17.7-14.3-32-32-32h-8.5zM0 448c0-17.7 14.3-32 32-32l256 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32z"
-          fill={fg}
-        />
+      {/* Classic geometric chess pawn */}
+      <g fill={fg}>
+        {/* Head */}
+        <circle cx="14" cy="7" r="4" />
+        {/* Collar */}
+        <ellipse cx="14" cy="11.5" rx="5.5" ry="1.2" />
+        {/* Body */}
+        <path d="M 11.5 12 Q 11.5 17 8 21 L 20 21 Q 16.5 17 16.5 12 Z" />
+        {/* Base upper step */}
+        <rect x="7" y="21" width="14" height="2" rx="0.5" />
+        {/* Base lower step */}
+        <rect x="5.5" y="23" width="17" height="2.5" rx="1" />
       </g>
     </svg>
   );
