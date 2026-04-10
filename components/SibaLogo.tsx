@@ -20,17 +20,29 @@ export function SibaMark({ size = 28, variant = "default" }: { size?: number; va
     >
       {/* Container square */}
       <rect width="28" height="28" rx="4" fill={bg} />
-      {/* Chess pawn silhouette */}
-      {/* Head */}
-      <circle cx="14" cy="7" r="3.5" fill={fg} />
-      {/* Neck */}
-      <rect x="12" y="9" width="4" height="3.5" fill={fg} />
-      {/* Body */}
-      <ellipse cx="14" cy="15" rx="5.5" ry="4" fill={fg} />
-      {/* Stem */}
-      <rect x="12" y="17.5" width="4" height="3" fill={fg} />
-      {/* Base */}
-      <rect x="8" y="20" width="12" height="3.5" rx="1.5" fill={fg} />
+      {/*
+        Chess pawn silhouette — single traced path:
+        Start at bottom-left of head circle, arc over the top,
+        concave neck curves inward, body sweeps out convexly,
+        wide base with raised step collar.
+      */}
+      <path
+        d="
+          M 12 9.2
+          A 4 4 0 1 1 16 9.2
+          C 17.5 10.6, 17 12.5, 15.5 14
+          C 14.5 15.5, 21.5 18.5, 21.5 21.5
+          L 23.5 21.5
+          L 23.5 25.5
+          L 4.5 25.5
+          L 4.5 21.5
+          L 6.5 21.5
+          C 6.5 18.5, 13.5 15.5, 12.5 14
+          C 11 12.5, 10.5 10.6, 12 9.2
+          Z
+        "
+        fill={fg}
+      />
     </svg>
   );
 }
