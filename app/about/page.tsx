@@ -49,7 +49,7 @@ export default function AboutPage() {
       />
 
       {/* Hero */}
-      <div className="relative min-h-[65vh] flex items-end">
+      <div className="relative w-full aspect-video flex items-end">
         <Image
           src="/images/about-hero.jpg"
           alt="SIBA Digital — built from a real investigation"
