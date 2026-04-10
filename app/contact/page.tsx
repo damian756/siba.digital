@@ -162,7 +162,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {category && category !== "commission" && (
+            {(category === "partnership" || category === "general") && (
               <div className="border border-[#e2e8f0] bg-white p-6 sm:p-8 space-y-5">
                 <div className="space-y-1.5">
                   <label htmlFor="name" className="block text-sm font-semibold text-[#0f172a]">
