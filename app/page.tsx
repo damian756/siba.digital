@@ -187,11 +187,14 @@ export default function HomePage() {
             <p className="mx-auto max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
               A single published analysis. No paid promotion. Over 55% of the
               audience held senior, director, or executive positions. Viewers
-              included professionals from the House of Commons, MHCLG, Bristol
-              City Council, North Yorkshire Council, Transport for London, and
-              AtkinsRéalis. Government Administration was the single largest
-              industry at 14.6% of the audience, followed by construction,
-              infrastructure, and real estate.
+              included professionals from <strong className="text-[#1c1c1c]">the House of Commons</strong>,{" "}
+              <strong className="text-[#1c1c1c]">MHCLG</strong>,{" "}
+              <strong className="text-[#1c1c1c]">Bristol City Council</strong>,{" "}
+              <strong className="text-[#1c1c1c]">North Yorkshire Council</strong>,{" "}
+              <strong className="text-[#1c1c1c]">Transport for London</strong>, and{" "}
+              <strong className="text-[#1c1c1c]">AtkinsRéalis</strong>. Government
+              Administration was the single largest industry at 14.6% of the
+              audience, followed by construction, infrastructure, and real estate.
             </p>
           </Reveal>
         </div>
