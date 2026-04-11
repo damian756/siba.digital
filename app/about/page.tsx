@@ -145,7 +145,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl">
               <p>
-                In 2025, SIBA set out to answer a single question: where does
+                In 2026, SIBA set out to answer a single question: where does
                 the Southport BID levy money go? The research uncovered
                 structural conflicts of interest, undisclosed media contracts,
                 and a governance model that produced predictable outcomes

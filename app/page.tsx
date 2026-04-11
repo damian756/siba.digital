@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -163,6 +163,34 @@ export default function HomePage() {
 
       <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
+      {/* FOI Deadline */}
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between border border-[#ddddd5] bg-white px-6 py-5">
+              <div>
+                <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-1">
+                  Live FOI Tracker
+                </p>
+                <p className="text-[15px] text-[#3d3d3d]">
+                  15 Freedom of Information requests to Sefton Council.
+                  Statutory deadline: <strong className="text-[#1c1c1c]">5 May 2026</strong>.
+                </p>
+              </div>
+              <Link
+                href="/foi"
+                className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
+              >
+                View countdown
+                <ArrowRight size={13} />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
+
       {/* Reach */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -196,6 +224,19 @@ export default function HomePage() {
               Administration was the single largest industry at 14.6% of the
               audience, followed by construction, infrastructure, and real estate.
             </p>
+          </Reveal>
+          <Reveal>
+            <div className="mt-6 text-center">
+              <a
+                href="https://www.linkedin.com/in/damian-roche-7ba8293a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-[#6b6b6b] transition-colors hover:text-[#1c1c1c]"
+              >
+                View on LinkedIn
+                <ExternalLink size={11} />
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>

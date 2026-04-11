@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Clock } from "lucide-react";
+import { ArrowRight, ExternalLink, Clock, CheckCircle2, XCircle } from "lucide-react";
 import FoiCountdown from "@/components/FoiCountdown";
 import InvestigationClosed from "@/components/InvestigationClosed";
 
@@ -22,7 +22,24 @@ export const metadata: Metadata = {
 
 const BASE_WDTK = "https://www.whatdotheyknow.com/request";
 
-const requests = [
+type FoiRequest = {
+  number: string;
+  title: string;
+  slug: string;
+  due: string;
+  status: "awaiting" | "received" | "refused" | "partial";
+  summary: string;
+  relatedLabel: string | null;
+  relatedHref: string | null;
+  highlight?: boolean;
+  response?: {
+    date: string;
+    outcome: string;
+    wdtkResponseUrl?: string;
+  };
+};
+
+const requests: FoiRequest[] = [
   {
     number: "01",
     title: "BID Ballot Voting",
@@ -195,8 +212,42 @@ const requests = [
   },
 ];
 
+function StatusBadge({ status }: { status: FoiRequest["status"] }) {
+  if (status === "received") {
+    return (
+      <span className="inline-flex items-center gap-1 border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-emerald-700">
+        <CheckCircle2 size={10} />
+        Response received
+      </span>
+    );
+  }
+  if (status === "refused") {
+    return (
+      <span className="inline-flex items-center gap-1 border border-red-200 bg-red-50 px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-red-700">
+        <XCircle size={10} />
+        Refused
+      </span>
+    );
+  }
+  if (status === "partial") {
+    return (
+      <span className="inline-flex items-center gap-1 border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-amber-700">
+        <CheckCircle2 size={10} />
+        Partial response
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center gap-1 border border-[#ddddd5] bg-[#f6f6ef] px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
+      <Clock size={10} />
+      Awaiting response
+    </span>
+  );
+}
+
 export default function FoiPage() {
   const awaiting = requests.filter((r) => r.status === "awaiting").length;
+  const responded = requests.filter((r) => r.status !== "awaiting").length;
 
   return (
     <div className="min-h-screen">
@@ -216,7 +267,7 @@ export default function FoiPage() {
           {[
             { value: String(requests.length), label: "Requests submitted" },
             { value: String(awaiting), label: "Awaiting response" },
-            { value: "0", label: "Substantive responses" },
+            { value: String(responded), label: "Responses received" },
           ].map((s) => (
             <div key={s.label} className="px-5 py-4 text-center">
               <p className="text-xl font-medium text-[#112d6e]">{s.value}</p>
@@ -286,15 +337,34 @@ export default function FoiPage() {
                     <h2 className="text-base font-medium text-[#1c1c1c]">
                       {r.title}
                     </h2>
-                    <span className="inline-flex items-center gap-1 border border-[#ddddd5] bg-[#f6f6ef] px-2 py-0.5 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
-                      <Clock size={10} />
-                      Awaiting response
-                    </span>
+                    <StatusBadge status={r.status} />
                   </div>
 
                   <p className="mb-4 text-sm leading-relaxed text-[#3d3d3d]">
                     {r.summary}
                   </p>
+
+                  {r.response && (
+                    <div className="mb-4 border border-[#ddddd5] bg-[#f6f6ef] p-4">
+                      <p className="mb-1 text-[10px] font-medium uppercase tracking-widest text-[#a0a0a0]">
+                        Response received {r.response.date}
+                      </p>
+                      <p className="text-sm leading-relaxed text-[#3d3d3d]">
+                        {r.response.outcome}
+                      </p>
+                      {r.response.wdtkResponseUrl && (
+                        <a
+                          href={r.response.wdtkResponseUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
+                        >
+                          Read full response on WhatDoTheyKnow
+                          <ExternalLink size={11} />
+                        </a>
+                      )}
+                    </div>
+                  )}
 
                   <div className="flex flex-wrap items-center gap-4">
                     <a
@@ -308,7 +378,7 @@ export default function FoiPage() {
                     </a>
 
                     <span className="text-xs text-[#a0a0a0]">
-                      Response due {r.due}
+                      {r.status === "awaiting" ? `Response due ${r.due}` : `Due date was ${r.due}`}
                     </span>
 
                     {r.relatedLabel && r.relatedHref && (
