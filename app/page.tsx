@@ -188,9 +188,10 @@ export default function HomePage() {
               A single published analysis. No paid promotion. Over 55% of the
               audience held senior, director, or executive positions. Viewers
               included professionals from the House of Commons, MHCLG, Bristol
-              City Council, North Yorkshire Council, and Transport for London.
-              Government Administration was the single largest industry at 14.6%
-              of the audience.
+              City Council, North Yorkshire Council, Transport for London, and
+              AtkinsRéalis. Government Administration was the single largest
+              industry at 14.6% of the audience, followed by construction,
+              infrastructure, and real estate.
             </p>
           </Reveal>
         </div>
