@@ -139,7 +139,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal>
             <p className="mx-auto mb-8 max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
-              A 12-month open-source investigation into a Business Improvement
+              An open-source investigation into a Business Improvement
               District managing over &pound;448,000 in compulsory levy income.
               The audit mapped director conflicts of interest, undeclared media
               contracts, procurement opacity, and editorial bias on a publicly-funded

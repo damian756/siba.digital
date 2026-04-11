@@ -152,11 +152,11 @@ export default function AboutPage() {
                 regardless of who ran it.
               </p>
               <p>
-                The published findings generated over 7,300 impressions on
-                LinkedIn. The readership included government administrators,
-                compliance professionals, real estate executives, construction
-                firms, BBC journalists, and representatives from the Ministry
-                of Housing, Communities and Local Government.
+                A single published analysis generated 9,422 impressions on
+                LinkedIn with no paid promotion. Over 55% of the audience
+                held senior, director, or executive positions. Viewers included
+                professionals from the House of Commons, MHCLG, Bristol City
+                Council, Transport for London, AtkinsRéalis, and BBC journalists.
               </p>
               <p>
                 The investigation survived a legal threat, prompted 15 FOI
