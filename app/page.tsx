@@ -165,17 +165,32 @@ export default function HomePage() {
 
       {/* Reach */}
       <section className="py-28 lg:py-36">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <h2 className="mb-6">Reach</h2>
+            <h2 className="mb-6 text-center">Reach</h2>
           </Reveal>
+
           <Reveal>
-            <p className="mx-auto max-w-lg text-[15px] leading-relaxed text-[#3d3d3d]">
-              A single published analysis generated over 7,300 impressions on
-              LinkedIn. The readership included government administration
-              professionals, compliance officers, construction and real estate
-              executives, and national media. The methodology attracted attention
-              because it was structured, sourced, and independently verifiable.
+            <div className="mb-10 grid grid-cols-2 divide-x divide-[#ddddd5] border border-[#ddddd5]">
+              <div className="px-8 py-6 text-center">
+                <p className="text-3xl font-semibold text-[#112d6e]">9,422</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-[#a0a0a0]">Impressions</p>
+              </div>
+              <div className="px-8 py-6 text-center">
+                <p className="text-3xl font-semibold text-[#112d6e]">7,191</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-[#a0a0a0]">Members reached</p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <p className="mx-auto max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
+              A single published analysis. No paid promotion. Over 55% of the
+              audience held senior, director, or executive positions. Viewers
+              included professionals from the House of Commons, MHCLG, Bristol
+              City Council, North Yorkshire Council, and Transport for London.
+              Government Administration was the single largest industry at 14.6%
+              of the audience.
             </p>
           </Reveal>
         </div>
