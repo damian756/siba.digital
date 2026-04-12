@@ -43,7 +43,7 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     "@id": "https://www.siba.digital/#organization",
-    name: "Southport Independent Business Alliance",
+    name: "SIBA Digital",
     url: "https://www.siba.digital",
   },
   publisher: {
@@ -997,7 +997,7 @@ export default function BidTreasurerMikhailPage() {
           </Link>
 
           <p className="text-sm text-[#6b6b6b] leading-relaxed">
-            SIBA has submitted 14 Freedom of Information requests to Sefton Council in total,
+            SIBA has submitted 15 Freedom of Information requests to Sefton Council in total,
             covering BID governance, public spending, and tourism platform management.{" "}
             <Link href="/foi" className="text-[#1c1c1c] underline">
               View all FOI requests.

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: "/images/siba-hero.jpg",
         width: 1168,
         height: 784,
-        alt: "SIBA Digital: Strategic Intelligence & Business Audits",
+        alt: "SIBA Digital: BID Governance Audits and OSINT",
       },
     ],
   },
@@ -62,7 +62,7 @@ const organizationSchema = {
     {
       "@type": "Organization",
       "@id": "https://www.siba.digital/#organization",
-      name: "Strategic Intelligence & Business Audits",
+      name: "SIBA Digital",
       alternateName: "SIBA Digital",
       url: "https://www.siba.digital",
       logo: {

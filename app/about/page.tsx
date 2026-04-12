@@ -172,7 +172,7 @@ export default function AboutPage() {
             </div>
 
             <Link
-              href="/analysis"
+              href="/overview"
               className="inline-flex items-center gap-1.5 mt-8 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
             >
               Read the full case study

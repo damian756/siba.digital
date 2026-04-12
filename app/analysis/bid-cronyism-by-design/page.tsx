@@ -30,7 +30,7 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     "@id": "https://www.siba.digital/#organization",
-    name: "Southport Independent Business Alliance",
+    name: "SIBA Digital",
     url: "https://www.siba.digital",
   },
   publisher: {
@@ -409,7 +409,7 @@ export default function CronyismAnalysisPage() {
             href="/foi"
             className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] transition-colors"
           >
-            View all 14 FOI requests
+            View all 15 FOI requests
             <ArrowRight size={12} />
           </Link>
         </section>
@@ -419,23 +419,23 @@ export default function CronyismAnalysisPage() {
         {/* CTA */}
         <div className="text-center py-4">
           <p className="text-[#6b6b6b] mb-6 leading-relaxed max-w-xl mx-auto">
-            SIBA is building the alternative. Free membership. No levy. No intermediary.
-            If you are a PR8 or PR9 business, request an audit or read our ongoing
-            investigation into Southport BID.
+            SIBA provides digital governance audits and OSINT for BIDs,
+            councils, and major developments across the UK. The methodology
+            used in this investigation is now available commercially.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="/audit"
+              href="/services#commission"
               className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
             >
-              Request a Free Audit
+              Commission an Audit
               <ArrowRight size={15} />
             </Link>
             <Link
-              href="/reports"
+              href="/overview"
               className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-6 py-3 text-sm font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] hover:border-[#ccccc4] transition-colors"
             >
-              Read the Reports
+              Case Study Overview
               <ArrowRight size={15} />
             </Link>
           </div>

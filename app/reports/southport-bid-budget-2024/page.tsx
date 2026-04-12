@@ -65,7 +65,7 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     "@id": "https://www.siba.digital/#organization",
-    name: "Southport Independent Business Alliance",
+    name: "SIBA Digital",
     url: "https://www.siba.digital",
   },
   publisher: {
@@ -492,21 +492,21 @@ export default function BidBudgetReportPage() {
 
         {/* 2026 */}
         <section className="space-y-4">
-          <SectionHeading>Before July</SectionHeading>
+          <SectionHeading>The methodology behind this report</SectionHeading>
           <div className="space-y-4 text-[#4a4a4a] leading-relaxed">
             <p>
-              The Open Championship comes to Royal Birkdale in July 2026. 150,000 visitors.
-              Potentially the busiest trading period Southport has seen in years. Every
-              business in PR8 and PR9 needs to be findable, optimised, and ready. SIBA
-              provides free digital audits and local SEO support to help make that happen,
-              regardless of whether you are a BID levy payer or not.
+              This budget analysis was produced using the same OSINT methodology
+              now available commercially through SIBA Digital. Every figure is
+              sourced from publicly available documents. The same approach is
+              applied to governance audits for BIDs, councils, and major
+              developments across the UK.
             </p>
           </div>
           <Link
-            href="/audit#request"
+            href="/services#commission"
             className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
           >
-            Request a free audit
+            Commission an Audit
             <ArrowRight size={14} />
           </Link>
         </section>

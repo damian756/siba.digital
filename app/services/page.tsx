@@ -416,9 +416,11 @@ export default function ServicesPage() {
                   Right of reply
                 </p>
                 <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
-                  Any party named in an audit report is offered the opportunity
-                  to respond before the report is finalised. Responses are
-                  included in the final deliverable.
+                  In published investigations, any party named is offered the
+                  opportunity to respond. Responses are published in full. For
+                  confidential commercial audits, the commissioning organisation
+                  receives the findings and decides how to act, including
+                  whether and when to offer right of reply to named parties.
                 </p>
               </div>
               <div>

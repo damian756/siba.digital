@@ -36,7 +36,7 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     "@id": "https://www.siba.digital/#organization",
-    name: "Southport Independent Business Alliance",
+    name: "SIBA Digital",
     url: "https://www.siba.digital",
   },
   publisher: {

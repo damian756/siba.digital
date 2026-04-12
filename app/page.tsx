@@ -59,7 +59,7 @@ export default function HomePage() {
                 Commission an Audit
               </Link>
               <Link
-                href="/analysis"
+                href="/overview"
                 className="text-sm text-white/40 transition-colors hover:text-white/80"
               >
                 Read the Case Study
@@ -150,7 +150,7 @@ export default function HomePage() {
           <Reveal>
             <div className="text-center">
               <Link
-                href="/analysis"
+                href="/overview"
                 className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
               >
                 Read the full case study
