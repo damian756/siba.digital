@@ -37,7 +37,7 @@ export default function CommissionForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          category: "commission-audit",
+          category: "commission",
           name: fields.role,
           businessName: fields.orgName,
           email: fields.email,
