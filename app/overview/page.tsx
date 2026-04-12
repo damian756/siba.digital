@@ -29,7 +29,7 @@ const events: {
   href?: string;
 }[] = [
   {
-    date: "Easter Sunday, 6 April 2026",
+    date: "Easter Sunday, 5 April 2026",
     type: "analysis",
     title: "Investigation begins",
     description:
