@@ -78,33 +78,21 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="tel:01704635785"
+                <Link
+                  href="/contact#pgp"
                   className="text-[13px] text-[#6b6b6b] hover:text-[#1c1c1c] transition-colors"
                 >
-                  01704 635785
-                </a>
+                  PGP key: 3D9C2224
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-[#ddddd5] space-y-3">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-            <p className="text-[12px] text-[#a0a0a0] leading-relaxed">
-              &copy; {year} Strategic Intelligence &amp; Business Audits.
-              SIBA Digital is a trading name of Churchtown Media Ltd (Company No. 16960442, VAT No. GB511024262). All rights reserved.
-            </p>
-          </div>
-          <p className="text-[12px] text-[#a0a0a0]">
-            Encrypted contact available.{" "}
-            <Link
-              href="/contact#pgp"
-              className="underline hover:text-[#6b6b6b] transition-colors"
-            >
-              PGP key: 3D9C2224
-            </Link>
-            {" "}· Source confidentiality is absolute.
+        <div className="mt-10 pt-6 border-t border-[#ddddd5]">
+          <p className="text-[12px] text-[#a0a0a0] leading-relaxed">
+            &copy; {year} Strategic Intelligence &amp; Business Audits.
+            SIBA Digital is a trading name of Churchtown Media Ltd (Company No. 16960442, VAT No. GB511024262). All rights reserved.
           </p>
         </div>
       </div>

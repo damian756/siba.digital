@@ -243,9 +243,9 @@ export default function ContactPage() {
               </a>
             </p>
             <p className="text-sm">
-              <span className="text-[#a0a0a0]">Phone: </span>
-              <a href="tel:01704635785" className="text-[#2c4a52] underline hover:text-[#1c1c1c]">
-                01704 635785
+              <span className="text-[#a0a0a0]">PGP: </span>
+              <a href="/contact#pgp" className="text-[#2c4a52] underline hover:text-[#1c1c1c]">
+                3D9C2224
               </a>
             </p>
           </div>
