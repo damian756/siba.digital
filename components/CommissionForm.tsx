@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const orgTypes = [
   "Business Improvement District",
@@ -61,10 +63,17 @@ export default function CommissionForm() {
     return (
       <div className="border border-[#ddddd5] px-8 py-10 max-w-xl">
         <p className="text-lg font-semibold text-[#1c1c1c] mb-2">Enquiry received</p>
-        <p className="text-sm text-[#3d3d3d] leading-relaxed">
+        <p className="text-sm text-[#3d3d3d] leading-relaxed mb-5">
           Thank you. SIBA will respond within one working day to discuss scope
           and next steps.
         </p>
+        <Link
+          href="/overview"
+          className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+        >
+          Read the founding case study while you wait
+          <ArrowRight size={13} />
+        </Link>
       </div>
     );
   }

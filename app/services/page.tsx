@@ -1,26 +1,87 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import CommissionForm from "@/components/CommissionForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Services: BID Governance Audits, OSINT and FOI Strategy",
   description:
-    "Digital governance audits and OSINT for Business Improvement Districts, councils, Town Deals and major developments. Three tiers from surface-level health checks to full forensic transparency audits. Public money accountability.",
+    "Digital governance audits and OSINT for Business Improvement Districts, councils, Town Deals and major developments. Four tiers from surface-level health checks to full forensic transparency audits and digital security assessments. Public money accountability.",
   alternates: {
     canonical: "https://www.siba.digital/services",
   },
   openGraph: {
     title: "Services | SIBA Digital",
     description:
-      "Digital governance audits and open-source intelligence for public bodies and major developments.",
+      "Digital governance audits, OSINT, FOI strategy and digital security assessments for public bodies and major developments across the UK.",
     url: "https://www.siba.digital/services",
     type: "website",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  provider: {
+    "@id": "https://www.siba.digital/#organization",
+  },
+  name: "Digital Governance Audits",
+  description:
+    "OSINT-based governance audits for Business Improvement Districts, local authorities, and major developments managing public money.",
+  url: "https://www.siba.digital/services",
+  areaServed: {
+    "@type": "Place",
+    name: "United Kingdom",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Audit Tiers",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        name: "Digital Governance Health Check",
+        description:
+          "Surface-level governance assessment and conflict of interest review. 5 working days.",
+        price: "1500",
+        priceCurrency: "GBP",
+      },
+      {
+        "@type": "Offer",
+        name: "Deep Transparency Audit",
+        description:
+          "Full forensic mapping of corporate ecosystem, procurement chains, and media contracts. 2-3 weeks.",
+        price: "4500",
+        priceCurrency: "GBP",
+      },
+      {
+        "@type": "Offer",
+        name: "Ongoing Monitoring",
+        description:
+          "Quarterly governance monitoring with change detection and flagged alerts.",
+        price: "750",
+        priceCurrency: "GBP",
+      },
+      {
+        "@type": "Offer",
+        name: "Digital Security Assessment",
+        description:
+          "External attack surface review, network exposure analysis, and data protection posture assessment.",
+        price: "2000",
+        priceCurrency: "GBP",
+      },
+    ],
   },
 };
 
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
 
         <Reveal>
@@ -30,8 +91,9 @@ export default function ServicesPage() {
         </Reveal>
         <Reveal delay={150}>
           <p className="text-[17px] text-[#3d3d3d] leading-relaxed max-w-xl mb-20">
-            Structured analysis from public records. Every engagement is
-            scoped to your organisation and delivered confidentially.
+            You will know what your corporate trail looks like before someone
+            else maps it for you. Structured analysis from public records,
+            scoped to your organisation, delivered confidentially.
           </p>
         </Reveal>
 
@@ -44,19 +106,42 @@ export default function ServicesPage() {
             <h2 className="text-[#112d6e] mb-2">
               Digital Governance Health Check
             </h2>
-            <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: 5 working days</p>
+            <div className="flex flex-wrap items-baseline gap-4 mb-6">
+              <p className="text-sm text-[#6b6b6b]">Turnaround: 5 working days</p>
+              <p className="text-sm font-medium text-[#1c1c1c]">From £1,500</p>
+            </div>
 
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-4">
-              A surface-level assessment of governance structures and digital
-              presence. Board of directors cross-referenced against Companies
-              House. Basic conflict of interest flag report. Surface-level OSINT
-              scan of corporate network. Digital footprint review of public-facing
-              platforms. Delivered as a summary report with risk flags and
-              recommendations.
+            <p className="text-[15px] text-[#1c1c1c] font-medium leading-relaxed mb-4">
+              You will know whether your board has undisclosed conflicts of
+              interest before a journalist, FOI request, or renewal ballot
+              reveals them.
             </p>
-            <p className="text-[13px] text-[#6b6b6b]">
-              Suited to smaller BIDs, mid-sized property developers, and
-              organisations seeking an initial assessment.
+
+            <ul className="space-y-2 text-[15px] text-[#3d3d3d] leading-relaxed mb-5">
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Board of directors cross-referenced against Companies House
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Basic conflict of interest flag report
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Surface-level OSINT scan of corporate network
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Digital footprint review of public-facing platforms
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Summary report with risk flags and recommendations
+              </li>
+            </ul>
+
+            <p className="text-[13px] text-[#a0a0a0]">
+              Deliverable: PDF report via encrypted email.
             </p>
           </section>
         </Reveal>
@@ -70,19 +155,47 @@ export default function ServicesPage() {
             <h2 className="text-[#112d6e] mb-2">
               Deep Transparency Audit
             </h2>
-            <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: 2 to 3 weeks</p>
+            <div className="flex flex-wrap items-baseline gap-4 mb-6">
+              <p className="text-sm text-[#6b6b6b]">Turnaround: 2 to 3 weeks</p>
+              <p className="text-sm font-medium text-[#1c1c1c]">From £4,500</p>
+            </div>
 
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-4">
-              Full forensic mapping of the corporate ecosystem and director
-              network. Procurement history and contractor relationship analysis.
-              Media and PR contract disclosure review. Related-party transaction
-              mapping from public filings. Budget flow analysis sourced from
-              published documents. Delivered as a comprehensive report with
-              structural findings and evidence chain.
+            <p className="text-[15px] text-[#1c1c1c] font-medium leading-relaxed mb-4">
+              You will have a complete map of every corporate relationship,
+              procurement chain, and media contract connected to your
+              governance structure. The same depth applied to the Southport
+              BID investigation.
             </p>
-            <p className="text-[13px] text-[#6b6b6b]">
-              Suited to major city BIDs, local authorities preparing for fund
-              audits, and construction networks managing public grants.
+
+            <ul className="space-y-2 text-[15px] text-[#3d3d3d] leading-relaxed mb-5">
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Full forensic mapping of director network and corporate ecosystem
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Procurement history and contractor relationship analysis
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Media and PR contract disclosure review
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Related-party transaction mapping from public filings
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Budget flow analysis sourced from published documents
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Comprehensive report with structural findings and evidence chain
+              </li>
+            </ul>
+
+            <p className="text-[13px] text-[#a0a0a0]">
+              Deliverable: Full report with evidence appendix via encrypted transfer.
             </p>
           </section>
         </Reveal>
@@ -96,18 +209,166 @@ export default function ServicesPage() {
             <h2 className="text-[#112d6e] mb-2">
               Ongoing Monitoring
             </h2>
-            <p className="text-sm text-[#6b6b6b] mb-6">Turnaround: Quarterly</p>
+            <div className="flex flex-wrap items-baseline gap-4 mb-6">
+              <p className="text-sm text-[#6b6b6b]">Quarterly reports</p>
+              <p className="text-sm font-medium text-[#1c1c1c]">From £750/quarter</p>
+            </div>
 
-            <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-4">
-              Quarterly review of board changes and new director appointments.
-              Companies House filing monitoring for target entities. Contractor
-              and procurement change detection. Digital footprint shift analysis.
-              Delivered as a quarterly update report with flagged changes.
+            <p className="text-[15px] text-[#1c1c1c] font-medium leading-relaxed mb-4">
+              You will know the moment anything in your governance structure
+              changes. New appointments, new filings, new procurement patterns.
+              Before anyone else notices.
             </p>
-            <p className="text-[13px] text-[#6b6b6b]">
-              Suited to organisations that have completed a Tier 2 audit and
-              want continuous governance assurance.
+
+            <ul className="space-y-2 text-[15px] text-[#3d3d3d] leading-relaxed mb-5">
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Quarterly review of board changes and new director appointments
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Companies House filing monitoring for target entities
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Contractor and procurement change detection
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Digital footprint shift analysis
+              </li>
+            </ul>
+
+            <p className="text-[13px] text-[#a0a0a0]">
+              Requires completed Tier 2 audit as baseline. Deliverable: Quarterly PDF update.
             </p>
+          </section>
+        </Reveal>
+
+        {/* Tier 4 */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
+              Tier 4
+            </p>
+            <h2 className="text-[#112d6e] mb-2">
+              Digital Security Assessment
+            </h2>
+            <div className="flex flex-wrap items-baseline gap-4 mb-6">
+              <p className="text-sm text-[#6b6b6b]">Turnaround: 5 to 10 working days</p>
+              <p className="text-sm font-medium text-[#1c1c1c]">From £2,000</p>
+            </div>
+
+            <p className="text-[15px] text-[#1c1c1c] font-medium leading-relaxed mb-4">
+              You will know what your organisation looks like to someone trying
+              to get inside it. External attack surface, network exposure, and
+              data protection posture reviewed before a vulnerability becomes
+              an incident.
+            </p>
+
+            <ul className="space-y-2 text-[15px] text-[#3d3d3d] leading-relaxed mb-5">
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                External digital attack surface review
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Network exposure and port vulnerability analysis
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Data protection posture assessment
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Public data leakage and credential exposure check
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Prioritised remediation report
+              </li>
+            </ul>
+
+            <p className="text-[13px] text-[#a0a0a0]">
+              Delivered standalone or alongside a governance audit. Deliverable: PDF report via encrypted email.
+            </p>
+          </section>
+        </Reveal>
+
+        {/* Case study proof point */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <div className="border-l-2 border-[#112d6e] pl-6 py-1">
+              <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
+                Proof of concept
+              </p>
+              <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-4">
+                This methodology is not theoretical. It was applied in full to
+                the Southport BID investigation: 4 published analyses, 2
+                reports, 15 FOI requests. Every finding sourced from public
+                documents. The investigation reached the House of Commons,
+                MHCLG, and national media with over 10,000 LinkedIn
+                impressions and no paid promotion.
+              </p>
+              <Link
+                href="/overview"
+                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+              >
+                Read the founding case study
+                <ArrowRight size={13} />
+              </Link>
+            </div>
+          </section>
+        </Reveal>
+
+        {/* Who commissions this */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <h2 className="text-[#112d6e] mb-10">When to commission an audit</h2>
+
+            <div className="space-y-6">
+              {[
+                {
+                  trigger: "Your BID is approaching renewal",
+                  detail:
+                    "You need your governance structure to be defensible before the ballot. Any undisclosed conflict of interest discovered during a renewal campaign becomes a reason to vote no.",
+                },
+                {
+                  trigger: "Your organisation has received an FOI request",
+                  detail:
+                    "Someone is already looking. You need to know what they will find before they find it. A governance health check identifies exposure points in days.",
+                },
+                {
+                  trigger: "Your Town Deal board is under scrutiny",
+                  detail:
+                    "Town Deal and Levelling Up boards manage significant public funds with governance structures that are rarely tested until a complaint surfaces. A deep audit maps the corporate relationships before a headline does.",
+                },
+                {
+                  trigger: "You are bidding on a public contract",
+                  detail:
+                    "Counter-party due diligence is standard in private transactions. It should be standard when public money is involved. Know your own corporate exposure before a procurement officer or journalist maps it for you.",
+                },
+                {
+                  trigger: "You have appointed new board members",
+                  detail:
+                    "A new appointment changes the corporate network. A baseline governance check ensures no undisclosed conflicts have been introduced.",
+                },
+                {
+                  trigger: "You want continuous assurance",
+                  detail:
+                    "Governance structures change. Directors are appointed and terminated. Procurement relationships shift. Ongoing monitoring means you know about changes before they become problems.",
+                },
+              ].map((item) => (
+                <div key={item.trigger}>
+                  <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                    {item.trigger}
+                  </p>
+                  <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
           </section>
         </Reveal>
 
@@ -118,24 +379,52 @@ export default function ServicesPage() {
 
             <div className="space-y-8">
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">Public records only</p>
+                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                  Public records only
+                </p>
                 <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
-                  Every finding is sourced from publicly available documents.
-                  Companies House, published accounts, FOI responses, and
-                  observable digital footprints. Nothing is assumed. Everything
-                  is linked.
+                  All research is conducted under existing public access rights.
+                  Companies House, Land Registry, Charity Commission, published
+                  accounts, FOI responses, and observable digital footprints. No
+                  hacking. No social engineering. No covert methods.
                 </p>
               </div>
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">Structured and repeatable</p>
+                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                  Evidence standard
+                </p>
                 <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
-                  The same methodology applied to the Southport BID case study
-                  is applied to every engagement. Structured data collection,
-                  cross-referencing, and evidence-chain documentation.
+                  Every finding in a SIBA report is linked to its source
+                  document. If we cannot source a claim from a publicly
+                  available record, we do not include it. Nothing is assumed.
+                  Everything is verifiable.
                 </p>
               </div>
               <div>
-                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">Confidential delivery</p>
+                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                  Adversarial review
+                </p>
+                <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                  Reports are reviewed for factual accuracy and legal risk
+                  before delivery. Findings must survive challenge. If a
+                  finding would not stand up to scrutiny from the subject of
+                  the report, it does not go in.
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                  Right of reply
+                </p>
+                <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                  Any party named in an audit report is offered the opportunity
+                  to respond before the report is finalised. Responses are
+                  included in the final deliverable.
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                  Confidential delivery
+                </p>
                 <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
                   Unlike the published case study, commercial audit reports are
                   delivered privately to the commissioning organisation. You
@@ -155,6 +444,28 @@ export default function ServicesPage() {
               We respond to every submission within one working day.
             </p>
             <CommissionForm />
+
+            <div className="mt-10 pt-8 border-t border-[#ddddd5]">
+              <p className="text-[14px] text-[#6b6b6b] mb-3">
+                Not ready to commission?
+              </p>
+              <div className="flex flex-wrap gap-5">
+                <Link
+                  href="/overview"
+                  className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+                >
+                  Read the case study first
+                  <ArrowRight size={13} />
+                </Link>
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+                >
+                  Read the blog
+                  <ArrowRight size={13} />
+                </Link>
+              </div>
+            </div>
           </section>
         </Reveal>
 
