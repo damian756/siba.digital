@@ -14,6 +14,7 @@ const topLinks = [
 ];
 
 const caseStudyLinks = [
+  { href: "/overview", label: "Overview" },
   { href: "/analysis", label: "Analysis" },
   { href: "/reports", label: "Reports" },
   { href: "/foi", label: "FOI Requests" },
