@@ -89,7 +89,7 @@ export default function Nav() {
                     : "text-[#6b6b6b] hover:text-[#1c1c1c]"
                 }`}
               >
-                Case Study
+                Southport Case Study
                 <ChevronDown
                   size={11}
                   className={`transition-transform duration-150 ${dropdownOpen ? "rotate-180" : ""}`}
@@ -153,7 +153,7 @@ export default function Nav() {
 
           <div className="pt-2">
             <p className="px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
-              Case Study
+              Southport Case Study
             </p>
             {caseStudyLinks.map((l) => (
               <Link
