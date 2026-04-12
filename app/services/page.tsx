@@ -3,9 +3,9 @@ import CommissionForm from "@/components/CommissionForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Services: Digital Governance Audits",
+  title: "Services: BID Governance Audits, OSINT and FOI Strategy",
   description:
-    "Three tiers of digital governance and OSINT audits for BIDs, councils, and major developments. From surface-level health checks to full forensic transparency audits.",
+    "Digital governance audits and OSINT for Business Improvement Districts, councils, Town Deals and major developments. Three tiers from surface-level health checks to full forensic transparency audits. Public money accountability.",
   alternates: {
     canonical: "https://www.siba.digital/services",
   },

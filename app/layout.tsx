@@ -20,11 +20,11 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "SIBA Digital | Strategic Intelligence & Business Audits",
+    default: "SIBA Digital | BID Governance Audits and OSINT",
     template: "%s | SIBA Digital",
   },
   description:
-    "Digital governance audits and open-source intelligence for BIDs, councils, and major developments across the UK.",
+    "Digital governance audits, OSINT and FOI strategy for Business Improvement Districts, councils and major developments across the UK. We find the vulnerabilities before the public does.",
   metadataBase: new URL("https://www.siba.digital"),
   openGraph: {
     siteName: "SIBA Digital",

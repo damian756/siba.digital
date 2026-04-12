@@ -5,16 +5,16 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "SIBA Digital | Strategic Intelligence & Business Audits",
+  title: "SIBA Digital | BID Governance Audits and OSINT",
   description:
-    "Digital governance audits and open-source intelligence for BIDs, councils, and major developments. We find the vulnerabilities before the public does.",
+    "Digital governance audits, OSINT and FOI strategy for Business Improvement Districts, councils and major developments across the UK. We find the vulnerabilities before the public does.",
   alternates: {
     canonical: "https://www.siba.digital",
   },
   openGraph: {
-    title: "SIBA Digital | Strategic Intelligence & Business Audits",
+    title: "SIBA Digital | BID Governance Audits and OSINT",
     description:
-      "Digital governance audits and OSINT for BIDs, councils, and major developments across the UK.",
+      "Digital governance audits, OSINT and FOI strategy for Business Improvement Districts, councils and major developments across the UK.",
     url: "https://www.siba.digital",
     type: "website",
   },

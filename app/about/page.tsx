@@ -5,9 +5,9 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "About SIBA Digital",
+  title: "About SIBA Digital: BID Governance Audits and OSINT",
   description:
-    "SIBA Digital provides open-source intelligence and digital governance audits for BIDs, councils, and major developments. Founded by Damian Roche, a 20-year web and SEO professional.",
+    "SIBA Digital provides open-source intelligence, digital governance audits and FOI strategy for Business Improvement Districts, councils and major developments. Founded by Damian Roche, ex-British Army, 20-year web and SEO professional.",
   alternates: {
     canonical: "https://www.siba.digital/about",
   },
