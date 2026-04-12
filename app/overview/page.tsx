@@ -108,11 +108,11 @@ const events: {
     href: "/services",
   },
   {
-    date: "5 May 2026",
+    date: "5-7 May 2026",
     type: "foi",
-    title: "FOI statutory deadline: Sefton Council responses due",
+    title: "FOI statutory deadlines: Sefton Council responses due",
     description:
-      "All 15 Freedom of Information responses are due by 5 May 2026. Every response will be published in full on this site.",
+      "Requests 1-8 are due by 5 May 2026. Request 9 is due 6 May. Requests 10-15 are due 7 May. Every response will be published in full on this site.",
     href: "/foi",
   },
 ];

@@ -174,7 +174,7 @@ export default function HomePage() {
                 </p>
                 <p className="text-[15px] text-[#3d3d3d]">
                   15 Freedom of Information requests to Sefton Council.
-                  Statutory deadline: <strong className="text-[#1c1c1c]">5 May 2026</strong>.
+                  Statutory deadlines: <strong className="text-[#1c1c1c]">5-7 May 2026</strong>.
                 </p>
               </div>
               <Link
