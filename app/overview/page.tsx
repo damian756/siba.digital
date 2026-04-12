@@ -203,12 +203,12 @@ export default function OverviewPage() {
                         href={event.href}
                         className="group inline-block"
                       >
-                        <h2 className="text-[15px] font-medium text-[#1c1c1c] group-hover:text-[#112d6e] transition-colors mb-1.5 leading-snug">
+                        <h2 className="text-[18px] font-medium text-[#1c1c1c] group-hover:text-[#112d6e] transition-colors mb-1.5 leading-snug">
                           {event.title}
                         </h2>
                       </Link>
                     ) : (
-                      <h2 className="text-[15px] font-medium text-[#1c1c1c] mb-1.5 leading-snug">
+                      <h2 className="text-[18px] font-medium text-[#1c1c1c] mb-1.5 leading-snug">
                         {event.title}
                       </h2>
                     )}
