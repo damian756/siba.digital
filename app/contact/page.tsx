@@ -250,6 +250,44 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
+
+        <div id="pgp" className="mt-8 pt-8 border-t border-[#ddddd5]">
+          <p className="text-[11px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
+            Encrypted contact
+          </p>
+          <p className="text-sm text-[#3d3d3d] leading-relaxed mb-4">
+            If you are sending sensitive information, use PGP to encrypt your
+            message before emailing. SIBA operates a zero-tolerance approach
+            to source confidentiality.
+          </p>
+          <div className="border border-[#ddddd5] bg-white px-5 py-4 space-y-3">
+            <div>
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-1">
+                Public key fingerprint
+              </p>
+              <p className="font-mono text-[13px] text-[#1c1c1c] break-all">
+                7460 66D3 A9E6 427A 5494 7413 ACB2 EF0A 3D9C 2224
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-4 pt-1">
+              <a
+                href="/pgp.txt"
+                download
+                className="inline-flex items-center gap-1.5 text-[13px] text-[#2c4a52] underline hover:text-[#1c1c1c] transition-colors"
+              >
+                Download public key
+              </a>
+              <a
+                href="https://keys.openpgp.org/search?q=damian%40siba.digital"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[13px] text-[#2c4a52] underline hover:text-[#1c1c1c] transition-colors"
+              >
+                Verify on keys.openpgp.org
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
