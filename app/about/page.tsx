@@ -152,8 +152,8 @@ export default function AboutPage() {
                 regardless of who ran it.
               </p>
               <p>
-                A single published analysis generated 9,422 impressions on
-                LinkedIn with no paid promotion. Over 55% of the audience
+                A single published analysis generated over 10,000 impressions
+                on LinkedIn with no paid promotion. Over 55% of the audience
                 held senior, director, or executive positions. Viewers included
                 professionals from the House of Commons, MHCLG, Bristol City
                 Council, Transport for London, Savills, AtkinsRéalis, and BBC

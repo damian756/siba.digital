@@ -201,7 +201,7 @@ export default function HomePage() {
           <Reveal>
             <div className="mb-10 grid grid-cols-2 divide-x divide-[#ddddd5] border border-[#ddddd5]">
               <div className="px-8 py-6 text-center">
-                <p className="text-3xl font-semibold text-[#112d6e]">9,422</p>
+                <p className="text-3xl font-semibold text-[#112d6e]">10,000+</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-[#a0a0a0]">Impressions</p>
               </div>
               <div className="px-8 py-6 text-center">
