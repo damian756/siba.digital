@@ -219,7 +219,8 @@ export default function HomePage() {
               <strong className="text-[#1c1c1c]">MHCLG</strong>,{" "}
               <strong className="text-[#1c1c1c]">Bristol City Council</strong>,{" "}
               <strong className="text-[#1c1c1c]">North Yorkshire Council</strong>,{" "}
-              <strong className="text-[#1c1c1c]">Transport for London</strong>, and{" "}
+              <strong className="text-[#1c1c1c]">Transport for London</strong>,{" "}
+              <strong className="text-[#1c1c1c]">Savills</strong>, and{" "}
               <strong className="text-[#1c1c1c]">AtkinsRéalis</strong>. Government
               Administration was the single largest industry at 14.6% of the
               audience, followed by construction, infrastructure, and real estate.

@@ -72,11 +72,11 @@ export default function AboutPage() {
             <span className="text-white/60">Now available commercially.</span>
           </h1>
           <p className="text-white/80 text-[17px] leading-relaxed max-w-xl" style={{ textShadow: "0 1px 8px rgba(0,0,0,0.35)" }}>
-            SIBA began as a 12-month open-source investigation into BID
-            governance in Southport. The methodology proved robust enough to
-            attract institutional attention from central government, national
-            media, and compliance professionals. It is now offered as a
-            commercial audit service for organisations managing public money.
+            SIBA began as an open-source investigation into BID governance
+            in Southport. The methodology proved robust enough to attract
+            institutional attention from central government, national media,
+            and compliance professionals. It is now offered as a commercial
+            audit service for organisations managing public money.
           </p>
         </div>
       </div>
@@ -156,7 +156,8 @@ export default function AboutPage() {
                 LinkedIn with no paid promotion. Over 55% of the audience
                 held senior, director, or executive positions. Viewers included
                 professionals from the House of Commons, MHCLG, Bristol City
-                Council, Transport for London, AtkinsRéalis, and BBC journalists.
+                Council, Transport for London, Savills, AtkinsRéalis, and BBC
+                journalists.
               </p>
               <p>
                 The investigation survived a legal threat, prompted 15 FOI
@@ -177,6 +178,56 @@ export default function AboutPage() {
               Read the full case study
               <ArrowRight size={13} />
             </Link>
+          </section>
+        </Reveal>
+
+        {/* Timeline */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
+              Timeline
+            </p>
+            <h2 className="text-[#112d6e] mb-10">How SIBA Was Built</h2>
+
+            <div className="space-y-8">
+              {[
+                {
+                  period: "Easter Sunday, April 2026",
+                  text: "A single question. Where does the Southport BID levy money go? A BID business plan read on a phone. The first Companies House searches. The investigation begins.",
+                },
+                {
+                  period: "The First Week",
+                  text: "Six analyses and reports published. All sourced from public documents. A direct phone call received from a named hospitality group chairman demanding removal of content. The content remained published. 15 FOI requests submitted to Sefton Council through WhatDoTheyKnow.",
+                },
+                {
+                  period: "The Outcome",
+                  text: "LinkedIn analytics confirmed the investigation reached the House of Commons, MHCLG, Bristol City Council, North Yorkshire Council, Transport for London, Savills, and AtkinsRéalis. Over 10,000 impressions. No paid promotion. 55% senior, director, or executive level audience.",
+                },
+                {
+                  period: "April 2026",
+                  text: "SIBA Digital launched commercially. The Southport BID investigation became the founding case study for a national governance audit methodology. Digital governance audits and OSINT for BIDs, councils, and major developments across the UK.",
+                },
+                {
+                  period: "May 2026",
+                  text: "15 FOI requests on the public record. Responses due from Sefton Council. Every response will be published in full.",
+                },
+              ].map((entry) => (
+                <div key={entry.period} className="flex gap-6">
+                  <div className="flex flex-col items-center">
+                    <span className="h-2.5 w-2.5 flex-shrink-0 rounded-full border-2 border-[#112d6e] bg-white" />
+                    <span className="w-px flex-1 bg-[#ddddd5]" />
+                  </div>
+                  <div className="pb-2">
+                    <p className="text-sm font-medium text-[#1c1c1c] mb-1.5">
+                      {entry.period}
+                    </p>
+                    <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
+                      {entry.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </section>
         </Reveal>
 
