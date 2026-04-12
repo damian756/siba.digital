@@ -1,10 +1,8 @@
 import { NextResponse } from "next/server";
 
 const CATEGORIES = [
-  "join-siba",
-  "support-siba",
-  "support-anonymous",
-  "provide-information",
+  "commission",
+  "partnership",
   "general",
 ] as const;
 
@@ -12,11 +10,9 @@ type Category = (typeof CATEGORIES)[number];
 
 function buildHtml(category: Category, data: Record<string, string>): string {
   const categoryLabels: Record<Category, string> = {
-    "join-siba": "Join SIBA",
-    "support-siba": "Support SIBA",
-    "support-anonymous": "Support SIBA (Anonymous)",
-    "provide-information": "Provide Information / Tip",
-    general: "General Contact",
+    commission: "Commission an Audit",
+    partnership: "Partnership or Referral",
+    general: "General Enquiry",
   };
 
   const rows = Object.entries(data)
@@ -47,14 +43,10 @@ function buildHtml(category: Category, data: Record<string, string>): string {
 
 function buildSubject(category: Category, data: Record<string, string>): string {
   switch (category) {
-    case "join-siba":
-      return `SIBA: Join Request — ${data["Name"] || "Unknown"}${data["Business"] ? ` (${data["Business"]})` : ""}`;
-    case "support-siba":
-      return `SIBA: Support Offer — ${data["Name"] || "Unknown"}`;
-    case "support-anonymous":
-      return `SIBA: Anonymous Support`;
-    case "provide-information":
-      return `SIBA: Information Tip [CONFIDENTIAL]`;
+    case "commission":
+      return `SIBA: Audit Commission Enquiry — ${data["Name"] || "Unknown"}${data["Business"] ? ` (${data["Business"]})` : ""}`;
+    case "partnership":
+      return `SIBA: Partnership / Referral — ${data["Name"] || "Unknown"}${data["Business"] ? ` (${data["Business"]})` : ""}`;
     case "general":
       return `SIBA: General Enquiry — ${data["Name"] || "Unknown"}`;
   }
