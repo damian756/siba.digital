@@ -161,8 +161,8 @@ export default function AboutPage() {
               </p>
               <p>
                 The investigation survived a legal threat, prompted 15 FOI
-                requests to Sefton Council, and produced six published analyses
-                and reports, all sourced entirely from public documents.
+                requests to Sefton Council, and produced three published
+                reports, all sourced entirely from public documents.
               </p>
               <p className="font-medium text-[#1c1c1c]">
                 That methodology is now available to any organisation that
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 },
                 {
                   period: "The First Week",
-                  text: "Six analyses and reports published. All sourced from public documents. A direct phone call received from a named hospitality group chairman demanding removal of content. The content remained published. 15 FOI requests submitted to Sefton Council through WhatDoTheyKnow.",
+                  text: "Three reports published, all sourced from public documents. A direct phone call received from a named hospitality group chairman demanding removal of content. A letter before action followed from solicitors. Content was voluntarily removed with no admission of liability. 15 FOI requests submitted to Sefton Council through WhatDoTheyKnow.",
                 },
                 {
                   period: "The Outcome",

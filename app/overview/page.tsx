@@ -56,7 +56,7 @@ const events: {
     type: "contact",
     title: "Direct contact received demanding removal of published content",
     description:
-      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. The content remained published. The contact is documented in full.",
+      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. A letter before action from solicitors followed. Content was subsequently voluntarily removed with no admission of liability. The contact is documented in full.",
     href: "/contact-log",
   },
   {

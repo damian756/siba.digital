@@ -144,7 +144,7 @@ export default function HomePage() {
               The audit mapped director conflicts of interest, undeclared media
               contracts, procurement opacity, and editorial bias on a publicly-funded
               tourism platform. 15 Freedom of Information requests were submitted
-              to Sefton Council. Six analyses and reports were published in full.
+              to Sefton Council. Three reports were published in full.
             </p>
           </Reveal>
           <Reveal>
