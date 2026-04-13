@@ -81,10 +81,10 @@ export default function BlogPage() {
             </p>
             <p className="text-xs text-[#a0a0a0] mb-5">April 2026</p>
             <Link
-              href="/blog/why-bid-ballots-favour-incumbents"
+              href="/blog/bid-cronyism-by-design"
               className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
             >
-              Start reading
+              Read the full analysis
               <ArrowRight size={13} />
             </Link>
           </section>
