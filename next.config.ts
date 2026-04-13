@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
   },
+  async redirects() {
+    return [
+      { source: "/manifesto", destination: "/", permanent: true },
+      { source: "/philosophy", destination: "/", permanent: true },
+      { source: "/2026", destination: "/", permanent: true },
+      { source: "/audit", destination: "/services", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
