@@ -125,7 +125,7 @@ export default function Nav() {
 
                   {/* Under investigation - greyed out, no link */}
                   <div className="px-4 py-2 cursor-default select-none">
-                    <span className="block text-[13px] font-bold text-[#ccccc4]">
+                    <span className="block text-[13px] font-bold text-[#a0a0a0]">
                       A North UK BID
                     </span>
                     <span className="mt-0.5 inline-flex items-center rounded-sm bg-[#eeeee6] border border-[#ddddd5] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-[#a0a0a0]">
@@ -209,7 +209,7 @@ export default function Nav() {
                 ))}
                 <div className="my-1 border-t border-[#ddddd5] mx-3" />
                 <div className="px-3 py-2 cursor-default select-none">
-                  <span className="block text-sm font-bold text-[#ccccc4]">A North UK BID</span>
+                  <span className="block text-sm font-bold text-[#a0a0a0]">A North UK BID</span>
                   <span className="mt-0.5 inline-flex items-center rounded-sm bg-[#eeeee6] border border-[#ddddd5] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-[#a0a0a0]">
                     Under Investigation
                   </span>
