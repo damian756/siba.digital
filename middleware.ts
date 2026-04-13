@@ -8,7 +8,15 @@ export function middleware(request: NextRequest) {
   const incoming = request.headers.get("x-origin-verify");
   if (incoming === CF_SECRET) return NextResponse.next();
 
-  return new NextResponse("Forbidden", { status: 403 });
+  return new NextResponse(
+    JSON.stringify({
+      hasSecret: !!CF_SECRET,
+      hasHeader: !!incoming,
+      secretLen: CF_SECRET?.length,
+      headerLen: incoming?.length,
+    }),
+    { status: 403, headers: { "content-type": "application/json" } }
+  );
 }
 
 export const config = {
