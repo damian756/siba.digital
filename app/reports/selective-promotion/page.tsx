@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "A manual review of editorial content on Southport's publicly-funded tourism platform. Four seasonal pages. Every mention. Every link. Zero independent restaurants or pubs. One commercial group on every page.",
   alternates: {
-    canonical: "https://www.siba.digital/analysis/selective-promotion",
+    canonical: "https://www.siba.digital/reports/selective-promotion",
   },
   openGraph: {
     title: "Which Businesses Does VisitSouthport.com Actually Promote?",
     description:
       "A manual editorial review of Southport's publicly-funded tourism platform. The findings are specific and independently verifiable.",
-    url: "https://www.siba.digital/analysis/selective-promotion",
+    url: "https://www.siba.digital/reports/selective-promotion",
     type: "article",
   },
 };
@@ -46,7 +46,7 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://www.siba.digital/analysis/selective-promotion",
+    "@id": "https://www.siba.digital/reports/selective-promotion",
   },
 };
 
@@ -251,11 +251,11 @@ export default function SelectivePromotionPage() {
       <div className="bg-white border-b border-[#ddddd5]">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
           <Link
-            href="/analysis"
+            href="/reports"
             className="inline-flex items-center gap-1.5 text-sm text-[#a0a0a0] hover:text-[#1c1c1c] transition-colors mb-6"
           >
             <ArrowLeft size={14} />
-            Analysis
+            Reports
           </Link>
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="badge badge-navy">Editorial Review</span>
@@ -698,15 +698,9 @@ export default function SelectivePromotionPage() {
             </p>
             <p>
               This is the structural pattern described in SIBA&apos;s analysis
-              of{" "}
-              <Link
-                href="/analysis/bid-cronyism-by-design"
-                className="text-[#1c1c1c] underline font-medium"
-              >
-                how BIDs breed cronyism by design
-              </Link>
-              , operating in practice on a specific, publicly-funded platform
-              with independently verifiable data.
+              of how BIDs breed cronyism by design, operating in practice on a
+              specific, publicly-funded platform with independently verifiable
+              data.
             </p>
           </div>
         </section>
@@ -939,16 +933,16 @@ export default function SelectivePromotionPage() {
         {/* CTA */}
         <div className="text-center py-4">
           <p className="text-[#6b6b6b] mb-6 leading-relaxed max-w-xl mx-auto">
-            This analysis provides the empirical evidence for the structural
-            argument made in our companion piece on BID cronyism by design. Read
-            both.
+            This report documents editorial patterns on a publicly-funded
+            platform. The structural analysis behind these findings is published
+            on the SIBA blog.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="/analysis/bid-cronyism-by-design"
+              href="/blog"
               className="inline-flex items-center gap-2 rounded-lg bg-[#1c1c1c] px-6 py-3 text-sm font-semibold text-white hover:bg-[#3d3d3d] transition-colors shadow-sm"
             >
-              Read: Cronyism by Design
+              Read the Blog
               <ArrowRight size={15} />
             </Link>
             <Link

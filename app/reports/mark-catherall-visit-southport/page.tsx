@@ -447,7 +447,7 @@ export default function CaterallReportPage() {
             </p>
           </div>
           <Link
-            href="/analysis/selective-promotion"
+            href="/reports/selective-promotion"
             className="inline-flex items-center gap-2 rounded-lg border border-[#ddddd5] bg-white px-4 py-2.5 text-xs font-semibold text-[#1c1c1c] hover:bg-[#eeeee6] transition-colors"
           >
             Read: Which Businesses Does VisitSouthport.com Actually Promote?
@@ -536,15 +536,9 @@ export default function CaterallReportPage() {
           </p>
 
           <p className="text-sm text-[#4a4a4a] leading-relaxed">
-            A companion analysis documents a separate but structurally related governance conflict
-            at the BID board level.{" "}
-            <Link href="/analysis/bid-treasurer-mikhail" className="text-[#1c1c1c] hover:underline">
-              Southport&apos;s BID Treasurer is a registered active director of Mikhail Hotels and
-              Leisure Holdings Limited
-            </Link>{" "}
-            while simultaneously overseeing BID finances. Together, these two cases document a
-            governance environment where conflicts of interest are managed without public
-            transparency.
+            Structural governance questions at the BID board level remain on the public record
+            via active Freedom of Information requests. These cases document a governance
+            environment where conflicts of interest are managed without public transparency.
           </p>
 
           <div className="space-y-3">

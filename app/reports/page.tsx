@@ -21,6 +21,15 @@ export const metadata: Metadata = {
 
 const publishedReports = [
   {
+    slug: "selective-promotion",
+    title: "Which businesses does VisitSouthport.com actually promote?",
+    subtitle: "A manual review of editorial content on Southport\u2019s publicly-funded tourism platform",
+    date: "April 2026",
+    category: "Editorial Review",
+    summary:
+      "Four seasonal pages. Every mention counted. Every outbound link checked. Zero independent restaurants or pubs. One commercial group on every page. The pattern is consistent and independently verifiable.",
+  },
+  {
     slug: "southport-bid-budget-2024",
     title: "Where does Southport BID spend your levy?",
     subtitle: "A line-by-line breakdown of the 2024-2029 BID Business Plan budget",
@@ -53,7 +62,7 @@ export default function ReportsPage() {
         </h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           This investigation began with a single question: where does the BID levy money go?
-          Two published reports, four structural analyses, and fifteen Freedom of Information
+          Three published reports, structural analysis, and fifteen Freedom of Information
           requests later, that question has a detailed public answer.
         </p>
 

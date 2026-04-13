@@ -81,8 +81,8 @@ const requests: FoiRequest[] = [
     status: "awaiting",
     summary:
       "Mark Catherall is Sefton Council's Tourism Service Manager. He runs Visit Southport day-to-day and also sits on the Southport BID board as a director. This request asks for his register of declared interests as a council officer, specifically whether his BID board directorship is declared.",
-    relatedLabel: "Selective Promotion Analysis",
-    relatedHref: "/analysis/selective-promotion#governance",
+    relatedLabel: "Selective Promotion Report",
+    relatedHref: "/reports/selective-promotion#governance",
     highlight: true,
   },
   {
@@ -137,8 +137,8 @@ const requests: FoiRequest[] = [
     status: "awaiting",
     summary:
       "Who has editorial control over the outbound links in VisitSouthport.com's seasonal content? What is the process for adding or removing a business link? Has any audit of the editorial content been conducted? This request directly supports our published analysis of which businesses VisitSouthport.com promotes.",
-    relatedLabel: "Selective Promotion Analysis",
-    relatedHref: "/analysis/selective-promotion",
+    relatedLabel: "Selective Promotion Report",
+    relatedHref: "/reports/selective-promotion",
     highlight: true,
   },
   {
@@ -149,9 +149,9 @@ const requests: FoiRequest[] = [
     status: "awaiting",
     summary:
       "Asks whether the BID governance framework requires board members to declare outside directorships, whether declarations were made by or in relation to G R Wareham (BID Treasurer) between January 2022 and December 2024 during the period he served as a director of Mikhail Hotels and Leisure Holdings Limited, and whether any correspondence exists between council officers and BID board members regarding declarations of outside commercial interests.",
-    relatedLabel: "BID Treasurer Analysis",
-    relatedHref: "/analysis/bid-treasurer-mikhail",
-    highlight: true,
+    relatedLabel: null,
+    relatedHref: null,
+    highlight: false,
   },
   {
     number: "11",
@@ -206,9 +206,9 @@ const requests: FoiRequest[] = [
     status: "awaiting",
     summary:
       "Three-part request. Part 1 asks for all payments made by Sefton Council, or from any council-administered fund, to Stand Up For Southport Limited (company 12553604), Andrew Brown Media, or Andrew Edward Brown personally, from January 2019 to the date of the request. Part 2 asks whether such payments appear in the council transparency data and whether any records were removed. Part 3 asks for any tender or procurement documentation held by the council relating to the appointment of Stand Up For Southport or Andrew Brown as a media supplier to Southport BID.",
-    relatedLabel: "BID Media Analysis",
-    relatedHref: "/analysis/andrew-brown-bid-media",
-    highlight: true,
+    relatedLabel: null,
+    relatedHref: null,
+    highlight: false,
   },
 ];
 

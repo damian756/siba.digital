@@ -15,7 +15,6 @@ const topLinks = [
 
 const southportLinks = [
   { href: "/overview", label: "Overview" },
-  { href: "/analysis", label: "Analysis" },
   { href: "/reports", label: "Reports" },
   { href: "/foi", label: "FOI Requests" },
   { href: "/contact-log", label: "Contact Log" },

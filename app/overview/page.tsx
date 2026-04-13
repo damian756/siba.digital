@@ -37,35 +37,11 @@ const events: {
   },
   {
     date: "7 April 2026",
-    type: "analysis",
-    title: "How BIDs Breed Cronyism by Design",
-    description:
-      "The founding structural analysis. The BID model does not just enable cronyism. It requires it. Published in full with no named allegations.",
-    href: "/analysis/bid-cronyism-by-design",
-  },
-  {
-    date: "7 April 2026",
-    type: "analysis",
-    title: "Southport's BID Treasurer Is an Active Director of the Town's Biggest Hospitality Group",
-    description:
-      "Companies House confirms Geoffrey Wareham is a registered active director of Mikhail Hotels and Leisure Holdings Limited while simultaneously serving as BID Treasurer. No termination has been filed.",
-    href: "/analysis/bid-treasurer-mikhail",
-  },
-  {
-    date: "7 April 2026",
-    type: "analysis",
-    title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
-    description:
-      "Andrew Brown's Stand Up For Southport holds a paid contract with Southport BID and, in his own words, also provides paid media and PR services to Mikhail Hotel and Leisure Group. Both organisations are covered without consistent disclosure.",
-    href: "/analysis/andrew-brown-bid-media",
-  },
-  {
-    date: "7 April 2026",
-    type: "analysis",
+    type: "report",
     title: "Which Businesses Does VisitSouthport.com Actually Promote?",
     description:
       "A manual review of editorial content on Southport's publicly-funded tourism platform. Four seasonal pages. Every mention. Every link. Zero independent restaurants or pubs. One commercial group on every page.",
-    href: "/analysis/selective-promotion",
+    href: "/reports/selective-promotion",
   },
   {
     date: "7 April 2026",
@@ -149,10 +125,9 @@ export default function OverviewPage() {
 
         {/* Stats row */}
         <Reveal>
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-[#ddddd5] border border-[#ddddd5] mb-14">
+          <div className="grid grid-cols-3 divide-x divide-[#ddddd5] border border-[#ddddd5] mb-14">
             {[
-              { value: "4", label: "Analyses" },
-              { value: "2", label: "Reports" },
+              { value: "3", label: "Reports" },
               { value: "15", label: "FOI Requests" },
               { value: "10,000+", label: "LinkedIn Impressions" },
             ].map((s) => (
@@ -234,13 +209,6 @@ export default function OverviewPage() {
         <div className="border-t border-[#ddddd5] mt-4 pt-10">
           <Reveal>
             <div className="flex flex-wrap gap-6">
-              <Link
-                href="/analysis"
-                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
-              >
-                All Analysis
-                <ArrowRight size={13} />
-              </Link>
               <Link
                 href="/reports"
                 className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"

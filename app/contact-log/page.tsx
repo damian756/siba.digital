@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AlertTriangle, Phone, Eye, Clock, Calendar, Info } from "lucide-react";
+import { AlertTriangle, Phone, Eye, Clock, Calendar, Info, Mail } from "lucide-react";
 import InvestigationClosed from "@/components/InvestigationClosed";
 
 export const metadata: Metadata = {
@@ -19,6 +19,37 @@ export const metadata: Metadata = {
 };
 
 const entries = [
+  {
+    id: "CL-003",
+    date: "13 April 2026",
+    time: "15:24",
+    duration: null,
+    method: "Letter",
+    methodIcon: "letter",
+    parties: [
+      {
+        name: "Victoria Sweeney",
+        role: "Director, River Law Limited",
+      },
+      {
+        name: "Geoffrey Wareham",
+        role: "Named client",
+      },
+      {
+        name: "Mikhail Hotels and Leisure Holdings Limited",
+        role: "Named client",
+      },
+      {
+        name: "Mikhail Hotels Limited",
+        role: "Named client",
+      },
+    ],
+    nature:
+      "Letter before action received from River Law Limited acting for Geoffrey Wareham, Mikhail Hotels and Leisure Holdings Limited, and Mikhail Hotels Limited. The letter alleged defamation in relation to a published analysis and a deleted Facebook post. No factual inaccuracy was identified. The published analysis was voluntarily removed. No admission of liability was made. No response was sent to River Law. SIBA considers the Southport BID case study closed. SIBA acknowledges the positive contribution Mikhail Hotel and Leisure Group has made to Southport's hospitality economy. 15 Freedom of Information requests remain on the public record.",
+    sibaResponse:
+      "The published analysis was voluntarily removed on the date the letter was received. No admission of liability was made. No response was sent. SIBA considers the Southport BID case study closed.",
+    highlight: false,
+  },
   {
     id: "CL-002",
     date: "8 April 2026",
@@ -56,16 +87,17 @@ const entries = [
       },
     ],
     nature:
-      "Caller identified themselves as Andrew from Mikhail and requested removal of published analysis at siba.digital/analysis/bid-treasurer-mikhail. Caller stated the article was about his staff. No specific factual inaccuracy was identified by the caller. No formal legal claim was made in writing. No letter before action from a solicitor was received before or after the call.",
+      "Caller identified themselves as Andrew from Mikhail and requested removal of a published analysis. Caller stated the article was about his staff. No specific factual inaccuracy was identified by the caller. No formal legal claim was made in writing.",
     sibaResponse:
-      "Content remains published. The analysis is sourced entirely from Companies House, a statutory public register, and the BID's own published website. Every factual claim in the analysis is independently verifiable. SIBA does not remove content on the basis of informal telephone requests. The right of reply offered in the published analysis remains open without time limit at damian@siba.digital.",
-    highlight: true,
+      "The analysis referenced in this call was subsequently removed voluntarily on 13 April 2026 following a separate letter before action (see CL-003). No admission of liability was made.",
+    highlight: false,
   },
 ];
 
 function MethodIcon({ type }: { type: string }) {
   if (type === "phone") return <Phone size={14} className="text-[#6b6b6b]" />;
   if (type === "eye") return <Eye size={14} className="text-[#a0a0a0]" />;
+  if (type === "letter") return <Mail size={14} className="text-[#6b6b6b]" />;
   return null;
 }
 

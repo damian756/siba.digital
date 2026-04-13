@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
       { source: "/philosophy", destination: "/", permanent: true },
       { source: "/2026", destination: "/", permanent: true },
       { source: "/audit", destination: "/services", permanent: true },
+      { source: "/analysis", destination: "/reports", permanent: true },
+      { source: "/analysis/selective-promotion", destination: "/reports/selective-promotion", permanent: true },
+      { source: "/analysis/bid-cronyism-by-design", destination: "/blog", permanent: true },
+      { source: "/analysis/andrew-brown-bid-media", destination: "/overview", permanent: true },
+      { source: "/analysis/bid-treasurer-mikhail", destination: "/overview", permanent: true },
     ];
   },
   async headers() {
