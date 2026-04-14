@@ -21,6 +21,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "bid-cronyism-by-design",
+    title: "How BIDs Breed Cronyism by Design",
+    summary:
+      "Most critics of Business Improvement Districts focus on bad actors. This is the wrong analysis. The BID model creates the conditions for cronyism structurally, regardless of intent. The founding analysis that started the conversation.",
+    date: "April 2026",
+    tag: "Structural Analysis",
+  },
+  {
+    slug: "being-locked-out-bid-procurement",
+    title: "Being Locked Out: How BID and Council Procurement Affects the Businesses Paying for It",
+    summary:
+      "The levy is compulsory. The events are not neutral. BID procurement decisions, event commissioning, and supply chain exclusion concentrate commercial advantage in the hands of those closest to the board. The affected population extends far beyond the levy area itself.",
+    date: "April 2026",
+    tag: "Structural Analysis",
+  },
+  {
     slug: "the-silence-is-the-story",
     title: "The Silence Is the Story: Why Small Businesses Won't Criticise Their BID",
     summary:
@@ -72,24 +88,25 @@ export default function BlogPage() {
           </p>
         </Reveal>
 
-        {/* Featured: Cronyism by Design */}
+        {/* Featured */}
         <Reveal>
           <section className="mb-14 pb-14 border-b border-[#ddddd5]">
             <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-4">
               Featured
             </p>
             <h2 className="text-[#112d6e] mb-3">
-              How BIDs Breed Cronyism by Design
+              The BID Model: A Twenty-Year Policy Failure Nobody Wanted to Examine
             </h2>
             <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl mb-2">
-              Most critics of Business Improvement Districts focus on bad
-              actors. This is the wrong analysis. The BID model creates the
-              conditions for cronyism structurally, regardless of intent. The
-              founding analysis that started the conversation.
+              Over 300 BIDs. &pound;100m+ in annual compulsory levy. A renewal
+              ballot that has never meaningfully failed. Every structural
+              vulnerability was visible in the legislation before a single BID
+              was established. Nobody with institutional oversight responsibility
+              acted. The full structural history.
             </p>
             <p className="text-xs text-[#a0a0a0] mb-5">April 2026</p>
             <Link
-              href="/blog/bid-cronyism-by-design"
+              href="/blog/the-bid-model-twenty-year-policy-failure"
               className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
             >
               Read the full analysis

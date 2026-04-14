@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title:
@@ -31,10 +32,21 @@ const articleSchema = {
   datePublished: "2026-04-14",
   dateModified: "2026-04-14",
   author: {
-    "@type": "Organization",
-    "@id": "https://www.siba.digital/#organization",
-    name: "SIBA Digital",
-    url: "https://www.siba.digital",
+    "@type": "Person",
+    "@id": "https://www.siba.digital/about#founder",
+    name: "Damian Roche",
+    url: "https://www.siba.digital/about",
+    jobTitle: "Founder",
+    sameAs: [
+      "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+      "https://find-and-update.company-information.service.gov.uk/company/16960442",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      "@id": "https://www.siba.digital/#organization",
+      name: "SIBA Digital",
+      url: "https://www.siba.digital",
+    },
   },
   publisher: {
     "@type": "Organization",
@@ -332,6 +344,8 @@ export default function SilencePost() {
             itself is central to the argument this article makes.
           </p>
         </div>
+
+        <AuthorBio />
 
         <div className="mt-14 pt-8 border-t border-[#ddddd5] flex items-center justify-between">
           <Link

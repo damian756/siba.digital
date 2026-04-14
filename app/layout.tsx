@@ -98,6 +98,22 @@ const organizationSchema = {
       ],
     },
     {
+      "@type": "Person",
+      "@id": "https://www.siba.digital/about#founder",
+      name: "Damian Roche",
+      url: "https://www.siba.digital/about",
+      jobTitle: "Founder",
+      image: "https://www.siba.digital/images/damian-roche.jpg",
+      sameAs: [
+        "https://www.linkedin.com/in/damian-roche-7ba8293a5/",
+        "https://find-and-update.company-information.service.gov.uk/company/16960442",
+        "https://www.churchtownmedia.co.uk",
+      ],
+      worksFor: {
+        "@id": "https://www.siba.digital/#organization",
+      },
+    },
+    {
       "@type": "WebSite",
       "@id": "https://www.siba.digital/#website",
       url: "https://www.siba.digital",

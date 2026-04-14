@@ -196,25 +196,26 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <p className="mb-4 text-center text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
-              Structural Analysis
+              Featured Analysis
             </p>
           </Reveal>
           <Reveal>
             <h2 className="mb-6 text-center">
-              The Silence Is the Story
+              The BID Model: A Twenty-Year Policy Failure
             </h2>
           </Reveal>
           <Reveal>
             <p className="mx-auto mb-8 max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
-              In BID towns across the UK, small business owners self-censor. Not because
-              anyone has threatened them. Because the structure makes silence the only
-              rational choice. A structural analysis of fear in BID towns.
+              Over 300 BIDs. &pound;100m+ in compulsory levy annually. A renewal
+              ballot that has never meaningfully failed. Every structural vulnerability
+              was visible in the legislation. Nobody with oversight responsibility
+              acted. The full structural history of a national policy failure.
             </p>
           </Reveal>
           <Reveal>
             <div className="text-center">
               <Link
-                href="/blog/the-silence-is-the-story"
+                href="/blog/the-bid-model-twenty-year-policy-failure"
                 className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
               >
                 Read the analysis
