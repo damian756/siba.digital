@@ -192,30 +192,34 @@ export default function HomePage() {
       <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
       {/* Featured Analysis */}
-      <section className="py-16">
+      <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-10 border border-[#ddddd5] bg-white px-8 py-8">
-              <div className="flex-shrink-0">
-                <p className="text-[10px] font-semibold uppercase tracking-widest text-[#a0a0a0]">
-                  Structural Analysis
-                </p>
-              </div>
-              <div>
-                <h3 className="text-[17px] font-semibold text-[#1c1c1c] leading-snug mb-2">
-                  The Silence Is the Story: Why Small Businesses Won&apos;t Criticise Their BID
-                </h3>
-                <p className="text-[14px] text-[#6b6b6b] leading-relaxed mb-4">
-                  In BID towns across the UK, small business owners self-censor. Not because anyone has threatened them. Because the structure makes silence the only rational choice.
-                </p>
-                <Link
-                  href="/blog/the-silence-is-the-story"
-                  className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
-                >
-                  Read the analysis
-                  <ArrowRight size={13} />
-                </Link>
-              </div>
+            <p className="mb-4 text-center text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0]">
+              Structural Analysis
+            </p>
+          </Reveal>
+          <Reveal>
+            <h2 className="mb-6 text-center">
+              The Silence Is the Story
+            </h2>
+          </Reveal>
+          <Reveal>
+            <p className="mx-auto mb-8 max-w-lg text-center text-[15px] leading-relaxed text-[#3d3d3d]">
+              In BID towns across the UK, small business owners self-censor. Not because
+              anyone has threatened them. Because the structure makes silence the only
+              rational choice. A structural analysis of fear in BID towns.
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="text-center">
+              <Link
+                href="/blog/the-silence-is-the-story"
+                className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] transition-colors hover:text-[#1c1c1c]"
+              >
+                Read the analysis
+                <ArrowRight size={13} />
+              </Link>
             </div>
           </Reveal>
         </div>
