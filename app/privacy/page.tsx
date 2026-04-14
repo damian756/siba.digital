@@ -74,19 +74,18 @@ export default function PrivacyPage() {
 
           <Section id="ownership" title="Statement of Ownership">
             <p>
-              SIBA Digital (siba.digital) is owned and operated by the Southport Independent
-              Business Alliance (SIBA), based in Southport, Merseyside. SIBA is the entity
-              responsible for all content published on this website.
+              SIBA Digital (siba.digital) is a trading name of Churchtown Media Ltd
+              (Company No. 16960442), based in Southport, Merseyside. Churchtown Media Ltd
+              is the entity responsible for all content published on this website.
             </p>
             <p>
-              SIBA Digital is a trading name of Churchtown Media Ltd. It provides
-              digital governance audits and open-source intelligence services for
-              public bodies, BIDs, and major developments across the UK.
+              SIBA Digital provides digital governance audits, open-source intelligence,
+              and corporate structure analysis for public bodies, Business Improvement
+              Districts, councils, and major developments across the UK.
             </p>
             <p>
-              SIBA is not affiliated with, endorsed by, or related to the Southport BID or
-              any other mandatory business levy organisation. SIBA does not collect compulsory
-              levies. Membership and engagement are entirely voluntary.
+              SIBA Digital is not affiliated with, endorsed by, or related to any Business
+              Improvement District or any other mandatory business levy organisation.
             </p>
             <div className="mt-4 border border-[#ddddd5] bg-[#f6f6ef] p-4">
               <p className="text-xs font-medium text-[#1c1c1c] mb-2">Contact</p>
@@ -154,8 +153,15 @@ export default function PrivacyPage() {
             <p>
               siba.digital does not use tracking cookies. We use Plausible Analytics, which
               is cookieless. We do not use Google Analytics, Facebook Pixel, or any other
-              third-party tracking tools that set cookies. No cookie consent banner is
-              displayed because no cookies requiring consent are set.
+              third-party tracking tools that set cookies.
+            </p>
+            <p>
+              siba.digital is served through Cloudflare, which may set a security cookie
+              (<code className="text-xs bg-[#eeeee6] px-1 py-0.5 rounded">cf_clearance</code>)
+              as part of its bot protection and DDoS mitigation. This is a strictly necessary
+              security cookie and does not track users or collect personal data. Under the
+              Privacy and Electronic Communications Regulations (PECR), strictly necessary
+              cookies do not require consent. No cookie consent banner is displayed.
             </p>
           </Section>
 
@@ -170,11 +176,6 @@ export default function PrivacyPage() {
               publicly available information. They should not be treated as formal financial
               or legal advice.
             </p>
-            <p>
-              BID levy rate figures are based on the standard 2% rate. Actual rates may
-              vary. Verify your specific levy with your local BID or rateable value with the
-              Valuation Office Agency.
-            </p>
             <H3>Acceptable use</H3>
             <p>
               You may not use siba.digital to distribute malware, attempt unauthorised access
@@ -184,9 +185,9 @@ export default function PrivacyPage() {
             <H3>Limitation of liability</H3>
             <p>
               SIBA accepts no liability for decisions made based on content published on
-              siba.digital. SEO audits and recommendations are provided in good faith but
-              results depend on factors outside our control, including search engine
-              algorithm changes.
+              siba.digital. Governance audits and intelligence reports are provided in good
+              faith but are based on publicly available information at the time of publication.
+              They do not constitute legal or financial advice.
             </p>
             <H3>Governing law</H3>
             <p>
