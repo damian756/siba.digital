@@ -191,6 +191,34 @@ export default function HomePage() {
 
       <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
 
+      {/* Featured Analysis */}
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <div className="border border-[#ddddd5] bg-[#1c1c1c] px-8 py-8 sm:py-10">
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-[#a0a0a0] mb-4">
+                Structural Analysis
+              </p>
+              <h3 className="text-xl font-semibold text-white leading-snug mb-3 max-w-lg">
+                The Silence Is the Story: Why Small Businesses Won&apos;t Criticise Their BID
+              </h3>
+              <p className="text-[14px] text-white/60 leading-relaxed mb-6 max-w-lg">
+                In BID towns across the UK, small business owners self-censor. Not because anyone has threatened them. Because the structure makes silence the only rational choice.
+              </p>
+              <Link
+                href="/blog/the-silence-is-the-story"
+                className="inline-flex items-center gap-1.5 text-sm text-white/70 border-b border-white/30 pb-0.5 transition-colors hover:text-white hover:border-white"
+              >
+                Read the analysis
+                <ArrowRight size={13} />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <hr className="mx-auto max-w-3xl border-[#ddddd5]" />
+
       {/* Reach */}
       <section className="py-28 lg:py-36">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
