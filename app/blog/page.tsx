@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "the-silence-is-the-story",
+    title: "The Silence Is the Story: Why Small Businesses Won't Criticise Their BID",
+    summary:
+      "In BID towns across the UK, small business owners self-censor. Not because anyone has threatened them. Because the structure makes silence the only rational choice. The fear extends beyond the levy area. The silence is the evidence.",
+    date: "April 2026",
+    tag: "Structural Analysis",
+  },
+  {
     slug: "why-bid-ballots-favour-incumbents",
     title: "Why BID Ballots Consistently Favour Incumbents",
     summary:
