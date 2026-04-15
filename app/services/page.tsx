@@ -303,9 +303,9 @@ export default function ServicesPage() {
                 Proof of concept
               </p>
               <p className="text-[15px] text-[#3d3d3d] leading-relaxed mb-4">
-                This methodology is not theoretical. It was applied in full to
-                the Southport BID investigation: 4 published analyses, 2
-                reports, 15 FOI requests. Every finding sourced from public
+                  This methodology is not theoretical. It was applied in full to
+                  the Southport BID investigation: 3 published reports, 15 FOI
+                  requests. Every finding sourced from public
                 documents. The investigation reached the House of Commons,
                 MHCLG, and national media with over 10,000 LinkedIn
                 impressions and no paid promotion.
