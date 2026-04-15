@@ -220,7 +220,7 @@ export default function FaqPage() {
                 <div className="space-y-10">
                   {section.items.map((item) => (
                     <div key={item.q}>
-                      <h2 className="text-[15px] font-semibold text-[#1c1c1c] mb-2 leading-snug">
+                      <h2 className="text-[18px] font-semibold text-[#1c1c1c] mb-2 leading-snug">
                         {item.q}
                       </h2>
                       <p className="text-[15px] text-[#3d3d3d] leading-relaxed">
