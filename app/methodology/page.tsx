@@ -24,10 +24,37 @@ const methodologySchema = {
   "@type": "WebPage",
   name: "Methodology: How SIBA Conducts Governance Audits",
   description:
-    "SIBA uses public records only. Companies House, FOI, council registers of interest, published accounts, and digital footprint analysis.",
+    "SIBA uses public records only. Companies House, FOI, council registers of interest, published accounts, and digital footprint analysis. Every finding is sourced, linked, and independently verifiable.",
   url: "https://www.siba.digital/methodology",
   isPartOf: {
-    "@id": "https://www.siba.digital/#organization",
+    "@type": "WebSite",
+    "@id": "https://www.siba.digital/#website",
+    url: "https://www.siba.digital",
+    name: "SIBA Digital",
+  },
+  about: {
+    "@type": "Service",
+    name: "Digital Governance Audits",
+    provider: {
+      "@id": "https://www.siba.digital/#organization",
+    },
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.siba.digital",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Methodology",
+        item: "https://www.siba.digital/methodology",
+      },
+    ],
   },
 };
 

@@ -49,6 +49,7 @@ export default function Footer() {
             </p>
             <ul className="space-y-2">
               {[
+                { href: "/faq", label: "FAQ" },
                 { href: "/privacy", label: "Privacy Policy" },
                 { href: "/privacy#ownership", label: "Statement of Ownership" },
                 { href: "/privacy#terms", label: "Terms of Use" },
