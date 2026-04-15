@@ -70,6 +70,14 @@ const serviceSchema = {
         price: "2000",
         priceCurrency: "GBP",
       },
+      {
+        "@type": "Offer",
+        name: "Governance Disclosure Review",
+        description:
+          "Review of public-facing governance documentation, digital footprint audit, and remediation roadmap. Identifies what a third-party OSINT reviewer would find and what needs to change.",
+        price: "2500",
+        priceCurrency: "GBP",
+      },
     ],
   },
 };
@@ -295,6 +303,56 @@ export default function ServicesPage() {
           </section>
         </Reveal>
 
+        {/* Tier 5 */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-3">
+              Tier 5
+            </p>
+            <h2 className="text-[#112d6e] mb-2">
+              Governance Disclosure Review
+            </h2>
+            <div className="flex flex-wrap items-baseline gap-4 mb-6">
+              <p className="text-sm text-[#6b6b6b]">Turnaround: 5 to 10 working days</p>
+              <p className="text-sm font-medium text-[#1c1c1c]">From £2,500</p>
+            </div>
+
+            <p className="text-[15px] text-[#1c1c1c] font-medium leading-relaxed mb-4">
+              You will know what your governance record looks like to an informed
+              external reviewer, and exactly what needs to change before they
+              look. Designed for organisations that have completed a Tier 2 audit
+              or identified their own exposure.
+            </p>
+
+            <ul className="space-y-2 text-[15px] text-[#3d3d3d] leading-relaxed mb-5">
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Review of all public-facing governance documentation: Companies House filings, BID website, published accounts, board minutes
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Identification of gaps, inaccuracies, and undisclosed interests in public records
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Register of interests compliance check against published declarations
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Digital footprint audit: what a third-party OSINT reviewer would find and flag
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#a0a0a0] flex-shrink-0 mt-0.5">—</span>
+                Remediation roadmap: specific steps to bring your public record into line with how you actually operate
+              </li>
+            </ul>
+
+            <p className="text-[13px] text-[#a0a0a0]">
+              Deliverable: Remediation report with prioritised action list, delivered via encrypted transfer. Can be commissioned standalone or following a Tier 2 audit.
+            </p>
+          </section>
+        </Reveal>
+
         {/* Case study proof point */}
         <Reveal>
           <section className="pb-14 mb-14 border-b border-[#ddddd5]">
@@ -357,6 +415,11 @@ export default function ServicesPage() {
                   trigger: "You want continuous assurance",
                   detail:
                     "Governance structures change. Directors are appointed and terminated. Procurement relationships shift. Ongoing monitoring means you know about changes before they become problems.",
+                },
+                {
+                  trigger: "You have received an audit finding and need to act on it",
+                  detail:
+                    "Knowing you have a governance problem and fixing what the public record shows are two different things. A Governance Disclosure Review maps your exposure precisely and tells you what to correct, update, or formally declare.",
                 },
               ].map((item) => (
                 <div key={item.trigger}>
