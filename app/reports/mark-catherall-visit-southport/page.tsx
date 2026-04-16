@@ -596,6 +596,48 @@ export default function CaterallReportPage() {
           </p>
         </section>
 
+        <div className="border-t border-[#ddddd5]" />
+
+        {/* Related */}
+        <section>
+          <p className="text-xs font-bold uppercase tracking-widest text-[#a0a0a0] mb-5">
+            Related analysis and reports
+          </p>
+          <div className="space-y-3">
+            {[
+              {
+                label: "Analysis",
+                title: "Southport BID's contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+                href: "/reports/andrew-brown-bid-media",
+              },
+              {
+                label: "Report",
+                title: "Which businesses does VisitSouthport.com actually promote?",
+                href: "/reports/selective-promotion",
+              },
+              {
+                label: "FOI Requests",
+                title: "15 Freedom of Information requests on the public record",
+                href: "/foi",
+              },
+            ].map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="flex items-center gap-4 rounded-lg border border-[#ddddd5] bg-white px-5 py-4 hover:border-[#1c1c1c] transition-colors group"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1c1c1c] w-24 flex-shrink-0">
+                  {r.label}
+                </span>
+                <p className="text-sm font-semibold text-[#1c1c1c] group-hover:text-[#3d3d3d] transition-colors flex-1 leading-snug">
+                  {r.title}
+                </p>
+                <ArrowRight size={14} className="text-[#ccccc4] group-hover:text-[#3d3d3d] transition-colors flex-shrink-0" />
+              </Link>
+            ))}
+          </div>
+        </section>
+
       </div>
     </div>
   );

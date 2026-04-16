@@ -76,6 +76,14 @@ const events: {
     href: "/foi",
   },
   {
+    date: "9 April 2026",
+    type: "report",
+    title: "Southport BID's contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+    description:
+      "Andrew Brown's Stand Up For Southport has held a BID contract since January 2021. In a published interview, Brown states he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure. The structure is documented from public sources.",
+    href: "/reports/andrew-brown-bid-media",
+  },
+  {
     date: "April 2026",
     type: "commercial",
     title: "SIBA Digital launched commercially",
@@ -127,7 +135,7 @@ export default function OverviewPage() {
         <Reveal>
           <div className="grid grid-cols-3 divide-x divide-[#ddddd5] border border-[#ddddd5] mb-14">
             {[
-              { value: "3", label: "Reports" },
+              { value: "4", label: "Reports" },
               { value: "15", label: "FOI Requests" },
               { value: "10,000+", label: "LinkedIn Impressions" },
             ].map((s) => (

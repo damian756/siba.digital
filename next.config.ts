@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       { source: "/analysis", destination: "/reports", permanent: true },
       { source: "/analysis/selective-promotion", destination: "/reports/selective-promotion", permanent: true },
       { source: "/analysis/bid-cronyism-by-design", destination: "/blog/bid-cronyism-by-design", permanent: true },
-      { source: "/analysis/andrew-brown-bid-media", destination: "/overview", permanent: true },
+      { source: "/analysis/andrew-brown-bid-media", destination: "/reports/andrew-brown-bid-media", permanent: true },
       { source: "/analysis/bid-treasurer-mikhail", destination: "/overview", permanent: true },
     ];
   },

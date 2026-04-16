@@ -24,7 +24,7 @@ const publishedReports = [
     slug: "selective-promotion",
     title: "Which businesses does VisitSouthport.com actually promote?",
     subtitle: "A manual review of editorial content on Southport\u2019s publicly-funded tourism platform",
-    date: "April 2026",
+    date: "7 April 2026",
     category: "Editorial Review",
     summary:
       "Four seasonal pages. Every mention counted. Every outbound link checked. Zero independent restaurants or pubs. One commercial group on every page. The pattern is consistent and independently verifiable.",
@@ -33,7 +33,7 @@ const publishedReports = [
     slug: "southport-bid-budget-2024",
     title: "Where does Southport BID spend your levy?",
     subtitle: "A line-by-line breakdown of the 2024-2029 BID Business Plan budget",
-    date: "April 2026",
+    date: "7 April 2026",
     category: "Budget Transparency",
     summary:
       "Southport BID collects \u00a3448,211 in compulsory levy income in year one of its current term, rising automatically by 3% each year. This report breaks down exactly where that money goes, sourced directly from the BID\u2019s own publicly available Business Plan.",
@@ -42,10 +42,19 @@ const publishedReports = [
     slug: "mark-catherall-visit-southport",
     title: "The council officer running Southport\u2019s tourism platform",
     subtitle: "How one Sefton Council officer controls both Visit Southport and a seat on the BID board",
-    date: "April 2026",
+    date: "8 April 2026",
     category: "Governance",
     summary:
       "Mark Catherall is Sefton Council\u2019s Service Manager for Tourism. He runs Visit Southport and sits on the BID board as the council\u2019s formally appointed representative. He helped design the BID before moving into his current post. This report documents the structure and asks the questions that follow.",
+  },
+  {
+    slug: "andrew-brown-bid-media",
+    title: "Southport BID\u2019s contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+    subtitle: "Andrew Brown\u2019s Stand Up For Southport holds a BID contract since 2021 and in his own words also provides paid PR services to Mikhail Hotel and Leisure Group",
+    date: "9 April 2026",
+    category: "Media Contracts",
+    summary:
+      "Both commercial relationships are confirmed from public sources: a BID announcement dated January 2021 and a published interview in November 2024. Neither relationship is consistently disclosed in Andrew Brown\u2019s coverage of either organisation.",
   },
 ];
 
@@ -62,8 +71,8 @@ export default function ReportsPage() {
         </h1>
         <p className="text-lg text-[#3d3d3d] leading-relaxed max-w-xl mb-14">
           This investigation began with a single question: where does the BID levy money go?
-          Three published reports, structural analysis, and fifteen Freedom of Information
-          requests later, that question has a detailed public answer.
+          Four published reports and fifteen Freedom of Information requests later,
+          that question has a detailed public answer.
         </p>
 
         {/* Source notice */}
