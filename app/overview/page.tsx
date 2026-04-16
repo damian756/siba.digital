@@ -78,9 +78,9 @@ const events: {
   {
     date: "9 April 2026",
     type: "report",
-    title: "Southport BID's contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+    title: "Southport BID's contracted media partner is also paid by the town's dominant hospitality group",
     description:
-      "Andrew Brown's Stand Up For Southport has held a BID contract since January 2021. In a published interview, Brown states he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure. The structure is documented from public sources.",
+      "Andrew Brown's Stand Up For Southport has held a BID contract since January 2021. In a published interview, Brown states he also provides paid media and PR services to the town's dominant hospitality group. He covers both organisations without consistent disclosure. The structure is documented from public sources.",
     href: "/reports/andrew-brown-bid-media",
   },
   {

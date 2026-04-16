@@ -3,16 +3,16 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, ExternalLink, AlertTriangle, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group | SIBA",
+  title: "Southport BID's Contracted Media Partner Is Also Paid by the Town's Dominant Hospitality Group | SIBA",
   description:
-    "Andrew Brown's Stand Up For Southport has been contracted by Southport BID since 2021. In his own words, he also provides paid media and PR services to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure. This analysis documents the structure.",
+    "Andrew Brown's Stand Up For Southport has been contracted by Southport BID since 2021. In a published interview, Brown states he also provides paid media and PR services to the town's dominant hospitality group. He covers both organisations without consistent disclosure. This analysis documents the structure.",
   alternates: {
     canonical: "https://www.siba.digital/reports/andrew-brown-bid-media",
   },
   openGraph: {
-    title: "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
+    title: "Southport BID's Contracted Media Partner Is Also Paid by the Town's Dominant Hospitality Group",
     description:
-      "Andrew Brown's Stand Up For Southport is contracted by Southport BID. In his own words, he also provides paid PR services to Mikhail Hotel and Leisure Group. Both relationships are documented from public sources.",
+      "Andrew Brown's Stand Up For Southport is contracted by Southport BID. In his own words, he also provides paid PR services to the town's dominant hospitality group. Both relationships are documented from public sources.",
     url: "https://www.siba.digital/reports/andrew-brown-bid-media",
     type: "article",
   },
@@ -44,9 +44,9 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Southport BID's Contracted Media Partner Is Also Paid by Mikhail Hotel and Leisure Group",
+    "Southport BID's Contracted Media Partner Is Also Paid by the Town's Dominant Hospitality Group",
   description:
-    "Andrew Brown's Stand Up For Southport has been contracted by Southport BID since 2021. In his own words, he also provides paid media and PR services to Mikhail Hotel and Leisure Group.",
+    "Andrew Brown's Stand Up For Southport has been contracted by Southport BID since 2021. In a published interview, Brown states he also provides paid media and PR services to the town's dominant hospitality group.",
   datePublished: "2026-04-09",
   dateModified: "2026-04-09",
   author: {
@@ -152,13 +152,13 @@ export default function AndrewBrownBidMediaPage() {
             <span className="text-xs text-[#a0a0a0]">April 2026</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1c1c1c] mb-4 leading-tight">
-            Southport BID&apos;s contracted media partner is also paid by Mikhail Hotel and Leisure Group
+            Southport BID&apos;s contracted media partner is also paid by the town&apos;s dominant hospitality group
           </h1>
           <p className="text-lg text-[#6b6b6b] leading-relaxed">
             Andrew Brown&apos;s Stand Up For Southport has held a paid contract with Southport BID since
             January 2021. In a published interview, Brown states he also provides paid media and PR services
-            to Mikhail Hotel and Leisure Group. He covers both organisations without consistent disclosure
-            of either relationship. This analysis documents what the public record shows.
+            to the town&apos;s dominant hospitality group. He covers both organisations without consistent
+            disclosure of either relationship. This analysis documents what the public record shows.
           </p>
         </div>
       </div>

@@ -607,7 +607,7 @@ export default function CaterallReportPage() {
             {[
               {
                 label: "Analysis",
-                title: "Southport BID's contracted media partner is also paid by Mikhail Hotel and Leisure Group",
+                title: "Southport BID's contracted media partner is also paid by the town's dominant hospitality group",
                 href: "/reports/andrew-brown-bid-media",
               },
               {
