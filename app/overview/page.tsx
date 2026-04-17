@@ -56,7 +56,7 @@ const events: {
     type: "contact",
     title: "Direct contact received demanding removal of published content",
     description:
-      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. A letter before action from solicitors followed. Content was subsequently voluntarily removed with no admission of liability. The contact is documented in full.",
+      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. Content was subsequently voluntarily removed with no admission of liability. The contact is documented in full.",
     href: "/contact-log",
   },
   {
@@ -82,6 +82,13 @@ const events: {
     description:
       "Andrew Brown's Stand Up For Southport has held a BID contract since January 2021. In a published interview, Brown states he also provides paid media and PR services to the town's dominant hospitality group. He covers both organisations without consistent disclosure. The structure is documented from public sources.",
     href: "/reports/andrew-brown-bid-media",
+  },
+  {
+    date: "16 April 2026",
+    type: "analysis",
+    title: "Catherall promoted to Head of Service, Visitor Economy and Enterprise",
+    description:
+      "Mark Catherall's promotion was announced publicly on LinkedIn on 16 April 2026. His remit expanded from Southport tourism to the full Sefton visitor economy, including Southport Market and Salt and Tar in Bootle. Four FOI requests directly naming or concerning his role remained unanswered at the time of the announcement.",
   },
   {
     date: "April 2026",
