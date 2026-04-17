@@ -42,6 +42,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/((?!_next|api).*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, s-maxage=300, stale-while-revalidate=60",
+          },
+        ],
+      },
     ];
   },
 };

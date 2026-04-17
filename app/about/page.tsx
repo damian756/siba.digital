@@ -197,7 +197,7 @@ export default function AboutPage() {
                 },
                 {
                   period: "The First Week",
-                  text: "Three reports published, all sourced from public documents. A direct phone call received from a named hospitality group chairman demanding removal of content. A letter before action followed from solicitors. Content was voluntarily removed with no admission of liability. 15 FOI requests submitted to Sefton Council through WhatDoTheyKnow.",
+                  text: "Published reports sourced from public documents. A direct phone call received from a named hospitality group chairman demanding removal of content. Content was voluntarily removed with no admission of liability. 15 FOI requests submitted to Sefton Council through WhatDoTheyKnow.",
                 },
                 {
                   period: "The Outcome",

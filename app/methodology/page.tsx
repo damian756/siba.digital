@@ -215,6 +215,30 @@ export default function MethodologyPage() {
           </section>
         </Reveal>
 
+        {/* Corrections */}
+        <Reveal>
+          <section className="pb-14 mb-14 border-b border-[#ddddd5]">
+            <p className="text-[11px] font-medium uppercase tracking-widest text-[#a0a0a0] mb-8">
+              Corrections and challenges
+            </p>
+            <p className="text-[15px] text-[#3d3d3d] leading-relaxed max-w-xl mb-6">
+              Every correction made to a SIBA publication is logged publicly with
+              the original text, the corrected text, and the reason for the
+              change. Any individual or organisation named in a SIBA publication
+              may submit a factual challenge in writing. Challenges that identify
+              a genuine error result in a correction. Challenges that do not
+              identify a specific inaccuracy are logged in the contact record.
+            </p>
+            <Link
+              href="/corrections"
+              className="inline-flex items-center gap-1.5 text-sm text-[#2c4a52] hover:text-[#1c1c1c] transition-colors"
+            >
+              View corrections log
+              <ArrowRight size={13} />
+            </Link>
+          </section>
+        </Reveal>
+
         {/* CTA */}
         <Reveal>
           <section>
