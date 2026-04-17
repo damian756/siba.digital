@@ -64,27 +64,15 @@ type Correction = {
 const corrections: Correction[] = [
   {
     id: "C-001",
-    date: "10 April 2026",
+    date: "14 April 2026",
     page: "Overview and Timeline",
     pageHref: "/overview",
     original:
-      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. A letter before action from solicitors followed. Content was subsequently voluntarily removed with no admission of liability.",
-    corrected:
       "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. Content was subsequently voluntarily removed with no admission of liability. The contact is documented in full.",
-    reason:
-      "The original text stated that a letter before action from solicitors followed the phone call. This was inaccurate. No letter before action was received in writing. The sentence was removed. The remainder of the description is unchanged and accurate.",
-  },
-  {
-    id: "C-002",
-    date: "10 April 2026",
-    page: "About",
-    pageHref: "/about",
-    original:
-      "The investigation survived a legal threat, prompted 15 FOI requests to Sefton Council, and produced three published reports, all sourced entirely from public documents.",
     corrected:
-      "The investigation generated significant institutional attention, prompted 15 FOI requests to Sefton Council, and produced published reports sourced entirely from public documents. A phone call was received requesting removal of published content. Content was voluntarily removed with no admission of liability.",
+      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. No specific factual inaccuracy was identified. The contact is documented in full. [Separate timeline entry added for 13 April 2026: letter before action received from River Law Limited. Published analysis voluntarily removed with no admission of liability. No apology made. No costs paid.]",
     reason:
-      "The original text used the phrase 'survived a legal threat.' This was imprecise. A phone call was received requesting removal of content. No formal legal proceedings were initiated and no letter before action was received in writing. The description has been corrected to accurately reflect what occurred.",
+      "The original 8 April entry implied content was removed as a direct result of the phone call. This compressed the timeline. The phone call occurred on 8 April. A formal letter before action from River Law Limited was received on 13 April. The article was removed following the letter, not the call. The entries have been separated to accurately reflect the sequence of events.",
   },
 ];
 

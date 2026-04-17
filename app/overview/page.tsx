@@ -56,7 +56,15 @@ const events: {
     type: "contact",
     title: "Direct contact received demanding removal of published content",
     description:
-      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. Content was subsequently voluntarily removed with no admission of liability. The contact is documented in full.",
+      "A phone call was received from a named hospitality group chairman. Removal of published content was demanded. No specific factual inaccuracy was identified. The contact is documented in full.",
+    href: "/contact-log",
+  },
+  {
+    date: "13 April 2026",
+    type: "contact",
+    title: "Letter before action received from solicitors",
+    description:
+      "A formal letter before action was received from River Law Limited acting for named parties. The letter alleged defamation in relation to a published analysis. No factual inaccuracy was identified in the letter. The published analysis was voluntarily removed with no admission of liability. No apology was made. No costs were paid. The contact is documented in full.",
     href: "/contact-log",
   },
   {
